@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zero To Hero on Nushan Kodikara</title>
+    <link>https://nushankodikara.com/tags/zero-to-hero/</link>
+    <description>Recent content in Zero To Hero on Nushan Kodikara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 10 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/zero-to-hero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Secure Your JavaScript Files</title>
+      <link>https://nushankodikara.com/blog/secure-your-javascript-files/</link>
+      <pubDate>Mon, 10 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/secure-your-javascript-files/</guid>
+      <description>Introduction Let&amp;rsquo;s be real, with firebase and all these knowledge, we should protect our JS files, They can&amp;rsquo;t be wide open for a smart ass to get there and mess around with the code or so, Yeah I know the firebase provides a much secure system in the security side but the code has to be secure too! To day let&amp;rsquo;s discuss on that, let&amp;rsquo;s explore what we can do to Protect our JS files.</description>
+    </item>
+    
+    <item>
+      <title>Js for Modern Web Development (Part 2)</title>
+      <link>https://nushankodikara.com/blog/js-for-modern-web-development-2/</link>
+      <pubDate>Sun, 26 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/js-for-modern-web-development-2/</guid>
+      <description>Introduction We did the programming part with JS, Now let&amp;rsquo;s implement our knowledge into action, Let&amp;rsquo;s create JS which can interact with webpages, This would be a long post so hold tight and here we go.
+Browser environment, specs The JavaScript language was initially created for web browsers. Since then it has evolved and become a language with many uses and platforms.
+A platform may be a browser, or a web-server or another host, even a &amp;ldquo;smart&amp;rdquo; coffee machine, if it can run JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Web Code Minification</title>
+      <link>https://nushankodikara.com/blog/web-code-minification/</link>
+      <pubDate>Sat, 25 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/web-code-minification/</guid>
+      <description>Introduction Code minification is a process modern web developers use on developments to speed up the loading of the codes, reduce the code size and decrease the ability to reverse-engineer the code. And it&amp;rsquo;s pretty easy to use too, but sadly not most of the developers know how to do it themselves. Let&amp;rsquo;s Explore Shall we.
+Minification Now, We use an online tool for this process, https://www.willpeavy.com/tools/minifier/ Goto this website for the tool, and It&amp;rsquo;s pretty simple to use but highly effective.</description>
+    </item>
+    
+    <item>
+      <title>Js for Modern Web Development (Part 1)</title>
+      <link>https://nushankodikara.com/blog/js-for-modern-web-development/</link>
+      <pubDate>Thu, 23 Jul 2020 11:52:24 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/js-for-modern-web-development/</guid>
+      <description>Introduction Here we are at the end of the modern web development course, At the right basics of the language which make the web interactive and functional. JS Is the back-born of the modern Internet, Why do I say so? Because we can do literally Anything you imagine. Without further explanation, Let&amp;rsquo;s start with the course. Before getting here, Please follow HTML CSS and SCSS guides.
+Hello, world! Javascript is fully functional with HTML and CSS, so first, Let&amp;rsquo;s create our demo document with HTML CSS And JS.</description>
+    </item>
+    
+    <item>
+      <title>Scss for Modern Web Development (Supercharged CSS)</title>
+      <link>https://nushankodikara.com/blog/scss-for-modern-web-development/</link>
+      <pubDate>Tue, 21 Jul 2020 06:59:06 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/scss-for-modern-web-development/</guid>
+      <description>Introduction If you noticed, I Didn&amp;rsquo;t mentioned css for browser types in our previous CSS tutorial, The case is, I don&amp;rsquo;t want to, SCSS is doing everything for us so why should we even bother? Let&amp;rsquo;s get started with SCSS and supercharge our css.
+Pre-Setup SCSS isn&amp;rsquo;t a universal solution, it&amp;rsquo;s here to help us with variables, nesting and automatic css generation. So we need a software to compile scss into css, here I&amp;rsquo;m using VSCode and an extension called live SCSS compiler.</description>
+    </item>
+    
+    <item>
+      <title>CSS for Modern Web Development (Zero-To-Hero)</title>
+      <link>https://nushankodikara.com/blog/css-for-modern-web-development/</link>
+      <pubDate>Sat, 18 Jul 2020 09:40:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/css-for-modern-web-development/</guid>
+      <description>Introduction Well well, here we are in the section of styling our HTML Page, if you don&amp;rsquo;t know what HTML is, Check HERE for the HTML Course on modern web development, Today we&amp;rsquo;re using CSS and HTML knowledge to create a beautiful looking website.
+Today we&amp;rsquo;re creating
+Adding to HTML There are three ways we can add a css file to our HTML Document and you can use unlimited css files in a single HTML page, Let&amp;rsquo;s Explore.</description>
+    </item>
+    
+    <item>
+      <title>Python Ultimate Crash Course (Zero-To-Hero)</title>
+      <link>https://nushankodikara.com/blog/python-ultimate-crash-course-2020/</link>
+      <pubDate>Thu, 16 Jul 2020 14:30:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/python-ultimate-crash-course-2020/</guid>
+      <description>Introduction Python is one of most popular and most powerful and one of the fastest programming languages until now, Millions upon millions developers use python in their projects to script easily. also python is one of the easiest languages to learn and master. But there are some differences between python 2 and 3, and most beginners get confused and leave python because they can&amp;rsquo;t understand how these work. So let&amp;rsquo;s begin with python 2 and 3 at the same time shall we?</description>
+    </item>
+    
+    <item>
+      <title>HTML for Modern Web Development (Zero-To-Hero)</title>
+      <link>https://nushankodikara.com/blog/html-for-modern-web-development/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/html-for-modern-web-development/</guid>
+      <description>Introduction HTML is the structural markup language for the web development community, there are more than HTML in markup community but for websites, we use mainly HTML. I&amp;rsquo;ll explain HTML from ground level so if you&amp;rsquo;re a absolute beginner, you can follow up easily. If something went wrong, just contact me from the links provided.
+Environment HTML doesn&amp;rsquo;t need a specific environment to run, but Modern web development required you to host the main files.</description>
+    </item>
+    
+  </channel>
+</rss>

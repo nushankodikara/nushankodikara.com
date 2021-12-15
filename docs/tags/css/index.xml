@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on Nushan Kodikara</title>
+    <link>https://nushankodikara.com/tags/css/</link>
+    <description>Recent content in CSS on Nushan Kodikara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 28 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple, Beautiful Modal</title>
+      <link>https://nushankodikara.com/blog/simple-beautiful-modal/</link>
+      <pubDate>Tue, 28 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/simple-beautiful-modal/</guid>
+      <description>Introduction We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I&amp;rsquo;m going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master HTML CSS SCSS JS part 1 and JS part 2 guides.
+Now in this guide, We&amp;rsquo;re making This Beautiful modal from scratch with only 14 lines of JS codes.</description>
+    </item>
+    
+    <item>
+      <title>Single line CSS Tricks (Part 1)</title>
+      <link>https://nushankodikara.com/blog/1line-css-tricks-part1/</link>
+      <pubDate>Fri, 24 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/1line-css-tricks-part1/</guid>
+      <description>Introduction CSS is the main styler over the internet, We all can&amp;rsquo;t use everything on css and because it&amp;rsquo;s a huge base, We&amp;rsquo;re probably lost somewhere inside it, So today, Let&amp;rsquo;s explore some creative and simple to use but effective single line codes for your next project. You can visit the CSS Full course HERE And without much explanations, Let&amp;rsquo;s get in to the post.
+01. Super Centered We can do so much things to make a code centered, But have you use the place-items property of the grid layout?</description>
+    </item>
+    
+    <item>
+      <title>CSS for Modern Web Development (Zero-To-Hero)</title>
+      <link>https://nushankodikara.com/blog/css-for-modern-web-development/</link>
+      <pubDate>Sat, 18 Jul 2020 09:40:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/css-for-modern-web-development/</guid>
+      <description>Introduction Well well, here we are in the section of styling our HTML Page, if you don&amp;rsquo;t know what HTML is, Check HERE for the HTML Course on modern web development, Today we&amp;rsquo;re using CSS and HTML knowledge to create a beautiful looking website.
+Today we&amp;rsquo;re creating
+Adding to HTML There are three ways we can add a css file to our HTML Document and you can use unlimited css files in a single HTML page, Let&amp;rsquo;s Explore.</description>
+    </item>
+    
+  </channel>
+</rss>

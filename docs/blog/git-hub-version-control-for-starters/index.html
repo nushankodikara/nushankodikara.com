@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    Git Hub Version Control for Starters - Nushan Kodikara
+  </title>
+  <meta name="description" content="As a human who uses computers, you must know about github version control!" /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="Git Hub Version Control for Starters" />
+<meta property="og:description" content="As a human who uses computers, you must know about github version control!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/git-hub-version-control-for-starters/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-07-27T06:00:00+05:30" />
+<meta property="article:modified_time" content="2020-07-27T06:00:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git Hub Version Control for Starters"/>
+<meta name="twitter:description" content="As a human who uses computers, you must know about github version control!"/>
+
+  <meta itemprop="name" content="Git Hub Version Control for Starters">
+<meta itemprop="description" content="As a human who uses computers, you must know about github version control!"><meta itemprop="datePublished" content="2020-07-27T06:00:00+05:30" />
+<meta itemprop="dateModified" content="2020-07-27T06:00:00+05:30" />
+<meta itemprop="wordCount" content="2778">
+<meta itemprop="keywords" content="Windows,Git Hub,Guide," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/wX2L8L-fGeA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM5NTkyMTQ3&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    July 27, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Git Hub Version Control for Starters</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    July 27, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      14&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      2778&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>Now let&rsquo;s take an start on our project directories, we as programmers and developers, always run into certain problems regarding our folder structures, corrupted files, need to undo but unable to do that because we made a terrible mistake and so on. Is there a way which we can solve this? Yes it is! that&rsquo;s called version controlling, Here we&rsquo;ll be able to backup our codes with version numbers and retrieve anytime we want, and when working with several developers in a single project, we&rsquo;ll be able to collaborate and code the same project simultaneously with these things, so without much explanation let&rsquo;s get into it.</p>
+<h2 id="whats-a-version-control-system">What’s a version control system?</h2>
+<p>A version control system, or VCS, tracks the history of changes as people and teams collaborate on projects together. As the project evolves, teams can run tests, fix bugs, and contribute new code with the confidence that any version can be recovered at any time. Developers can review project history to find out:</p>
+<ul>
+<li>Which changes were made?</li>
+<li>Who made the changes?</li>
+<li>When were the changes made?</li>
+<li>Why were changes needed?</li>
+</ul>
+<h2 id="why-git">Why Git?</h2>
+<p>There are many more version control systems but we are using GIT because it&rsquo;s free and it&rsquo;s what most of the developers use. and also it has many more features like web-hosting and many more, which we&rsquo;re going to explore in a later date.</p>
+<h2 id="whats-a-repository">What’s a repository?</h2>
+<p>Consider a repository as a project. and that&rsquo;s the most simplistic explanation on what&rsquo;s a repository. Why they are called repositories you ask? That&rsquo;s just a fancy name git uses and That&rsquo;s all. Alongside with the repositories, there is a system to track down the changes, so if you need to rollback to a previous version of your project, you can do it in a matter of seconds and there are no limitations for this process.</p>
+<h2 id="what-services-we-use">What services we use</h2>
+<p>There are many hit services like gitbucket github gitlabs so on&hellip; but we&rsquo;re using github today, not for a real reason but it&rsquo;s my favorite git service and I use it on my personal projects allot.</p>
+<h2 id="how-do-i-start">How do I start</h2>
+<p>There are many ways you can start, you can use a full GUI based application like github desktop or the command line GIT or extensions for VSCode too.. now let&rsquo;s download git first, you can use <a href="https://desktop.github.com/">https://desktop.github.com/</a> or <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> To download manually or just got to your appstore on pc for linux and mac users. Anyway you need a git client on your machine install it, restart the machine and you&rsquo;re good to go. Also goto <a href="http://www.github.com">www.github.com</a> and create your account before starting, in anytime you&rsquo;ll come-up with a login section, which you have to login with your email and password.</p>
+<h2 id="github-cli">Github CLI</h2>
+<p>Let&rsquo;s start with the command line interface, you have to start a command line interface in your working directory. it&rsquo;s different from machine to machine but you should probably know by now how it&rsquo;s done, otherwise I don&rsquo;t think it&rsquo;s a good idea to continue. Anyway if you&rsquo;re running into problems while using the command line, skip this section and follow along with the GUI base version.</p>
+<p>By using git command line you can come-up with this section of documentation</p>
+<pre tabindex="0"><code>usage: git [--version] [--help] [-C &lt;path&gt;] [-c &lt;name&gt;=&lt;value&gt;]
+           [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]
+           &lt;command&gt; [&lt;args&gt;]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help &lt;command&gt;' or 'git help &lt;concept&gt;'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+</code></pre><p>now With this section, you&rsquo;re pretty much good to go it&rsquo;s self explanatory, Let&rsquo;s get started and I&rsquo;ll show you some commands, not everything, only what you would need in your day-to-day programming career.</p>
+<h3 id="lets-explore-basic-commands">Let&rsquo;s explore Basic commands</h3>
+<ul>
+<li>
+<p><strong>git init</strong> - initializes a brand new Git repository and begins tracking an existing directory. It adds a hidden subfolder within the existing directory that houses the internal data structure required for version control.</p>
+</li>
+<li>
+<p><strong>git clone</strong> - creates a local copy of a project that already exists remotely. The clone includes all the project’s files, history, and branches.</p>
+</li>
+<li>
+<p><strong>git add</strong> - stages a change. Git tracks changes to a developer’s codebase, but it’s necessary to stage and take a snapshot of the changes to include them in the project’s history. This command performs staging, the first part of that two-step process. Any changes that are staged will become a part of the next snapshot and a part of the project’s history. Staging and committing separately gives developers complete control over the history of their project without changing how they code and work.</p>
+</li>
+<li>
+<p><strong>git commit</strong> - saves the snapshot to the project history and completes the change-tracking process. In short, a commit functions like taking a photo. Anything that’s been staged with git add will become a part of the snapshot with git commit.</p>
+</li>
+<li>
+<p><strong>git status</strong> - shows the status of changes as untracked, modified, or staged.</p>
+</li>
+<li>
+<p><strong>git branch</strong> - shows the branches being worked on locally.</p>
+</li>
+<li>
+<p><strong>git merge</strong> - merges lines of development together. This command is typically used to combine changes made on two distinct branches. For example, a developer would merge when they want to combine changes from a feature branch into the main branch for deployment.</p>
+</li>
+<li>
+<p><strong>git pull</strong> - updates the local line of development with updates from its remote counterpart. Developers use this command if a teammate has made commits to a branch on a remote, and they would like to reflect those changes in their local environment.</p>
+</li>
+<li>
+<p><strong>git push</strong> - updates the remote repository with any commits made locally to a branch.</p>
+</li>
+</ul>
+<h3 id="branches">Branches?</h3>
+<p>Consider them as parallel universes. Branches are the same copy of code but modified differently, you can merge two branches anytime you want and also you can create unlimited branches of a repository</p>
+<h3 id="how-github-works">How GitHub works</h3>
+<p>&quot; GitHub builds collaboration directly into the development process. Work is organized into repositories, where developers can outline requirements or direction and set expectations for team members. Then, using the GitHub flow, developers simply create a branch to work on updates, commit changes to save them, open a pull request to propose and discuss changes, and merge pull requests once everyone is on the same page.&quot;</p>
+<h3 id="flow">Flow</h3>
+<p>Here we&rsquo;re discussing about the work flow of the github, also we can call this steps to make a github repository for a project.</p>
+<p>The GitHub flow is a lightweight, branch-based workflow built around core Git commands used by teams around the globe—including ours.</p>
+<p>The GitHub flow has six steps, each with distinct benefits when implemented:</p>
+<ul>
+<li>Create a branch: Topic branches created from the canonical deployment branch (usually main) allow teams to contribute to many parallel efforts. Short-lived topic branches, in particular, keep teams focused and results in quick ships.</li>
+<li>Add commits: Snapshots of development efforts within a branch create safe, revertible points in the project’s history.</li>
+<li>Open a pull request: Pull requests publicize a project’s ongoing efforts and set the tone for a transparent development process.</li>
+<li>Discuss and review code: Teams participate in code reviews by commenting, testing, and reviewing open pull requests. Code review is at the core of an open and participatory culture.</li>
+<li>Merge: Upon clicking merge, GitHub automatically performs the equivalent of a local ‘git merge’ operation. GitHub also keeps the entire branch development history on the merged pull request.</li>
+<li>Deploy: Teams can choose the best release cycles or incorporate continuous integration tools and operate with the assurance that code on the deployment branch has gone through a robust workflow.</li>
+</ul>
+<h3 id="can-we-code-now">Can we code now?</h3>
+<p>Of course, let&rsquo;s get into it. Now i&rsquo;ll provide some examples on how we can use the github command-line interface for our needs.</p>
+<h4 id="contributing-to-a-current-repository">Contributing to a current repository</h4>
+<pre tabindex="0"><code>## download a repository on GitHub.com to our machine
+git clone https://github.com/me/repo.git
+
+## change into the `repo` directory
+cd repo
+
+## create a new branch to store any new changes
+git branch my-branch
+
+## switch to that branch (line of development)
+git checkout my-branch
+
+## make changes, for example, edit `file1.md` and `file2.md` using the text editor
+
+## stage the changed files
+git add file1.md file2.md
+
+## take a snapshot of the staging area (anything that's been added)
+git commit -m &quot;my snapshot&quot;
+
+## push changes to github
+git push --set-upstream origin my-branch
+</code></pre><h4 id="start-a-new-repository-and-publish-it-to-github">Start a new repository and publish it to GitHub</h4>
+<p>Before this step, goto github and create a new repository, It&rsquo;s simple as it sounds and I&rsquo;m not showing it here.</p>
+<pre tabindex="0"><code>## create a new directory, and initialize it with git-specific functions
+git init my-repo
+
+## change into the `my-repo` directory
+cd my-repo
+
+## create the first file in the project
+touch README.md
+
+## git isn't aware of the file, stage it
+git add README.md
+
+## take a snapshot of the staging area
+git commit -m &quot;add README to initial commit&quot;
+
+## provide the path for the repository you created on github
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+
+## push changes to github
+git push --set-upstream origin main
+</code></pre><h4 id="contribute-to-an-existing-branch-on-github">Contribute to an existing branch on GitHub</h4>
+<pre tabindex="0"><code>## assumption: a project called `repo` already exists on the machine, and a new branch has been pushed to GitHub.com since the last time changes were made locally
+
+## change into the `repo` directory
+cd repo
+
+## update all remote tracking branches, and the currently checked out branch
+git pull
+
+## change into the existing branch called `feature-a`
+git checkout feature-a
+
+## make changes, for example, edit `file1.md` using the text editor
+
+## stage the changed file
+git add file1.md
+
+## take a snapshot of the staging area
+git commit -m &quot;edit file1&quot;
+
+## push changes to github
+git push
+</code></pre><p>And that&rsquo;s all for the command line, you can visit github guide pages on how you can improve and use advanced functionality of github, If you&rsquo;re interested, I can also make a post on advanced github functions, so let me know in the comments wether you need one.</p>
+<h2 id="github-desktop">Github Desktop</h2>
+<p>Here we come to a fun part, Github GUI version is more fun to explore and use, It has everything a user needs with a guide on hand, First goto <a href="https://desktop.github.com/">https://desktop.github.com/</a> and download your copy of github. And you can use it right on.</p>
+<p><img src="https://desktop.github.com/images/github-desktop-screenshot-windows.png" alt="Github"></p>
+<p>This application is straight forward but follows the same workflow as the github CLI version, in case you didn&rsquo;t read it and managed to get here straight, you can find it here  again.</p>
+<h3 id="flow-1">Flow</h3>
+<p>Here we&rsquo;re discussing about the work flow of the github, also we can call this steps to make a github repository for a project.</p>
+<p>The GitHub flow is a lightweight, branch-based workflow built around core Git commands used by teams around the globe—including ours.</p>
+<p>The GitHub flow has six steps, each with distinct benefits when implemented:</p>
+<ul>
+<li>Create a branch: Topic branches created from the canonical deployment branch (usually main) allow teams to contribute to many parallel efforts. Short-lived topic branches, in particular, keep teams focused and results in quick ships.</li>
+<li>Add commits: Snapshots of development efforts within a branch create safe, revertible points in the project’s history.</li>
+<li>Open a pull request: Pull requests publicize a project’s ongoing efforts and set the tone for a transparent development process.</li>
+<li>Discuss and review code: Teams participate in code reviews by commenting, testing, and reviewing open pull requests. Code review is at the core of an open and participatory culture.</li>
+<li>Merge: Upon clicking merge, GitHub automatically performs the equivalent of a local ‘git merge’ operation. GitHub also keeps the entire branch development history on the merged pull request.</li>
+<li>Deploy: Teams can choose the best release cycles or incorporate continuous integration tools and operate with the assurance that code on the deployment branch has gone through a robust workflow.</li>
+</ul>
+<p>GitHub Desktop is an open source <a href="https://electron.atom.io">Electron</a>-based
+GitHub app. It is written in <a href="http://www.typescriptlang.org">TypeScript</a> and
+uses <a href="https://facebook.github.io/react/">React</a>.</p>
+<p><img src="https://cloud.githubusercontent.com/assets/359239/26094502/a1f56d02-3a5d-11e7-8799-23c7ba5e5106.png" alt="GitHub Desktop screenshot - Windows"></p>
+<h3 id="where-can-i-get-it">Where can I get it?</h3>
+<p>Download the official installer for your operating system:</p>
+<ul>
+<li><a href="https://central.github.com/deployments/desktop/desktop/latest/darwin">macOS</a></li>
+<li><a href="https://central.github.com/deployments/desktop/desktop/latest/win32">Windows</a></li>
+<li><a href="https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi">Windows machine-wide install</a></li>
+</ul>
+<p>You can install this alongside your existing GitHub Desktop for Mac or GitHub
+Desktop for Windows application.</p>
+<p><strong>NOTE</strong>: there is no current migration path to import your existing
+repositories into the new application - you can drag-and-drop your repositories
+from disk onto the application to get started.</p>
+<h4 id="beta-channel">Beta Channel</h4>
+<p>Want to test out new features and get fixes before everyone else? Install the
+beta channel to get access to early builds of Desktop:</p>
+<ul>
+<li><a href="https://central.github.com/deployments/desktop/desktop/latest/darwin?env=beta">macOS</a></li>
+<li><a href="https://central.github.com/deployments/desktop/desktop/latest/win32?env=beta">Windows</a></li>
+</ul>
+<h4 id="community-releases">Community Releases</h4>
+<p>There are several community-supported package managers that can be used to
+install GitHub Desktop:</p>
+<ul>
+<li>Windows users can install using <a href="https://chocolatey.org/">Chocolatey</a> package manager:
+<code>c:\&gt; choco install github-desktop</code></li>
+<li>macOS users can install using <a href="https://brew.sh/">Homebrew</a> package manager:
+<code>$ brew cask install github</code></li>
+</ul>
+<p>Installers for various Linux distributions can be found on the
+<a href="https://github.com/shiftkey/desktop"><code>shiftkey/desktop</code></a> fork.</p>
+<p>Arch Linux users can install the latest version from the
+<a href="https://aur.archlinux.org/packages/github-desktop-bin/">AUR</a>.</p>
+<h3 id="is-github-desktop-right-for-me-what-are-the-primary-areas-of-focus">Is GitHub Desktop right for me? What are the primary areas of focus?</h3>
+<p><a href="https://github.com/desktop/desktop/blob/development/docs/process/what-is-desktop.md">This document</a> describes the focus of GitHub Desktop and who the product is most useful for.</p>
+<p>And to see what the team is working on currently and in the near future, check out the <a href="https://github.com/desktop/desktop/blob/development/docs/process/roadmap.md">GitHub Desktop roadmap</a>.</p>
+<h3 id="i-have-a-problem-with-github-desktop">I have a problem with GitHub Desktop</h3>
+<p>Note: The <a href="https://github.com/desktop/desktop/blob/development/CODE_OF_CONDUCT.md">GitHub Desktop Code of Conduct</a> applies in all interactions relating to the GitHub Desktop project.</p>
+<p>First, please search the <a href="https://github.com/desktop/desktop/issues?q=is%3Aopen">open issues</a>
+and <a href="https://github.com/desktop/desktop/issues?q=is%3Aclosed">closed issues</a>
+to see if your issue hasn&rsquo;t already been reported (it may also be fixed).</p>
+<p>There is also a list of <a href="https://github.com/desktop/desktop/blob/development/docs/known-issues.md">known issues</a>
+that are being tracked against Desktop, and some of these issues have workarounds.</p>
+<p>If you can&rsquo;t find an issue that matches what you&rsquo;re seeing, open a <a href="https://github.com/desktop/desktop/issues/new/choose">new issue</a>,
+choose the right template and provide us with enough information to investigate
+further.</p>
+<h3 id="the-issue-i-reported-isnt-fixed-yet-what-can-i-do">The issue I reported isn&rsquo;t fixed yet. What can I do?</h3>
+<p>If nobody has responded to your issue in a few days, you&rsquo;re welcome to respond to it with a friendly ping in the issue. Please do not respond more than a second time if nobody has responded. The GitHub Desktop maintainers are constrained in time and resources, and diagnosing individual configurations can be difficult and time consuming. While we&rsquo;ll try to at least get you pointed in the right direction, we can&rsquo;t guarantee we&rsquo;ll be able to dig too deeply into any one person&rsquo;s issue.</p>
+<h3 id="how-can-i-contribute-to-github-desktop">How can I contribute to GitHub Desktop?</h3>
+<p>The <a href="./.github/CONTRIBUTING.md">CONTRIBUTING.md</a> document will help you get setup and
+familiar with the source. The <a href="docs/">documentation</a> folder also contains more
+resources relevant to the project.</p>
+<p>If you&rsquo;re looking for something to work on, check out the <a href="https://github.com/desktop/desktop/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22">help wanted</a> label.</p>
+<h3 id="more-resources">More Resources</h3>
+<p>See <a href="https://desktop.github.com">desktop.github.com</a> for more product-oriented
+information about GitHub Desktop.</p>
+<h3 id="i-still-didnt-got-it">I still didn&rsquo;t got it</h3>
+<p>Go ahead and Create a repository in github and download then login to the Desktop client, you can see your repositories in the left hand side and using the GUI, clone it. you can then work on your project as usual and come back to github application to see your changes and from here on you can commit from the left bottom button and push to your repository from the top button, and you&rsquo;re good to go.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Github is the favorite of most of the developers these days due to their functionalities, I&rsquo;ll show you how you can use these specialties in the near future and until then, be safe and stay home.</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

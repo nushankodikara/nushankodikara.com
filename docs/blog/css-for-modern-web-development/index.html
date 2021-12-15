@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    CSS for Modern Web Development (Zero-To-Hero) - Nushan Kodikara
+  </title>
+  <meta name="description" content="CSS Full Course for Modern Web Development" /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="CSS for Modern Web Development (Zero-To-Hero)" />
+<meta property="og:description" content="CSS Full Course for Modern Web Development" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/css-for-modern-web-development/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-07-18T09:40:00+05:30" />
+<meta property="article:modified_time" content="2020-07-18T09:40:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSS for Modern Web Development (Zero-To-Hero)"/>
+<meta name="twitter:description" content="CSS Full Course for Modern Web Development"/>
+
+  <meta itemprop="name" content="CSS for Modern Web Development (Zero-To-Hero)">
+<meta itemprop="description" content="CSS Full Course for Modern Web Development"><meta itemprop="datePublished" content="2020-07-18T09:40:00+05:30" />
+<meta itemprop="dateModified" content="2020-07-18T09:40:00+05:30" />
+<meta itemprop="wordCount" content="3352">
+<meta itemprop="keywords" content="web development,CSS,Zero To Hero,Crash Course," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/ipARHaxETRk/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM5NTkxNjQ5&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    July 18, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">CSS for Modern Web Development (Zero-To-Hero)</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    July 18, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      16&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      3352&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>Well well, here we are in the section of styling our HTML Page, if you don&rsquo;t know what HTML is, Check <a href="/post/html-for-modern-web-development/">HERE</a> for the HTML Course on modern web development, Today we&rsquo;re using CSS and HTML knowledge to create a beautiful looking website.</p>
+<p>Today we&rsquo;re creating</p>
+<h2 id="adding-to-html">Adding to HTML</h2>
+<p>There are three ways we can add a css file to our HTML Document and you can use unlimited css files in a single HTML page, Let&rsquo;s Explore.</p>
+<ul>
+<li>Externally</li>
+<li>Internally</li>
+<li>Inline</li>
+</ul>
+<h3 id="external-css-files">External CSS Files</h3>
+<p>Here we can create a .css file in our root directory, And to link it to the HTML Page, you have to add a link tag in the head section of our HTML page</p>
+<blockquote>
+<pre><code>  &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;path-with-name&gt;&quot;&gt;
+</code></pre>
+</blockquote>
+<p>As a practical usage</p>
+<blockquote>
+<pre><code>  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+</code></pre>
+</blockquote>
+<p>Here, I&rsquo;m linking a style.css file near the index.html file. Now This is how my file directory looks like</p>
+<p><img src="/uploads/20200718_01.png" alt="File Structure"></p>
+<p>And This is how my HTML Document Looks like.</p>
+<p><img src="/uploads/20200718_02.png" alt="HTML Document"></p>
+<p>Also you can include a style tag in html page and put css in it like this</p>
+<blockquote>
+<pre><code>  &lt;head&gt;
+      &lt;style&gt;
+          div {background:black;}
+      &lt;/style&gt;
+  &lt;/head&gt;
+</code></pre>
+</blockquote>
+<p>Or use inline style attribution to apply css directly to that block</p>
+<blockquote>
+<pre><code>  &lt;div style=&quot;background:black; font-family: monospace;&quot;&gt;&lt;/div&gt;
+</code></pre>
+</blockquote>
+<h3 id="purpose-of-css">Purpose Of CSS</h3>
+<p>Remember, this css language is for styling your html page and Here with my modern development course, I&rsquo;m explaining only what you will use for real projects, there are a lot of properties you can play with and you&rsquo;re always open to explore. And remember because this is modern web development, we&rsquo;ll use scss and these are what you only use.</p>
+<h3 id="selectors">Selectors</h3>
+<p>Here, there are three types of selectors. you can select a tag in our HTML page, you can select a class in our HTML page and you can also select an ID on our HTML page. And to select each type</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">How To Select It</th>
+<th style="text-align:left">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">HTML Tags</td>
+<td style="text-align:left">tag name without any special characters</td>
+<td style="text-align:left">h1</td>
+</tr>
+<tr>
+<td style="text-align:left">Classes</td>
+<td style="text-align:left">class name with a dot in-front</td>
+<td style="text-align:left">.myClass</td>
+</tr>
+<tr>
+<td style="text-align:left">IDs</td>
+<td style="text-align:left">ID Name with a Hash in-front</td>
+<td style="text-align:left">#myID</td>
+</tr>
+</tbody>
+</table>
+<p>I&rsquo;ll show an example just to understand what these used for,</p>
+<blockquote>
+<pre><code>  h1 {
+      color: red;
+      font-family: monospace;    
+  }
+
+  .myClass {
+      background:Maroon;
+      padding:10px;
+      margin:10px;
+      width:100vw;
+  }
+
+  #myID {
+      position:fixed;
+      bottom:0;
+      width:100%;
+      background:green;
+  }
+</code></pre>
+</blockquote>
+<p>Here, you can see how the selector is used. now in those curly braces, those are properties and those properties change certain display aspects of HTML Elements. Here in the first part, I selected h1 heading and in curly braces applied font color of red and changed it&rsquo;s font to monospace. let&rsquo;s try in our page. I&rsquo;m only doing this once so see how I do this and follow along. I&rsquo;m creating h1 element, a div element with class of myClass and a div element with the id of myID. and This is how html looks like</p>
+<blockquote>
+<pre><code>  &lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  
+  &lt;head&gt;
+      &lt;title&gt;Modern Web Development Tutorial&lt;/title&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+      &lt;h1&gt;Hello World&lt;/h1&gt;
+      &lt;div class=&quot;myClass&quot;&gt;Testing World&lt;/div&gt;
+      &lt;div id=&quot;myID&quot;&gt;Testing ID World&lt;/div&gt;
+  &lt;/body&gt;
+  
+  &lt;/html&gt;
+</code></pre>
+</blockquote>
+<p>And this is how I did it.</p>
+<p><img src="/uploads/20200718_03.png" alt="HTML Document">
+<img src="/uploads/20200718_04.png" alt="CSS Document"></p>
+<p>and now you can see the web page looks like this.</p>
+<p><img src="/uploads/20200718_05.png" alt="Webpage Preview"></p>
+<p>Let&rsquo;s explore what properties we have to work with and how to use it.</p>
+<p><img src="https://www.w3schools.com/css/selector.gif" alt="css form"></p>
+<h3 id="comments-in-css">Comments in css</h3>
+<p>you can use the opening tag /<em>and closing tag</em>/ for comments</p>
+<blockquote>
+<pre><code>  /* Comment */
+  /* Multiline
+      Comment */
+</code></pre>
+</blockquote>
+<h3 id="properties">Properties</h3>
+<h4 id="animation-properties">Animation Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">animation</td>
+<td style="text-align:left">Specifies the keyframe-based animations.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-delay</td>
+<td style="text-align:left">Specifies when the animation will start.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-direction</td>
+<td style="text-align:left">Specifies whether the animation should play in reverse on alternate cycles or not.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-duration</td>
+<td style="text-align:left">Specifies the number of seconds or milliseconds an animation should take to complete one cycle.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-fill-mode</td>
+<td style="text-align:left">Specifies how a CSS animation should apply styles to its target before and after it is executing.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-iteration-count</td>
+<td style="text-align:left">Specifies the number of times an animation cycle should be played before stopping.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-name</td>
+<td style="text-align:left">Specifies the name of @keyframes defined animations that should be applied to the selected element.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-play-state</td>
+<td style="text-align:left">Specifies whether the animation is running or paused.</td>
+</tr>
+<tr>
+<td style="text-align:left">animation-timing-function</td>
+<td style="text-align:left">Specifies how a CSS animation should progress over the duration of each cycle.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="background-properties">Background Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">background</td>
+<td style="text-align:left">Defines a variety of background properties within one declaration.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-attachment</td>
+<td style="text-align:left">Specify whether the background image is fixed in the viewport or scrolls.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-clip</td>
+<td style="text-align:left">Specifies the painting area of the background.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-color</td>
+<td style="text-align:left">Defines an element&rsquo;s background color.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-image</td>
+<td style="text-align:left">Defines an element&rsquo;s background image.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-origin</td>
+<td style="text-align:left">Specifies the positioning area of the background images.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-position</td>
+<td style="text-align:left">Defines the origin of a background image.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-repeat</td>
+<td style="text-align:left">Specify whether/how the background image is tiled.</td>
+</tr>
+<tr>
+<td style="text-align:left">background-size</td>
+<td style="text-align:left">Specifies the size of the background images.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="border-properties">Border Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">border</td>
+<td style="text-align:left">Sets the width, style, and color for all four sides of an element&rsquo;s border.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-bottom</td>
+<td style="text-align:left">Sets the width, style, and color of the bottom border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-bottom-color</td>
+<td style="text-align:left">Sets the color of the bottom border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-bottom-left-radius</td>
+<td style="text-align:left">Defines the shape of the bottom-left border corner of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-bottom-right-radius</td>
+<td style="text-align:left">Defines the shape of the bottom-right border corner of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-bottom-style</td>
+<td style="text-align:left">Sets the style of the bottom border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-bottom-width</td>
+<td style="text-align:left">Sets the width of the bottom border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-color</td>
+<td style="text-align:left">Sets the color of the border on all the four sides of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-image</td>
+<td style="text-align:left">Specifies how an image is to be used in place of the border styles.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-image-outset</td>
+<td style="text-align:left">Specifies the amount by which the border image area extends beyond the border box.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-image-repeat</td>
+<td style="text-align:left">Specifies whether the image-border should be repeated, rounded or stretched.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-image-slice</td>
+<td style="text-align:left">Specifies the inward offsets of the image-border.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-image-source</td>
+<td style="text-align:left">Specifies the location of the image to be used as a border.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-image-width</td>
+<td style="text-align:left">Specifies the width of the image-border.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-left</td>
+<td style="text-align:left">Sets the width, style, and color of the left border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-left-color</td>
+<td style="text-align:left">Sets the color of the left border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-left-style</td>
+<td style="text-align:left">Sets the style of the left border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-left-width</td>
+<td style="text-align:left">Sets the width of the left border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-radius</td>
+<td style="text-align:left">Defines the shape of the border corners of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-right</td>
+<td style="text-align:left">Sets the width, style, and color of the right border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-right-color</td>
+<td style="text-align:left">Sets the color of the right border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-right-style</td>
+<td style="text-align:left">Sets the style of the right border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-right-width</td>
+<td style="text-align:left">Sets the width of the right border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-style</td>
+<td style="text-align:left">Sets the style of the border on all the four sides of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-top</td>
+<td style="text-align:left">Sets the width, style, and color of the top border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-top-color</td>
+<td style="text-align:left">Sets the color of the top border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-top-left-radius</td>
+<td style="text-align:left">Defines the shape of the top-left border corner of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-top-right-radius</td>
+<td style="text-align:left">Defines the shape of the top-right border corner of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-top-width</td>
+<td style="text-align:left">Sets the width of the top border of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-width</td>
+<td style="text-align:left">Sets the width of the border on all the four sides of an element.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="color-properties">Color Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">Specify the color of the text of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">opacity</td>
+<td style="text-align:left">Specifies the transparency of an element.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="dimension-properties">Dimension Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">height</td>
+<td style="text-align:left">Specify the height of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">max-height</td>
+<td style="text-align:left">Specify the maximum height of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">max-width</td>
+<td style="text-align:left">Specify the maximum width of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">min-height</td>
+<td style="text-align:left">Specify the minimum height of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">min-width</td>
+<td style="text-align:left">Specify the minimum width of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">width</td>
+<td style="text-align:left">Specify the width of an element.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="generated-content-properties">Generated Content Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">Inserts generated content.</td>
+</tr>
+<tr>
+<td style="text-align:left">quotes Specifies</td>
+<td style="text-align:left">quotation marks for embedded quotations.</td>
+</tr>
+<tr>
+<td style="text-align:left">counter-reset</td>
+<td style="text-align:left">Creates or resets one or more counters.</td>
+</tr>
+<tr>
+<td style="text-align:left">counter-increment</td>
+<td style="text-align:left">Increments one or more counter values.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="flexible-box-layout">Flexible Box Layout</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">align-content</td>
+<td style="text-align:left">Specifies the alignment of flexible container&rsquo;s items within the flex container.</td>
+</tr>
+<tr>
+<td style="text-align:left">align-items</td>
+<td style="text-align:left">Specifies the default alignment for items within the flex container.</td>
+</tr>
+<tr>
+<td style="text-align:left">align-self</td>
+<td style="text-align:left">Specifies the alignment for selected items within the flex container.</td>
+</tr>
+<tr>
+<td style="text-align:left">flex</td>
+<td style="text-align:left">Specifies the components of a flexible length.</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-basis</td>
+<td style="text-align:left">Specifies the initial main size of the flex item.</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-direction</td>
+<td style="text-align:left">Specifies the direction of the flexible items.</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-flow</td>
+<td style="text-align:left">A shorthand property for the flex-direction and the flex-wrap properties.</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-grow</td>
+<td style="text-align:left">Specifies how the flex item will grow relative to the other items inside the flex container.</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-shrink</td>
+<td style="text-align:left">Specifies how the flex item will shrink relative to the other items inside the flex container.</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-wrap</td>
+<td style="text-align:left">Specifies whether the flexible items should wrap or not.</td>
+</tr>
+<tr>
+<td style="text-align:left">justify-content</td>
+<td style="text-align:left">Specifies how flex items are aligned along the main axis of the flex container after any flexible lengths and auto margins have been resolved.</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">Specifies the order in which a flex items are displayed and laid out within a flex container.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="font-properties">Font Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">font</td>
+<td style="text-align:left">Defines a variety of font properties within one declaration.</td>
+</tr>
+<tr>
+<td style="text-align:left">font-family</td>
+<td style="text-align:left">Defines a list of fonts for element.</td>
+</tr>
+<tr>
+<td style="text-align:left">font-size</td>
+<td style="text-align:left">Defines the font size for the text.</td>
+</tr>
+<tr>
+<td style="text-align:left">font-size-adjust</td>
+<td style="text-align:left">Preserves the readability of text when font fallback occurs.</td>
+</tr>
+<tr>
+<td style="text-align:left">font-stretch</td>
+<td style="text-align:left">Selects a normal, condensed, or expanded face from a font.</td>
+</tr>
+<tr>
+<td style="text-align:left">font-style</td>
+<td style="text-align:left">Defines the font style for the text.</td>
+</tr>
+<tr>
+<td style="text-align:left">font-variant</td>
+<td style="text-align:left">Specify the font variant.</td>
+</tr>
+<tr>
+<td style="text-align:left">font-weight</td>
+<td style="text-align:left">Specify the font weight of the text.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="list-properties">List Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">list-style</td>
+<td style="text-align:left">Defines the display style for a list and list elements.</td>
+</tr>
+<tr>
+<td style="text-align:left">list-style-image</td>
+<td style="text-align:left">Specifies the image to be used as a list-item marker.</td>
+</tr>
+<tr>
+<td style="text-align:left">list-style-position</td>
+<td style="text-align:left">Specifies the position of the list-item marker.</td>
+</tr>
+<tr>
+<td style="text-align:left">list-style-type</td>
+<td style="text-align:left">Specifies the marker style for a list-item.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="margin-properties">Margin Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">margin Sets</td>
+<td style="text-align:left">the margin on all four sides of the element.</td>
+</tr>
+<tr>
+<td style="text-align:left">margin-bottom</td>
+<td style="text-align:left">Sets the bottom margin of the element.</td>
+</tr>
+<tr>
+<td style="text-align:left">margin-left</td>
+<td style="text-align:left">Sets the left margin of the element.</td>
+</tr>
+<tr>
+<td style="text-align:left">margin-right</td>
+<td style="text-align:left">Sets the right margin of the element.</td>
+</tr>
+<tr>
+<td style="text-align:left">margin-top</td>
+<td style="text-align:left">Sets the top margin of the element.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="multi-column-layout-properties">Multi-column Layout Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">column-count</td>
+<td style="text-align:left">Specifies the number of columns in a multi-column element.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-fill</td>
+<td style="text-align:left">Specifies how columns will be filled.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-gap</td>
+<td style="text-align:left">Specifies the gap between the columns in a multi-column element.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-rule</td>
+<td style="text-align:left">Specifies a straight line, or &ldquo;rule&rdquo;, to be drawn between each column in a multi-column element.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-rule-color</td>
+<td style="text-align:left">Specifies the color of the rules drawn between columns in a multi-column layout.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-rule-style</td>
+<td style="text-align:left">Specifies the style of the rule drawn between the columns in a multi-column layout.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-rule-width</td>
+<td style="text-align:left">Specifies the width of the rule drawn between the columns in a multi-column layout.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-span</td>
+<td style="text-align:left">Specifies how many columns an element spans across in a multi-column layout.</td>
+</tr>
+<tr>
+<td style="text-align:left">column-width</td>
+<td style="text-align:left">Specifies the optimal width of the columns in a multi-column element.</td>
+</tr>
+<tr>
+<td style="text-align:left">columns</td>
+<td style="text-align:left">A shorthand property for setting column-width and column-count properties.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="outline-properties">Outline Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">outline</td>
+<td style="text-align:left">Sets the width, style, and color for all four sides of an element&rsquo;s outline.</td>
+</tr>
+<tr>
+<td style="text-align:left">outline-color</td>
+<td style="text-align:left">Sets the color of the outline.</td>
+</tr>
+<tr>
+<td style="text-align:left">outline-offset</td>
+<td style="text-align:left">Set the space between an outline and the border edge of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">outline-style</td>
+<td style="text-align:left">Sets a style for an outline.</td>
+</tr>
+<tr>
+<td style="text-align:left">outline-width</td>
+<td style="text-align:left">Sets the width of the outline.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="padding-properties">Padding Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">padding</td>
+<td style="text-align:left">Sets the padding on all four sides of the element.</td>
+</tr>
+<tr>
+<td style="text-align:left">padding-bottom</td>
+<td style="text-align:left">Sets the padding to the bottom side of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">padding-left</td>
+<td style="text-align:left">Sets the padding to the left side of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">padding-right</td>
+<td style="text-align:left">Sets the padding to the right side of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">padding-top</td>
+<td style="text-align:left">Sets the padding to the top side of an element.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="print-properties">Print Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">page-break-after</td>
+<td style="text-align:left">Insert a page breaks after an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">page-break-before</td>
+<td style="text-align:left">Insert a page breaks before an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">page-break-inside</td>
+<td style="text-align:left">Insert a page breaks inside an element.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="table-properties">Table Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">border-collapse</td>
+<td style="text-align:left">Specifies whether table cell borders are connected or separated.</td>
+</tr>
+<tr>
+<td style="text-align:left">border-spacing</td>
+<td style="text-align:left">Sets the spacing between the borders of adjacent table cells.</td>
+</tr>
+<tr>
+<td style="text-align:left">caption-side</td>
+<td style="text-align:left">Specify the position of table&rsquo;s caption.</td>
+</tr>
+<tr>
+<td style="text-align:left">empty-cells</td>
+<td style="text-align:left">Show or hide borders and backgrounds of empty table cells.</td>
+</tr>
+<tr>
+<td style="text-align:left">table-layout</td>
+<td style="text-align:left">Specifies a table layout algorithm.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="text-properties">Text Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">direction</td>
+<td style="text-align:left">Define the text direction/writing direction.</td>
+</tr>
+<tr>
+<td style="text-align:left">tab-size</td>
+<td style="text-align:left">Specifies the length of the tab character.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-align</td>
+<td style="text-align:left">Sets the horizontal alignment of inline content.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-align-last</td>
+<td style="text-align:left">Specifies how the last line of a block or a line right before a forced line break is aligned when text-align is justify.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-decoration</td>
+<td style="text-align:left">Specifies the decoration added to text.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-decoration-color</td>
+<td style="text-align:left">Specifies the color of the text-decoration-line.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-decoration-line</td>
+<td style="text-align:left">Specifies what kind of line decorations are added to the element.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-decoration-style</td>
+<td style="text-align:left">Specifies the style of the lines specified by the text-decoration-line property.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-indent</td>
+<td style="text-align:left">Indent the first line of text.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-justify</td>
+<td style="text-align:left">Specifies the justification method to use when the text-align property is set to justify.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-overflow</td>
+<td style="text-align:left">Specifies how the text content will be displayed, when it overflows the block containers.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-shadow</td>
+<td style="text-align:left">Applies one or more shadows to the text content of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">text-transform</td>
+<td style="text-align:left">Transforms the case of the text.</td>
+</tr>
+<tr>
+<td style="text-align:left">line-height</td>
+<td style="text-align:left">Sets the height between lines of text.</td>
+</tr>
+<tr>
+<td style="text-align:left">vertical-align</td>
+<td style="text-align:left">Sets the vertical positioning of an element relative to the current text baseline.</td>
+</tr>
+<tr>
+<td style="text-align:left">letter-spacing</td>
+<td style="text-align:left">Sets the extra spacing between letters.</td>
+</tr>
+<tr>
+<td style="text-align:left">word-spacing</td>
+<td style="text-align:left">Sets the spacing between words.</td>
+</tr>
+<tr>
+<td style="text-align:left">white-space</td>
+<td style="text-align:left">Specifies how white space inside the element is handled.</td>
+</tr>
+<tr>
+<td style="text-align:left">word-break</td>
+<td style="text-align:left">Specifies how to break lines within words.</td>
+</tr>
+<tr>
+<td style="text-align:left">word-wrap</td>
+<td style="text-align:left">Specifies whether to break words when the content overflows the boundaries of its container.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="transform-properties">Transform Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">backface-visibility</td>
+<td style="text-align:left">Specifies whether or not the &ldquo;back&rdquo; side of a transformed element is visible when facing the user.</td>
+</tr>
+<tr>
+<td style="text-align:left">perspective</td>
+<td style="text-align:left">Defines the perspective from which all child elements of the object are viewed.</td>
+</tr>
+<tr>
+<td style="text-align:left">perspective-origin</td>
+<td style="text-align:left">Defines the origin (the vanishing point for the 3D space) for the perspective property.</td>
+</tr>
+<tr>
+<td style="text-align:left">transform</td>
+<td style="text-align:left">Applies a 2D or 3D transformation to an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">transform-origin</td>
+<td style="text-align:left">Defines the origin of transformation for an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">transform-style</td>
+<td style="text-align:left">Specifies how nested elements are rendered in 3D space.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="transitions-properties">Transitions Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">transition</td>
+<td style="text-align:left">Defines the transition between two states of an element.</td>
+</tr>
+<tr>
+<td style="text-align:left">transition-delay</td>
+<td style="text-align:left">Specifies when the transition effect will start.</td>
+</tr>
+<tr>
+<td style="text-align:left">transition-duration</td>
+<td style="text-align:left">Specifies the number of seconds or milliseconds a transition effect should take to complete.</td>
+</tr>
+<tr>
+<td style="text-align:left">transition-property</td>
+<td style="text-align:left">Specifies the names of the CSS properties to which a transition effect should be applied.</td>
+</tr>
+<tr>
+<td style="text-align:left">transition-timing-function</td>
+<td style="text-align:left">Specifies the speed curve of the transition effect.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="visual-formatting-properties">Visual formatting Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">display</td>
+<td style="text-align:left">Specifies how an element is displayed onscreen.</td>
+</tr>
+<tr>
+<td style="text-align:left">position</td>
+<td style="text-align:left">Specifies how an element is positioned.</td>
+</tr>
+<tr>
+<td style="text-align:left">top</td>
+<td style="text-align:left">Specify the location of the top edge of the positioned element.</td>
+</tr>
+<tr>
+<td style="text-align:left">right</td>
+<td style="text-align:left">Specify the location of the right edge of the positioned element.</td>
+</tr>
+<tr>
+<td style="text-align:left">bottom</td>
+<td style="text-align:left">Specify the location of the bottom edge of the positioned element.</td>
+</tr>
+<tr>
+<td style="text-align:left">left</td>
+<td style="text-align:left">Specify the location of the left edge of the positioned element.</td>
+</tr>
+<tr>
+<td style="text-align:left">float</td>
+<td style="text-align:left">Specifies whether or not a box should float.</td>
+</tr>
+<tr>
+<td style="text-align:left">clear</td>
+<td style="text-align:left">Specifies the placement of an element in relation to floating elements.</td>
+</tr>
+<tr>
+<td style="text-align:left">z-index</td>
+<td style="text-align:left">Specifies a layering or stacking order for positioned elements.</td>
+</tr>
+<tr>
+<td style="text-align:left">overflow</td>
+<td style="text-align:left">Specifies the treatment of content that overflows the element&rsquo;s box.</td>
+</tr>
+<tr>
+<td style="text-align:left">overflow-x</td>
+<td style="text-align:left">Specifies how to manage the content when it overflows the width of the element&rsquo;s content area.</td>
+</tr>
+<tr>
+<td style="text-align:left">overflow-y</td>
+<td style="text-align:left">Specifies how to manage the content when it overflows the height of the element&rsquo;s content area.</td>
+</tr>
+<tr>
+<td style="text-align:left">resize</td>
+<td style="text-align:left">Specifies whether or not an element is resizable by the user.</td>
+</tr>
+<tr>
+<td style="text-align:left">clip</td>
+<td style="text-align:left">Defines the clipping region.</td>
+</tr>
+<tr>
+<td style="text-align:left">visibility</td>
+<td style="text-align:left">Specifies whether or not an element is visible.</td>
+</tr>
+<tr>
+<td style="text-align:left">cursor</td>
+<td style="text-align:left">Specify the type of cursor.</td>
+</tr>
+<tr>
+<td style="text-align:left">box-shadow</td>
+<td style="text-align:left">Applies one or more drop-shadows to the element&rsquo;s box.</td>
+</tr>
+<tr>
+<td style="text-align:left">box-sizing</td>
+<td style="text-align:left">Alter the default CSS box model.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="discussion">Discussion</h3>
+<p>Now that&rsquo;s all we need for CSS, look carefully and you&rsquo;ll find something you like, now let&rsquo;s create some simple but beautiful webpages to emphasize our skills, and get to know how to use css.</p>
+<h3 id="lets-create-a-login-page">Let&rsquo;s Create A Login Page</h3>
+<p>Now, Let&rsquo;s Cerate this beautiful Login page And I&rsquo;ll Show you the code and then explain what&rsquo;s going on here, Now considering this, it&rsquo;s not a difficult one to make as it seams. Also you can download the complete project <a href="/zip/Sample-site.zip">HERE</a>.</p>
+<p><img src="/uploads/20200718_06.png" alt="HTML Document"></p>
+<h4 id="html">HTML</h4>
+<p>First of all, let&rsquo;s see what&rsquo;s in the HTML Section of this code.</p>
+<blockquote>
+<pre><code>  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  
+  &lt;head&gt;
+      &lt;title&gt;Modern Web Development Tutorial&lt;/title&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+      &lt;div id=&quot;loginSection&quot;&gt;
+          &lt;img src=&quot;avatar.webp&quot; title=&quot;User Image&quot;&gt;
+          &lt;h1&gt;Log In&lt;/h1&gt;
+          &lt;form&gt;
+              &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; placeholder=&quot;Username&quot;&gt;
+              &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+              &lt;button&gt;Login&lt;/button&gt;&lt;br&gt;
+              &lt;small&gt;By Signing in, You Are agreeing to the terms and conditions&lt;/small&gt;
+              &lt;small id=&quot;resetLink&quot;&gt;&lt;a&gt;Reset Password&lt;/a&gt;&lt;/small&gt;
+          &lt;/form&gt;
+      &lt;/div&gt;
+  &lt;/body&gt;
+  
+  &lt;/html&gt;
+</code></pre>
+</blockquote>
+<p>Let me explain. Here first I made a div section with the id of loginSection. and in it I placed a image tag, h1 tag, a form with two input fields for username and password, a button to login, A disclaimer note and a link to reset the password. Here, the functionality isn&rsquo;t considered and we are making this functional in the Javascript course. And That&rsquo;s it for HTML.</p>
+<h5 id="css">CSS</h5>
+<p>Here Begins the fun part. It&rsquo;s not that hard but you have to remember what you need and use it carefully, let me show you the code base first.</p>
+<blockquote>
+<pre><code>  * {
+      font-family: monospace;
+  }
+  
+  body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-image: url(background.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  
+  #loginSection {
+      background-color: rgba(250, 235, 215, 0.6);
+      max-width: 250px;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      border-radius: 20px;
+  }
+  
+  img {
+      width: 180px;
+  }
+  
+  input {
+      width: 80%;
+      padding: 15px 20px;
+      outline: none;
+      margin-bottom: 15px;
+      border-radius: 500px;
+      border: none;
+  }
+  
+  button {
+      padding: 15px 30px;
+      outline: none;
+      border-radius: 500px;
+      color: black;
+      background-color: GreenYellow;
+      border: none;
+  }
+  
+  button:hover {
+      background-color: rgb(153, 255, 0);
+  }
+  
+  #resetLink {
+      color: cornflowerblue;
+  }
+</code></pre>
+</blockquote>
+<p>Here, Let me explain. first I made a selector called <em>and this is a special selector, which selects everything, means the properties in the</em> selector can affect every element in the HTML page, here I changed the font family to monospace ( It&rsquo;s my favorite ).</p>
+<p>in then i selected the whole body section of the document with body selector and made it stretch 100% which means from the left side to the right side completely, and removed margin and padding. also added a background image (Here you have to use that url section) and I set that background repeat to no repeat. and I made that background to stay anchored to the center. also made the background size a cover, which means the background covers the whole screen.</p>
+<p>Now loginSection part. Here I selected the login section with the ID I provided, and set it&rsquo;s background color to a pale white with RGB colors and the alpha channel to 0.6 (Transparency). Then fixed it&rsquo;s width to 250px and added a padding of 20px. Aligned it&rsquo;s text to center which makes everything in login section centered. Now I made the position of it fixed which means it doesn&rsquo;t scroll with the window. and it has to be fixed in the center so I made it hang 50% from the top and 50% from the left. Also I have to set a offset to make it to the dead center, I did it by using a transform property, there, I made translate -50% in the X axis and -70% in the Y axis to make it a little bit to the top. Then I rounded it&rsquo;s borders using border-radius property.</p>
+<p>for the avatar image, I just selected img tag and set it&rsquo;s width to 180px and here, when I&rsquo;m not providing the height, It automatically assigns it&rsquo;s height and that&rsquo;s it for the image.</p>
+<p>Then the input boxes, here I only have two input tags and they are username and password so I can just select input tag and It&rsquo;ll apply to both of those, here I made it&rsquo;s width 80% from parent container which is the login section. and added a padding top and bottom of 15px to make it a bit taller and 20px to left and right to make it a bit longer, also I removed it&rsquo;s outline and border, and added a margin to the bottom of 15px and to make it pill shaped, added a border radius of 500px (That&rsquo;s a trick)</p>
+<p>Buttons are the same, I added some padding to 4 sides to make it a bit taller and a bit longer, removed border and outline, made it&rsquo;s text black and background color of greenYellow.</p>
+<p>Then Button:hover section is a special selector, these properties applies when the user hovers the mouse above the button, so I made it to go a bit darker when hovering. and I selected the password reset link with it&rsquo;s ID and added a color of cornflowerblue.</p>
+<p>And That&rsquo;s pretty much it guys, Play with these values to get a feeling for it. and css isn&rsquo;t something that&rsquo;s hard, you just have to get a feeling.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Well well well, here we are at the end of another course, CSS Zero to Hero and this one is a bit different than others, just explanation and an example. Is it enough? yeah, get a feeling to it and you&rsquo;ll flow on css, CSS is not something difficult something for you to think for hours upon hours, play with it for sometime, it&rsquo;s just a styling guide and when you&rsquo;re comfortable with it, You&rsquo;re an artist drawing in a web browser with some codes.</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

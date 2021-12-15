@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nushan Kodikara</title>
+    <link>https://nushankodikara.com/</link>
+    <description>Recent content on Nushan Kodikara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nushankodikara.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://nushankodikara.com/page/about/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nushankodikara.com/page/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+    </item>
+    
+    <item>
+      <title>Git Hub Pages for Web Hosting</title>
+      <link>https://nushankodikara.com/blog/git-hub-pages-for-web-hosting/</link>
+      <pubDate>Wed, 12 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/git-hub-pages-for-web-hosting/</guid>
+      <description>Introduction Github pages is one of the most used and in my opinion the best static hosting site available right now, It only has a free version and it&amp;rsquo;s all we need, let me show you how we can create and deploy a static website to github, and then how we can assign a custom domain to the site and enable SSL certificate in few minuets.
+Starting With git-hub First we need to goto github and login to your account.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Weather App Using Openweathermaps API</title>
+      <link>https://nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
+      <pubDate>Tue, 11 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
+      <description>Introduction As I Promised, We&amp;rsquo;re doing advanced app examples today, to be specific, we&amp;rsquo;re creating a weather application using openweathermap API, owfont-regular, vivify for animation, font-awesome pack, progressbar.js for sun-timer , jquery.cookie, jquery-3.5.1 and apexcharts for weather details. We&amp;rsquo;re making this application responsible and I&amp;rsquo;ll link down the documentations off all the libraries we use, with them if you don&amp;rsquo;t understand the code, you can always copy and paste it and it would work fine without a problem at all!</description>
+    </item>
+    
+    <item>
+      <title>Secure Your JavaScript Files</title>
+      <link>https://nushankodikara.com/blog/secure-your-javascript-files/</link>
+      <pubDate>Mon, 10 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/secure-your-javascript-files/</guid>
+      <description>Introduction Let&amp;rsquo;s be real, with firebase and all these knowledge, we should protect our JS files, They can&amp;rsquo;t be wide open for a smart ass to get there and mess around with the code or so, Yeah I know the firebase provides a much secure system in the security side but the code has to be secure too! To day let&amp;rsquo;s discuss on that, let&amp;rsquo;s explore what we can do to Protect our JS files.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Messaging App With Firebase</title>
+      <link>https://nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</link>
+      <pubDate>Sun, 09 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</guid>
+      <description>Introduction Now we have covered firebase realtime and firestore databases, Authentication, Hosting and analytics, We can create a simple chat/messaging application within 15-minuets or less! Aren&amp;rsquo;t you sure of that? Let&amp;rsquo;s get started!
+Background and Environment I&amp;rsquo;m using what we did in firebase realtime database, authentication and hosting for this project. So if you didn&amp;rsquo;t saw them already, go ahead now. let&amp;rsquo;s explore the code and as always HERE you can download the completed project file.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Hosting and Analytics</title>
+      <link>https://nushankodikara.com/blog/firebase-hosting-and-analytics/</link>
+      <pubDate>Sat, 08 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-hosting-and-analytics/</guid>
+      <description>Introduction We can use firebase as a hosting service, Firebase Hosting provides fast and secure hosting for your web app, static and dynamic content, and microservices, Also Firebase Hosting is production-grade web content hosting for developers, With a single command, you can quickly deploy web apps and serve both static and dynamic content to a global CDN (content delivery network), You can also pair Firebase Hosting with Cloud Functions or Cloud Run to build and host microservices on Firebase.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Authentication</title>
+      <link>https://nushankodikara.com/blog/firebase-authentication/</link>
+      <pubDate>Fri, 07 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-authentication/</guid>
+      <description>Introduction Let&amp;rsquo;s use firebase for user authentication, you don&amp;rsquo;t need to setup custom authentications, app apis and other stupid things anymore, we have firebase on our back and few lines of codes can make the programs more efficient and more secure! today I&amp;rsquo;m only focusing Email, Google and Anonymous authentications mainly. you can browse firebase docs for more information on how to setup other authentications in advanced.
+Firebase Authentication Most apps need to know the identity of a user.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Cloud Firestore</title>
+      <link>https://nushankodikara.com/blog/firebase-cloud-firestore/</link>
+      <pubDate>Thu, 06 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-cloud-firestore/</guid>
+      <description>Introduction Use our flexible, scalable NoSQL cloud database to store and sync data for client- and server-side development.
+Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform, Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity, Cloud Firestore also offers seamless integration with other Firebase and Google Cloud Platform products, including Cloud Functions.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Realtime Database</title>
+      <link>https://nushankodikara.com/blog/firebase-realtime-database/</link>
+      <pubDate>Wed, 05 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-realtime-database/</guid>
+      <description>Introduction Okay, Let&amp;rsquo;s do some database actions, But without SQL or any of those table based old style databases, We&amp;rsquo;re learning how to use Firebase Realtime database with a web application, but also the codes are the same for mobile applications, so it won&amp;rsquo;t make much difference at all, And in the end of this series, After we covered Authentication, We&amp;rsquo;re creating a fully fledged Chat application and maybe a social media application to test our knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started With Firebase</title>
+      <link>https://nushankodikara.com/blog/getting-started-with-firebase/</link>
+      <pubDate>Wed, 05 Aug 2020 05:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/getting-started-with-firebase/</guid>
+      <description>Introduction This is a different post from what I did before, Today I&amp;rsquo;m introducing you to a technology, It&amp;rsquo;s a BaaS from google which stands for Backend As A Service and that&amp;rsquo;s weird in many ways, First It is not what you would expect out of a traditional site and Here I only speak about Modern development So Let&amp;rsquo;s get started with this new technology and make our Lives Easier!</description>
+    </item>
+    
+    <item>
+      <title>Playstore Publishing Guide 101</title>
+      <link>https://nushankodikara.com/blog/publishing-guide-for-playstore/</link>
+      <pubDate>Tue, 04 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/publishing-guide-for-playstore/</guid>
+      <description>Introduction Playstore is the king of all appstores in the world right now, It hold&amp;rsquo;s a market share of 75% around the globe and google single handedly offers the best tools for Android developers as none other, We already discussed how we can create android applications using Cordova as a hybrid app platform and today, We&amp;rsquo;re uploading our newly signed apk file to the playstore from our own account.
+Preparation The ingredients for this recipe</description>
+    </item>
+    
+    <item>
+      <title>Creating a Network Hub for Social Medias</title>
+      <link>https://nushankodikara.com/blog/creating-a-network-hub-of-socialmedias/</link>
+      <pubDate>Mon, 03 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-a-network-hub-of-socialmedias/</guid>
+      <description>Introduction We all see the new instagram bio link apps are getting popular and popular day by day, and They are just a simple lines of HTML and CSS even without no JS! And I totally think I can re-create this bio link page with HTML and CSS and add some JS to the taste and also add some dynamic functionalities you can use. Today we&amp;rsquo;re discussing about how I made https://bio.</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Create a Mobile App for TECINPACT</title>
+      <link>https://nushankodikara.com/blog/creating-an-app-for-tecinpact/</link>
+      <pubDate>Sun, 02 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-an-app-for-tecinpact/</guid>
+      <description>Introduction Today we&amp;rsquo;re creating an app for our agency using Hybrid technology which we discussed in THIS ARTICLE, And if you didn&amp;rsquo;t checked it out, Go ahead and try now, I&amp;rsquo;m only showing you the codes I used here And also This is an demo on how to use the technology, Then we&amp;rsquo;re publishing it on playstore Tomorrow! How cool is that? started as a web developer and now you&amp;rsquo;re an official mobile developer.</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Create Mobile Apps With Cordova</title>
+      <link>https://nushankodikara.com/blog/creating-mobile-apps-with-cordova/</link>
+      <pubDate>Sat, 01 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-mobile-apps-with-cordova/</guid>
+      <description>Introduction Mobile app development is a cool thing, and most of us use android studio or swift in order to create mobile apps for Android and IOS devices, But what if I tell you that now you can create mobile apps for android and IOS with a single code base and It&amp;rsquo;s working with HTML CSS and JS? Yeah that&amp;rsquo;s true, with node.js now we&amp;rsquo;re able to create mobile apps using platforms such as Cordova.</description>
+    </item>
+    
+    <item>
+      <title>Best Ways to Modern Web Hosting</title>
+      <link>https://nushankodikara.com/blog/best-ways-to-modern-web-hosting/</link>
+      <pubDate>Fri, 31 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/best-ways-to-modern-web-hosting/</guid>
+      <description>Introduction Welcome to the world of modern web hosting, now why modern you ask, If you followed our course of modern web development, by now you should know it&amp;rsquo;s different from the typical web development process and here Today I&amp;rsquo;m showing you the free and paid web hosting platforms I use for my projects in a daily basis. My favorite is Netlify, before you ask, and this is only an introduction guide to what we&amp;rsquo;re going to explore in the near future.</description>
+    </item>
+    
+    <item>
+      <title>How Antivirus Softwares Damage Our Hard Drives</title>
+      <link>https://nushankodikara.com/blog/how-antivirus-softwares-damage-our-hard-drives/</link>
+      <pubDate>Thu, 30 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/how-antivirus-softwares-damage-our-hard-drives/</guid>
+      <description>Introduction This post is a theory I tested and got some decent results, you can&amp;rsquo;t find any evidence about is this a thing, because the anti-virus industry is a huge pile of money and if someone speaks against it, they quickly take it down and then no one can see this. But from time to time, there are articles surfacing with the same issue and again the somehow takes it down for no reason.</description>
+    </item>
+    
+    <item>
+      <title>Best Password Managers 2020</title>
+      <link>https://nushankodikara.com/blog/best-password-managers-2020/</link>
+      <pubDate>Wed, 29 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/best-password-managers-2020/</guid>
+      <description>Introduction Password managers are pieces of softwares which keep our passwords saved in somewhere to decrease the chances of forgetting them and resetting, some password managers also can auto fill data and sync between platforms for the user&amp;rsquo;s convenience. Today, we&amp;rsquo;re discussing about password managers, are they safe to use? what kinds of password managers we have and how to use them safely. So without further explanation, Let&amp;rsquo;s get in to the post.</description>
+    </item>
+    
+    <item>
+      <title>Simple, Beautiful Modal</title>
+      <link>https://nushankodikara.com/blog/simple-beautiful-modal/</link>
+      <pubDate>Tue, 28 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/simple-beautiful-modal/</guid>
+      <description>Introduction We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I&amp;rsquo;m going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master HTML CSS SCSS JS part 1 and JS part 2 guides.
+Now in this guide, We&amp;rsquo;re making This Beautiful modal from scratch with only 14 lines of JS codes.</description>
+    </item>
+    
+    <item>
+      <title>Git Hub Version Control for Starters</title>
+      <link>https://nushankodikara.com/blog/git-hub-version-control-for-starters/</link>
+      <pubDate>Mon, 27 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/git-hub-version-control-for-starters/</guid>
+      <description>Introduction Now let&amp;rsquo;s take an start on our project directories, we as programmers and developers, always run into certain problems regarding our folder structures, corrupted files, need to undo but unable to do that because we made a terrible mistake and so on. Is there a way which we can solve this? Yes it is! that&amp;rsquo;s called version controlling, Here we&amp;rsquo;ll be able to backup our codes with version numbers and retrieve anytime we want, and when working with several developers in a single project, we&amp;rsquo;ll be able to collaborate and code the same project simultaneously with these things, so without much explanation let&amp;rsquo;s get into it.</description>
+    </item>
+    
+    <item>
+      <title>Js for Modern Web Development (Part 2)</title>
+      <link>https://nushankodikara.com/blog/js-for-modern-web-development-2/</link>
+      <pubDate>Sun, 26 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/js-for-modern-web-development-2/</guid>
+      <description>Introduction We did the programming part with JS, Now let&amp;rsquo;s implement our knowledge into action, Let&amp;rsquo;s create JS which can interact with webpages, This would be a long post so hold tight and here we go.
+Browser environment, specs The JavaScript language was initially created for web browsers. Since then it has evolved and become a language with many uses and platforms.
+A platform may be a browser, or a web-server or another host, even a &amp;ldquo;smart&amp;rdquo; coffee machine, if it can run JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Web Code Minification</title>
+      <link>https://nushankodikara.com/blog/web-code-minification/</link>
+      <pubDate>Sat, 25 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/web-code-minification/</guid>
+      <description>Introduction Code minification is a process modern web developers use on developments to speed up the loading of the codes, reduce the code size and decrease the ability to reverse-engineer the code. And it&amp;rsquo;s pretty easy to use too, but sadly not most of the developers know how to do it themselves. Let&amp;rsquo;s Explore Shall we.
+Minification Now, We use an online tool for this process, https://www.willpeavy.com/tools/minifier/ Goto this website for the tool, and It&amp;rsquo;s pretty simple to use but highly effective.</description>
+    </item>
+    
+    <item>
+      <title>Single line CSS Tricks (Part 1)</title>
+      <link>https://nushankodikara.com/blog/1line-css-tricks-part1/</link>
+      <pubDate>Fri, 24 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/1line-css-tricks-part1/</guid>
+      <description>Introduction CSS is the main styler over the internet, We all can&amp;rsquo;t use everything on css and because it&amp;rsquo;s a huge base, We&amp;rsquo;re probably lost somewhere inside it, So today, Let&amp;rsquo;s explore some creative and simple to use but effective single line codes for your next project. You can visit the CSS Full course HERE And without much explanations, Let&amp;rsquo;s get in to the post.
+01. Super Centered We can do so much things to make a code centered, But have you use the place-items property of the grid layout?</description>
+    </item>
+    
+    <item>
+      <title>Js for Modern Web Development (Part 1)</title>
+      <link>https://nushankodikara.com/blog/js-for-modern-web-development/</link>
+      <pubDate>Thu, 23 Jul 2020 11:52:24 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/js-for-modern-web-development/</guid>
+      <description>Introduction Here we are at the end of the modern web development course, At the right basics of the language which make the web interactive and functional. JS Is the back-born of the modern Internet, Why do I say so? Because we can do literally Anything you imagine. Without further explanation, Let&amp;rsquo;s start with the course. Before getting here, Please follow HTML CSS and SCSS guides.
+Hello, world! Javascript is fully functional with HTML and CSS, so first, Let&amp;rsquo;s create our demo document with HTML CSS And JS.</description>
+    </item>
+    
+    <item>
+      <title>Download Youtube Videos 2020</title>
+      <link>https://nushankodikara.com/blog/download-youtube-videos-2020/</link>
+      <pubDate>Wed, 22 Jul 2020 16:25:57 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/download-youtube-videos-2020/</guid>
+      <description>Introduction Let&amp;rsquo;s be real, We need to download Youtube Videos for so many reasons, Maybe mp3 from youtube, And we still don&amp;rsquo;t have a clear way, But today I&amp;rsquo;m here to change that, I Found some interesting apps and websites which can download From youtube directly as video or Audio. Without much details, Let&amp;rsquo;s dive in.
+Android For android devices, I Have an app for you. This isn&amp;rsquo;t Available on playstore because that&amp;rsquo;s how it is.</description>
+    </item>
+    
+    <item>
+      <title>Scss for Modern Web Development (Supercharged CSS)</title>
+      <link>https://nushankodikara.com/blog/scss-for-modern-web-development/</link>
+      <pubDate>Tue, 21 Jul 2020 06:59:06 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/scss-for-modern-web-development/</guid>
+      <description>Introduction If you noticed, I Didn&amp;rsquo;t mentioned css for browser types in our previous CSS tutorial, The case is, I don&amp;rsquo;t want to, SCSS is doing everything for us so why should we even bother? Let&amp;rsquo;s get started with SCSS and supercharge our css.
+Pre-Setup SCSS isn&amp;rsquo;t a universal solution, it&amp;rsquo;s here to help us with variables, nesting and automatic css generation. So we need a software to compile scss into css, here I&amp;rsquo;m using VSCode and an extension called live SCSS compiler.</description>
+    </item>
+    
+    <item>
+      <title>Create an Eco System With Join by joaoapps</title>
+      <link>https://nushankodikara.com/blog/create-an-eco-system-with-join/</link>
+      <pubDate>Mon, 20 Jul 2020 12:19:26 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/create-an-eco-system-with-join/</guid>
+      <description>Introduction Let&amp;rsquo;s be real, We all like to work in one place but access all of our devices, Apple has a solution for this but what if you don&amp;rsquo;t have an apple eco system? Today, Let&amp;rsquo;s discuss how we can create an ecosystem for with what we have and for a little price to pay, With Join by joaoapps.
+There are more services like this, Push bullet is one of them but their prices are, for my tastes, unfair.</description>
+    </item>
+    
+    <item>
+      <title>Storage Free Cloud Life 2020</title>
+      <link>https://nushankodikara.com/blog/storage-free-cloud-life-2020/</link>
+      <pubDate>Sun, 19 Jul 2020 14:04:05 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/storage-free-cloud-life-2020/</guid>
+      <description>Introduction Storage, in other words, Information had evolved in to almost to be a basic need of modern human life, Everything form studies, household things, social awareness programs and pretty much anything you name, has a digital counterpart that stored somewhere in the world, And as humans, we have to constantly phrase and read them to keep up with the modern society, and sometimes, It&amp;rsquo;s a pain. But most of us are creating and storing a massive amounts of data within our life time, and for most of us, there are times which we struggle to keep up with the amount of information that we make.</description>
+    </item>
+    
+    <item>
+      <title>CSS for Modern Web Development (Zero-To-Hero)</title>
+      <link>https://nushankodikara.com/blog/css-for-modern-web-development/</link>
+      <pubDate>Sat, 18 Jul 2020 09:40:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/css-for-modern-web-development/</guid>
+      <description>Introduction Well well, here we are in the section of styling our HTML Page, if you don&amp;rsquo;t know what HTML is, Check HERE for the HTML Course on modern web development, Today we&amp;rsquo;re using CSS and HTML knowledge to create a beautiful looking website.
+Today we&amp;rsquo;re creating
+Adding to HTML There are three ways we can add a css file to our HTML Document and you can use unlimited css files in a single HTML page, Let&amp;rsquo;s Explore.</description>
+    </item>
+    
+    <item>
+      <title>Ultimate Adobe Softwares List With Universal Crack 2020</title>
+      <link>https://nushankodikara.com/blog/adobe-softwares-ultimate-list-with-crack-2020/</link>
+      <pubDate>Fri, 17 Jul 2020 15:30:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/adobe-softwares-ultimate-list-with-crack-2020/</guid>
+      <description>Introduction We all have used adobe software in some point of our lives and wandered how many others there are to explore. While none of the internet has a proper guide on this topic, I managed to create a complete solution for this case. and I Made a Universal crack for all adobe softwares. If you came for the crack itself.
+Adobe Universal Crack (Windows / Mac) Download
+You can crack up-to CC 2020 Adobe softwares from this crack and Rest of us, Let&amp;rsquo;s explore the options.</description>
+    </item>
+    
+    <item>
+      <title>Photoshop Trending Autumn Effect 2020</title>
+      <link>https://nushankodikara.com/blog/photoshop-trending-autumn-effect-2020/</link>
+      <pubDate>Fri, 17 Jul 2020 09:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/photoshop-trending-autumn-effect-2020/</guid>
+      <description>Introduction Autumn effect is something now getting in trend on social medias, It&amp;rsquo;s a simple filter but most of the softwares get it wrong and making a messed up look but untrained eye isn&amp;rsquo;t going to notice that until doing some post processing. Here Let&amp;rsquo;s re-create that effect on photoshop so it&amp;rsquo;s more versatile for more adjustments. Here&amp;rsquo;s a before and after photo of me (Not the prettiest one but it worked) with the effect applied</description>
+    </item>
+    
+    <item>
+      <title>Python Ultimate Crash Course (Zero-To-Hero)</title>
+      <link>https://nushankodikara.com/blog/python-ultimate-crash-course-2020/</link>
+      <pubDate>Thu, 16 Jul 2020 14:30:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/python-ultimate-crash-course-2020/</guid>
+      <description>Introduction Python is one of most popular and most powerful and one of the fastest programming languages until now, Millions upon millions developers use python in their projects to script easily. also python is one of the easiest languages to learn and master. But there are some differences between python 2 and 3, and most beginners get confused and leave python because they can&amp;rsquo;t understand how these work. So let&amp;rsquo;s begin with python 2 and 3 at the same time shall we?</description>
+    </item>
+    
+    <item>
+      <title>Google Drive Serverless Web Hosting 2020</title>
+      <link>https://nushankodikara.com/blog/google-drive-serverless-web-hosting-2020/</link>
+      <pubDate>Wed, 15 Jul 2020 08:39:18 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/google-drive-serverless-web-hosting-2020/</guid>
+      <description>Introduction Serverless web hosting getting popular day by day, with the rise of static websites, So here today, I&amp;rsquo;m going to show you how to host your created website ( HTML JS And CSS files ) In the google drive, and setting up a proper domain name for it using Freenome and netlify. If you are a typical follower of my blog, this would be awkward because I didn&amp;rsquo;t completed the web development course just yet.</description>
+    </item>
+    
+    <item>
+      <title>HTML for Modern Web Development (Zero-To-Hero)</title>
+      <link>https://nushankodikara.com/blog/html-for-modern-web-development/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/html-for-modern-web-development/</guid>
+      <description>Introduction HTML is the structural markup language for the web development community, there are more than HTML in markup community but for websites, we use mainly HTML. I&amp;rsquo;ll explain HTML from ground level so if you&amp;rsquo;re a absolute beginner, you can follow up easily. If something went wrong, just contact me from the links provided.
+Environment HTML doesn&amp;rsquo;t need a specific environment to run, but Modern web development required you to host the main files.</description>
+    </item>
+    
+    <item>
+      <title>Royalty Free Internet Resources</title>
+      <link>https://nushankodikara.com/blog/royalty-free-internet-resources/</link>
+      <pubDate>Mon, 13 Jul 2020 18:14:56 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/royalty-free-internet-resources/</guid>
+      <description>Introduction No matter what profession you are in, in a certain period of time, you are going to face a situation which you need some materials royalty free for your projects, maybe Images, videos, sound clips etc.. So in this article, let me show you my pics for royalty free Resource collections.
+But, first, let’s go over some basic royalty-free terms.  Royalty-Free: This allows you to use intellectual property without having to pay royalties or license fees.</description>
+    </item>
+    
+    <item>
+      <title>VS Code for Web Developers</title>
+      <link>https://nushankodikara.com/blog/vs-code-for-web-developers/</link>
+      <pubDate>Sun, 12 Jul 2020 07:38:18 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/vs-code-for-web-developers/</guid>
+      <description>Introduction Visual studio code is a powerful and a user-friendly code editor, It has extended functionality, which makes it an all-in-one solution for most of the web developers and This would be a follow up guide to a Web and Hybrid app development course I&amp;rsquo;m planning forward to.
+Installation VS Code is available for Windows, Mac and linux, so pretty much It&amp;rsquo;s a cross platform code editor. one of my favourite.</description>
+    </item>
+    
+    <item>
+      <title>Free Top Level Domain Names 2020</title>
+      <link>https://nushankodikara.com/blog/free-top-level-domain-names-2020/</link>
+      <pubDate>Sat, 11 Jul 2020 15:54:59 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/free-top-level-domain-names-2020/</guid>
+      <description>Introduction I Was surprised and wasn&amp;rsquo;t sure is this a spam or not, Top Level domains for free? that&amp;rsquo;s Odd to be exact, But yeah, Freenom offers top level domains for no cost at all! and that&amp;rsquo;s weird. In this article, I&amp;rsquo;ll show you how you can get a Freenom top level domain for free and in the correct way. Follow this guide very carefully because anyone can f*ck it up in no time.</description>
+    </item>
+    
+    <item>
+      <title>Budget Online Radio Station Guide 2020</title>
+      <link>https://nushankodikara.com/blog/budget-online-radio-station-guide-2020/</link>
+      <pubDate>Sat, 11 Jul 2020 08:47:08 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/budget-online-radio-station-guide-2020/</guid>
+      <description>Introduction Youtube is the main source of entertainment these days, but people still want to enjoy radio streams for no reason, online radio stations are costy and it&amp;rsquo;s nearly impossible for a normal person to start an online radio station without getting in to any of the top stupid costing radio stream services. In this article, let me show you how I made an online radio station without wasting a single penny, or without sacrificing the quality</description>
+    </item>
+    
+    <item>
+      <title>Best Media Players 2020</title>
+      <link>https://nushankodikara.com/blog/best-media-players-2020/</link>
+      <pubDate>Fri, 10 Jul 2020 15:59:09 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/best-media-players-2020/</guid>
+      <description>Introduction In this post, I would like to present to you with the best media players according to technologies they use. This is a weird post to make in this time period but I&amp;rsquo;m creating this as a follow-up for a new post I&amp;rsquo;m planning to post in the future about Online Radio Broadcasting Technologies.
+What I&amp;rsquo;m Considering Here Well, While I&amp;rsquo;m Preparing the list, I was considering about several features to back it up with.</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 Speedup Registry Tweaks</title>
+      <link>https://nushankodikara.com/blog/windows-10-speedup-registry-tweaks/</link>
+      <pubDate>Thu, 09 Jul 2020 10:12:44 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/windows-10-speedup-registry-tweaks/</guid>
+      <description>Introduction Windows based PCs have a registry system to take control over the system wide operations and most of the times windows default operations are useless to most of us and somewhat annoying. So to be cleared, I made this easy to install Registry file to speed up your PC in matter of seconds.
+What Does It Do? Well, here comes the boring part. If you don&amp;rsquo;t want to know what this file does to your PC, just skip this section and use the link below to download the program.</description>
+    </item>
+    
+    <item>
+      <title>The Package Manager for Windows [ Chocolatey ]</title>
+      <link>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</link>
+      <pubDate>Wed, 08 Jul 2020 17:30:00 +0000</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</guid>
+      <description>Introduction Do you ever thought about a single command to install, uninstall or update softwares in Windows? How about a script automatically do everything for you? Guess what, you&amp;rsquo;re in the perfect place!
+Chocolatey is a package manager for Windows, which you can install by a single command and do everything with a single command!
+Showcase Install softwares
+&amp;gt; choco install vlc  Updated softwares
+&amp;gt; choco upgrade vlc  Uninstall softwares</description>
+    </item>
+    
+    <item>
+      <title>Best Code Editors of 2020</title>
+      <link>https://nushankodikara.com/blog/best-code-editors-of-2020/</link>
+      <pubDate>Wed, 08 Jul 2020 15:30:00 +0000</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/best-code-editors-of-2020/</guid>
+      <description>Introduction Code editors are usually overpowered text editors. Mainly they are used for editing codes, but in the modern world, code editors are playing a role of complete development environments for some frameworks, with the help of extensions.
+In this article, I would like to present you my most favourite code editors and also some download links, and typical extensions I use.
+#1 Visual Studio Code Visual studio code is a multi talented and an open source project by Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://nushankodikara.com/blog/first-post/</link>
+      <pubDate>Wed, 08 Jul 2020 06:30:00 +0000</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/first-post/</guid>
+      <description>Introduction Hello There My Gorgeous friends! From today on, this would be my hobby, blogging about technology and solving your IT Related Anything!
+What I&amp;rsquo;m Posting? As we speak, I&amp;rsquo;m planning to blog about
+ Web dev PC / Android Software New technologies Security and Tips Coding and Programming  And so much more on modern technologies.
+ Stay Tuned With RSS Feed Subscription
+ Don&amp;rsquo;t forget to ask me anything through out my Social media links And E-Mail.</description>
+    </item>
+    
+  </channel>
+</rss>

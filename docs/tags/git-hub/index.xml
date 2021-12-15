@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git Hub on Nushan Kodikara</title>
+    <link>https://nushankodikara.com/tags/git-hub/</link>
+    <description>Recent content in Git Hub on Nushan Kodikara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 12 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/git-hub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Hub Pages for Web Hosting</title>
+      <link>https://nushankodikara.com/blog/git-hub-pages-for-web-hosting/</link>
+      <pubDate>Wed, 12 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/git-hub-pages-for-web-hosting/</guid>
+      <description>Introduction Github pages is one of the most used and in my opinion the best static hosting site available right now, It only has a free version and it&amp;rsquo;s all we need, let me show you how we can create and deploy a static website to github, and then how we can assign a custom domain to the site and enable SSL certificate in few minuets.
+Starting With git-hub First we need to goto github and login to your account.</description>
+    </item>
+    
+    <item>
+      <title>Git Hub Version Control for Starters</title>
+      <link>https://nushankodikara.com/blog/git-hub-version-control-for-starters/</link>
+      <pubDate>Mon, 27 Jul 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/git-hub-version-control-for-starters/</guid>
+      <description>Introduction Now let&amp;rsquo;s take an start on our project directories, we as programmers and developers, always run into certain problems regarding our folder structures, corrupted files, need to undo but unable to do that because we made a terrible mistake and so on. Is there a way which we can solve this? Yes it is! that&amp;rsquo;s called version controlling, Here we&amp;rsquo;ll be able to backup our codes with version numbers and retrieve anytime we want, and when working with several developers in a single project, we&amp;rsquo;ll be able to collaborate and code the same project simultaneously with these things, so without much explanation let&amp;rsquo;s get into it.</description>
+    </item>
+    
+  </channel>
+</rss>

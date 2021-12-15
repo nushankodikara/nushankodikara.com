@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    Let&#39;s Create Mobile Apps With Cordova - Nushan Kodikara
+  </title>
+  <meta name="description" content="Creating Mobile apps using cordova" /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="Let&#39;s Create Mobile Apps With Cordova" />
+<meta property="og:description" content="Creating Mobile apps using cordova" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/creating-mobile-apps-with-cordova/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-08-01T06:00:00+05:30" />
+<meta property="article:modified_time" content="2020-08-01T06:00:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Let&#39;s Create Mobile Apps With Cordova"/>
+<meta name="twitter:description" content="Creating Mobile apps using cordova"/>
+
+  <meta itemprop="name" content="Let&#39;s Create Mobile Apps With Cordova">
+<meta itemprop="description" content="Creating Mobile apps using cordova"><meta itemprop="datePublished" content="2020-08-01T06:00:00+05:30" />
+<meta itemprop="dateModified" content="2020-08-01T06:00:00+05:30" />
+<meta itemprop="wordCount" content="2135">
+<meta itemprop="keywords" content="Android,IOS,Mobile development,Hybrid Apps," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/HfWA-Axq6Ek/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8YW5kcm9pZCUyMGFwcHx8MHx8fHwxNjM5NTkxNjA0&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    August 1, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Let&#39;s Create Mobile Apps With Cordova</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    August 1, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      11&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      2135&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>Mobile app development is a cool thing, and most of us use android studio or swift in order to create mobile apps for Android and IOS devices, But what if I tell you that now you can create mobile apps for android and IOS with a single code base and It&rsquo;s working with HTML CSS and JS? Yeah that&rsquo;s true, with node.js now we&rsquo;re able to create mobile apps using platforms such as Cordova.</p>
+<h2 id="what-is-cordova">What is Cordova</h2>
+<p><img src="https://images.prismic.io/ionicframeworkcom/3d6dfd9bd31653194a051e7a2b859d0890a1554e_article---what-is-cordova-phone-gap.png?auto=compress,format" alt="Cordova"></p>
+<p>Apache Cordova is an open-source mobile development framework. It allows you to use standard web technologies - HTML5, CSS3, and JavaScript for cross-platform development. Applications execute within wrappers targeted to each platform, and rely on standards-compliant API bindings to access each device&rsquo;s capabilities such as sensors, data, network status, etc.</p>
+<h2 id="architecture">Architecture</h2>
+<p>There are several components to a Cordova application. The following diagram shows a high-level view of the Cordova application architecture.</p>
+<p><img src="https://cordova.apache.org/static/img/guide/cordovaapparchitecture.png" alt="Cordova Architecture"></p>
+<p>Pretty cool isn&rsquo;t it? Let&rsquo;s go on. Today, we&rsquo;re considering on Android app development using a Windows PC, also you can convert this code base to IOS, Windows, Mac, Linux and any platform you think of.</p>
+<h2 id="setting-up-the-environment">Setting up the environment</h2>
+<p>In order to develop android apps, You need to have android Studio installed, If you didn&rsquo;t installed it you can download android studio from <a href="https://developer.android.com/studio">https://developer.android.com/studio</a> And also the core, You need node.js to installed in your system, you can download and install the latest LTS or Current version from <a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></p>
+<p>Now you have to setup Android SDKs, currently you need to install Android SDK28 in order to create android apps, This could change, if it&rsquo;s changed you&rsquo;ll get an error when compiling with the version you need, so stay focused on it. You can check and install Android SDKs from android Studio application as this. Don&rsquo;t worry this supports from Android 4.4 upwards.</p>
+<p><img src="/uploads/20200801_01.gif" alt="Showing Android SDK"></p>
+<p>Now after that, We need to install cordova on our system. You need to install node.js, if you didn&rsquo;t did it, go ahead and do it now, and come to the terminal with administrator access and enter the command</p>
+<blockquote>
+<pre><code>  npm install -g cordova
+</code></pre>
+</blockquote>
+<p>And after that, Let&rsquo;s Create our first project and add android platform to begin with.</p>
+<h2 id="creating-our-first-project">Creating Our First Project</h2>
+<p>Let&rsquo;s now start creating our first project, It isn&rsquo;t hard or so, let&rsquo;s get right in to the process. First you need to have a terminal in your working directory, and in there you need to use the command</p>
+<blockquote>
+<pre><code>  cordova create &lt;path&gt; &lt;package-name&gt; &lt;app-name&gt;
+</code></pre>
+</blockquote>
+<p>To create the app directory, for an example you can use</p>
+<blockquote>
+<pre><code>  cordova create tecinpact com.tecinpactdev.app Tecinpact
+</code></pre>
+</blockquote>
+<p>from this command, we&rsquo;re creating an app called Tecinpact with the package name of com.tecinpactdev.app in the path called tecinpact. and we have to get into this folder using the CD command, and it&rsquo;s</p>
+<blockquote>
+<pre><code>  cd &lt;path&gt;
+</code></pre>
+</blockquote>
+<p>within this example</p>
+<blockquote>
+<pre><code>  cd tecinpact
+</code></pre>
+</blockquote>
+<p>Now let&rsquo;s add the android platform to the project using platform add command</p>
+<blockquote>
+<pre><code>  cordova platform add &lt;platform&gt;
+</code></pre>
+</blockquote>
+<p>in this case</p>
+<blockquote>
+<pre><code>  cordova platform add android
+</code></pre>
+</blockquote>
+<p>and We&rsquo;re officially done for now. you can run the app using</p>
+<blockquote>
+<pre><code>  cordova run &lt;platform&gt;
+</code></pre>
+</blockquote>
+<p>in this case</p>
+<blockquote>
+<pre><code>  cordova run android
+</code></pre>
+</blockquote>
+<p>And remember, to run the application, you have to connect your Android device and enable Android Debugging bridge by,</p>
+<ol>
+<li>Open the Settings app.</li>
+<li>Select System.</li>
+<li>Scroll to the bottom and select About phone.</li>
+<li>Scroll to the bottom and tap Build number 7 times.</li>
+<li>Return to the previous screen to find Developer options near the bottom.</li>
+<li>Scroll down and enable USB debugging.</li>
+</ol>
+<p>Guys! I have something odd to say here, While I&rsquo;m preparing this post, my PC crashed and got into a boot loop suddenly! I had no idea how to do anything with it so I clean installed windows Just now, I posted some stories on instagram explaining the situation and I Usually backup my work while doing it, It saved my life and you also must check out cloud storages and I hava an article about it <a href="/post/storage-free-cloud-life-2020/">HERE</a>)</p>
+<p>And I&rsquo;m installing Everything using choco once again</p>
+<p><img src="/uploads/20200801_02.png" alt="Installing Android Studio"></p>
+<p>Now that out to the way, Let&rsquo;s continue with the guide. Where were we, Okay we made and ran our First cordova application and I was about to show you how I do it, Let me show you.</p>
+<p><img src="/uploads/20200801_03.gif" alt="Showing Android SDK"></p>
+<h2 id="multidex">Multidex</h2>
+<p>Now, If you don&rsquo;t know what multidex is, it allows android apps to have over 64k functions and you&rsquo;ll hit that threshold as soo as installing some plugins and doing some work, so I usually install multidex at the begining of the project, to do this you can use the following command.</p>
+<blockquote>
+<pre><code>  cordova plugin add cordova-plugin-enable-multidex
+</code></pre>
+</blockquote>
+<p>This is a must! so do it as soon as posible. After this you&rsquo;re done with the initial setup. Now let&rsquo;s see how we can create apps using cordova.</p>
+<h2 id="folder-structure">Folder Structure</h2>
+<p><img src="/uploads/20200801_04.png" alt="Cordova Folder Structure"></p>
+<p>Here we only need to discuss about few files,</p>
+<ul>
+<li>config.xml</li>
+<li>www</li>
+</ul>
+<h3 id="configxml">config.xml</h3>
+<p>For this project I have a config file like this and I&rsquo;m pretty sure yours also looks like this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
+<span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;com.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.0.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
+    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
+    <span style="color:#ff79c6">&lt;description&gt;</span>
+        A sample Apache Cordova application that responds to the deviceready event.
+    <span style="color:#ff79c6">&lt;/description&gt;</span>
+    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;dev@cordova.apache.org&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://cordova.io&#34;</span><span style="color:#ff79c6">&gt;</span>
+        Apache Cordova Team
+    <span style="color:#ff79c6">&lt;/author&gt;</span>
+    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
+        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
+        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+<span style="color:#ff79c6">&lt;/widget&gt;</span>
+</code></pre></div><p>Now here, This is the file that controls our application, this is our meta data file, you can change the package name, application name and many more things by tweaking this file, later in this tutorial, we&rsquo;re explaining how we can do things by tweaking this file. For now, don&rsquo;t be afraid to modify and tweak it BUT DO NOT REMOVE ANYTHING WITHOUT KNOWING WHAT IT DOES. And that&rsquo;s a warning.</p>
+<p>Let me introduce each element to you. Name tags holds the application name, description tag holds a description of the app, author tag as others author details. content must be pointed to the main HTML file and that&rsquo;s what you need for now, and there should be a self closing icon tag pointing to a icon file with src attribute and that&rsquo;s all you need to know in the base level. if non of these made sense to you, go check out my Web Development series <a href="/post/html-for-modern-web-development/">HTML</a>, <a href="/post/css-for-modern-web-development/">CSS</a>, <a href="/post/scss-for-modern-web-development/">SCSS</a>, <a href="/post/js-for-modern-web-development/">JS part 1</a> and <a href="/content/post/js-for-modern-web-development-2/">JS part 2</a> First and then come to this section.</p>
+<h3 id="www-directory">www Directory</h3>
+<p>Now the www directory is where we create our hybrid app. Hybrid means you can create your application out of HTML CSS and JS and compile it into a native app, using some sort of a magic. Magics are not real and they are illusions, so the trick behind the sleave is, Cordova has a separate stable web view activity which can run the HTML file internally. The end user won&rsquo;t feel a difference and if you&rsquo;re careful enough, We can make this app looks way way better. Now you can find these even in the cordova documentation page, but let me show you what you cannot find in the documentation and what I really use in my workflow. BTW go and modify the content in the www folder and create your mobile app there with HTML CSS and JS and I&rsquo;ll do it in the next guide. For now I&rsquo;m using the default pages.</p>
+<h2 id="setting-up-an-icon">Setting up an Icon</h2>
+<p>This isn&rsquo;t a hard one you need to create a res folder and add your icon in there, also after that you just need to add a single line of code to the config file and you&rsquo;re pretty much good to go. Here&rsquo;s how I do it.</p>
+<p><img src="/uploads/20200801_05.gif" alt="Adding Icon To the Folder"></p>
+<p>And That out to the way we need to map the icon to the config file. How can we do that? Simple, Just add this line of code to your config file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/demoIcon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
+</code></pre></div><p>And That&rsquo;s it. After that the whole XML config file should look like this. You have to rename the demoIcon.png part to your icon name and you&rsquo;re done.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
+<span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;com.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.0.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
+    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
+    <span style="color:#ff79c6">&lt;description&gt;</span>
+        A sample Apache Cordova application that responds to the deviceready event.
+    <span style="color:#ff79c6">&lt;/description&gt;</span>
+    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;dev@cordova.apache.org&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://cordova.io&#34;</span><span style="color:#ff79c6">&gt;</span>
+        Apache Cordova Team
+    <span style="color:#ff79c6">&lt;/author&gt;</span>
+    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/demoIcon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
+        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
+        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+<span style="color:#ff79c6">&lt;/widget&gt;</span>
+</code></pre></div><p>Alright now there&rsquo;s something called signing your app when developing android apps, and to do that, you have to develop your application into a apk file and do a complex thing called Zip aligning. Lucky for us, I Found a way which a handful of members know of, you can automatically sign Cordova apps with a build.json file and That&rsquo;s the easiest as it gets. But before that, you have to create a key for your app. In order to do this you have to follow up the usual procedure of obtaining a key. You can learn how to get a keystore key for android from <a href="https://www.youtube.com/watch?v=HNbtFTtq-8o">THIS VIDEO</a>, You don&rsquo;t have to follow the whole guide, Just generate the .keystore file and you&rsquo;re good to go. Now you have to create a new file called build.json</p>
+<p><img src="/uploads/20200801_06.png" alt="Cordova Folder Structure"></p>
+<p>Here you can see I created a build.json file and copied my mykey.keystore file. Now in the json file, I you have to add these lines</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#ff79c6">&#34;android&#34;</span>: {
+        <span style="color:#ff79c6">&#34;debug&#34;</span>: {
+            <span style="color:#ff79c6">&#34;keystore&#34;</span>: <span style="color:#f1fa8c">&#34;mykey.keystore&#34;</span>,
+            <span style="color:#ff79c6">&#34;storePassword&#34;</span>: <span style="color:#f1fa8c">&#34;password&#34;</span>,
+            <span style="color:#ff79c6">&#34;alias&#34;</span>: <span style="color:#f1fa8c">&#34;alias name&#34;</span>,
+            <span style="color:#ff79c6">&#34;password&#34;</span> : <span style="color:#f1fa8c">&#34;password&#34;</span>,
+            <span style="color:#ff79c6">&#34;keystoreType&#34;</span>: <span style="color:#f1fa8c">&#34;&#34;</span>
+        },
+        <span style="color:#ff79c6">&#34;release&#34;</span>: {
+            <span style="color:#ff79c6">&#34;keystore&#34;</span>: <span style="color:#f1fa8c">&#34;mykey.keystore&#34;</span>,
+            <span style="color:#ff79c6">&#34;storePassword&#34;</span>: <span style="color:#f1fa8c">&#34;password&#34;</span>,
+            <span style="color:#ff79c6">&#34;alias&#34;</span>: <span style="color:#f1fa8c">&#34;alias name&#34;</span>,
+            <span style="color:#ff79c6">&#34;password&#34;</span> : <span style="color:#f1fa8c">&#34;password&#34;</span>,
+            <span style="color:#ff79c6">&#34;keystoreType&#34;</span>: <span style="color:#f1fa8c">&#34;&#34;</span>
+        }
+    }
+}
+</code></pre></div><p>Here you have to change mykey.keystore to your keystore file, enter your storepassword to the password, alias name to that section and alias password in password section. You are writing these when creating the keystore file and DO NOT LOSE THIS FILE, if you did so you won&rsquo;t be able to update your app in the future. Now we&rsquo;re officially done with the process and we only have to Build the app itself. Before that, Let&rsquo;s summarize what we did for now</p>
+<ol>
+<li>Created a Cordova Project</li>
+<li>Added Android Platform</li>
+<li>Added Icon File</li>
+<li>Added HTML Documents in www directory</li>
+<li>Added Keystore and build files</li>
+</ol>
+<p>And Disclaimer, If you&rsquo;re an absolute beginner, You have to setup environments for each pieces of software you need, I&rsquo;m only showing this step for windows users because mac users can install AndroidStudio, Java and get Gradle tools and you&rsquo;re going to need one more step and I&rsquo;ll show it, Linux users, you have to figure it out, You&rsquo;re using linux because you know somewhat about developments and you have to know how other programs use environmental variables and also install everything without overriding other applications. If that&rsquo;s complicated for you, yes that&rsquo;s totally complicated in linux. Use a windows OS Instead. Let&rsquo;s Setup Our Environments</p>
+<h2 id="environmental-variables">Environmental Variables</h2>
+<p>You have to download Java SE Development Kit And Gradle Bundle Links Would Be <a href="https://gradle.org/install">https://gradle.org/install</a> for gradle and <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</a> for Java. Good news mac users. you can use brew to install the gradle and the command is</p>
+<pre tabindex="0"><code>$ brew install gradle
+</code></pre><p>And Windows users, Download these Files and Install Java if you didn&rsquo;t already. Then also download and Extract Gradle bundle to C: Drive. You have to add your Application paths. In this step, We&rsquo;re setting up ANDROID_SDK_ROOT, JAVA_HOME and path variables. Follow my steps</p>
+<ol>
+<li>Right Click This PC &gt; Properties</li>
+<li>Click on Advanced System Settings</li>
+<li>Click on Environmental Variables</li>
+<li>Click new under user variables and add ANDROID_SDK_ROOT path</li>
+<li>Click new under user variables and add JAVA_HOME path</li>
+<li>double click on path variable and add gradle path, java path, android sdk tools path and android sdk platform tools path</li>
+</ol>
+<p><img src="/uploads/20200801_07.gif" alt="Environmental Variables Structure"></p>
+<p>now we&rsquo;re ready to build the application. fire up the terminal window and type the command to build our signed APK</p>
+<pre tabindex="0"><code>cordova build android
+</code></pre><p>If you did everything correctly, By now you should see a window like this and Your APK file should be build in</p>
+<p>..\platforms\android\app\build\outputs\apk\debug</p>
+<p>Folder. to create a release version you can use</p>
+<pre tabindex="0"><code>cordova build android -release
+</code></pre><p>And that command would output an apk file in</p>
+<p>..\platforms\android\app\build\outputs\apk\release</p>
+<p><img src="/uploads/20200801_08.png" alt="Cordova Folder Structure"></p>
+<p>This is what you get if everything went correctly, In the terminal. And wolah! You are officially made an android app that can be published to mobile stores. Also you can install this apk to your mobile by sending it in any way you prefer.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Here, we successfully created an android app and it&rsquo;s simple as it. environmental setup is the most advanced step in this whole process and if you ran into an issue which you can&rsquo;t figure out what to do, just contact me or post down below in the comment section. Tomorrow we&rsquo;re creating an app for Tecinpact and On monday, We&rsquo;re Publishing it to the play store!</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

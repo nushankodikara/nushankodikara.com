@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web hosting on Nushan Kodikara</title>
+    <link>https://nushankodikara.com/tags/web-hosting/</link>
+    <description>Recent content in web hosting on Nushan Kodikara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 12 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/web-hosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Hub Pages for Web Hosting</title>
+      <link>https://nushankodikara.com/blog/git-hub-pages-for-web-hosting/</link>
+      <pubDate>Wed, 12 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/git-hub-pages-for-web-hosting/</guid>
+      <description>Introduction Github pages is one of the most used and in my opinion the best static hosting site available right now, It only has a free version and it&amp;rsquo;s all we need, let me show you how we can create and deploy a static website to github, and then how we can assign a custom domain to the site and enable SSL certificate in few minuets.
+Starting With git-hub First we need to goto github and login to your account.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Package Manager on Nushan Kodikara</title>
+    <link>https://nushankodikara.com/tags/package-manager/</link>
+    <description>Recent content in Package Manager on Nushan Kodikara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Jul 2020 17:30:00 +0000</lastBuildDate><atom:link href="https://nushankodikara.com/tags/package-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Package Manager for Windows [ Chocolatey ]</title>
+      <link>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</link>
+      <pubDate>Wed, 08 Jul 2020 17:30:00 +0000</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</guid>
+      <description>Introduction Do you ever thought about a single command to install, uninstall or update softwares in Windows? How about a script automatically do everything for you? Guess what, you&amp;rsquo;re in the perfect place!
+Chocolatey is a package manager for Windows, which you can install by a single command and do everything with a single command!
+Showcase Install softwares
+&amp;gt; choco install vlc  Updated softwares
+&amp;gt; choco upgrade vlc  Uninstall softwares</description>
+    </item>
+    
+  </channel>
+</rss>

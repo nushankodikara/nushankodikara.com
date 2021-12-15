@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    Secure Your JavaScript Files - Nushan Kodikara
+  </title>
+  <meta name="description" content="Let&#39;s Secure your JS Files" /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="Secure Your JavaScript Files" />
+<meta property="og:description" content="Let&#39;s Secure your JS Files" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/secure-your-javascript-files/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-08-10T06:00:00+05:30" />
+<meta property="article:modified_time" content="2020-08-10T06:00:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Secure Your JavaScript Files"/>
+<meta name="twitter:description" content="Let&#39;s Secure your JS Files"/>
+
+  <meta itemprop="name" content="Secure Your JavaScript Files">
+<meta itemprop="description" content="Let&#39;s Secure your JS Files"><meta itemprop="datePublished" content="2020-08-10T06:00:00+05:30" />
+<meta itemprop="dateModified" content="2020-08-10T06:00:00+05:30" />
+<meta itemprop="wordCount" content="785">
+<meta itemprop="keywords" content="web development,Javascript,Zero To Hero,Crash Course," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/q2Zk10NBnsA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTN8fGxvY2t8fDB8fHx8MTYzOTU2Njc2OA&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    August 10, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Secure Your JavaScript Files</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    August 10, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      4&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      785&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>Let&rsquo;s be real, with firebase and all these knowledge, we should protect our JS files, They can&rsquo;t be wide open for a smart ass to get there and mess around with the code or so, Yeah I know the firebase provides a much secure system in the security side but the code has to be secure too! To day let&rsquo;s discuss on that, let&rsquo;s explore what we can do to Protect our JS files.</p>
+<p><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="Security"></p>
+<h2 id="my-steps">My Steps</h2>
+<p>I Usually use 5 steps of protection in my personal projects,</p>
+<ol>
+<li>Trust No one!</li>
+<li>Minification and Obfuscation</li>
+<li>Lint your code</li>
+<li>Strict mode</li>
+<li>Brake-down The code</li>
+<li>Simple and elegant</li>
+</ol>
+<h2 id="first-step-trust-no-one">First Step, Trust No one</h2>
+<p>One super important technique to avoid JavaScript vulnerabilities is to have a good validation architecture in place.</p>
+<p>May it be the data coming from users. Or may it be the data coming from your servers. Always validate the data before it enters the application.</p>
+<p>In the case of user input forms- validate each and every field. Sql injections and XSS are dramatically increasing these days. So, make sure you validate each and every field on the form before you save the data to the server.</p>
+<p>Even when the data is saved on the servers, do not trust them. Always sanitize the data coming from the servers.</p>
+<p>If yours is a node based application have a look at validator.js. It’s something you should start using right away.</p>
+<h2 id="minification-and-obfuscation">Minification and Obfuscation</h2>
+<p>Another way of securing your data is minifying and obfuscating the code. What minification is it simply makes the whole code in to a single line and remove extra white-spaces. We discussed about this techniques in the past and I&rsquo;m not explaining them in detail again. you can visit it <a href="/post/web-code-minification/">HERE</a>.</p>
+<p>Then Obfuscation. As the Wikipedia says Obfuscation is ❝In software development, obfuscation is the deliberate act of creating source or machine code that is difficult for humans to understand. Like obfuscation in natural language, it may use needlessly roundabout expressions to compose statements. Programmers may deliberately obfuscate code to conceal its purpose (security through obscurity) or its logic or implicit values embedded in it, primarily, in order to prevent tampering, deter reverse engineering, or even to create a puzzle or recreational challenge for someone reading the source code. This can be done manually or by using an automated tool, the latter being the preferred technique in industry.❞</p>
+<p>In simple words, It makes the code nearly impossible to read and modify. A De-obfuscator can return the code back to the original form, but not simple as it says, so only highly skilled penetrators would be able to kick something like that.</p>
+<p>Tools for minification</p>
+<ul>
+<li><a href="https://www.willpeavy.com/tools/minifier/">https://www.willpeavy.com/tools/minifier/</a></li>
+<li><a href="https://jscompress.com/">https://jscompress.com/</a></li>
+<li><a href="http://javascript-minifier.com/">http://javascript-minifier.com/</a></li>
+<li><a href="http://refresh-sf.com/">http://refresh-sf.com/</a></li>
+</ul>
+<p>Tools for obfuscation</p>
+<ul>
+<li><a href="https://obfuscator.io/">https://obfuscator.io/</a></li>
+<li><a href="https://javascriptobfuscator.com/">https://javascriptobfuscator.com/</a></li>
+<li><a href="https://github.com/mishoo/UglifyJS">https://github.com/mishoo/UglifyJS</a></li>
+</ul>
+<h2 id="lint-your-code">Lint your code</h2>
+<p>This is a process which you can analyze and scan for suspicious code snippets on your JS files. It&rsquo;s much needed when you&rsquo;re working with a dynamic code base. Otherwise no one can hack into a stone. So if you&rsquo;re using or working with any kind of dynamic code base, don&rsquo;t forget to check out these tools</p>
+<ul>
+<li><a href="http://eslint.org/">http://eslint.org/</a></li>
+<li><a href="http://jshint.com/">http://jshint.com/</a></li>
+<li><a href="http://www.jslint.com/">http://www.jslint.com/</a></li>
+</ul>
+<h2 id="use-strict-mode">Use Strict mode</h2>
+<p>Modern JS has a mode called Strict mode. Where the JS files get to a highly strict mode as it says, only using a simple code. This would prevent others from injecting codes into the codebase and it could save you from 90% of the attacks you can encounter with. We discussed this with the JS fundamental course which you can visit <a href="/post/js-for-modern-web-development/">HERE</a>.</p>
+<h2 id="brake-down-the-code">Brake-Down the code</h2>
+<p>This is something I personally use and this could make reverse engineering very confusing. I usually brake-down my codes in various parts and put different parts in like 5 or 6 js files to only be combined when it&rsquo;s running. I Even brake down strings and all of the variables, so if someone going to reverse engineer my codes, They would be in serious troubles on figuring out which are which.</p>
+<h2 id="simple-and-elegant">Simple and elegant</h2>
+<p>Always use simple codes, This can make your code easy for you to understand and prevent mistakes which could occur due to human nature of forgetting what we&rsquo;re doing or so. And here, this is against my previous point? No absolutely not! Being Simple is something and Being Advanced or messy is something else, You can be simple and messy, what I prefer in codes.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This could be a small post considering my previous attempts. But this is something you must do before publishing your codes. for more security based information, join our whatsapp and telegram groups using the links above. and if you&rsquo;re wandering I never used these in my source codes, dumb-ass you! If I did so, How could you understand the code!</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

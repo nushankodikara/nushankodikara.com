@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    Firebase Hosting and Analytics - Nushan Kodikara
+  </title>
+  <meta name="description" content="Let&#39;s Explore firebase Hosting And Firebase Analytics" /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="Firebase Hosting and Analytics" />
+<meta property="og:description" content="Let&#39;s Explore firebase Hosting And Firebase Analytics" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/firebase-hosting-and-analytics/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-08-08T06:00:00+05:30" />
+<meta property="article:modified_time" content="2020-08-08T06:00:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Firebase Hosting and Analytics"/>
+<meta name="twitter:description" content="Let&#39;s Explore firebase Hosting And Firebase Analytics"/>
+
+  <meta itemprop="name" content="Firebase Hosting and Analytics">
+<meta itemprop="description" content="Let&#39;s Explore firebase Hosting And Firebase Analytics"><meta itemprop="datePublished" content="2020-08-08T06:00:00+05:30" />
+<meta itemprop="dateModified" content="2020-08-08T06:00:00+05:30" />
+<meta itemprop="wordCount" content="4710">
+<meta itemprop="keywords" content="Mobile Development,web Development,Firebase," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/IrRbSND5EUc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8YW5hbHl0aWNzfHwwfHx8fDE2Mzk1NDQ4NzQ&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    August 8, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Firebase Hosting and Analytics</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    August 8, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      23&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      4710&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>We can use firebase as a hosting service, Firebase Hosting provides fast and secure hosting for your web app, static and dynamic content, and microservices, Also Firebase Hosting is production-grade web content hosting for developers, With a single command, you can quickly deploy web apps and serve both static and dynamic content to a global CDN (content delivery network), You can also pair Firebase Hosting with Cloud Functions or Cloud Run to build and host microservices on Firebase.</p>
+<h2 id="how-does-it-work">How does it work</h2>
+<p>Firebase Hosting is built for the modern web developer. Websites and apps are more powerful than ever with the rise of front-end JavaScript frameworks like Angular and static generator tools like Jekyll. Whether you are deploying a simple app landing page or a complex Progressive Web App (PWA), Hosting gives you the infrastructure, features, and tooling tailored to deploying and managing websites and apps.</p>
+<p>Using the Firebase CLI, you deploy files from local directories on your computer to your Hosting server. Beyond serving static content, you can use Cloud Functions for Firebase or Cloud Run to serve dynamic content and host microservices on your sites. All content is served over an SSL connection from the closest edge server on our global CDN.</p>
+<p>Firebase Hosting has lightweight hosting configuration options for you to build sophisticated PWAs. You can easily rewrite URLs for client-side routing or set up custom headers.</p>
+<p>For serving your content, Firebase offers several domain and subdomain options:</p>
+<ul>
+<li>
+<p>By default, every Firebase project has free subdomains on the web.app and firebaseapp.com domains. These two sites serve the same deployed content and configuration.</p>
+</li>
+<li>
+<p>You can create multiple sites if you have related sites and apps that serve different content but still share the same Firebase project resources (for example if you have a blog, admin panel, and public app).</p>
+</li>
+<li>
+<p>You can connect your own domain name to a Firebase-hosted site.</p>
+</li>
+</ul>
+<p>Firebase automatically provisions SSL certificates for all your domains so that all your content is served securely.</p>
+<h2 id="what-is-firebase-hosting">What is Firebase Hosting</h2>
+<p>Firebase Hosting is a fully-managed hosting service for static and dynamic content as well as microservices. The service is backed by SSD storage and a global CDN (content delivery network). Zero-configuration SSL is built into Firebase Hosting, so content is always delivered securely.</p>
+<h2 id="what-can-you-host">What can you host</h2>
+<h2 id="build-then-host-your-microservices-api-and-forms">Build then host your microservices, API, and forms</h2>
+<p>Pair Firebase Hosting with Cloud Functions to build microservices using the Express.js framework. This pairing allows you to host your microservices and APIs on Firebase. In addition, you can use a deep integration with Cloud Firestore to build very powerful forms and web apps which can update data in real time.</p>
+<h2 id="host-your-single-page-web-apps-marketing-websites-and-static-and-dynamic-assets">Host your single-page web apps, marketing websites, and static and dynamic assets</h2>
+<p>Benefit from Firebase Hosting&rsquo;s unique optimization for serving single-page web apps and static websites. Delivery of static assets (HTML, CSS, JavaScript, fonts, etc.) is powered by our SSD backend storage and a global CDN with edge locations across all major locations in the world. You can even cache your dynamic content on the global CDN. All sites hosted by Firebase also get a free SSL certificate, so your content is always delivered securely.</p>
+<h2 id="add-a-custom-domain-or-a-subdomain">Add a custom domain (or a subdomain)</h2>
+<p>With Firebase Hosting, you&rsquo;re automatically given a Firebase sub-domain, but you can choose to serve your content on a custom domain (like example.com or myrealtimeapp.example.com). Firebase Hosting provisions an SSL certificate for each of your domains and serves your content over a global CDN.</p>
+<h2 id="keep-all-your-sites-in-one-place">Keep all your sites in one place</h2>
+<p>Firebase Hosting supports multiple sites in a single Firebase project. Each site hosts its own collection of content, has its own hosting configuration, and can have one or more associated domains. Since the sites are all in the same Firebase project, all the sites can access the other Firebase resources of the project.</p>
+<p>You can use multiple sites in a Firebase project to keep related sites together (for example your single-page app, blog, and marketing website).</p>
+<h2 id="automate-continuous-deployment-with-cloud-build">Automate continuous deployment with Cloud Build</h2>
+<p>Firebase Hosting partnered with Cloud Build offers a DevOps-ready solution for automating a continuous deployment workflow for your static and dynamic content as well as for your microservices.</p>
+<p>After you configure these tools, you can deploy your web app to Firebase Hosting by simply checking in your code to your git repository.</p>
+<h2 id="restrict-access-and-counter-a-ddos-attack-for-your-web-apps">Restrict access and counter a DDoS attack for your web apps</h2>
+<p>Using the power of Express.js middleware, you can build custom logic into serving your microservices, APIs, and other HTTP endpoints. For example, with just a few lines of code, you can integrate popular Node.js middleware offerings to build additional security layers, like access management by IP or protection from denial-of-service (DDoS) attacks.</p>
+<h2 id="customize-everything">Customize everything</h2>
+<ul>
+<li>Error pages — Return a neatly fully customized 404 page from your web app.</li>
+<li>Rewrites — Customize which endpoints serve what traffic, and even display the same content from multiple URLs.</li>
+<li>Headers — Want to access cookies? Use custom headers!</li>
+<li>Caching and CDN behavior — Control how your web app is cached across the CDN through custom headers.</li>
+</ul>
+<h2 id="deploy-to-firebase-from-various-web-based-ides">Deploy to Firebase from various web-based IDEs</h2>
+<p>Firebase Hosting is integrated with various web-based IDEs so that you can deploy to Firebase Hosting directly from within <a href="https://stackblitz.com/">StackBlitz</a> and <a href="https://glitch.com/">Glitch</a>, two web-based IDEs.</p>
+<p><img src="https://firebase.google.com/docs/hosting/images/hosting-deploy-stackblitz.gif" alt="StackBlitz">
+<img src="https://firebase.google.com/docs/hosting/images/hosting-deploy-glitch.gif" alt="Glitch"></p>
+<p>These IDEs automatically detect when you&rsquo;re creating a Firebase app and allow you to deploy to Firebase Hosting with the click of a button, without ever leaving the IDE!</p>
+<h2 id="build-deep-integrations-with-other-firebase-services">Build deep integrations with other Firebase services</h2>
+<p><img src="https://firebase.google.com/docs/hosting/images/friendlychat-web-codelab.png" alt="FriendlyChat web codelab"></p>
+<p>Firebase Hosting works out-of-the-box with Firebase services, including Cloud Functions, Authentication, Realtime Database, Cloud Firestore, and Cloud Messaging. You can build powerful microservices and web apps using these complementary Firebase services.</p>
+<p>Try out our FriendlyChat web codelab to learn how Hosting pairs with these Firebase services.</p>
+<h2 id="create-a-custom-deployment-workflow-using-rest-api-and-our-nodejs-modules">Create a custom deployment workflow using REST API and our Node.js modules</h2>
+<p>Firebase Hosting supports a REST API for advanced developers to build custom workflows, like deploying through a JavaScript app.</p>
+<p>We also have a Node.js module which you can import into your Node.js apps to build advanced functionality.</p>
+<h2 id="get-started-with-firebase-hosting">Get started with Firebase Hosting</h2>
+<p>Firebase Hosting gives you a fast, secure, and reliable way to host your app&rsquo;s static assets (HTML, CSS, JavaScript, media files, etc.) as well as to serve dynamic content and host microservices.</p>
+<p>Our production-grade hosting is backed by a global content delivery network (CDN). Hosting serves your content over SSL, by default, and can be used with your own custom domain or on your project&rsquo;s free subdomains on web.app and firebaseapp.com.</p>
+<h2 id="before-you-begin">Before you begin</h2>
+<p>Before you can set up Firebase Hosting, you need to create a Firebase project. We did this already in our previous guides, If you didn&rsquo;t checked those out, Go ahead.</p>
+<h2 id="step-1-install-the-firebase-cli">Step 1: Install the Firebase CLI</h2>
+<p>Visit the Firebase CLI documentation on <a href="https://firebase.google.com/docs/cli">https://firebase.google.com/docs/cli</a> to learn how to install the CLI or update to its latest version. or install node js and run the command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">npm install <span style="color:#ff79c6">-</span>g firebase<span style="color:#ff79c6">-</span>tools
+</code></pre></div><h2 id="step-2-initialize-your-project">Step 2: Initialize your project</h2>
+<p>To connect your local project to your Firebase project, run the following command from the root of your local project directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase init
+</code></pre></div><p>During project initialization, from the Firebase CLI prompts:</p>
+<ol>
+<li>Select to set up Hosting.</li>
+</ol>
+<p>If you want to set up other Firebase products for your project, refer to their documentation for setup information. Note that you can always run firebase init later to set up more Firebase products.</p>
+<ol start="2">
+<li>Select a Firebase project to connect to your local project directory.</li>
+</ol>
+<p>The selected Firebase project is your &ldquo;default&rdquo; Firebase project for your local project directory. To connect additional Firebase projects to your local project directory, set up project aliases.</p>
+<ol start="3">
+<li>Specify a directory to use as your public root directory.</li>
+</ol>
+<p>This directory contains all your publicly served static files, including your index.html file and any other assets that you want to deploy to Firebase Hosting.</p>
+<ul>
+<li>The default for the public root directory is called public.</li>
+<li>You can specify your public root directory now or you can specify it later in your firebase.json configuration file.</li>
+<li>If you select the default and don&rsquo;t already have a directory called public, Firebase creates it for you.</li>
+<li>If you don&rsquo;t already have a valid index.html file or 404.html file in your public root directory, Firebase creates them for you.</li>
+</ul>
+<ol start="4">
+<li>Choose a configuration for your site.</li>
+</ol>
+<p>If you select to make a one-page app, then Firebase automatically adds rewrite configurations for you.</p>
+<p>At the end of initialization, Firebase automatically creates and adds two files to the root of your local app directory:</p>
+<ul>
+<li>A firebase.json configuration file that lists your project configuration. Learn more about this file on the configure hosting behavior page.</li>
+<li>A .firebaserc file that stores your project aliases.</li>
+</ul>
+<h2 id="step-3-deploy-to-your-site">Step 3: Deploy to your site</h2>
+<p>To deploy to your site, run the following command from the root of your local project directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase deploy
+</code></pre></div><p>This command deploys a release to your Firebase project&rsquo;s default Hosting sites:</p>
+<ul>
+<li>PROJECT_ID.web.app</li>
+<li>PROJECT_ID.firebaseapp.com</li>
+</ul>
+<p>Learn more about deploys and even locally testing your site.</p>
+<h2 id="test-locally-then-deploy-to-your-site">Test locally then deploy to your site</h2>
+<p>You can view and test your site locally, even emulate your HTTPS functions, before deploying your site to production.</p>
+<h2 id="get-started">Get started</h2>
+<p>Complete the steps listed on the Hosting Get Started page, which include installing the Firebase CLI and connecting your local project to your Firebase project.</p>
+<h2 id="serve-and-test-your-firebase-project-locally-optional">Serve and test your Firebase project locally (optional)</h2>
+<p>You can view and test your Firebase project on locally hosted URLs before deploying to production. If you only want to test select features, you can use a comma-separated list in a flag on the firebase serve command.</p>
+<p>Run the following command from the root of your local project directory if you want to do either of the following tasks:</p>
+<ul>
+<li>View the static content for your Firebase-hosted app.</li>
+<li>Use Cloud Functions to generate dynamic content for Firebase Hosting and you want to use your production (deployed) HTTP functions to emulate Hosting on a local URL.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase serve <span style="color:#ff79c6">--</span>only hosting
+</code></pre></div><h2 id="emulate-your-project-using-local-http-functions">Emulate your project using local HTTP functions</h2>
+<p>Run any of the following commands from your project directory to emulate your project using local HTTP functions.</p>
+<ul>
+<li>To emulate HTTP functions and hosting for testing on local URLs, use either of the following commands:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase serve
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase serve <span style="color:#ff79c6">--</span>only functions,hosting <span style="color:#6272a4">// uses a flag
+</span></code></pre></div><ul>
+<li>To emulate HTTP functions only, use the following command:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase serve <span style="color:#ff79c6">--</span>only functions
+</code></pre></div><h2 id="test-from-other-local-devices">Test from other local devices</h2>
+<p>By default, firebase serve only responds to requests from localhost. This means that you&rsquo;ll be able to access your hosted content from your computer&rsquo;s web browser but not from other devices on your network. If you&rsquo;d like to test from other local devices, use the &ndash;host flag, like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase serve <span style="color:#ff79c6">--</span>host <span style="color:#bd93f9">0.0</span>.<span style="color:#bd93f9">0.0</span>  <span style="color:#6272a4">// accepts requests to any host
+</span></code></pre></div><h2 id="deploy-to-your-site">Deploy to your site</h2>
+<p>To deploy to your site, run the following command from the root of your local project directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase deploy
+</code></pre></div><p>This command deploys a release to the following sites:</p>
+<ul>
+<li>
+<p>Your Firebase project&rsquo;s default Hosting sites, PROJECT_ID.web.app and PROJECT_ID.firebaseapp.com</p>
+</li>
+<li>
+<p>Any custom domains that you&rsquo;ve connected to your Hosting site.</p>
+</li>
+</ul>
+<p>You can optionally add a comment to a deploy. This comment will display with the other deployment information on your project&rsquo;s Hosting page. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase deploy <span style="color:#ff79c6">-</span>m <span style="color:#f1fa8c">&#34;Deploying the best new feature ever.&#34;</span>
+</code></pre></div><h2 id="deploys-for-projects-with-multiple-sites">Deploys for projects with multiple sites</h2>
+<p>If you&rsquo;ve added additional sites to your Firebase project, use the following command to deploy to one of those sites:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase deploy <span style="color:#ff79c6">--</span>only hosting<span style="color:#ff79c6">:</span>TARGET_NAME
+</code></pre></div><p>The TARGET_NAME parameter is the unique identifier that you specified for the additional Hosting site during its setup.</p>
+<h2 id="add-predeploy-and-postdeploy-scripted-tasks">Add predeploy and postdeploy scripted tasks</h2>
+<p>You can optionally connect shell scripts to the firebase deploy command to perform predeploy or postdeploy tasks. For example, a postdeploy hook could notify administrators of new site content deploys. Refer to the Firebase CLI documentation for more details.</p>
+<h2 id="caching-deployed-content">Caching deployed content</h2>
+<p>When a request is made for static content, Firebase Hosting automatically caches the content on the CDN. If you redeploy your site&rsquo;s content, Firebase automatically clears all your cached static content across the CDN so that new requests receive your new content.</p>
+<p>Note that you can configure the caching of dynamic content.</p>
+<h2 id="serving-over-https">Serving over HTTPS</h2>
+<p>Firebase Hosting is SSL-only, meaning that content is only served over HTTPS.
+As you&rsquo;re developing your application, make sure that all external resources that are not hosted on Firebase Hosting are loaded over SSL (HTTPS), including any external scripts. Most browsers do not allow users to load &ldquo;mixed content&rdquo; (SSL and non-SSL traffic).</p>
+<h2 id="share-project-resources-across-multiple-sites">Share project resources across multiple sites</h2>
+<p>You can set up one or more Firebase Hosting sites in a single Firebase project. Since the sites are all in the same Firebase project, all the sites can access the other Firebase resources of the project.</p>
+<ul>
+<li>Each site has its own hosting configuration.</li>
+<li>Each site hosts its own collection of content.</li>
+<li>Each site can have one or more associated domains.</li>
+</ul>
+<p>By setting up multiple Hosting sites within the same Firebase project, you can more easily share Firebase resources between related sites and apps. For example, if you set up your blog, admin panel, and public app as individual sites in the same Firebase project, they can all share the same Firebase Authentication user database, while also having their own unique domains or content.</p>
+<h2 id="step-1-update-your-firebase-cli-version">Step 1: Update your Firebase CLI version</h2>
+<p>Access the most current Firebase Hosting features by updating to the latest version of the Firebase CLI.</p>
+<h2 id="step-2-add-additional-sites">Step 2: Add additional sites</h2>
+<p>Add additional sites to a Firebase project directly from your Firebase Hosting page. To each site, you can also optionally add custom domains to serve the same content and configuration to multiple URLs.</p>
+<h2 id="delete-a-secondary-site">Delete a secondary site</h2>
+<p>Delete unwanted sites directly from your Firebase Hosting page. Note that you cannot delete the default site, which has the same site name as your Firebase project ID.</p>
+<h2 id="step-3-set-up-deploy-targets-for-your-sites">Step 3: Set up deploy targets for your sites</h2>
+<p>When you have multiple sites and you run Firebase CLI deploy commands, the CLI needs a way to communicate which settings should be deployed to each site. With deploy targets you can uniquely identify a specific site by its target name in your firebase.json configuration file and in your Firebase CLI commands for testing or deploying to your sites.</p>
+<p>To create a deploy target and apply a target name to a Hosting site, run the following CLI command from the root of your project directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase target<span style="color:#ff79c6">:</span>apply hosting TARGET_NAME RESOURCE_NAME
+</code></pre></div><p>Where the parameters are:</p>
+<ul>
+<li>
+<p>TARGET_NAME — a unique identifier (that you&rsquo;ve defined yourself) for the Hosting site that you&rsquo;re deploying to</p>
+</li>
+<li>
+<p>RESOURCE_NAME — the name of the Hosting site as listed in your Firebase project</p>
+</li>
+</ul>
+<p>For example, if you&rsquo;ve created two sites (myapp-blog and myapp-app) in your Firebase project, you could apply a unique target name to each site (blog and app, respectively) by running the following commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase target<span style="color:#ff79c6">:</span>apply hosting blog myapp<span style="color:#ff79c6">-</span>blog
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase target<span style="color:#ff79c6">:</span>apply hosting app myapp<span style="color:#ff79c6">-</span>app
+</code></pre></div><p>The settings for deploy targets are stored in the .firebaserc file in your project directory, so you only need to set up deploy targets one time per project.</p>
+<h2 id="step-4-define-the-hosting-configuration-for-each-site">Step 4: Define the hosting configuration for each site</h2>
+<p>Use a site&rsquo;s applied target name when you&rsquo;re defining its hosting configuration in your firebase.json file.</p>
+<ul>
+<li>If your firebase.json file defines the configuration for multiple sites, use an array format:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#f1fa8c">&#34;hosting&#34;</span><span style="color:#ff79c6">:</span> [ {
+      <span style="color:#f1fa8c">&#34;target&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;blog&#34;</span>,  <span style="color:#6272a4">// &#34;blog&#34; is the applied target name for the Hosting site &#34;myapp-blog&#34;
+</span><span style="color:#6272a4"></span>      <span style="color:#f1fa8c">&#34;public&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;blog/dist&#34;</span>,  <span style="color:#6272a4">// contents of this folder are deployed to the site &#34;myapp-blog&#34;
+</span><span style="color:#6272a4"></span>
+      <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>    },
+    {
+      <span style="color:#f1fa8c">&#34;target&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;app&#34;</span>,  <span style="color:#6272a4">// &#34;app&#34; is the applied target name for the Hosting site &#34;myapp-app&#34;
+</span><span style="color:#6272a4"></span>      <span style="color:#f1fa8c">&#34;public&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;app/dist&#34;</span>,  <span style="color:#6272a4">// contents of this folder are deployed to the site &#34;myapp-app&#34;
+</span><span style="color:#6272a4"></span>
+      <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>
+      <span style="color:#f1fa8c">&#34;rewrites&#34;</span><span style="color:#ff79c6">:</span> [...]  <span style="color:#6272a4">// You can define specific Hosting configurations for each site
+</span><span style="color:#6272a4"></span>    }
+  ]
+}
+</code></pre></div><ul>
+<li>If your firebase.json file defines the configuration for only one site, it&rsquo;s not necessary to use an array format:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#f1fa8c">&#34;hosting&#34;</span><span style="color:#ff79c6">:</span> {
+      <span style="color:#f1fa8c">&#34;target&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;blog&#34;</span>,
+      <span style="color:#f1fa8c">&#34;public&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;dist&#34;</span>,
+
+      <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>
+      <span style="color:#f1fa8c">&#34;rewrites&#34;</span><span style="color:#ff79c6">:</span> [...]
+  }
+}
+</code></pre></div><h2 id="step-5-deploy-to-your-sites-or-serve-locally">Step 5: Deploy to your sites or serve locally</h2>
+<p>Run any of the following commands from the root of your project directory.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Command</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">firebase deploy</td>
+<td style="text-align:left">Creates a release of all deployable resources in your project directory</td>
+</tr>
+<tr>
+<td style="text-align:left">firebase deploy &ndash;only hosting:TARGET_NAME</td>
+<td style="text-align:left">Creates a release of only the resources for the specified Hosting target</td>
+</tr>
+<tr>
+<td style="text-align:left">firebase serve</td>
+<td style="text-align:left">Serves your Firebase project locally</td>
+</tr>
+<tr>
+<td style="text-align:left">firebase serve &ndash;only hosting:TARGET_NAME</td>
+<td style="text-align:left">Serves locally only the resources for the specified Hosting target</td>
+</tr>
+</tbody>
+</table>
+<h2 id="connect-a-custom-domain">Connect a custom domain</h2>
+<p>You don&rsquo;t have to give up your unique, brand-centric domain names with Firebase Hosting. You can use a custom domain (like example.com or app.example.com) instead of a Firebase-generated domain for your Firebase-hosted site.</p>
+<p>Firebase Hosting provisions an SSL certificate, signed by Let&rsquo;s Encrypt, for each of your domains and serves your content over a global CDN.</p>
+<p><a href="https://firebase.google.com/docs/hosting/images/custom-domain.png">CustomDomains</a></p>
+<p>The rest of this document walks you through these steps to connect your custom domain.</p>
+<h2 id="set-up-your-domain-for-hosting">Set up your domain for Hosting</h2>
+<p>Make sure that you&rsquo;ve completed the &ldquo;Get Started&rdquo; wizard from your project&rsquo;s Firebase Hosting page so that you have a Firebase Hosting site in your Firebase project.</p>
+<h2 id="step-1-add-domain">Step 1: Add domain</h2>
+<ol>
+<li>From your project&rsquo;s Hosting page, enter the wizard for connecting a custom domain:</li>
+</ol>
+<ul>
+<li>If you have only one Hosting site, click Connect domain.</li>
+<li>If you have more than one Hosting site, click View for the desired site, then click Connect domain.</li>
+</ul>
+<ol start="2">
+<li>
+<p>Enter the custom domain name that you&rsquo;d like to connect to your Hosting site.</p>
+</li>
+<li>
+<p>(Optional) Check the box to redirect all requests on the custom domain to a second specified domain (such that example.com and <a href="http://www.example.com">www.example.com</a> redirect to the same content).</p>
+</li>
+<li>
+<p>Click Continue to initiate the validation process.</p>
+</li>
+</ol>
+<h2 id="step-2-verify-domain-ownership">Step 2: Verify domain ownership</h2>
+<p>If requested in the Connect Domain setup wizard, verify your apex domain.</p>
+<p>These steps ensure that your domain is not already linked with a Firebase project and that you own the specified domain.</p>
+<ol>
+<li>
+<p>In your domain provider&rsquo;s site, locate the DNS management page.</p>
+</li>
+<li>
+<p>Add and save a new record with the following inputs:</p>
+</li>
+</ol>
+<ul>
+<li>Type: Add a TXT record.</li>
+</ul>
+<p>Firebase Hosting requires that you keep this TXT record continually present in your DNS settings to prove your ownership of the domain and to authorize Firebase to assign and renew SSL certificates for your site.</p>
+<p>Your domain provider may list this term as &ldquo;Record Type&rdquo;.</p>
+<ul>
+<li>Host: Enter your apex domain key.</li>
+</ul>
+<p>Proving your ownership of an apex domain, or root domain, proves your ownership of all its subdomains.</p>
+<p>Your domain provider may list this term as &ldquo;Host Name&rdquo;, &ldquo;Name&rdquo;, or &ldquo;Domain&rdquo;.</p>
+<ul>
+<li>Value: Copy the unique verification value into the field.</li>
+</ul>
+<p>Firebase Hosting checks for this value to prove your domain ownership.</p>
+<p>Your domain provider may list this term as &ldquo;Data&rdquo;.</p>
+<ol start="3">
+<li>Allow up to 24 hours for propagation of your updated TXT records, then click Verify.</li>
+</ol>
+<p>Note that you may click Cancel to safely close the Connect Domain window and reopen at a later time. This does not affect the propagation time, but you will be prompted to re-enter your domain name when you reopen the window.</p>
+<p>After ample propagation time, clicking Verify in the Connect Domain window of the Firebase console allows you to begin the SSL certificate provisioning process.</p>
+<p>In most cases, propagation of your records and verification of your domain will happen within a few hours, depending on your domain provider. Refer to your domain provider&rsquo;s documentation for detailed instructions for adding TXT records and propagation times.</p>
+<p>If clicking Verify prompts an error message, your records have not propagated or your values may be incorrect.</p>
+<h2 id="step-3-go-live">Step 3: Go live</h2>
+<p>In the Connect Domain window of the Firebase console, select Quick Setup for a new site or Advanced Setup if you already have a site running on another hosting provider and need a zero-downtime migration.</p>
+<h2 id="quick-setup">Quick Setup</h2>
+<ol>
+<li>Return to your domain name provider&rsquo;s DNS management site to create DNS A records pointing your page to Firebase Hosting. Add and save records with the following inputs:</li>
+</ol>
+<ul>
+<li>Type: Add two DNS A records.</li>
+<li>Host: Enter your custom domain key for both records.
+The host you indicate is the domain on which you want to serve content; this domain can be an apex domain or subdomain.</li>
+</ul>
+<p>Your domain provider may list this term as &ldquo;Host Name&rdquo;, &ldquo;Name&rdquo;, or &ldquo;Domain&rdquo;.</p>
+<ul>
+<li>Value: Assign one value to each DNS A record to point your domain to the specified IP addresses.
+Your domain provider may list this term as &ldquo;Data&rdquo;, &ldquo;Points To&rdquo;, &ldquo;Content&rdquo;, &ldquo;Address&rdquo;, or &ldquo;IP Address&rdquo;.</li>
+</ul>
+<ol start="2">
+<li>Allow time for your SSL certificate to be provisioned. This may take up to 24 hours after you point your A records to Firebase Hosting. In most cases, propagation of your records and provisioning of your SSL cerificate will happen within a few hours, depending on your domain provider.</li>
+</ol>
+<h2 id="advanced-setup">Advanced Setup</h2>
+<ol>
+<li>The Connect Domain window of the Firebase console will request that you provide a token to migrate your existing site. You only need to complete one of the following to provide the token:</li>
+</ol>
+<ul>
+<li>Update DNS TXT records: Visit your domain provider&rsquo;s DNS management site. Add a TXT record with your domain key and the provided value.</li>
+<li>Allow up to 24 hours for propagation of your TXT records.
+Upload a file to an existing site: Upload the token onto your existing site at the specified URL and verify its existence.
+This page must be served over HTTPS and doesn&rsquo;t have to be valid or secure. The encrypted token is only valid for one try. If migration fails, a new token will be generated for your records.</li>
+</ul>
+<ol>
+<li>
+<p>Allow time for your SSL certificate to be provisioned. This may take up to 24 hours. In most cases, propagation of your records and provisioning of your SSL certificate will happen within a few hours, depending on your domain provider.</p>
+</li>
+<li>
+<p>After your SSL certificate is provisioned, return to your DNS provider&rsquo;s DNS management site to add DNS A records pointing your page to Firebase Hosting. Add and save records with the following inputs:</p>
+</li>
+</ol>
+<ul>
+<li>Type: Add two DNS A records.</li>
+<li>Host: Enter your custom domain key for both records.
+The host you indicate is the domain on which you want to serve content; this domain can be an apex domain or subdomain.</li>
+</ul>
+<p>Your domain provider may list this term as &ldquo;Host name&rdquo;, &ldquo;Name&rdquo;, or &ldquo;Domain&rdquo;.</p>
+<ul>
+<li>Value: Assign one value to each DNS A record to point your domain to the specified IP addresses.
+Your domain provider may list this term as &ldquo;Data&rdquo;, &ldquo;Points To&rdquo;, &ldquo;Content&rdquo;, &ldquo;Address&rdquo;, or &ldquo;IP Address&rdquo;.</li>
+</ul>
+<h2 id="wait-for-ssl-certificate-provisioning">Wait for SSL certificate provisioning</h2>
+<p>After we verify domain ownership, we provision an SSL certificate for your domain and deploy it across our global CDN within 24 hours after you point your DNS A records to Firebase Hosting.</p>
+<p>Your domain will be listed as one of the Subject Alternative Names (SAN) in the FirebaseApp SSL certificate. You can view this certificate using the browser&rsquo;s security tools. While the domain is provisioning, you might see an invalid certificate that does not include your domain name. This is a normal part of the process and will resolve after your domain&rsquo;s certificate is available.</p>
+<p>For Advanced Setup users, your website will be hosted by your previous hosting provider until the setup status in your project&rsquo;s Firebase Hosting page updates to Connected.</p>
+<h2 id="your-custom-domain-key">Your custom domain key</h2>
+<p>When adding or editing DNS records, different domain providers expect you to enter different inputs for the Host field within their DNS management sites. We&rsquo;ve compiled common inputs from popular providers below. Refer to your domain provider&rsquo;s documentation for detailed instructions.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Domain type</th>
+<th style="text-align:left">Custom domain key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Apex domain</td>
+<td style="text-align:left">Common inputs include: @ The apex domain name (for example, example.com), Leaving the Host field blank</td>
+</tr>
+<tr>
+<td style="text-align:left">Subdomain</td>
+<td style="text-align:left">Common inputs include: The full subdomain name (for example, app.example.com), Only the subdomain portion (for example, app only, and leaving out .example.com) ,Only www for the subdomain of <a href="http://www.example.com">www.example.com</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="lets-do-a-demo">Let&rsquo;s do a demo</h2>
+<p>Now we know the basics of the firebase hosting, Let&rsquo;s deploy a testing site to Our Firebase Project.</p>
+<p>First I&rsquo;m installing the tool set using npm</p>
+<p><img src="/uploads/20200808_01.gif" alt="Installing Firebase"></p>
+<p>Then start a terminal in the project folder and Login to firebase CLI if you haven&rsquo;t already.</p>
+<p><img src="/uploads/20200808_02.gif" alt="Login To Firebase"></p>
+<p>Now Run the initialization command <code>firebase init</code> And select hosting from the service menu using space bar and select your project using enter.</p>
+<p><img src="/uploads/20200808_03.gif" alt="Initializing Firebase"></p>
+<p>Now you should have these folders in your directory.</p>
+<p><img src="/uploads/20200808_04.png" alt="Project Directory"></p>
+<p>I Created a simple Web page for demonstrate the hosting process.</p>
+<p><img src="/uploads/20200808_05.png" alt="Project Directory"></p>
+<p><img src="/uploads/20200808_06.png" alt="Project Directory"></p>
+<p>And now let&rsquo;s run our project locally for testing.</p>
+<p><img src="/uploads/20200808_07.gif" alt="Initializing Firebase"></p>
+<p>After testing with the server, Let&rsquo;s Deploy!</p>
+<p><img src="/uploads/20200808_08.gif" alt="Initializing Firebase"></p>
+<p>And Wolah! It&rsquo;s deployed and hosted on <a href="https://tecinpact-demo.web.app">https://tecinpact-demo.web.app</a></p>
+<p><img src="/uploads/20200808_09.png" alt="Project Directory"></p>
+<p>Now Let&rsquo;s Connect a custom domain for the project. Here I&rsquo;m using a free Domain from <a href="/post/free-top-level-domain-names-2020/">This Guide</a> . for this demonstration the Domain will be tecinpactdemonstration.gq so let&rsquo;s add it to the firebase project.</p>
+<p><img src="/uploads/20200808_11.png" alt="Project Directory"></p>
+<p>Go-to Firebase Console and go-to the hosting tab.</p>
+<p><img src="/uploads/20200808_12.png" alt="Project Directory">
+<img src="/uploads/20200808_13.png" alt="Project Directory"></p>
+<p>Click on add domain button and Enter the Domain name with the subdomain (optionally the sub domain) And Click continue</p>
+<p><img src="/uploads/20200808_14.png" alt="Project Directory"></p>
+<p>Here you can see the verification DNS Records. Go-to your domain provider and add these records and click verify.</p>
+<p><img src="/uploads/20200808_15.png" alt="Project Directory">
+<img src="/uploads/20200808_16.png" alt="Project Directory">
+<img src="/uploads/20200808_17.png" alt="Project Directory"></p>
+<p>Here you have the actual DNS Records to redirect users to the site. Add those too. And click finish</p>
+<p><img src="/uploads/20200808_18.png" alt="Project Directory">
+<img src="/uploads/20200808_19.png" alt="Project Directory">
+<img src="/uploads/20200808_20.png" alt="Project Directory">
+<img src="/uploads/20200808_21.png" alt="Project Directory">
+<img src="/uploads/20200808_22.png" alt="Project Directory"></p>
+<p>I&rsquo;m also adding the www subdomain for my project, I Can add it easily by clicking the add button from the notification. or copy the details from my page.</p>
+<p><img src="/uploads/20200808_23.gif" alt="Project Directory"></p>
+<p>And finally you should see the pending status. Here you can see Firebase is generating A Secure Certificate for the domain. This could take a while and it&rsquo;s totally automated.</p>
+<p><img src="/uploads/20200808_24.png" alt="Project Directory"></p>
+<p>After few hours you can see the SSL certificate has beed delivered and there&rsquo;s a padlock next to your URL. Also in the console, the status would be <code>connected</code>.</p>
+<p><img src="/uploads/20200808_25.png" alt="Project Directory">
+<img src="/uploads/20200808_26.png" alt="Project Directory"></p>
+<p>And you are a master in Firebase Hosting! If you made some changes, just deploy and you&rsquo;re good to go!</p>
+<h2 id="firebase-analytics">Firebase Analytics</h2>
+<p>Google Analytics is a free app measurement solution that provides insight on app usage and user engagement.</p>
+<p>At the heart of Firebase is Google Analytics, a free and unlimited analytics solution. Analytics integrates across Firebase features and provides you with unlimited reporting for up to 500 distinct events that you can define using the Firebase SDK. Analytics reports help you understand clearly how your users behave, which enables you to make informed decisions regarding app marketing and performance optimizations.</p>
+<h2 id="how-does-it-work-actually">How does it work actually</h2>
+<p>Google Analytics helps you understand how people use your web, iOS, or Android app. The SDK automatically captures a number of events and user properties and also allows you to define your own custom events to measure the things that uniquely matter to your business. Once the data is captured, it&rsquo;s available in a dashboard through the Firebase console. This dashboard provides detailed insights about your data — from summary data such as active users and demographics, to more detailed data such as identifying your most purchased items.</p>
+<p>Analytics also integrates with a number of other Firebase features. For example, it automatically logs events that correspond to notification messages sent via the Notifications composer and provides reporting on the impact of each campaign.</p>
+<p>Analytics helps you understand how your users behave, so you can make informed decisions about how to market your app. See the performance of your campaigns across organic and paid channels to understand which methods are most effective at driving high-value users. If you need to perform custom analysis or join your data with other sources you can link your Analytics data to BigQuery, which allows for more complex analysis like querying large data sets and joining multiple data sources.</p>
+<h2 id="lets-implement-analytics">Let&rsquo;s Implement Analytics</h2>
+<p>Now, what do we need to see our application data usage in a single dashboards? We are web developers. And we can add a single line of code to get all these benefits! That&rsquo;s the beauty of the modern web development with BaaS services.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">&lt;!--</span> If you enabled Analytics <span style="color:#ff79c6">in</span> your project, add the Firebase SDK <span style="color:#ff79c6">for</span> Analytics <span style="color:#ff79c6">--&gt;</span>
+<span style="color:#ff79c6">&lt;</span>script src<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/__/firebase/7.17.1/firebase-analytics.js&#34;</span><span style="color:#ff79c6">&gt;&lt;</span>/script&gt;
+</code></pre></div><p>That&rsquo;s it for Analytics. Go to the dashboard and your reports would get generated!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>You can have a download bandwidth of 10GB/month free and expansion isn&rsquo;t that expensive. You can host any kind of static site using This technique, but we can get more benefits by using Firebase as a hosting service while using other firebase tools BECAUSE, these services are provided by a single supplier and when we using more and more of their services, They can ensure the maximum security and pin point accurate analytics for us.</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

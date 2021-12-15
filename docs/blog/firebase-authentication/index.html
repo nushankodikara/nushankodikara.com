@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    Firebase Authentication - Nushan Kodikara
+  </title>
+  <meta name="description" content="Let&#39;s Use Firebase For User Authentication." /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="Firebase Authentication" />
+<meta property="og:description" content="Let&#39;s Use Firebase For User Authentication." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/firebase-authentication/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-08-07T06:00:00+05:30" />
+<meta property="article:modified_time" content="2020-08-07T06:00:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Firebase Authentication"/>
+<meta name="twitter:description" content="Let&#39;s Use Firebase For User Authentication."/>
+
+  <meta itemprop="name" content="Firebase Authentication">
+<meta itemprop="description" content="Let&#39;s Use Firebase For User Authentication."><meta itemprop="datePublished" content="2020-08-07T06:00:00+05:30" />
+<meta itemprop="dateModified" content="2020-08-07T06:00:00+05:30" />
+<meta itemprop="wordCount" content="3647">
+<meta itemprop="keywords" content="Mobile Development,web Development,Firebase," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/FGH69mi53Mw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBsb2NrfHwwfHx8fDE2Mzk1ODY5NzY&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    August 7, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Firebase Authentication</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    August 7, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      18&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      3647&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>Let&rsquo;s use firebase for user authentication, you don&rsquo;t need to setup custom authentications, app apis and other stupid things anymore, we have firebase on our back and few lines of codes can make the programs more efficient and more secure! today I&rsquo;m only focusing Email, Google and Anonymous authentications mainly. you can browse firebase docs for more information on how to setup other authentications in advanced.</p>
+<h2 id="firebase-authentication">Firebase Authentication</h2>
+<p>Most apps need to know the identity of a user. Knowing a user&rsquo;s identity allows an app to securely save user data in the cloud and provide the same personalized experience across all of the user&rsquo;s devices.
+Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.</p>
+<p>Firebase Authentication integrates tightly with other Firebase services, and it leverages industry standards like OAuth 2.0 and OpenID Connect, so it can be easily integrated with your custom backend.</p>
+<h2 id="users-in-firebase-projects">Users in Firebase Projects</h2>
+<p>The Firebase user object represents a user account that has signed up for an app in your project. Apps usually have many registered users, and every app in a project shares a user database.</p>
+<p>User instances are independent from Firebase Authentication instances, so you can have several references to different users within the same context and still call any of their methods.</p>
+<h2 id="user-properties">User properties</h2>
+<p>Firebase users have a fixed set of basic properties—a unique ID, a primary email address, a name and a photo URL—stored in the project&rsquo;s user database, that can be updated by the user (iOS, Android, web). You cannot add other properties to the user object directly; instead, you can store the additional properties in any other storage services, like Google Cloud Firestore.</p>
+<p>The first time a user signs up to your app, the user&rsquo;s profile data is populated using the available information:</p>
+<ul>
+<li>If the user signed up with an email address and password, only the primary email address property is populated</li>
+<li>If the user signed up with a federated identity provider, such as Google or Facebook, the account information made available by the provider is used to populate the user&rsquo;s profile</li>
+<li>If the user signed up with your custom auth system, you must explicitly add the information you want to the user&rsquo;s profile</li>
+</ul>
+<p>Once a user account has been created, you can reload the user&rsquo;s information to incorporate any changes the user might have made on another device.</p>
+<h2 id="sign-in-providers">Sign-in providers</h2>
+<p>You can sign in users to your apps using several methods: email address and password, federated identity providers, and your custom auth system. You can associate more than one sign-in method with a user: for example, a user can sign in to the same account using an email address and a password, or using Google Sign-In.</p>
+<p>User instances keeps track of every provider linked to the user. This allows you to update empty profile&rsquo;s properties using the information given by a provider. See Managing Users (iOS, Android, web).</p>
+<h2 id="the-current-user">The current user</h2>
+<p>When a user signs up or signs in, that user becomes the current user of the Auth instance. The instance persists the user&rsquo;s state, so that refreshing the page (in a browser) or restarting the application doesn&rsquo;t lose the user&rsquo;s information.</p>
+<p>When the user signs out, the Auth instance stops keeping a reference to the user object and no longer persists its state; there is no current user. However, the user instance continues to be completely functional: if you keep a reference to it, you can still access and update the user&rsquo;s data.</p>
+<h2 id="the-user-lifecycle">The user lifecycle</h2>
+<p>The recommended way to track the current state of the Auth instance is by using listeners (also called &ldquo;observers&rdquo; in JavaScript). An Auth listener gets notified any time something relevant happens to the Auth object. See Managing Users (iOS, Android, web).</p>
+<p>An Auth listener gets notified in the following situations:</p>
+<p>The Auth object finishes initializing and a user was already signed in from a previous session, or has been redirected from an identity provider&rsquo;s sign-in flow</p>
+<ul>
+<li>A user signs in (the current user is set)</li>
+<li>A user signs out (the current user becomes null)</li>
+<li>The current user&rsquo;s access token is refreshed. This case can happen in the following conditions:</li>
+<li>The access token expires: this is a common situation. The refresh token is used to get a new valid set of tokens.</li>
+<li>The user changes their password: Firebase issues new access and refresh tokens and renders the old tokens expired. This automatically expires the user&rsquo;s token and/or signs out the user on every device, for security reasons.</li>
+<li>The user re-authenticates: some actions require that the user&rsquo;s credentials are recently issued; such actions include deleting an account, setting a primary email address, and changing a password. Instead of signing out the user and then signing in the user again, get new credentials from the user, and pass the new credentials to the re-authenticate method of the user object.</li>
+</ul>
+<h2 id="easily-add-sign-in-to-your-web-app-with-firebaseui">Easily add sign-in to your Web app with FirebaseUI</h2>
+<p>FirebaseUI is a library built on top of the Firebase Authentication SDK that provides drop-in UI flows for use in your app. FirebaseUI provides the following benefits:</p>
+<ul>
+<li>Multiple Providers - sign-in flows for email/password, email link, phone authentication, Google, Facebook, Twitter and GitHub sign-in.</li>
+<li>Account Linking - flows to safely link user accounts across identity providers.</li>
+<li>Customization - override CSS styles of FirebaseUI to match your app requirements. Also, because FirebaseUI is open source, you can fork the project and customize it exactly to your needs.</li>
+<li>Localized UI - internationalization for over 40 languages.</li>
+<li>Upgrading anonymous users - ability to upgrade anonymous users through sign-in/sign-up. For more information, visit the Upgrading anonymous users section.</li>
+</ul>
+<h2 id="before-you-begin">Before you begin</h2>
+<p>Add Firebase Authentication to your web application.</p>
+<p>Include the following script and CSS file in the <code>&lt;head&gt;</code> tag of your page, below the initialization snippet from the Firebase Console:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&lt;</span>script src<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js&#34;</span><span style="color:#ff79c6">&gt;&lt;</span>/script&gt;
+<span style="color:#ff79c6">&lt;</span>link type<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;text/css&#34;</span> rel<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> href<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</code></pre></div><h2 id="initialize-firebaseui">Initialize FirebaseUI</h2>
+<p>After importing the SDK, initialize the Auth UI.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Initialize the FirebaseUI Widget using Firebase.
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> ui <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> firebaseui.auth.AuthUI(firebase.auth());
+</code></pre></div><h2 id="set-up-sign-in-methods">Set up sign-in methods</h2>
+<p>Before you can use Firebase to sign in users, you must enable and configure the sign-in methods you want to support.</p>
+<h2 id="email-address-and-password">Email address and password</h2>
+<ol>
+<li>
+<p>In the Firebase console, open the Authentication section and enable email and password authentication.</p>
+</li>
+<li>
+<p>Add the email provider ID to the list of FirebaseUI signInOptions.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">ui.start(<span style="color:#f1fa8c">&#39;#firebaseui-auth-container&#39;</span>, {
+  signInOptions<span style="color:#ff79c6">:</span> [
+    firebase.auth.EmailAuthProvider.PROVIDER_ID
+  ],
+  <span style="color:#6272a4">// Other config options...
+</span><span style="color:#6272a4"></span>});
+</code></pre></div><ol start="3">
+<li>Optional: The EmailAuthProvider can be configured to require the user to enter a display name (defaults to true).</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">ui.start(<span style="color:#f1fa8c">&#39;#firebaseui-auth-container&#39;</span>, {
+  signInOptions<span style="color:#ff79c6">:</span> [
+    {
+      provider<span style="color:#ff79c6">:</span> firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      requireDisplayName<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>
+    }
+  ]
+});
+</code></pre></div><h2 id="authenticate-with-firebase-anonymously-using-javascript">Authenticate with Firebase Anonymously Using JavaScript</h2>
+<p>You can use Firebase Authentication to create and use temporary anonymous accounts to authenticate with Firebase. These temporary anonymous accounts can be used to allow users who haven&rsquo;t yet signed up to your app to work with data protected by security rules. If an anonymous user decides to sign up to your app, you can link their sign-in credentials to the anonymous account so that they can continue to work with their protected data in future sessions.</p>
+<h2 id="before-you--begin">Before you  begin</h2>
+<ol>
+<li>Add Firebase to your JavaScript project.</li>
+<li>If you haven&rsquo;t yet connected your app to your Firebase project, do so from the Firebase console.</li>
+<li>Enable anonymous auth:</li>
+</ol>
+<ul>
+<li>In the Firebase console, open the Auth section.</li>
+<li>On the Sign-in Methods page, enable the Anonymous sign-in method.</li>
+</ul>
+<h2 id="authenticate-with-firebase-anonymously">Authenticate with Firebase anonymously</h2>
+<p>When a signed-out user uses an app feature that requires authentication with Firebase, sign in the user anonymously by completing the following steps:</p>
+<ol>
+<li>Call the signInAnonymously method:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.auth().signInAnonymously().<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+  <span style="color:#6272a4">// Handle Errors here.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> errorCode <span style="color:#ff79c6">=</span> error.code;
+  <span style="color:#8be9fd;font-style:italic">var</span> errorMessage <span style="color:#ff79c6">=</span> error.message;
+  <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>});
+</code></pre></div><p>This is also where you can catch and handle errors. For a list of error codes have a look at the Auth Reference Docs.</p>
+<ol start="2">
+<li>If the signInAnonymously method completes without error, the observer registered in the onAuthStateChanged will trigger and you can get the anonymous user&rsquo;s account data from the User object:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.auth().onAuthStateChanged(<span style="color:#8be9fd;font-style:italic">function</span>(user) {
+  <span style="color:#ff79c6">if</span> (user) {
+    <span style="color:#6272a4">// User is signed in.
+</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd;font-style:italic">var</span> isAnonymous <span style="color:#ff79c6">=</span> user.isAnonymous;
+    <span style="color:#8be9fd;font-style:italic">var</span> uid <span style="color:#ff79c6">=</span> user.uid;
+    <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>  } <span style="color:#ff79c6">else</span> {
+    <span style="color:#6272a4">// User is signed out.
+</span><span style="color:#6272a4"></span>    <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>  }
+  <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>});
+</code></pre></div><p>Also you can use this to check authentication state.</p>
+<h2 id="convert-an-anonymous-account-to-a-permanent-account">Convert an anonymous account to a permanent account</h2>
+<p>When an anonymous user signs up to your app, you might want to allow them to continue their work with their new account—for example, you might want to make the items the user added to their shopping cart before they signed up available in their new account&rsquo;s shopping cart. To do so, complete the following steps:</p>
+<ol>
+<li>
+<p>When the user signs up, complete the sign-in flow for the user&rsquo;s authentication provider up to, but not including, calling one of the Auth.signInWith methods. For example, get the user&rsquo;s Google ID token, Facebook access token, or email address and password.</p>
+</li>
+<li>
+<p>Get an AuthCredential for the new authentication provider:</p>
+</li>
+</ol>
+<p>Google Sign-In</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> credential <span style="color:#ff79c6">=</span> firebase.auth.GoogleAuthProvider.credential(
+    googleUser.getAuthResponse().id_token);
+</code></pre></div><p>Email-password sign-in</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> credential <span style="color:#ff79c6">=</span> firebase.auth.EmailAuthProvider.credential(email, password);
+</code></pre></div><ol start="3">
+<li>Pass the AuthCredential object to the sign-in user&rsquo;s link method:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">auth.currentUser.linkWithCredential(credential)
+  .then(<span style="color:#8be9fd;font-style:italic">function</span>(usercred) {
+    <span style="color:#8be9fd;font-style:italic">var</span> user <span style="color:#ff79c6">=</span> usercred.user;
+    console.log(<span style="color:#f1fa8c">&#34;Anonymous account successfully upgraded&#34;</span>, user);
+  }).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.log(<span style="color:#f1fa8c">&#34;Error upgrading anonymous account&#34;</span>, error);
+  });
+</code></pre></div><p>If the call to link succeeds, the user&rsquo;s new account can access the anonymous account&rsquo;s Firebase data.</p>
+<h2 id="authenticate-using-google-sign-in-with-javascript">Authenticate Using Google Sign-In with JavaScript</h2>
+<p>You can let your users authenticate with Firebase using their Google Accounts by integrating Google Sign-In into your app. You can integrate Google Sign-In either by using the Firebase SDK to carry out the sign-in flow, or by carrying out the Google Sign-In flow manually and passing the resulting ID token to Firebase.</p>
+<h2 id="before-you---begin">Before you   begin</h2>
+<ol>
+<li>Add Firebase to your JavaScript project.</li>
+<li>Enable Google Sign-In in the Firebase console:</li>
+</ol>
+<ul>
+<li>In the Firebase console, open the Auth section.</li>
+<li>On the Sign in method tab, enable the Google sign-in method and click Save.</li>
+</ul>
+<h2 id="handle-the-sign-in-flow-with-the-firebase-sdk">Handle the sign-in flow with the Firebase SDK</h2>
+<p>If you are building a web app, the easiest way to authenticate your users with Firebase using their Google Accounts is to handle the sign-in flow with the Firebase JavaScript SDK. (If you want to authenticate a user in Node.js or other non-browser environment, you must handle the sign-in flow manually.)</p>
+<p>To handle the sign-in flow with the Firebase JavaScript SDK, follow these steps:</p>
+<ol>
+<li>Create an instance of the Google provider object:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> provider <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> firebase.auth.GoogleAuthProvider();
+</code></pre></div><ol start="2">
+<li>Optional: Specify additional OAuth 2.0 scopes that you want to request from the authentication provider. To add a scope, call addScope. For example:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">provider.addScope(<span style="color:#f1fa8c">&#39;https://www.googleapis.com/auth/contacts.readonly&#39;</span>);
+</code></pre></div><ol start="3">
+<li>See the authentication provider documentation.
+Optional: To localize the provider&rsquo;s OAuth flow to the user&rsquo;s preferred language without explicitly passing the relevant custom OAuth parameters, update the language code on the Auth instance before starting the OAuth flow. For example:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.auth().languageCode <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;pt&#39;</span>;
+<span style="color:#6272a4">// To apply the default browser preference instead of explicitly setting it.
+</span><span style="color:#6272a4">// firebase.auth().useDeviceLanguage();
+</span></code></pre></div><ol start="4">
+<li>Optional: Specify additional custom OAuth provider parameters that you want to send with the OAuth request. To add a custom parameter, call setCustomParameters on the initialized provider with an object containing the key as specified by the OAuth provider documentation and the corresponding value. For example:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">provider.setCustomParameters({
+  <span style="color:#f1fa8c">&#39;login_hint&#39;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;user@example.com&#39;</span>
+});
+</code></pre></div><p>Reserved required OAuth parameters are not allowed and will be ignored. See the authentication provider reference for more details.</p>
+<ol start="5">
+<li>Authenticate with Firebase using the Google provider object. You can prompt your users to sign in with their Google Accounts either by opening a pop-up window or by redirecting to the sign-in page. The redirect method is preferred on mobile devices.
+To sign in with a pop-up window, call signInWithPopup:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.auth().signInWithPopup(provider).then(<span style="color:#8be9fd;font-style:italic">function</span>(result) {
+  <span style="color:#6272a4">// This gives you a Google Access Token. You can use it to access the Google API.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> token <span style="color:#ff79c6">=</span> result.credential.accessToken;
+  <span style="color:#6272a4">// The signed-in user info.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> user <span style="color:#ff79c6">=</span> result.user;
+  <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>}).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+  <span style="color:#6272a4">// Handle Errors here.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> errorCode <span style="color:#ff79c6">=</span> error.code;
+  <span style="color:#8be9fd;font-style:italic">var</span> errorMessage <span style="color:#ff79c6">=</span> error.message;
+  <span style="color:#6272a4">// The email of the user&#39;s account used.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> email <span style="color:#ff79c6">=</span> error.email;
+  <span style="color:#6272a4">// The firebase.auth.AuthCredential type that was used.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> credential <span style="color:#ff79c6">=</span> error.credential;
+  <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>});
+</code></pre></div><p>Also notice that you can retrieve the Google provider&rsquo;s OAuth token which can be used to fetch additional data using the Google APIs.
+This is also where you can catch and handle errors. For a list of error codes have a look at the Auth Reference Docs.</p>
+<ul>
+<li>To sign in by redirecting to the sign-in page, call signInWithRedirect:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.auth().signInWithRedirect(provider);
+</code></pre></div><p>Then, you can also retrieve the Google provider&rsquo;s OAuth token by calling getRedirectResult when your page loads:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.auth().getRedirectResult().then(<span style="color:#8be9fd;font-style:italic">function</span>(result) {
+  <span style="color:#ff79c6">if</span> (result.credential) {
+    <span style="color:#6272a4">// This gives you a Google Access Token. You can use it to access the Google API.
+</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd;font-style:italic">var</span> token <span style="color:#ff79c6">=</span> result.credential.accessToken;
+    <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>  }
+  <span style="color:#6272a4">// The signed-in user info.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> user <span style="color:#ff79c6">=</span> result.user;
+}).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+  <span style="color:#6272a4">// Handle Errors here.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> errorCode <span style="color:#ff79c6">=</span> error.code;
+  <span style="color:#8be9fd;font-style:italic">var</span> errorMessage <span style="color:#ff79c6">=</span> error.message;
+  <span style="color:#6272a4">// The email of the user&#39;s account used.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> email <span style="color:#ff79c6">=</span> error.email;
+  <span style="color:#6272a4">// The firebase.auth.AuthCredential type that was used.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">var</span> credential <span style="color:#ff79c6">=</span> error.credential;
+  <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>});
+</code></pre></div><p>This is also where you can catch and handle errors. For a list of error codes have a look at the Auth Reference Docs. You can find all of the providers here.</p>
+<p><img src="/uploads/20200807_01.gif" alt="Authentication Providers"></p>
+<p>Alright! Now we know how we can authenticate with firebase, Now, Let&rsquo;s explore how we can secure our Firestore and Realtime databases.</p>
+<h2 id="signing-out">Signing Out</h2>
+<p>We all need a sign out button and it&rsquo;s very simple, just use this code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.auth().signOut().then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+  <span style="color:#6272a4">// Sign-out successful.
+</span><span style="color:#6272a4"></span>}).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+  <span style="color:#6272a4">// An error happened.
+</span><span style="color:#6272a4"></span>});
+</code></pre></div><h2 id="understand-firebase-realtime-database-rules">Understand Firebase Realtime Database Rules</h2>
+<p>Firebase Realtime Database Rules determine who has read and write access to your database, how your data is structured, and what indexes exist. These rules live on the Firebase servers and are enforced automatically at all times. Every read and write request will only be completed if your rules allow it. By default, your rules do not allow anyone access to your database. This is to protect your database from abuse until you have time to customize your rules or set up authentication.</p>
+<p>Realtime Database Rules have a JavaScript-like syntax and come in four types:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Rule</th>
+<th style="text-align:left">Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">.read</td>
+<td style="text-align:left">Describes if and when data is allowed to be read by users.</td>
+</tr>
+<tr>
+<td style="text-align:left">.write</td>
+<td style="text-align:left">Describes if and when data is allowed to be written.</td>
+</tr>
+<tr>
+<td style="text-align:left">.validate</td>
+<td style="text-align:left">Defines what a correctly formatted value will look like, whether it has child attributes, and the data type.</td>
+</tr>
+<tr>
+<td style="text-align:left">.indexOn</td>
+<td style="text-align:left">Specifies a child to index to support ordering and querying.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="realtime-database-security-overview">Realtime Database security overview</h2>
+<p>The Firebase Realtime Database provides a full set of tools for managing the security of your app. These tools make it easy to authenticate your users, enforce user permissions, and validate inputs.</p>
+<p>Firebase-powered apps run more client-side code than those with many other technology stacks. Therefore, the way we approach security may be a bit different than you&rsquo;re used to.</p>
+<h2 id="authentication">Authentication</h2>
+<p>A common first step in securing your app is identifying your users. This process is called authentication. You can use Firebase Authentication to have users to sign in to your app. Firebase Authentication includes drop-in support for common authentication methods like Google and Facebook, as well as email and password login, anonymous login, and more.</p>
+<p>User identity is an important security concept. Different users have different data, and sometimes they have different capabilities. For example, in a chat application, each message is associated with the user that created it. Users may also be able to delete their own messages, but not messages posted by other users.</p>
+<h2 id="authorization">Authorization</h2>
+<p>Identifying your user is only part of security. Once you know who they are, you need a way to control their access to data in your database. Realtime Database Rules allow you to control access for each user. For example, here&rsquo;s a set of security rules that allows anyone to read the path /foo/, but no one to write to it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#f1fa8c">&#34;rules&#34;</span><span style="color:#ff79c6">:</span> {
+    <span style="color:#f1fa8c">&#34;foo&#34;</span><span style="color:#ff79c6">:</span> {
+      <span style="color:#f1fa8c">&#34;.read&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+      <span style="color:#f1fa8c">&#34;.write&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>
+    }
+  }
+}
+</code></pre></div><p>.read and .write rules cascade, so this ruleset grants read access to any data at path /foo/ as well as any deeper paths such as /foo/bar/baz. Note that .read and .write rules shallower in the database override deeper rules, so read access to /foo/bar/baz would still be granted in this example even if a rule at the path /foo/bar/baz evaluated to false.</p>
+<p>The Realtime Database Rules include built-in variables and functions that allow you to refer to other paths, server-side timestamps, authentication information, and more. Here&rsquo;s an example of a rule that grants write access for authenticated users to <code>/users/&lt;uid&gt;/</code>, where <code>&lt;uid&gt;</code> is the ID of the user obtained through Firebase Authentication.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#f1fa8c">&#34;rules&#34;</span><span style="color:#ff79c6">:</span> {
+    <span style="color:#f1fa8c">&#34;users&#34;</span><span style="color:#ff79c6">:</span> {
+      <span style="color:#f1fa8c">&#34;$uid&#34;</span><span style="color:#ff79c6">:</span> {
+        <span style="color:#f1fa8c">&#34;.write&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;$uid === auth.uid&#34;</span>
+      }
+    }
+  }
+}
+</code></pre></div><h2 id="data-validation">Data validation</h2>
+<p>The Firebase Realtime Database is schemaless. This makes it easy to change things as you develop, but once your app is ready to distribute, it&rsquo;s important for data to stay consistent. The rules language includes a .validate rule which allows you to apply validation logic using the same expressions used for .read and .write rules. The only difference is that validation rules do not cascade, so all relevant validation rules must evaluate to true in order for the write to be allowed.</p>
+<p>These rule enforce that data written to /foo/ must be a string less than 100 characters:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#f1fa8c">&#34;rules&#34;</span><span style="color:#ff79c6">:</span> {
+    <span style="color:#f1fa8c">&#34;foo&#34;</span><span style="color:#ff79c6">:</span> {
+      <span style="color:#f1fa8c">&#34;.validate&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;newData.isString() &amp;&amp; newData.val().length &lt; 100&#34;</span>
+    }
+  }
+}
+</code></pre></div><p>Validation rules have access to all of the same built-in functions and variables as .read and .write rules. You can use these to create validation rules that are aware of data elsewhere in your database, your user&rsquo;s identity, server time, and much more.</p>
+<h2 id="defining-database-indexes">Defining database indexes</h2>
+<p>The Firebase Realtime Database allows ordering and querying data. For small data sizes, the database supports ad hoc querying, so indexes are generally not required during development. Before launching your app though, it is important to specify indexes for any queries you have to ensure they continue to work as your app grows.</p>
+<p>Indexes are specified using the .indexOn rule. Here is an example index declaration that would index the height and length fields for a list of dinosaurs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#f1fa8c">&#34;rules&#34;</span><span style="color:#ff79c6">:</span> {
+    <span style="color:#f1fa8c">&#34;dinosaurs&#34;</span><span style="color:#ff79c6">:</span> {
+      <span style="color:#f1fa8c">&#34;.indexOn&#34;</span><span style="color:#ff79c6">:</span> [<span style="color:#f1fa8c">&#34;height&#34;</span>, <span style="color:#f1fa8c">&#34;length&#34;</span>]
+    }
+  }
+}
+</code></pre></div><h2 id="get-started-with-cloud-firestore-security-rules">Get started with Cloud Firestore Security Rules</h2>
+<p>With Cloud Firestore Security Rules, you can focus on building a great user experience without having to manage infrastructure or write server-side authentication and authorization code.</p>
+<p>Security rules provide access control and data validation in a simple yet expressive format. To build user-based and role-based access systems that keep your users' data safe, you need to use Firebase Authentication with Cloud Firestore Security Rules.</p>
+<h2 id="security-rules-version-2">Security rules version 2</h2>
+<p>As of May 2019, version 2 of the Cloud Firestore security rules is now available. Version 2 of the rules changes the behavior of recursive wildcards {name=**}. You must use version 2 if you plan to use collection group queries. You must opt-in to version 2 by making rules_version = &lsquo;2&rsquo;; the first line in your security rules:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">rules_version <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;2&#39;</span>;
+service cloud.firestore {
+  match <span style="color:#ff79c6">/</span>databases<span style="color:#ff79c6">/</span>{database}<span style="color:#ff79c6">/</span>documents {
+</code></pre></div><h2 id="writing-rules">Writing rules</h2>
+<p>All Cloud Firestore Security Rules consist of match statements, which identify documents in your database, and allow expressions, which control access to those documents:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">service cloud.firestore {
+  match <span style="color:#ff79c6">/</span>databases<span style="color:#ff79c6">/</span>{database}<span style="color:#ff79c6">/</span>documents {
+    match <span style="color:#ff79c6">/&lt;</span>some_path<span style="color:#ff79c6">&gt;</span>/ {
+      allow read, write<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">&lt;</span>some_condition<span style="color:#ff79c6">&gt;</span>;
+    }
+  }
+}
+</code></pre></div><p>Every database request from a Cloud Firestore mobile/web client library is evaluated against your security rules before reading or writing any data. If the rules deny access to any of the specified document paths, the entire request fails.</p>
+<p>Below are some examples of basic rule sets. While these rules are valid, they are not recommended for production applications:</p>
+<h3 id="auth-required">Auth Required</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Allow read/write access on all documents to any user signed in to the application
+</span><span style="color:#6272a4"></span>service cloud.firestore {
+  match <span style="color:#ff79c6">/</span>databases<span style="color:#ff79c6">/</span>{database}<span style="color:#ff79c6">/</span>documents {
+    match <span style="color:#ff79c6">/</span>{<span style="color:#8be9fd;font-style:italic">document</span><span style="color:#ff79c6">=**</span>} {
+      allow read, write<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">if</span> request.auth <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">null</span>;
+    }
+  }
+}
+</code></pre></div><h3 id="deny-all">Deny all</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Deny read/write access to all users under any conditions
+</span><span style="color:#6272a4"></span>service cloud.firestore {
+  match <span style="color:#ff79c6">/</span>databases<span style="color:#ff79c6">/</span>{database}<span style="color:#ff79c6">/</span>documents {
+    match <span style="color:#ff79c6">/</span>{<span style="color:#8be9fd;font-style:italic">document</span><span style="color:#ff79c6">=**</span>} {
+      allow read, write<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">false</span>;
+    }
+  }
+}
+</code></pre></div><h3 id="allow-all">Allow All</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Allow read/write access to all users under any conditions
+</span><span style="color:#6272a4">// Warning: **NEVER** use this rule set in production; it allows
+</span><span style="color:#6272a4">// anyone to overwrite your entire database.
+</span><span style="color:#6272a4"></span>service cloud.firestore {
+  match <span style="color:#ff79c6">/</span>databases<span style="color:#ff79c6">/</span>{database}<span style="color:#ff79c6">/</span>documents {
+    match <span style="color:#ff79c6">/</span>{<span style="color:#8be9fd;font-style:italic">document</span><span style="color:#ff79c6">=**</span>} {
+      allow read, write<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">true</span>;
+    }
+  }
+}
+</code></pre></div><p>The {document=**} path used in the examples above matches any document in the entire database. Continue on to the guide for structuring security rules to learn how to match specific data paths and work with hierarchical data.</p>
+<h2 id="testing-rules">Testing rules</h2>
+<p>Cloud Firestore provides a rules simulator that you can use to test your ruleset. You can access the simulator from the Rules tab in the Cloud Firestore section of the Firebase console.</p>
+<p>The rules simulator lets you simulate authenticated and unauthenticated reads, writes, and deletes. When you simulate an authenticated request, you can build and preview authentication tokens from various providers. Simulated requests run against the ruleset in your editor, not your currently deployed ruleset.</p>
+<h2 id="deploying-rules">Deploying rules</h2>
+<p>Before you can start using Cloud Firestore from your mobile app, you will need to deploy security rules. You can deploy rules in the Firebase console or using the Firebase CLI.</p>
+<p>Updates to Cloud Firestore Security Rules can take up to a minute to affect new queries and listeners. However, it can take up to 10 minutes to fully propagate the changes and affect any active listeners.</p>
+<h2 id="use-the-firebase-console">Use the Firebase console</h2>
+<p>To set up and deploy your first set of rules, open the Rules tab in the Cloud Firestore section of the Firebase console.</p>
+<p>Write your rules in the online editor, then click Publish.</p>
+<p>And That&rsquo;s what we need to know about! Use these wisely and you&rsquo;ll end-up with a super cool project overall!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Firebase is a complete BaaS Solution for modern web developers. It also supports so many platforms but we&rsquo;re considering web SDKs for now.</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

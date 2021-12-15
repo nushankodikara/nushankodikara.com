@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    Firebase Cloud Firestore - Nushan Kodikara
+  </title>
+  <meta name="description" content="Complete Guide on Firebase Cloud Firestore Database" /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="Firebase Cloud Firestore" />
+<meta property="og:description" content="Complete Guide on Firebase Cloud Firestore Database" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/firebase-cloud-firestore/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-08-06T06:00:00+05:30" />
+<meta property="article:modified_time" content="2020-08-06T06:00:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Firebase Cloud Firestore"/>
+<meta name="twitter:description" content="Complete Guide on Firebase Cloud Firestore Database"/>
+
+  <meta itemprop="name" content="Firebase Cloud Firestore">
+<meta itemprop="description" content="Complete Guide on Firebase Cloud Firestore Database"><meta itemprop="datePublished" content="2020-08-06T06:00:00+05:30" />
+<meta itemprop="dateModified" content="2020-08-06T06:00:00+05:30" />
+<meta itemprop="wordCount" content="4182">
+<meta itemprop="keywords" content="Mobile Development,web Development,Firebase," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/Q1p7bh3SHj8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fHNlcnZlcnx8MHx8fHwxNjM5NTY0ODU4&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    August 6, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Firebase Cloud Firestore</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    August 6, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      20&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      4182&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>Use our flexible, scalable NoSQL cloud database to store and sync data for client- and server-side development.</p>
+<p>Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform, Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity, Cloud Firestore also offers seamless integration with other Firebase and Google Cloud Platform products, including Cloud Functions.</p>
+<h2 id="key-capabilities">Key capabilities</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">capability</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Flexibility</td>
+<td style="text-align:left">The Cloud Firestore data model supports flexible, hierarchical data structures. Store your data in documents, organized into collections. Documents can contain complex nested objects in addition to subcollections.</td>
+</tr>
+<tr>
+<td style="text-align:left">Expressive querying</td>
+<td style="text-align:left">In Cloud Firestore, you can use queries to retrieve individual, specific documents or to retrieve all the documents in a collection that match your query parameters. Your queries can include multiple, chained filters and combine filtering and sorting. They&rsquo;re also indexed by default, so query performance is proportional to the size of your result set, not your data set.</td>
+</tr>
+<tr>
+<td style="text-align:left">Realtime updates</td>
+<td style="text-align:left">Like Realtime Database, Cloud Firestore uses data synchronization to update data on any connected device. However, it&rsquo;s also designed to make simple, one-time fetch queries efficiently.</td>
+</tr>
+<tr>
+<td style="text-align:left">Offline support</td>
+<td style="text-align:left">Cloud Firestore caches data that your app is actively using, so the app can write, read, listen to, and query data even if the device is offline. When the device comes back online, Cloud Firestore synchronizes any local changes back to Cloud Firestore.</td>
+</tr>
+<tr>
+<td style="text-align:left">Designed to scale</td>
+<td style="text-align:left">Cloud Firestore brings you the best of Google Cloud Platform&rsquo;s powerful infrastructure: automatic multi-region data replication, strong consistency guarantees, atomic batch operations, and real transaction support. We&rsquo;ve designed Cloud Firestore to handle the toughest database workloads from the world&rsquo;s biggest apps.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-does-it-work">How does it work</h2>
+<p>Cloud Firestore is a cloud-hosted, NoSQL database that your iOS, Android, and web apps can access directly via native SDKs. Cloud Firestore is also available in native Node.js, Java, Python, Unity, C++ and Go SDKs, in addition to REST and RPC APIs.</p>
+<p>Following Cloud Firestore&rsquo;s NoSQL data model, you store data in documents that contain fields mapping to values. These documents are stored in collections, which are containers for your documents that you can use to organize your data and build queries. Documents support many different data types, from simple strings and numbers, to complex, nested objects. You can also create subcollections within documents and build hierarchical data structures that scale as your database grows. The Cloud Firestore data model supports whatever data structure works best for your app.</p>
+<p>Additionally, querying in Cloud Firestore is expressive, efficient, and flexible. Create shallow queries to retrieve data at the document level without needing to retrieve the entire collection, or any nested subcollections. Add sorting, filtering, and limits to your queries or cursors to paginate your results. To keep data in your apps current, without retrieving your entire database each time an update happens, add realtime listeners. Adding realtime listeners to your app notifies you with a data snapshot whenever the data your client apps are listening to changes, retrieving only the new changes.</p>
+<p>Protect access to your data in Cloud Firestore with Firebase Authentication and Cloud Firestore Security Rules for Android, iOS, and JavaScript, or Identity and Access Management (IAM) for server-side languages.</p>
+<h2 id="get-started-with-cloud-firestore">Get started with Cloud Firestore</h2>
+<p>This quickstart shows you how to set up Cloud Firestore, add data, then view the data you just added in the Firebase console.</p>
+<h2 id="create-a-cloud-firestore-database">Create a Cloud Firestore database</h2>
+<ol>
+<li>
+<p>If you haven&rsquo;t already, create a Firebase project: In the Firebase console, click Add project, then follow the on-screen instructions to create a Firebase project or to add Firebase services to an existing GCP project.</p>
+</li>
+<li>
+<p>Navigate to the Database section of the Firebase console. You&rsquo;ll be prompted to select an existing Firebase project. Follow the database creation workflow.</p>
+</li>
+<li>
+<p>Select a starting mode for your Cloud Firestore Security Rules:</p>
+</li>
+</ol>
+<h3 id="test-mode">Test mode</h3>
+<p>Good for getting started with the mobile and web client libraries, but allows anyone to read and overwrite your data. After testing, make sure to review the Secure your data section.</p>
+<p>To get started with the web, iOS, or Android SDK, select test mode.</p>
+<h3 id="locked-mode">Locked mode</h3>
+<p>Denies all reads and writes from mobile and web clients. Your authenticated application servers (C#, Go, Java, Node.js, PHP, Python, or Ruby) can still access your database.</p>
+<p>To get started with the C#, Go, Java, Node.js, PHP, Python, or Ruby server client library, select locked mode.</p>
+<ol start="4">
+<li>Select a location for your database.</li>
+</ol>
+<ul>
+<li>
+<p>This location setting is your project&rsquo;s default Google Cloud Platform (GCP) resource location. Note that this location will be used for GCP services in your project that require a location setting, specifically, your default Cloud Storage bucket and your App Engine app (which is required if you use Cloud Scheduler).</p>
+</li>
+<li>
+<p>If you aren&rsquo;t able to select a location, then your project already has a default GCP resource location. It was set either during project creation or when setting up another service that requires a location setting.</p>
+</li>
+</ul>
+<ol start="5">
+<li>Click Done.</li>
+</ol>
+<p>I&rsquo;m skipping the first step because we did it in the previous post. And continuing from there, It&rsquo;s not much harder just create a new project.</p>
+<p><img src="/uploads/20200806_01.gif" alt="Creating Database"></p>
+<h2 id="set-up-your-development-environment">Set up your development environment</h2>
+<p>Add the required dependencies and client libraries to your app. In this case, we need firestore library and the app initialization library.</p>
+<ol>
+<li>Follow the instructions to add Firebase to your Web app.</li>
+<li>Add the Firebase and Cloud Firestore libraries to your app:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&lt;</span>script src<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js&#34;</span><span style="color:#ff79c6">&gt;&lt;</span>/script&gt;
+<span style="color:#ff79c6">&lt;</span>script src<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js&#34;</span><span style="color:#ff79c6">&gt;&lt;</span>/script&gt;
+</code></pre></div><p>Now Let&rsquo;s Initialize the app with our database. To do this, You have to add the initialization code from your console.</p>
+<p><img src="/uploads/20200806_02.gif" alt="Initializing App"></p>
+<h2 id="add-data">Add data</h2>
+<p>Cloud Firestore stores data in Documents, which are stored in Collections. Cloud Firestore creates collections and documents implicitly the first time you add data to the document. You do not need to explicitly create collections or documents.</p>
+<p>Create a new collection and a document using the following example code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;users&#34;</span>).add({
+    first<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Ada&#34;</span>,
+    last<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Lovelace&#34;</span>,
+    born<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1815</span>
+})
+.then(<span style="color:#8be9fd;font-style:italic">function</span>(docRef) {
+    console.log(<span style="color:#f1fa8c">&#34;Document written with ID: &#34;</span>, docRef.id);
+})
+.<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.error(<span style="color:#f1fa8c">&#34;Error adding document: &#34;</span>, error);
+});
+</code></pre></div><p>Now add another document to the users collection. Notice that this document includes a key-value pair (middle name) that does not appear in the first document. Documents in a collection can contain different sets of information.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Add a second document with a generated ID.
+</span><span style="color:#6272a4"></span>db.collection(<span style="color:#f1fa8c">&#34;users&#34;</span>).add({
+    first<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Alan&#34;</span>,
+    middle<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Mathison&#34;</span>,
+    last<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Turing&#34;</span>,
+    born<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1912</span>
+})
+.then(<span style="color:#8be9fd;font-style:italic">function</span>(docRef) {
+    console.log(<span style="color:#f1fa8c">&#34;Document written with ID: &#34;</span>, docRef.id);
+})
+.<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.error(<span style="color:#f1fa8c">&#34;Error adding document: &#34;</span>, error);
+});
+</code></pre></div><h2 id="read-data">Read data</h2>
+<p>To quickly verify that you&rsquo;ve added data to Cloud Firestore, use the data viewer in the Firebase console.</p>
+<p>You can also use the &ldquo;get&rdquo; method to retrieve the entire collection.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;users&#34;</span>).get().then((querySnapshot) =&gt; {
+    querySnapshot.forEach((doc) =&gt; {
+        console.log(<span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>doc.id<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c"> =&gt; </span><span style="color:#f1fa8c">${</span>doc.data()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>);
+    });
+});
+</code></pre></div><h2 id="secure-your-data">Secure your data</h2>
+<p>If you&rsquo;re using the Web, Android, or iOS SDK, use Firebase Authentication and Cloud Firestore Security Rules to secure your data in Cloud Firestore.</p>
+<p>Here are some basic rule sets you can use to get started. You can modify your security rules in the Rules tab of the console. (We&rsquo;re Discussing Security in detail on another day!)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Allow read/write access on all documents to any user signed in to the application
+</span><span style="color:#6272a4"></span>service cloud.firestore {
+  match <span style="color:#ff79c6">/</span>databases<span style="color:#ff79c6">/</span>{database}<span style="color:#ff79c6">/</span>documents {
+    match <span style="color:#ff79c6">/</span>{<span style="color:#8be9fd;font-style:italic">document</span><span style="color:#ff79c6">=**</span>} {
+      allow read, write<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">if</span> request.auth <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">null</span>;
+    }
+  }
+}
+</code></pre></div><p>If you&rsquo;re using one of the server SDKs, use Identity and Access Management (IAM) to secure your data in Cloud Firestore.</p>
+<p>Let&rsquo;s dive deeper into the above topics.</p>
+<h2 id="adding-data-explanation">Adding Data Explanation</h2>
+<p>There are several ways to write data to Cloud Firestore:</p>
+<ul>
+<li>Set the data of a document within a collection, explicitly specifying a document identifier.</li>
+<li>Add a new document to a collection. In this case, Cloud Firestore automatically generates the document identifier.</li>
+<li>Create an empty document with an automatically generated identifier, and assign data to it later.</li>
+</ul>
+<p>This guide explains how to use the set, add, or update individual documents in Cloud Firestore. If you want to write data in bulk, see Transactions and Batched Writes.</p>
+<h2 id="set-a-document">Set a document</h2>
+<p>To create or overwrite a single document, use the set() method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Add a new document in collection &#34;cities&#34;
+</span><span style="color:#6272a4"></span>db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;LA&#34;</span>).set({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Los Angeles&#34;</span>,
+    state<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;CA&#34;</span>,
+    country<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;USA&#34;</span>
+})
+.then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+    console.log(<span style="color:#f1fa8c">&#34;Document successfully written!&#34;</span>);
+})
+.<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.error(<span style="color:#f1fa8c">&#34;Error writing document: &#34;</span>, error);
+});
+</code></pre></div><p>If the document does not exist, it will be created. If the document does exist, its contents will be overwritten with the newly provided data, unless you specify that the data should be merged into the existing document, as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> cityRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#39;cities&#39;</span>).doc(<span style="color:#f1fa8c">&#39;BJ&#39;</span>);
+
+<span style="color:#8be9fd;font-style:italic">var</span> setWithMerge <span style="color:#ff79c6">=</span> cityRef.set({
+    capital<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>
+}, { merge<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span> });
+</code></pre></div><p>If you&rsquo;re not sure whether the document exists, pass the option to merge the new data with any existing document to avoid overwriting entire documents.</p>
+<h2 id="data-types">Data types</h2>
+<p>Cloud Firestore lets you write a variety of data types inside a document, including strings, booleans, numbers, dates, null, and nested arrays and objects. Cloud Firestore always stores numbers as doubles, regardless of what type of number you use in your code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> docData <span style="color:#ff79c6">=</span> {
+    stringExample<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Hello world!&#34;</span>,
+    booleanExample<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+    numberExample<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">3.14159265</span>,
+    dateExample<span style="color:#ff79c6">:</span> firebase.firestore.Timestamp.fromDate(<span style="color:#ff79c6">new</span> <span style="color:#8be9fd;font-style:italic">Date</span>(<span style="color:#f1fa8c">&#34;December 10, 1815&#34;</span>)),
+    arrayExample<span style="color:#ff79c6">:</span> [<span style="color:#bd93f9">5</span>, <span style="color:#ff79c6">true</span>, <span style="color:#f1fa8c">&#34;hello&#34;</span>],
+    nullExample<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>,
+    objectExample<span style="color:#ff79c6">:</span> {
+        a<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">5</span>,
+        b<span style="color:#ff79c6">:</span> {
+            nested<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;foo&#34;</span>
+        }
+    }
+};
+db.collection(<span style="color:#f1fa8c">&#34;data&#34;</span>).doc(<span style="color:#f1fa8c">&#34;one&#34;</span>).set(docData).then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+    console.log(<span style="color:#f1fa8c">&#34;Document successfully written!&#34;</span>);
+});
+</code></pre></div><h2 id="custom-objects">Custom objects</h2>
+<p>Using Map or Dictionary objects to represent your documents is often not very convenient, so Cloud Firestore supports writing documents with custom classes. Cloud Firestore converts the objects to supported data types.</p>
+<p>Using custom classes, you could rewrite the initial example as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">class</span> City {
+    constructor (name, state, country ) {
+        <span style="color:#ff79c6">this</span>.name <span style="color:#ff79c6">=</span> name;
+        <span style="color:#ff79c6">this</span>.state <span style="color:#ff79c6">=</span> state;
+        <span style="color:#ff79c6">this</span>.country <span style="color:#ff79c6">=</span> country;
+    }
+    toString() {
+        <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">this</span>.name <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;, &#39;</span> <span style="color:#ff79c6">+</span> <span style="color:#ff79c6">this</span>.state <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;, &#39;</span> <span style="color:#ff79c6">+</span> <span style="color:#ff79c6">this</span>.country;
+    }
+}
+
+    <span style="color:#6272a4">// Firestore data converter
+</span><span style="color:#6272a4"></span>  cityConverter <span style="color:#ff79c6">=</span> {
+      toFirestore<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span>(city) {
+          <span style="color:#ff79c6">return</span> {
+              name<span style="color:#ff79c6">:</span> city.name,
+              state<span style="color:#ff79c6">:</span> city.state,
+              country<span style="color:#ff79c6">:</span> city.country
+              }
+      },
+      fromFirestore<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span>(snapshot, options){
+          <span style="color:#ff79c6">const</span> data <span style="color:#ff79c6">=</span> snapshot.data(options);
+          <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">new</span> City(data.name, data.state, data.country)
+      }
+  }
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Set with cityConverter
+</span><span style="color:#6272a4"></span>db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;LA&#34;</span>)
+  .withConverter(cityConverter)
+  .set(<span style="color:#ff79c6">new</span> City(<span style="color:#f1fa8c">&#34;Los Angeles&#34;</span>, <span style="color:#f1fa8c">&#34;CA&#34;</span>, <span style="color:#f1fa8c">&#34;USA&#34;</span>));
+</code></pre></div><h2 id="add-a-document">Add a document</h2>
+<p>When you use set() to create a document, you must specify an ID for the document to create. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;new-city-id&#34;</span>).set(data);
+</code></pre></div><p>But sometimes there isn&rsquo;t a meaningful ID for the document, and it&rsquo;s more convenient to let Cloud Firestore auto-generate an ID for you. You can do this by calling add():</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Add a new document with a generated id.
+</span><span style="color:#6272a4"></span>db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).add({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Tokyo&#34;</span>,
+    country<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Japan&#34;</span>
+})
+.then(<span style="color:#8be9fd;font-style:italic">function</span>(docRef) {
+    console.log(<span style="color:#f1fa8c">&#34;Document written with ID: &#34;</span>, docRef.id);
+})
+.<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.error(<span style="color:#f1fa8c">&#34;Error adding document: &#34;</span>, error);
+});
+</code></pre></div><p>In some cases, it can be useful to create a document reference with an auto-generated ID, then use the reference later. For this use case, you can call doc():</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Add a new document with a generated id.
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> newCityRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc();
+
+<span style="color:#6272a4">// later...
+</span><span style="color:#6272a4"></span>newCityRef.set(data);
+</code></pre></div><p>Behind the scenes, .add(&hellip;) and .doc().set(&hellip;) are completely equivalent, so you can use whichever is more convenient.</p>
+<h2 id="update-a-document">Update a document</h2>
+<p>To update some fields of a document without overwriting the entire document, use the update() method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> washingtonRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;DC&#34;</span>);
+
+<span style="color:#6272a4">// Set the &#34;capital&#34; field of the city &#39;DC&#39;
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">return</span> washingtonRef.update({
+    capital<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>
+})
+.then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+    console.log(<span style="color:#f1fa8c">&#34;Document successfully updated!&#34;</span>);
+})
+.<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    <span style="color:#6272a4">// The document probably doesn&#39;t exist.
+</span><span style="color:#6272a4"></span>    console.error(<span style="color:#f1fa8c">&#34;Error updating document: &#34;</span>, error);
+});
+</code></pre></div><h2 id="server-timestamp">Server Timestamp</h2>
+<p>You can set a field in your document to a server timestamp which tracks when the server receives the update.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> docRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#39;objects&#39;</span>).doc(<span style="color:#f1fa8c">&#39;some-id&#39;</span>);
+
+<span style="color:#6272a4">// Update the timestamp field with the value from the server
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> updateTimestamp <span style="color:#ff79c6">=</span> docRef.update({
+    timestamp<span style="color:#ff79c6">:</span> firebase.firestore.FieldValue.serverTimestamp()
+});
+</code></pre></div><h2 id="update-fields-in-nested-objects">Update fields in nested objects</h2>
+<p>If your document contains nested objects, you can use &ldquo;dot notation&rdquo; to reference nested fields within the document when you call update():</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Create an initial document to update.
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> frankDocRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;users&#34;</span>).doc(<span style="color:#f1fa8c">&#34;frank&#34;</span>);
+frankDocRef.set({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Frank&#34;</span>,
+    favorites<span style="color:#ff79c6">:</span> { food<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Pizza&#34;</span>, color<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Blue&#34;</span>, subject<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;recess&#34;</span> },
+    age<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">12</span>
+});
+
+<span style="color:#6272a4">// To update age and favorite color:
+</span><span style="color:#6272a4"></span>db.collection(<span style="color:#f1fa8c">&#34;users&#34;</span>).doc(<span style="color:#f1fa8c">&#34;frank&#34;</span>).update({
+    <span style="color:#f1fa8c">&#34;age&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">13</span>,
+    <span style="color:#f1fa8c">&#34;favorites.color&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Red&#34;</span>
+})
+.then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+    console.log(<span style="color:#f1fa8c">&#34;Document successfully updated!&#34;</span>);
+});
+</code></pre></div><p>Dot notation allows you to update a single nested field without overwriting other nested field. If you update a nested field without dot notation, you will overwrite the entire map field, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Create our initial doc
+</span><span style="color:#6272a4"></span>db.collection(<span style="color:#f1fa8c">&#34;users&#34;</span>).doc(<span style="color:#f1fa8c">&#34;frank&#34;</span>).set({
+  name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Frank&#34;</span>,
+  favorites<span style="color:#ff79c6">:</span> {
+    food<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Pizza&#34;</span>,
+    color<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Blue&#34;</span>,
+    subject<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Recess&#34;</span>
+  },
+  age<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">12</span>
+}).then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+  console.log(<span style="color:#f1fa8c">&#34;Frank created&#34;</span>);
+});
+
+<span style="color:#6272a4">// Update the doc without using dot notation.
+</span><span style="color:#6272a4">// Notice the map value for favorites.
+</span><span style="color:#6272a4"></span>db.collection(<span style="color:#f1fa8c">&#34;users&#34;</span>).doc(<span style="color:#f1fa8c">&#34;frank&#34;</span>).update({
+  favorites<span style="color:#ff79c6">:</span> {
+    food<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Ice Cream&#34;</span>
+  }
+}).then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+  console.log(<span style="color:#f1fa8c">&#34;Frank food updated&#34;</span>);
+});
+
+<span style="color:#6272a4">/*
+</span><span style="color:#6272a4">Ending State, favorite.color and favorite.subject are no longer present:
+</span><span style="color:#6272a4">/users
+</span><span style="color:#6272a4">    /frank
+</span><span style="color:#6272a4">        {
+</span><span style="color:#6272a4">            name: &#34;Frank&#34;,
+</span><span style="color:#6272a4">            favorites: {
+</span><span style="color:#6272a4">                food: &#34;Ice Cream&#34;,
+</span><span style="color:#6272a4">            },
+</span><span style="color:#6272a4">            age: 12
+</span><span style="color:#6272a4">        }
+</span><span style="color:#6272a4"> */</span>
+</code></pre></div><h2 id="update-elements-in-an-array">Update elements in an array</h2>
+<p>If your document contains an array field, you can use arrayUnion() and arrayRemove() to add and remove elements. arrayUnion() adds elements to an array but only elements not already present. arrayRemove() removes all instances of each given element.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> washingtonRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;DC&#34;</span>);
+
+<span style="color:#6272a4">// Atomically add a new region to the &#34;regions&#34; array field.
+</span><span style="color:#6272a4"></span>washingtonRef.update({
+    regions<span style="color:#ff79c6">:</span> firebase.firestore.FieldValue.arrayUnion(<span style="color:#f1fa8c">&#34;greater_virginia&#34;</span>)
+});
+
+<span style="color:#6272a4">// Atomically remove a region from the &#34;regions&#34; array field.
+</span><span style="color:#6272a4"></span>washingtonRef.update({
+    regions<span style="color:#ff79c6">:</span> firebase.firestore.FieldValue.arrayRemove(<span style="color:#f1fa8c">&#34;east_coast&#34;</span>)
+});
+</code></pre></div><h2 id="increment-a-numeric-value">Increment a numeric value</h2>
+<p>You can increment or decrement a numeric field value as shown in the following example. An increment operation increases or decreases the current value of a field by the given amount. If the field does not exist or if the current field value is not a numeric value, the operation sets the field to the given value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> washingtonRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#39;cities&#39;</span>).doc(<span style="color:#f1fa8c">&#39;DC&#39;</span>);
+
+<span style="color:#6272a4">// Atomically increment the population of the city by 50.
+</span><span style="color:#6272a4"></span>washingtonRef.update({
+    population<span style="color:#ff79c6">:</span> firebase.firestore.FieldValue.increment(<span style="color:#bd93f9">50</span>)
+});
+
+</code></pre></div><p>Increment operations are useful for implementing counters, but keep in mind that you can update a single document only once per second.</p>
+<h2 id="delete-data-from-cloud-firestore">Delete data from Cloud Firestore</h2>
+<p>The following examples demonstrate how to delete documents, fields, and collections.</p>
+<h2 id="delete-documents">Delete documents</h2>
+<p>To delete a document, use the delete() method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;DC&#34;</span>).<span style="color:#ff79c6">delete</span>().then(<span style="color:#8be9fd;font-style:italic">function</span>() {
+    console.log(<span style="color:#f1fa8c">&#34;Document successfully deleted!&#34;</span>);
+}).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.error(<span style="color:#f1fa8c">&#34;Error removing document: &#34;</span>, error);
+});
+</code></pre></div><p>When you delete a document, Cloud Firestore does not automatically delete the documents within its subcollections. You can still access the subcollection documents by reference. For example, you can access the document at path /mycoll/mydoc/mysubcoll/mysubdoc even if you delete the ancestor document at /mycoll/mydoc.</p>
+<p>Non-existent ancestor documents appear in the console, but they do not appear in query results and snapshots.</p>
+<p>If you want to delete a document and all the documents within its subcollections, you must do so manually. For more information, see Delete Collections.</p>
+<h2 id="delete-fields">Delete fields</h2>
+<p>To delete specific fields from a document, use the FieldValue.delete() method when you update a document:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> cityRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#39;cities&#39;</span>).doc(<span style="color:#f1fa8c">&#39;BJ&#39;</span>);
+
+<span style="color:#6272a4">// Remove the &#39;capital&#39; field from the document
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> removeCapital <span style="color:#ff79c6">=</span> cityRef.update({
+    capital<span style="color:#ff79c6">:</span> firebase.firestore.FieldValue.<span style="color:#ff79c6">delete</span>()
+});
+</code></pre></div><h3 id="delete-collections">Delete collections</h3>
+<p>To delete an entire collection or subcollection in Cloud Firestore, retrieve all the documents within the collection or subcollection and delete them. If you have larger collections, you may want to delete the documents in smaller batches to avoid out-of-memory errors. Repeat the process until you&rsquo;ve deleted the entire collection or subcollection.</p>
+<p>Deleting a collection requires coordinating an unbounded number of individual delete requests. If you need to delete entire collections, do so only from a trusted server environment. While it is possible to delete a collection from a mobile/web client, doing so has negative security and performance implications.</p>
+<p>The snippets below are somewhat simplified and do not deal with error handling, security, deleting subcollections, or maximizing performance. To learn more about one recommended approach to deleting collections in production, see Deleting Collections and Subcollections.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Deleting collections from a Web client is not recommended.
+</span></code></pre></div><h2 id="get-data-with-cloud-firestore">Get data with Cloud Firestore</h2>
+<p>There are two ways to retrieve data stored in Cloud Firestore. Either of these methods can be used with documents, collections of documents, or the results of queries:</p>
+<ul>
+<li>Call a method to get the data.</li>
+<li>Set a listener to receive data-change events.</li>
+</ul>
+<p>When you set a listener, Cloud Firestore sends your listener an initial snapshot of the data, and then another snapshot each time the document changes.</p>
+<h2 id="example-data">Example data</h2>
+<p>To get started, write some data about cities so we can look at different ways to read it back:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> citiesRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>);
+
+citiesRef.doc(<span style="color:#f1fa8c">&#34;SF&#34;</span>).set({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;San Francisco&#34;</span>, state<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;CA&#34;</span>, country<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;USA&#34;</span>,
+    capital<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>, population<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">860000</span>,
+    regions<span style="color:#ff79c6">:</span> [<span style="color:#f1fa8c">&#34;west_coast&#34;</span>, <span style="color:#f1fa8c">&#34;norcal&#34;</span>] });
+citiesRef.doc(<span style="color:#f1fa8c">&#34;LA&#34;</span>).set({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Los Angeles&#34;</span>, state<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;CA&#34;</span>, country<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;USA&#34;</span>,
+    capital<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>, population<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">3900000</span>,
+    regions<span style="color:#ff79c6">:</span> [<span style="color:#f1fa8c">&#34;west_coast&#34;</span>, <span style="color:#f1fa8c">&#34;socal&#34;</span>] });
+citiesRef.doc(<span style="color:#f1fa8c">&#34;DC&#34;</span>).set({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Washington, D.C.&#34;</span>, state<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>, country<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;USA&#34;</span>,
+    capital<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>, population<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">680000</span>,
+    regions<span style="color:#ff79c6">:</span> [<span style="color:#f1fa8c">&#34;east_coast&#34;</span>] });
+citiesRef.doc(<span style="color:#f1fa8c">&#34;TOK&#34;</span>).set({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Tokyo&#34;</span>, state<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>, country<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Japan&#34;</span>,
+    capital<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>, population<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">9000000</span>,
+    regions<span style="color:#ff79c6">:</span> [<span style="color:#f1fa8c">&#34;kanto&#34;</span>, <span style="color:#f1fa8c">&#34;honshu&#34;</span>] });
+citiesRef.doc(<span style="color:#f1fa8c">&#34;BJ&#34;</span>).set({
+    name<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Beijing&#34;</span>, state<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>, country<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;China&#34;</span>,
+    capital<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>, population<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">21500000</span>,
+    regions<span style="color:#ff79c6">:</span> [<span style="color:#f1fa8c">&#34;jingjinji&#34;</span>, <span style="color:#f1fa8c">&#34;hebei&#34;</span>] });
+</code></pre></div><h2 id="get-a-document">Get a document</h2>
+<p>The following example shows how to retrieve the contents of a single document using get():</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> docRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;SF&#34;</span>);
+
+docRef.get().then(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+    <span style="color:#ff79c6">if</span> (doc.exists) {
+        console.log(<span style="color:#f1fa8c">&#34;Document data:&#34;</span>, doc.data());
+    } <span style="color:#ff79c6">else</span> {
+        <span style="color:#6272a4">// doc.data() will be undefined in this case
+</span><span style="color:#6272a4"></span>        console.log(<span style="color:#f1fa8c">&#34;No such document!&#34;</span>);
+    }
+}).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.log(<span style="color:#f1fa8c">&#34;Error getting document:&#34;</span>, error);
+});
+</code></pre></div><h2 id="source-options">Source Options</h2>
+<p>For platforms with offline support, you can set the source option to control how a get call uses the offline cache.</p>
+<p>By default, a get call will attempt to fetch the latest document snapshot from your database. On platforms with offline support, the client library will use the offline cache if the network is unavailable or if the request times out.</p>
+<p>You can specify the source option in a get() call to change the default behavior. You can fetch from only the database and ignore the offline cache, or you can fetch from only the offline cache. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> docRef <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;SF&#34;</span>);
+
+<span style="color:#6272a4">// Valid options for source are &#39;server&#39;, &#39;cache&#39;, or
+</span><span style="color:#6272a4">// &#39;default&#39;. See https://firebase.google.com/docs/reference/js/firebase.firestore.GetOptions
+</span><span style="color:#6272a4">// for more information.
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">var</span> getOptions <span style="color:#ff79c6">=</span> {
+    source<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;cache&#39;</span>
+};
+
+<span style="color:#6272a4">// Get a document, forcing the SDK to fetch from the offline cache.
+</span><span style="color:#6272a4"></span>docRef.get(getOptions).then(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+    <span style="color:#6272a4">// Document was found in the cache. If no cached document exists,
+</span><span style="color:#6272a4"></span>    <span style="color:#6272a4">// an error will be returned to the &#39;catch&#39; block below.
+</span><span style="color:#6272a4"></span>    console.log(<span style="color:#f1fa8c">&#34;Cached document data:&#34;</span>, doc.data());
+}).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+    console.log(<span style="color:#f1fa8c">&#34;Error getting cached document:&#34;</span>, error);
+});
+</code></pre></div><h2 id="custom--objects">Custom  objects</h2>
+<p>The previous example retrieved the contents of the document as a map, but in some languages it&rsquo;s often more convenient to use a custom object type. In Add Data, you defined a City class that you used to define each city. You can turn your document back into a City object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">class</span> City {
+    constructor (name, state, country ) {
+        <span style="color:#ff79c6">this</span>.name <span style="color:#ff79c6">=</span> name;
+        <span style="color:#ff79c6">this</span>.state <span style="color:#ff79c6">=</span> state;
+        <span style="color:#ff79c6">this</span>.country <span style="color:#ff79c6">=</span> country;
+    }
+    toString() {
+        <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">this</span>.name <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;, &#39;</span> <span style="color:#ff79c6">+</span> <span style="color:#ff79c6">this</span>.state <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;, &#39;</span> <span style="color:#ff79c6">+</span> <span style="color:#ff79c6">this</span>.country;
+    }
+}
+
+    <span style="color:#6272a4">// Firestore data converter
+</span><span style="color:#6272a4"></span>  cityConverter <span style="color:#ff79c6">=</span> {
+      toFirestore<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span>(city) {
+          <span style="color:#ff79c6">return</span> {
+              name<span style="color:#ff79c6">:</span> city.name,
+              state<span style="color:#ff79c6">:</span> city.state,
+              country<span style="color:#ff79c6">:</span> city.country
+              }
+      },
+      fromFirestore<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span>(snapshot, options){
+          <span style="color:#ff79c6">const</span> data <span style="color:#ff79c6">=</span> snapshot.data(options);
+          <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">new</span> City(data.name, data.state, data.country)
+      }
+  }
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;LA&#34;</span>)
+  .withConverter(cityConverter)
+  .get().then(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+    <span style="color:#ff79c6">if</span> (doc.exists){
+      <span style="color:#6272a4">// Convert to City object
+</span><span style="color:#6272a4"></span>      city <span style="color:#ff79c6">=</span> doc.data();
+      <span style="color:#6272a4">// Use a City instance method
+</span><span style="color:#6272a4"></span>      console.log(city.toString());
+    } <span style="color:#ff79c6">else</span> {
+      console.log(<span style="color:#f1fa8c">&#34;No such document!&#34;</span>)
+    }}).<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+      console.log(<span style="color:#f1fa8c">&#34;Error getting document:&#34;</span>, error)
+    });
+</code></pre></div><h2 id="get-multiple-documents-from-a-collection">Get multiple documents from a collection</h2>
+<p>You can also retrieve multiple documents with one request by querying documents in a collection. For example, you can use where() to query for all of the documents that meet a certain condition, then use get() to retrieve the results:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).where(<span style="color:#f1fa8c">&#34;capital&#34;</span>, <span style="color:#f1fa8c">&#34;==&#34;</span>, <span style="color:#ff79c6">true</span>)
+    .get()
+    .then(<span style="color:#8be9fd;font-style:italic">function</span>(querySnapshot) {
+        querySnapshot.forEach(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+            <span style="color:#6272a4">// doc.data() is never undefined for query doc snapshots
+</span><span style="color:#6272a4"></span>            console.log(doc.id, <span style="color:#f1fa8c">&#34; =&gt; &#34;</span>, doc.data());
+        });
+    })
+    .<span style="color:#ff79c6">catch</span>(<span style="color:#8be9fd;font-style:italic">function</span>(error) {
+        console.log(<span style="color:#f1fa8c">&#34;Error getting documents: &#34;</span>, error);
+    });
+</code></pre></div><p>By default, Cloud Firestore retrieves all documents that satisfy the query in ascending order by document ID, but you can order and limit the data returned.</p>
+<h2 id="get-all-documents-in-a-collection">Get all documents in a collection</h2>
+<p>In addition, you can retrieve all documents in a collection by omitting the where() filter entirely:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).get().then(<span style="color:#8be9fd;font-style:italic">function</span>(querySnapshot) {
+    querySnapshot.forEach(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+        <span style="color:#6272a4">// doc.data() is never undefined for query doc snapshots
+</span><span style="color:#6272a4"></span>        console.log(doc.id, <span style="color:#f1fa8c">&#34; =&gt; &#34;</span>, doc.data());
+    });
+});
+</code></pre></div><h2 id="get-multiple-documents-from-a-collection-group">Get multiple documents from a collection group</h2>
+<p>A collection group consists of all collections with the same ID. For example, if each document in your cities collection has a subcollection called landmarks, all of the landmarks subcollections belong to the same collection group. By default, queries retrieve results from a single collection in your database. Use a collection group query to retrieve results from a collection group instead of from a single collection.</p>
+<h2 id="list-subcollections-of-a-document">List subcollections of a document</h2>
+<p>The getCollections() method of the Cloud Firestore server client libraries lists all subcollections of a document reference.</p>
+<p>Retrieving a list of collections is not possible with the mobile/web client libraries. You should only look up collection names as part of administrative tasks in trusted server environments. If you find that you need this capability in the mobile/web client libraries, consider restructuring your data so that subcollection names are predictable.</p>
+<h2 id="get-realtime-updates-with-cloud-firestore">Get realtime updates with Cloud Firestore</h2>
+<p>You can listen to a document with the onSnapshot() method. An initial call using the callback you provide creates a document snapshot immediately with the current contents of the single document. Then, each time the contents change, another call updates the document snapshot.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;SF&#34;</span>)
+    .onSnapshot(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+        console.log(<span style="color:#f1fa8c">&#34;Current data: &#34;</span>, doc.data());
+    });
+</code></pre></div><h2 id="events-for-local-changes">Events for local changes</h2>
+<p>Local writes in your app will invoke snapshot listeners immediately. This is because of an important feature called &ldquo;latency compensation.&rdquo; When you perform a write, your listeners will be notified with the new data before the data is sent to the backend.</p>
+<p>Retrieved documents have a metadata.hasPendingWrites property that indicates whether the document has local changes that haven&rsquo;t been written to the backend yet. You can use this property to determine the source of events received by your snapshot listener:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;SF&#34;</span>)
+    .onSnapshot(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+        <span style="color:#8be9fd;font-style:italic">var</span> source <span style="color:#ff79c6">=</span> doc.metadata.hasPendingWrites <span style="color:#ff79c6">?</span> <span style="color:#f1fa8c">&#34;Local&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Server&#34;</span>;
+        console.log(source, <span style="color:#f1fa8c">&#34; data: &#34;</span>, doc.data());
+    });
+</code></pre></div><h2 id="events-for-metadata-changes">Events for metadata changes</h2>
+<p>When listening for changes to a document, collection, or query, you can pass options to control the granularity of events that your listener will receive.</p>
+<p>By default, listeners are not notified of changes that only affect metadata. Consider what happens when your app writes a new document:</p>
+<ol>
+<li>A change event is immediately fired with the new data. The document has not yet been written to the backend so the &ldquo;pending writes&rdquo; flag is true.</li>
+<li>The document is written to the backend.</li>
+<li>The backend notifies the client of the successful write. There is no change to the document data, but there is a metadata change because the &ldquo;pending writes&rdquo; flag is now false.</li>
+</ol>
+<p>If you want to receive snapshot events when the document or query metadata changes, pass a listen options object when attaching your listener:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).doc(<span style="color:#f1fa8c">&#34;SF&#34;</span>)
+    .onSnapshot({
+        <span style="color:#6272a4">// Listen for document metadata changes
+</span><span style="color:#6272a4"></span>        includeMetadataChanges<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>
+    }, <span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+        <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>    });
+</code></pre></div><h2 id="listen-to-multiple-documents-in-a-collection">Listen to multiple documents in a collection</h2>
+<p>As with documents, you can use onSnapshot() instead of get() to listen to the results of a query. This creates a query snapshot. For example, to listen to the documents with state CA:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).where(<span style="color:#f1fa8c">&#34;state&#34;</span>, <span style="color:#f1fa8c">&#34;==&#34;</span>, <span style="color:#f1fa8c">&#34;CA&#34;</span>)
+    .onSnapshot(<span style="color:#8be9fd;font-style:italic">function</span>(querySnapshot) {
+        <span style="color:#8be9fd;font-style:italic">var</span> cities <span style="color:#ff79c6">=</span> [];
+        querySnapshot.forEach(<span style="color:#8be9fd;font-style:italic">function</span>(doc) {
+            cities.push(doc.data().name);
+        });
+        console.log(<span style="color:#f1fa8c">&#34;Current cities in CA: &#34;</span>, cities.join(<span style="color:#f1fa8c">&#34;, &#34;</span>));
+    });
+</code></pre></div><p>The snapshot handler will receive a new query snapshot every time the query results change (that is, when a document is added, removed, or modified).</p>
+<h2 id="view-changes-between-snapshots">View changes between snapshots</h2>
+<p>It is often useful to see the actual changes to query results between query snapshots, instead of simply using the entire query snapshot. For example, you may want to maintain a cache as individual documents are added, removed, and modified.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>).where(<span style="color:#f1fa8c">&#34;state&#34;</span>, <span style="color:#f1fa8c">&#34;==&#34;</span>, <span style="color:#f1fa8c">&#34;CA&#34;</span>)
+    .onSnapshot(<span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
+        snapshot.docChanges().forEach(<span style="color:#8be9fd;font-style:italic">function</span>(change) {
+            <span style="color:#ff79c6">if</span> (change.type <span style="color:#ff79c6">===</span> <span style="color:#f1fa8c">&#34;added&#34;</span>) {
+                console.log(<span style="color:#f1fa8c">&#34;New city: &#34;</span>, change.doc.data());
+            }
+            <span style="color:#ff79c6">if</span> (change.type <span style="color:#ff79c6">===</span> <span style="color:#f1fa8c">&#34;modified&#34;</span>) {
+                console.log(<span style="color:#f1fa8c">&#34;Modified city: &#34;</span>, change.doc.data());
+            }
+            <span style="color:#ff79c6">if</span> (change.type <span style="color:#ff79c6">===</span> <span style="color:#f1fa8c">&#34;removed&#34;</span>) {
+                console.log(<span style="color:#f1fa8c">&#34;Removed city: &#34;</span>, change.doc.data());
+            }
+        });
+    });
+</code></pre></div><p>The initial state can come from the server directly, or from a local cache. If there is state available in a local cache, the query snapshot will be initially populated with the cached data, then updated with the server&rsquo;s data when the client has caught up with the server&rsquo;s state.</p>
+<h2 id="detach-a-listener">Detach a listener</h2>
+<p>When you are no longer interested in listening to your data, you must detach your listener so that your event callbacks stop getting called. This allows the client to stop using bandwidth to receive updates. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> unsubscribe <span style="color:#ff79c6">=</span> db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>)
+    .onSnapshot(<span style="color:#8be9fd;font-style:italic">function</span> (){
+      <span style="color:#6272a4">// Respond to data
+</span><span style="color:#6272a4"></span>      <span style="color:#6272a4">// ...
+</span><span style="color:#6272a4"></span>    });
+
+<span style="color:#6272a4">// Later ...
+</span><span style="color:#6272a4"></span>
+<span style="color:#6272a4">// Stop listening to changes
+</span><span style="color:#6272a4"></span>unsubscribe();
+</code></pre></div><h2 id="handle-listen-errors">Handle listen errors</h2>
+<p>A listen may occasionally fail — for example, due to security permissions, or if you tried to listen on an invalid query. (Learn more about valid and invalid queries.) To handle these failures, you can provide an error callback when you attach your snapshot listener. After an error, the listener will not receive any more events, and there is no need to detach your listener.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">db.collection(<span style="color:#f1fa8c">&#34;cities&#34;</span>)
+    .onSnapshot(<span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
+        <span style="color:#6272a4">//...
+</span><span style="color:#6272a4"></span>    }, <span style="color:#8be9fd;font-style:italic">function</span>(error) {
+        <span style="color:#6272a4">//...
+</span><span style="color:#6272a4"></span>    });
+</code></pre></div><p>And That&rsquo;s what we need for the basics! We&rsquo;ll preform advanced quarries and so many things later!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Here, we hav another great firebase solution from the firebase. This is not the full guide, because we need authentication for further details, I&rsquo;m ending this basic guide here, After we discuss about the authentication in advanced, We can proceed with Firebase Firestore!</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+    Getting Started With Firebase - Nushan Kodikara
+  </title>
+  <meta name="description" content="How we can use Firebase" /><meta name="generator" content="Hugo 0.89.4" /><link
+    rel="stylesheet"
+    href="https://nushankodikara.com/css/styles.min.c492e1a790d94097bfb5b0d84fa753d34da3b9e4bb44c09bf11daf42f516c165.css"
+    integrity="sha256-xJLhp5DZQJe/tbDYT6dT002jueS7RMCb8R2vQvUWwWU="
+  />
+  
+  
+
+  <meta property="og:title" content="Getting Started With Firebase" />
+<meta property="og:description" content="How we can use Firebase" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nushankodikara.com/blog/getting-started-with-firebase/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-08-05T05:00:00+05:30" />
+<meta property="article:modified_time" content="2020-08-05T05:00:00+05:30" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting Started With Firebase"/>
+<meta name="twitter:description" content="How we can use Firebase"/>
+
+  <meta itemprop="name" content="Getting Started With Firebase">
+<meta itemprop="description" content="How we can use Firebase"><meta itemprop="datePublished" content="2020-08-05T05:00:00+05:30" />
+<meta itemprop="dateModified" content="2020-08-05T05:00:00+05:30" />
+<meta itemprop="wordCount" content="2165">
+<meta itemprop="keywords" content="web development,mobile development," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="https://nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Nushan Kodikara
+  </a>
+  <ul class="flex items-center gap-4 lg:gap-6">
+
+    
+    <li><a href="/blog">Blog</a></li>
+    
+    <li><a href="/page/about/">About</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://unsplash.com/photos/YLSwjSy7stw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8bGlicmFyeXx8MHx8fHwxNjM5NTg5ODA0&amp;force=true&amp;w=640" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    August 5, 2020
+  
+
+
+    </div>
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Getting Started With Firebase</h1>
+    <h5 class="text-sm flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    August 5, 2020
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      11&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      2165&nbsp;words
+      
+    </h5>
+
+    <h2 id="introduction">Introduction</h2>
+<p>This is a different post from what I did before, Today I&rsquo;m introducing you to a technology, It&rsquo;s a BaaS from google which stands for Backend As A Service and that&rsquo;s weird in many ways, First It is not what you would expect out of a traditional site and Here I only speak about Modern development So Let&rsquo;s get started with this new technology and make our Lives Easier!</p>
+<h2 id="what-is-firebase">What Is Firebase</h2>
+<p>Firebase is a platform for creating mobile and web applications developed by Google. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development. Considering google, They are the biggest tech company in earth by now. (Yeah we have more planets and there are aliens, I have proofs and Let&rsquo;s not talk about it ever again) So as an Earth being, if a service gets delivered by google, That&rsquo;s a pot of gold. Let&rsquo;s explore what we can do with firebase shall we?</p>
+<h2 id="firebase-products">Firebase Products</h2>
+<p>Before getting in to what are the benefits, Let&rsquo;s Explore what Firebase offers Us in advance. you can check this link <a href="https://firebase.google.com/docs">https://firebase.google.com/docs</a> for more details.</p>
+<p>For Building your app</p>
+<ul>
+<li>Cloud Firestore</li>
+<li>Firebase ML</li>
+<li>Cloud Functions</li>
+<li>Authentication</li>
+<li>Hosting</li>
+<li>Cloud Storage</li>
+<li>Realtime Database</li>
+</ul>
+<p>Improve app quality</p>
+<ul>
+<li>Crashlytics</li>
+<li>App Distribution</li>
+<li>Performance Monitoring</li>
+<li>Test Lab</li>
+</ul>
+<p>Grow your business</p>
+<ul>
+<li>Analytics</li>
+<li>Extensions</li>
+<li>Predictions</li>
+<li>Firebase A/B Testing</li>
+<li>Cloud Messaging</li>
+<li>In-App Messaging</li>
+<li>Remote Config</li>
+<li>Dynamic Links</li>
+<li>App Indexing</li>
+</ul>
+<p>Now let me introduce you, what are these and Let&rsquo;s get to know firebase a bit better.</p>
+<p><img src="https://cdn-media-1.freecodecamp.org/images/0*CPTNvq87xG-sUGdx.png" alt="Firebase"></p>
+<h2 id="cloud-firestore">Cloud Firestore</h2>
+<p>Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform. Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity. Cloud Firestore also offers seamless integration with other Firebase and Google Cloud Platform products, including Cloud Functions.</p>
+<h2 id="firebase-ml">Firebase ML</h2>
+<p>Firebase Machine Learning is a mobile SDK that brings Google&rsquo;s machine learning expertise to Android and iOS apps in a powerful yet easy-to-use package. Whether you&rsquo;re new or experienced in machine learning, you can implement the functionality you need in just a few lines of code. There&rsquo;s no need to have deep knowledge of neural networks or model optimization to get started. On the other hand, if you are an experienced ML developer, Firebase ML provides convenient APIs that help you use your custom TensorFlow Lite models in your mobile apps.</p>
+<h2 id="cloud-functions">Cloud Functions</h2>
+<p>Cloud Functions for Firebase is a serverless framework that lets you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your JavaScript or TypeScript code is stored in Google&rsquo;s cloud and runs in a managed environment. There&rsquo;s no need to manage and scale your own servers.</p>
+<h2 id="firebase-authentication">Firebase Authentication</h2>
+<p>Most apps need to know the identity of a user. Knowing a user&rsquo;s identity allows an app to securely save user data in the cloud and provide the same personalized experience across all of the user&rsquo;s devices. Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more. Firebase Authentication integrates tightly with other Firebase services, and it leverages industry standards like OAuth 2.0 and OpenID Connect, so it can be easily integrated with your custom backend.</p>
+<h2 id="firebase-hosting">Firebase Hosting</h2>
+<p>Firebase Hosting provides fast and secure hosting for your web app, static and dynamic content, and microservices. Firebase Hosting is production-grade web content hosting for developers. With a single command, you can quickly deploy web apps and serve both static and dynamic content to a global CDN (content delivery network). You can also pair Firebase Hosting with Cloud Functions or Cloud Run to build and host microservices on Firebase.</p>
+<h2 id="cloud-storage">Cloud Storage</h2>
+<p>Cloud Storage is built for app developers who need to store and serve user-generated content, such as photos or videos. Cloud Storage for Firebase is a powerful, simple, and cost-effective object storage service built for Google scale. The Firebase SDKs for Cloud Storage add Google security to file uploads and downloads for your Firebase apps, regardless of network quality. You can use our SDKs to store images, audio, video, or other user-generated content. On the server, you can use Google Cloud Storage, to access the same files.</p>
+<h2 id="firebase-realtime-database">Firebase Realtime Database</h2>
+<p>Store and sync data with our NoSQL cloud database. Data is synced across all clients in realtime, and remains available when your app goes offline. The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client. When you build cross-platform apps with our iOS, Android, and JavaScript SDKs, all of your clients share one Realtime Database instance and automatically receive updates with the newest data.</p>
+<h2 id="firebase-crashlytics">Firebase Crashlytics</h2>
+<p>Get clear, actionable insight into app issues with this powerful crash reporting solution for iOS, Android, and Unity. Firebase Crashlytics is a lightweight, realtime crash reporter that helps you track, prioritize, and fix stability issues that erode your app quality. Crashlytics saves you troubleshooting time by intelligently grouping crashes and highlighting the circumstances that lead up to them. Find out if a particular crash is impacting a lot of users. Get alerts when an issue suddenly increases in severity. Figure out which lines of code are causing crashes.</p>
+<h2 id="firebase-app-distribution">Firebase App Distribution</h2>
+<p>Firebase App Distribution makes distributing your apps to trusted testers painless. By getting your apps onto testers' devices quickly, you can get feedback early and often. And if you use Crashlytics in your apps, you’ll automatically get stability metrics for all your builds, so you know when you’re ready to ship.</p>
+<h2 id="firebase-performance-monitoring">Firebase Performance Monitoring</h2>
+<p>Gain insight into your app&rsquo;s performance issues. Firebase Performance Monitoring is a service that helps you to gain insight into the performance characteristics of your iOS, Android, and web apps. You use the Performance Monitoring SDK to collect performance data from your app, then review and analyze that data in the Firebase console. Performance Monitoring helps you to understand where and when the performance of your app can be improved so that you can use that information to fix performance issues.</p>
+<h2 id="firebase-test-lab">Firebase Test Lab</h2>
+<p>Test your app on devices hosted in a Google data center. Firebase Test Lab is a cloud-based app-testing infrastructure. With one operation, you can test your Android or iOS app across a wide variety of devices and device configurations, and see the results—including logs, videos, and screenshots—in the Firebase console.</p>
+<h2 id="google-analytics">Google Analytics</h2>
+<p>Google Analytics is a free app measurement solution that provides insight on app usage and user engagement. At the heart of Firebase is Google Analytics, a free and unlimited analytics solution. Analytics integrates across Firebase features and provides you with unlimited reporting for up to 500 distinct events that you can define using the Firebase SDK. Analytics reports help you understand clearly how your users behave, which enables you to make informed decisions regarding app marketing and performance optimizations.</p>
+<h2 id="firebase-extensions">Firebase Extensions</h2>
+<p>Firebase Extensions help you deploy functionality to your app quickly with pre-packaged solutions. Once installed, a Firebase Extension performs a specific task or set of tasks in response to HTTPS requests or to triggering events from other Firebase products, like Cloud Firestore or Firebase Cloud Messaging.</p>
+<h2 id="firebase-predictions">Firebase Predictions</h2>
+<p>Firebase Predictions applies machine learning to your analytics data to create dynamic user segments based on your users' predicted behavior. These predictions are automatically available for use with Firebase Remote Config, the Notifications composer, Firebase In-App Messaging, and A/B Testing. You can also export your app&rsquo;s Predictions data to BigQuery for further analysis or to push to third party tools. When you use Predictions with Remote Config, you can increase conversions by providing a custom experience based on each of your users' anticipated needs. You can also use Predictions with the Notifications composer to deliver one-time messages or recurring campaigns. For example, you can automatically send a notification to users who are predicted to stop using your app. With A/B Testing, you can compare the effectiveness between different the Notifications composer campaigns, or use Remote Config to test the result of different ways of customizing the in-app experience for users in a predicted segment.</p>
+<h2 id="firebase-ab-testing">Firebase A/B Testing</h2>
+<p>Powered by Google Optimize, Firebase A/B Testing helps you optimize your app experience by making it easy to run, analyze, and scale product and marketing experiments. It gives you the power to test changes to your app’s UI, features, or engagement campaigns to see if they actually move the needle on your key metrics (like revenue and retention) before you roll them out widely. A/B Testing works with FCM so you can test different marketing messages, and with Remote Config so you can test changes within your app.</p>
+<h2 id="firebase-cloud-messaging">Firebase Cloud Messaging</h2>
+<p>Firebase Cloud Messaging (FCM) is a cross-platform messaging solution that lets you reliably send messages at no cost. Using FCM, you can notify a client app that new email or other data is available to sync. You can send notification messages to drive user re-engagement and retention. For use cases such as instant messaging, a message can transfer a payload of up to 4KB to a client app. Using deprecated Google Cloud Messaging APIs? Learn more about how to migrate to FCM.</p>
+<h2 id="firebase-in-app-messaging">Firebase In-App Messaging</h2>
+<p>Engage active app users with contextual messages. Firebase In-App Messaging helps you engage your app&rsquo;s active users by sending them targeted, contextual messages that encourage them to use key app features. For example, you could send an in-app message to get users to subscribe, watch a video, complete a level, or buy an item. You can customize messages as cards, banners, modals, or images, and set up triggers so that they appear exactly when they&rsquo;d benefit your users most. Use Firebase In-App Messaging to encourage exploration and discovery: highlight a sale or coupon in your ecommerce app, give clues or tips in your game, or prompt a like or share in your social media app.</p>
+<h2 id="firebase-remote-config">Firebase Remote Config</h2>
+<p>Change the behavior and appearance of your app without publishing an app update, at no cost, for unlimited daily active users. Firebase Remote Config is a cloud service that lets you change the behavior and appearance of your app without requiring users to download an app update. When using Remote Config, you create in-app default values that control the behavior and appearance of your app. Then, you can later use the Firebase console or the Remote Config backend APIs to override in-app default values for all app users or for segments of your user base. Your app controls when updates are applied, and it can frequently check for updates and apply them with a negligible impact on performance.</p>
+<h2 id="firebase-dynamic-links">Firebase Dynamic Links</h2>
+<p>Firebase Dynamic Links are links that work the way you want, on multiple platforms, and whether or not your app is already installed. With Dynamic Links, your users get the best available experience for the platform they open your link on. If a user opens a Dynamic Link on iOS or Android, they can be taken directly to the linked content in your native app. If a user opens the same Dynamic Link in a desktop browser, they can be taken to the equivalent content on your website. In addition, Dynamic Links work across app installs: if a user opens a Dynamic Link on iOS or Android and doesn&rsquo;t have your app installed, the user can be prompted to install it; then, after installation, your app starts and can access the link.</p>
+<h2 id="firebase-app-indexing">Firebase App Indexing</h2>
+<p>Firebase App Indexing gets your app into Google Search. If users have your app installed, they can launch your app and go directly to the content they&rsquo;re searching for. App Indexing reengages your app users by helping them find public content right on their device, even offering query autocompletions to help them more quickly find what they need. If users don’t yet have your app, relevant queries trigger an install card for your app in Search results.</p>
+<p>And That&rsquo;s It! That&rsquo;s all we get for a free quota which updates every month! and believe it or not these are the cheapest services you can get right now!</p>
+<h2 id="how-should-i-start">How Should I Start</h2>
+<p>We&rsquo;re considering Firebase with Javascript. So in this guide series we&rsquo;re considering more and more web apps and hybrid mobile apps to develop. And you also need some basic knowledge on <a href="/post/html-for-modern-web-development/">HTML</a>, <a href="/post/css-for-modern-web-development/">CSS</a>, <a href="/post/scss-for-modern-web-development/">SCSS</a>, <a href="/post/js-for-modern-web-development/">JS part 1</a> and <a href="/content/post/js-for-modern-web-development-2/">JS part 2</a> After that we can get into this series. This isn&rsquo;t hard but you have to keep your focus high.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Firebase is a set of services ( A Collection of services ) which can make your life easier. I Use firebase personally in my projects whenever I can and It made my life so much easier. From today on we&rsquo;re discussing how we can use these services. So stay Tuned!</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+    <ul class="flex justify-center gap-4">
+      
+      <li>
+        <a
+          href="https://twitter.com/kodikara_nushan"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      <li>
+        <a
+          href="https://github.com/nushankodikara"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2022 - Nushan Kodikara · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://nushankodikara.com/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+</body>
+</html>

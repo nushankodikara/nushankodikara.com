@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mobile Development on Nushan Kodikara</title>
+    <link>https://nushankodikara.com/tags/mobile-development/</link>
+    <description>Recent content in Mobile Development on Nushan Kodikara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 11 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/mobile-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Weather App Using Openweathermaps API</title>
+      <link>https://nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
+      <pubDate>Tue, 11 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
+      <description>Introduction As I Promised, We&amp;rsquo;re doing advanced app examples today, to be specific, we&amp;rsquo;re creating a weather application using openweathermap API, owfont-regular, vivify for animation, font-awesome pack, progressbar.js for sun-timer , jquery.cookie, jquery-3.5.1 and apexcharts for weather details. We&amp;rsquo;re making this application responsible and I&amp;rsquo;ll link down the documentations off all the libraries we use, with them if you don&amp;rsquo;t understand the code, you can always copy and paste it and it would work fine without a problem at all!</description>
+    </item>
+    
+    <item>
+      <title>Creating a Messaging App With Firebase</title>
+      <link>https://nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</link>
+      <pubDate>Sun, 09 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</guid>
+      <description>Introduction Now we have covered firebase realtime and firestore databases, Authentication, Hosting and analytics, We can create a simple chat/messaging application within 15-minuets or less! Aren&amp;rsquo;t you sure of that? Let&amp;rsquo;s get started!
+Background and Environment I&amp;rsquo;m using what we did in firebase realtime database, authentication and hosting for this project. So if you didn&amp;rsquo;t saw them already, go ahead now. let&amp;rsquo;s explore the code and as always HERE you can download the completed project file.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Hosting and Analytics</title>
+      <link>https://nushankodikara.com/blog/firebase-hosting-and-analytics/</link>
+      <pubDate>Sat, 08 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-hosting-and-analytics/</guid>
+      <description>Introduction We can use firebase as a hosting service, Firebase Hosting provides fast and secure hosting for your web app, static and dynamic content, and microservices, Also Firebase Hosting is production-grade web content hosting for developers, With a single command, you can quickly deploy web apps and serve both static and dynamic content to a global CDN (content delivery network), You can also pair Firebase Hosting with Cloud Functions or Cloud Run to build and host microservices on Firebase.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Authentication</title>
+      <link>https://nushankodikara.com/blog/firebase-authentication/</link>
+      <pubDate>Fri, 07 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-authentication/</guid>
+      <description>Introduction Let&amp;rsquo;s use firebase for user authentication, you don&amp;rsquo;t need to setup custom authentications, app apis and other stupid things anymore, we have firebase on our back and few lines of codes can make the programs more efficient and more secure! today I&amp;rsquo;m only focusing Email, Google and Anonymous authentications mainly. you can browse firebase docs for more information on how to setup other authentications in advanced.
+Firebase Authentication Most apps need to know the identity of a user.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Cloud Firestore</title>
+      <link>https://nushankodikara.com/blog/firebase-cloud-firestore/</link>
+      <pubDate>Thu, 06 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-cloud-firestore/</guid>
+      <description>Introduction Use our flexible, scalable NoSQL cloud database to store and sync data for client- and server-side development.
+Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform, Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity, Cloud Firestore also offers seamless integration with other Firebase and Google Cloud Platform products, including Cloud Functions.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Realtime Database</title>
+      <link>https://nushankodikara.com/blog/firebase-realtime-database/</link>
+      <pubDate>Wed, 05 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/firebase-realtime-database/</guid>
+      <description>Introduction Okay, Let&amp;rsquo;s do some database actions, But without SQL or any of those table based old style databases, We&amp;rsquo;re learning how to use Firebase Realtime database with a web application, but also the codes are the same for mobile applications, so it won&amp;rsquo;t make much difference at all, And in the end of this series, After we covered Authentication, We&amp;rsquo;re creating a fully fledged Chat application and maybe a social media application to test our knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started With Firebase</title>
+      <link>https://nushankodikara.com/blog/getting-started-with-firebase/</link>
+      <pubDate>Wed, 05 Aug 2020 05:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/getting-started-with-firebase/</guid>
+      <description>Introduction This is a different post from what I did before, Today I&amp;rsquo;m introducing you to a technology, It&amp;rsquo;s a BaaS from google which stands for Backend As A Service and that&amp;rsquo;s weird in many ways, First It is not what you would expect out of a traditional site and Here I only speak about Modern development So Let&amp;rsquo;s get started with this new technology and make our Lives Easier!</description>
+    </item>
+    
+    <item>
+      <title>Playstore Publishing Guide 101</title>
+      <link>https://nushankodikara.com/blog/publishing-guide-for-playstore/</link>
+      <pubDate>Tue, 04 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/publishing-guide-for-playstore/</guid>
+      <description>Introduction Playstore is the king of all appstores in the world right now, It hold&amp;rsquo;s a market share of 75% around the globe and google single handedly offers the best tools for Android developers as none other, We already discussed how we can create android applications using Cordova as a hybrid app platform and today, We&amp;rsquo;re uploading our newly signed apk file to the playstore from our own account.
+Preparation The ingredients for this recipe</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Create a Mobile App for TECINPACT</title>
+      <link>https://nushankodikara.com/blog/creating-an-app-for-tecinpact/</link>
+      <pubDate>Sun, 02 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-an-app-for-tecinpact/</guid>
+      <description>Introduction Today we&amp;rsquo;re creating an app for our agency using Hybrid technology which we discussed in THIS ARTICLE, And if you didn&amp;rsquo;t checked it out, Go ahead and try now, I&amp;rsquo;m only showing you the codes I used here And also This is an demo on how to use the technology, Then we&amp;rsquo;re publishing it on playstore Tomorrow! How cool is that? started as a web developer and now you&amp;rsquo;re an official mobile developer.</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Create Mobile Apps With Cordova</title>
+      <link>https://nushankodikara.com/blog/creating-mobile-apps-with-cordova/</link>
+      <pubDate>Sat, 01 Aug 2020 06:00:00 +0530</pubDate>
+      
+      <guid>https://nushankodikara.com/blog/creating-mobile-apps-with-cordova/</guid>
+      <description>Introduction Mobile app development is a cool thing, and most of us use android studio or swift in order to create mobile apps for Android and IOS devices, But what if I tell you that now you can create mobile apps for android and IOS with a single code base and It&amp;rsquo;s working with HTML CSS and JS? Yeah that&amp;rsquo;s true, with node.js now we&amp;rsquo;re able to create mobile apps using platforms such as Cordova.</description>
+    </item>
+    
+  </channel>
+</rss>
