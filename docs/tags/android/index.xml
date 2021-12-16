@@ -2,91 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on Nushan Kodikara</title>
-    <link>https://nushankodikara.com/tags/android/</link>
+    <link>https://www.nushankodikara.com/tags/android/</link>
     <description>Recent content in Android on Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Weather App Using Openweathermaps API</title>
-      <link>https://nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
+      <link>https://www.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
       <pubDate>Tue, 11 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
+      <guid>https://www.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
       <description>Introduction As I Promised, We&amp;rsquo;re doing advanced app examples today, to be specific, we&amp;rsquo;re creating a weather application using openweathermap API, owfont-regular, vivify for animation, font-awesome pack, progressbar.js for sun-timer , jquery.cookie, jquery-3.5.1 and apexcharts for weather details. We&amp;rsquo;re making this application responsible and I&amp;rsquo;ll link down the documentations off all the libraries we use, with them if you don&amp;rsquo;t understand the code, you can always copy and paste it and it would work fine without a problem at all!</description>
     </item>
     
     <item>
       <title>Playstore Publishing Guide 101</title>
-      <link>https://nushankodikara.com/blog/publishing-guide-for-playstore/</link>
+      <link>https://www.nushankodikara.com/blog/publishing-guide-for-playstore/</link>
       <pubDate>Tue, 04 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/publishing-guide-for-playstore/</guid>
+      <guid>https://www.nushankodikara.com/blog/publishing-guide-for-playstore/</guid>
       <description>Introduction Playstore is the king of all appstores in the world right now, It hold&amp;rsquo;s a market share of 75% around the globe and google single handedly offers the best tools for Android developers as none other, We already discussed how we can create android applications using Cordova as a hybrid app platform and today, We&amp;rsquo;re uploading our newly signed apk file to the playstore from our own account.
 Preparation The ingredients for this recipe</description>
     </item>
     
     <item>
       <title>Let&#39;s Create a Mobile App for TECINPACT</title>
-      <link>https://nushankodikara.com/blog/creating-an-app-for-tecinpact/</link>
+      <link>https://www.nushankodikara.com/blog/creating-an-app-for-tecinpact/</link>
       <pubDate>Sun, 02 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/creating-an-app-for-tecinpact/</guid>
+      <guid>https://www.nushankodikara.com/blog/creating-an-app-for-tecinpact/</guid>
       <description>Introduction Today we&amp;rsquo;re creating an app for our agency using Hybrid technology which we discussed in THIS ARTICLE, And if you didn&amp;rsquo;t checked it out, Go ahead and try now, I&amp;rsquo;m only showing you the codes I used here And also This is an demo on how to use the technology, Then we&amp;rsquo;re publishing it on playstore Tomorrow! How cool is that? started as a web developer and now you&amp;rsquo;re an official mobile developer.</description>
     </item>
     
     <item>
       <title>Let&#39;s Create Mobile Apps With Cordova</title>
-      <link>https://nushankodikara.com/blog/creating-mobile-apps-with-cordova/</link>
+      <link>https://www.nushankodikara.com/blog/creating-mobile-apps-with-cordova/</link>
       <pubDate>Sat, 01 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/creating-mobile-apps-with-cordova/</guid>
+      <guid>https://www.nushankodikara.com/blog/creating-mobile-apps-with-cordova/</guid>
       <description>Introduction Mobile app development is a cool thing, and most of us use android studio or swift in order to create mobile apps for Android and IOS devices, But what if I tell you that now you can create mobile apps for android and IOS with a single code base and It&amp;rsquo;s working with HTML CSS and JS? Yeah that&amp;rsquo;s true, with node.js now we&amp;rsquo;re able to create mobile apps using platforms such as Cordova.</description>
     </item>
     
     <item>
       <title>How Antivirus Softwares Damage Our Hard Drives</title>
-      <link>https://nushankodikara.com/blog/how-antivirus-softwares-damage-our-hard-drives/</link>
+      <link>https://www.nushankodikara.com/blog/how-antivirus-softwares-damage-our-hard-drives/</link>
       <pubDate>Thu, 30 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/how-antivirus-softwares-damage-our-hard-drives/</guid>
+      <guid>https://www.nushankodikara.com/blog/how-antivirus-softwares-damage-our-hard-drives/</guid>
       <description>Introduction This post is a theory I tested and got some decent results, you can&amp;rsquo;t find any evidence about is this a thing, because the anti-virus industry is a huge pile of money and if someone speaks against it, they quickly take it down and then no one can see this. But from time to time, there are articles surfacing with the same issue and again the somehow takes it down for no reason.</description>
     </item>
     
     <item>
       <title>Best Password Managers 2020</title>
-      <link>https://nushankodikara.com/blog/best-password-managers-2020/</link>
+      <link>https://www.nushankodikara.com/blog/best-password-managers-2020/</link>
       <pubDate>Wed, 29 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/best-password-managers-2020/</guid>
+      <guid>https://www.nushankodikara.com/blog/best-password-managers-2020/</guid>
       <description>Introduction Password managers are pieces of softwares which keep our passwords saved in somewhere to decrease the chances of forgetting them and resetting, some password managers also can auto fill data and sync between platforms for the user&amp;rsquo;s convenience. Today, we&amp;rsquo;re discussing about password managers, are they safe to use? what kinds of password managers we have and how to use them safely. So without further explanation, Let&amp;rsquo;s get in to the post.</description>
     </item>
     
     <item>
       <title>Download Youtube Videos 2020</title>
-      <link>https://nushankodikara.com/blog/download-youtube-videos-2020/</link>
+      <link>https://www.nushankodikara.com/blog/download-youtube-videos-2020/</link>
       <pubDate>Wed, 22 Jul 2020 16:25:57 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/download-youtube-videos-2020/</guid>
+      <guid>https://www.nushankodikara.com/blog/download-youtube-videos-2020/</guid>
       <description>Introduction Let&amp;rsquo;s be real, We need to download Youtube Videos for so many reasons, Maybe mp3 from youtube, And we still don&amp;rsquo;t have a clear way, But today I&amp;rsquo;m here to change that, I Found some interesting apps and websites which can download From youtube directly as video or Audio. Without much details, Let&amp;rsquo;s dive in.
 Android For android devices, I Have an app for you. This isn&amp;rsquo;t Available on playstore because that&amp;rsquo;s how it is.</description>
     </item>
     
     <item>
       <title>Create an Eco System With Join by joaoapps</title>
-      <link>https://nushankodikara.com/blog/create-an-eco-system-with-join/</link>
+      <link>https://www.nushankodikara.com/blog/create-an-eco-system-with-join/</link>
       <pubDate>Mon, 20 Jul 2020 12:19:26 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/create-an-eco-system-with-join/</guid>
+      <guid>https://www.nushankodikara.com/blog/create-an-eco-system-with-join/</guid>
       <description>Introduction Let&amp;rsquo;s be real, We all like to work in one place but access all of our devices, Apple has a solution for this but what if you don&amp;rsquo;t have an apple eco system? Today, Let&amp;rsquo;s discuss how we can create an ecosystem for with what we have and for a little price to pay, With Join by joaoapps.
 There are more services like this, Push bullet is one of them but their prices are, for my tastes, unfair.</description>
     </item>
     
     <item>
       <title>Ultimate Adobe Softwares List With Universal Crack 2020</title>
-      <link>https://nushankodikara.com/blog/adobe-softwares-ultimate-list-with-crack-2020/</link>
+      <link>https://www.nushankodikara.com/blog/adobe-softwares-ultimate-list-with-crack-2020/</link>
       <pubDate>Fri, 17 Jul 2020 15:30:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/adobe-softwares-ultimate-list-with-crack-2020/</guid>
+      <guid>https://www.nushankodikara.com/blog/adobe-softwares-ultimate-list-with-crack-2020/</guid>
       <description>Introduction We all have used adobe software in some point of our lives and wandered how many others there are to explore. While none of the internet has a proper guide on this topic, I managed to create a complete solution for this case. and I Made a Universal crack for all adobe softwares. If you came for the crack itself.
 Adobe Universal Crack (Windows / Mac) Download
 You can crack up-to CC 2020 Adobe softwares from this crack and Rest of us, Let&amp;rsquo;s explore the options.</description>
@@ -94,10 +94,10 @@ You can crack up-to CC 2020 Adobe softwares from this crack and Rest of us, Let&
     
     <item>
       <title>Best Media Players 2020</title>
-      <link>https://nushankodikara.com/blog/best-media-players-2020/</link>
+      <link>https://www.nushankodikara.com/blog/best-media-players-2020/</link>
       <pubDate>Fri, 10 Jul 2020 15:59:09 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/best-media-players-2020/</guid>
+      <guid>https://www.nushankodikara.com/blog/best-media-players-2020/</guid>
       <description>Introduction In this post, I would like to present to you with the best media players according to technologies they use. This is a weird post to make in this time period but I&amp;rsquo;m creating this as a follow-up for a new post I&amp;rsquo;m planning to post in the future about Online Radio Broadcasting Technologies.
 What I&amp;rsquo;m Considering Here Well, While I&amp;rsquo;m Preparing the list, I was considering about several features to back it up with.</description>
     </item>

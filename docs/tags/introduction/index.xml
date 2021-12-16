@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Nushan Kodikara</title>
-    <link>https://nushankodikara.com/tags/introduction/</link>
+    <link>https://www.nushankodikara.com/tags/introduction/</link>
     <description>Recent content in Introduction on Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Jul 2020 17:30:00 +0000</lastBuildDate><atom:link href="https://nushankodikara.com/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Jul 2020 17:30:00 +0000</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Package Manager for Windows [ Chocolatey ]</title>
-      <link>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</link>
+      <link>https://www.nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</link>
       <pubDate>Wed, 08 Jul 2020 17:30:00 +0000</pubDate>
       
-      <guid>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</guid>
+      <guid>https://www.nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</guid>
       <description>Introduction Do you ever thought about a single command to install, uninstall or update softwares in Windows? How about a script automatically do everything for you? Guess what, you&amp;rsquo;re in the perfect place!
 Chocolatey is a package manager for Windows, which you can install by a single command and do everything with a single command!
 Showcase Install softwares
@@ -21,10 +21,10 @@ Showcase Install softwares
     
     <item>
       <title>Best Code Editors of 2020</title>
-      <link>https://nushankodikara.com/blog/best-code-editors-of-2020/</link>
+      <link>https://www.nushankodikara.com/blog/best-code-editors-of-2020/</link>
       <pubDate>Wed, 08 Jul 2020 15:30:00 +0000</pubDate>
       
-      <guid>https://nushankodikara.com/blog/best-code-editors-of-2020/</guid>
+      <guid>https://www.nushankodikara.com/blog/best-code-editors-of-2020/</guid>
       <description>Introduction Code editors are usually overpowered text editors. Mainly they are used for editing codes, but in the modern world, code editors are playing a role of complete development environments for some frameworks, with the help of extensions.
 In this article, I would like to present you my most favourite code editors and also some download links, and typical extensions I use.
 #1 Visual Studio Code Visual studio code is a multi talented and an open source project by Microsoft.</description>
@@ -32,10 +32,10 @@ In this article, I would like to present you my most favourite code editors and 
     
     <item>
       <title>First Post</title>
-      <link>https://nushankodikara.com/blog/first-post/</link>
+      <link>https://www.nushankodikara.com/blog/first-post/</link>
       <pubDate>Wed, 08 Jul 2020 06:30:00 +0000</pubDate>
       
-      <guid>https://nushankodikara.com/blog/first-post/</guid>
+      <guid>https://www.nushankodikara.com/blog/first-post/</guid>
       <description>Introduction Hello There My Gorgeous friends! From today on, this would be my hobby, blogging about technology and solving your IT Related Anything!
 What I&amp;rsquo;m Posting? As we speak, I&amp;rsquo;m planning to blog about
  Web dev PC / Android Software New technologies Security and Tips Coding and Programming  And so much more on modern technologies.

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jquery on Nushan Kodikara</title>
-    <link>https://nushankodikara.com/tags/jquery/</link>
+    <link>https://www.nushankodikara.com/tags/jquery/</link>
     <description>Recent content in Jquery on Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple, Beautiful Modal</title>
-      <link>https://nushankodikara.com/blog/simple-beautiful-modal/</link>
+      <link>https://www.nushankodikara.com/blog/simple-beautiful-modal/</link>
       <pubDate>Tue, 28 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/simple-beautiful-modal/</guid>
+      <guid>https://www.nushankodikara.com/blog/simple-beautiful-modal/</guid>
       <description>Introduction We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I&amp;rsquo;m going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master HTML CSS SCSS JS part 1 and JS part 2 guides.
 Now in this guide, We&amp;rsquo;re making This Beautiful modal from scratch with only 14 lines of JS codes.</description>
     </item>

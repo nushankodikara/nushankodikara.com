@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minification on Nushan Kodikara</title>
-    <link>https://nushankodikara.com/tags/minification/</link>
+    <link>https://www.nushankodikara.com/tags/minification/</link>
     <description>Recent content in Minification on Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 25 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/minification/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/minification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Code Minification</title>
-      <link>https://nushankodikara.com/blog/web-code-minification/</link>
+      <link>https://www.nushankodikara.com/blog/web-code-minification/</link>
       <pubDate>Sat, 25 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/web-code-minification/</guid>
+      <guid>https://www.nushankodikara.com/blog/web-code-minification/</guid>
       <description>Introduction Code minification is a process modern web developers use on developments to speed up the loading of the codes, reduce the code size and decrease the ability to reverse-engineer the code. And it&amp;rsquo;s pretty easy to use too, but sadly not most of the developers know how to do it themselves. Let&amp;rsquo;s Explore Shall we.
 Minification Now, We use an online tool for this process, https://www.willpeavy.com/tools/minifier/ Goto this website for the tool, and It&amp;rsquo;s pretty simple to use but highly effective.</description>
     </item>

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Review on Nushan Kodikara</title>
-    <link>https://nushankodikara.com/tags/review/</link>
+    <link>https://www.nushankodikara.com/tags/review/</link>
     <description>Recent content in Review on Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Jul 2020 15:59:09 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jul 2020 15:59:09 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Best Media Players 2020</title>
-      <link>https://nushankodikara.com/blog/best-media-players-2020/</link>
+      <link>https://www.nushankodikara.com/blog/best-media-players-2020/</link>
       <pubDate>Fri, 10 Jul 2020 15:59:09 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/best-media-players-2020/</guid>
+      <guid>https://www.nushankodikara.com/blog/best-media-players-2020/</guid>
       <description>Introduction In this post, I would like to present to you with the best media players according to technologies they use. This is a weird post to make in this time period but I&amp;rsquo;m creating this as a follow-up for a new post I&amp;rsquo;m planning to post in the future about Online Radio Broadcasting Technologies.
 What I&amp;rsquo;m Considering Here Well, While I&amp;rsquo;m Preparing the list, I was considering about several features to back it up with.</description>
     </item>
     
     <item>
       <title>The Package Manager for Windows [ Chocolatey ]</title>
-      <link>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</link>
+      <link>https://www.nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</link>
       <pubDate>Wed, 08 Jul 2020 17:30:00 +0000</pubDate>
       
-      <guid>https://nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</guid>
+      <guid>https://www.nushankodikara.com/blog/the-package-manager-for-windows-chocolatey/</guid>
       <description>Introduction Do you ever thought about a single command to install, uninstall or update softwares in Windows? How about a script automatically do everything for you? Guess what, you&amp;rsquo;re in the perfect place!
 Chocolatey is a package manager for Windows, which you can install by a single command and do everything with a single command!
 Showcase Install softwares
@@ -31,10 +31,10 @@ Showcase Install softwares
     
     <item>
       <title>Best Code Editors of 2020</title>
-      <link>https://nushankodikara.com/blog/best-code-editors-of-2020/</link>
+      <link>https://www.nushankodikara.com/blog/best-code-editors-of-2020/</link>
       <pubDate>Wed, 08 Jul 2020 15:30:00 +0000</pubDate>
       
-      <guid>https://nushankodikara.com/blog/best-code-editors-of-2020/</guid>
+      <guid>https://www.nushankodikara.com/blog/best-code-editors-of-2020/</guid>
       <description>Introduction Code editors are usually overpowered text editors. Mainly they are used for editing codes, but in the modern world, code editors are playing a role of complete development environments for some frameworks, with the help of extensions.
 In this article, I would like to present you my most favourite code editors and also some download links, and typical extensions I use.
 #1 Visual Studio Code Visual studio code is a multi talented and an open source project by Microsoft.</description>
