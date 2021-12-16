@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.nushankodikara.com/page/about/</loc>
-    <lastmod>2021-12-15T00:00:00+00:00</lastmod>
+    <loc>https://www.nushankodikara.com/blog/</loc>
+    <lastmod>2021-12-16T08:32:21+05:30</lastmod>
+  </url><url>
+    <loc>https://www.nushankodikara.com/tags/free-to-go/</loc>
+    <lastmod>2021-12-16T08:32:21+05:30</lastmod>
+  </url><url>
+    <loc>https://www.nushankodikara.com/blog/lets-create-a-free-vps-server/</loc>
+    <lastmod>2021-12-16T08:32:21+05:30</lastmod>
   </url><url>
     <loc>https://www.nushankodikara.com/</loc>
+    <lastmod>2021-12-16T08:32:21+05:30</lastmod>
+  </url><url>
+    <loc>https://www.nushankodikara.com/tags/</loc>
+    <lastmod>2021-12-16T08:32:21+05:30</lastmod>
+  </url><url>
+    <loc>https://www.nushankodikara.com/tags/vps/</loc>
+    <lastmod>2021-12-16T08:32:21+05:30</lastmod>
+  </url><url>
+    <loc>https://www.nushankodikara.com/page/about/</loc>
     <lastmod>2021-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.nushankodikara.com/page/</loc>
     <lastmod>2021-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.nushankodikara.com/blog/</loc>
-    <lastmod>2020-08-12T06:00:00+05:30</lastmod>
-  </url><url>
     <loc>https://www.nushankodikara.com/tags/git-hub/</loc>
     <lastmod>2020-08-12T06:00:00+05:30</lastmod>
   </url><url>
     <loc>https://www.nushankodikara.com/blog/git-hub-pages-for-web-hosting/</loc>
-    <lastmod>2020-08-12T06:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://www.nushankodikara.com/tags/</loc>
     <lastmod>2020-08-12T06:00:00+05:30</lastmod>
   </url><url>
     <loc>https://www.nushankodikara.com/tags/web-hosting/</loc>

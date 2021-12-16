@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Free To Go on Nushan Kodikara</title>
-    <link>https://nushankodikara.com/tags/free-to-go/</link>
+    <link>https://www.nushankodikara.com/tags/free-to-go/</link>
     <description>Recent content in Free To Go on Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 15 Dec 2021 22:32:21 +0530</lastBuildDate><atom:link href="https://nushankodikara.com/tags/free-to-go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Dec 2021 08:32:21 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/free-to-go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let&#39;s Create a Free VPS Server</title>
-      <link>https://nushankodikara.com/blog/lets-create-a-free-vps-server/</link>
-      <pubDate>Wed, 15 Dec 2021 22:32:21 +0530</pubDate>
+      <link>https://www.nushankodikara.com/blog/lets-create-a-free-vps-server/</link>
+      <pubDate>Thu, 16 Dec 2021 08:32:21 +0530</pubDate>
       
-      <guid>https://nushankodikara.com/blog/lets-create-a-free-vps-server/</guid>
+      <guid>https://www.nushankodikara.com/blog/lets-create-a-free-vps-server/</guid>
       <description>The process of creating a free VPS server is very simple. Some people overcomplicate the process and the ones who follow them will get frustrated. Let&amp;rsquo;s see how we can create a free VPS server in just a few steps, without complicating the process. If you got any issues while following the steps, please feel free to contact me through Telegram.
-Step 1: Creating And Account On VPS Provider Step 2: Creating A VPS Server Step 3: Creating A Domain Name Step 4: Configuring The DNS Server Step 5: SSH Access </description>
+Step 1: Creating And Account On VPS Provider Today in this guide, we&amp;rsquo;re using a site called Hax.</description>
     </item>
     
   </channel>
