@@ -10,7 +10,7 @@ draft: false
 
 The process of creating a free VPS server is very simple. Some people overcomplicate the process and the ones who follow them will get frustrated. Let's see how we can create a free VPS server in just a few steps, without complicating the process. If you got any issues while following the steps, please feel free to contact me through [Telegram](https://t.me/+FtAyOh8JBWg4OGU1).
 
-## Step 1: Creating And Account On VPS Provider
+## Step 1: Creating An Account On VPS Provider
 
 Today in this guide, we're using a site called [Hax.co.id](https://hax.co.id/). It's a site that provides free VPS servers. Unfortunately, this site doesn't provide any premium servers, in-case you needed to upgrade. So, if you need to create a premium server, you can use [DigitalOcean](https://www.digitalocean.com/). Follow along the steps below to create an account on the site.
 
