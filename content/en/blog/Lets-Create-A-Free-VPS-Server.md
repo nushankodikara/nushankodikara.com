@@ -3,7 +3,7 @@ author: "Nushan Kodikara"
 title: "Let's Create a Free VPS Server"
 description: "The best way to get started with VPS is to create a free VPS server. This article will help you to through the journey."
 date: 2021-12-16T08:32:21+05:30
-tags: ["VPS","Free To Go"]
+tags: ["VPS", "Free To Go"]
 thumbnail: https://unsplash.com/photos/M5tzZtFCOfs/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8c2VydmVyfHwwfHx8fDE2Mzk1NjQ4NTg&force=true&w=640
 draft: false
 ---
@@ -14,7 +14,7 @@ The process of creating a free VPS server is very simple. Some people overcompli
 
 Today in this guide, we're using a site called [Hax.co.id](https://hax.co.id/). It's a site that provides free VPS servers. Unfortunately, this site doesn't provide any premium servers, in-case you needed to upgrade. So, if you need to create a premium server, you can use [DigitalOcean](https://www.digitalocean.com/). Follow along the steps below to create an account on the site.
 
-Browser to the site [https://Hax.co.id/](https://hax.co.id/).
+Browse to the site [https://Hax.co.id/](https://hax.co.id/).
 
 ![Homepage](/uploads/2021_12_16_P1.png)
 
@@ -28,7 +28,6 @@ Here enter your telegram ID. If you don't know your telegram ID, just go to the 
 
 Click on the first result and you'll get to the telegram bot page, tap on `start` button and the bot will send you your telegram ID.
 
-![Telegram Bot](/uploads/2021_12_16_P2.2.png)
 ![Telegram Bot](/uploads/2021_12_16_P2.3.png)
 
 Enter Your Telegram ID in the form and click on the `Submit` button. As soon as you tapped on the submit button, The bot will send you an Authentication Code. Copy this code and enter it in the next form, and click submit.
@@ -50,17 +49,17 @@ After clicking on the button, you'll be redirected to the VPS creation page. Her
 
 ![VPS Creation](/uploads/2021_12_16_P6.png)
 
-Let's go through the forum to setup your VPS server. 
+Let's go through the forum to setup your VPS server.
 
-* First you need to select your Data Center. Select any data center from the dropdown menu. 
+-   First you need to select your Data Center. Select any data center from the dropdown menu.
 
-* Next you need to select your Operating system. I have choosed Ubuntu 20, Choose your system according to your needs. If you don't know what is the best one for you, just go with Ubuntu 20.
+-   Next you need to select your Operating system. I have choosed Ubuntu 20, Choose your system according to your needs. If you don't know what is the best one for you, just go with Ubuntu 20.
 
-* Next you need to enter a SSH password. This password will be used when we connect to your VPS server through SSH. Remebmer to keep this password safe!
+-   Next you need to enter a SSH password. This password will be used when we connect to your VPS server through SSH. Remebmer to keep this password safe!
 
-* This site requires you to select the purpose of your VPS, select one according to your needs.
+-   This site requires you to select the purpose of your VPS, select one according to your needs.
 
-* Tick all the tick boxes with license agreements and click on `Create VPS` button to complete your VPS creation.
+-   Tick all the tick boxes with license agreements and click on `Create VPS` button to complete your VPS creation.
 
 ![VPS Created!](/uploads/2021_12_16_P7.png)
 
@@ -106,7 +105,7 @@ Then you'll be redirected to the terminal page. Here first you need to enter you
 
 ### Method 2: SSH Terminal (Recommended)
 
-This method is same for all Windows, Mac And linux desktops as well as android terminals. 
+This method is same for all Windows, Mac And linux desktops as well as android terminals.
 
 If you're in windows. open Command Prompt (CMD), If you're in Linux or Mac, Open up a terminal window. If you're using an android device you can download and use an app called [Termius](https://play.google.com/store/apps/details?id=com.server.auditor.ssh.client). And follow along!
 
@@ -147,7 +146,7 @@ First enter the command
 ```terminal
 sudo apt-get update
 ```
-    
+
 Then press enter to start updating your repositories.
 
 ![Update Repositories](/uploads/2021_12_16_P17.png)
@@ -157,7 +156,7 @@ It would take a minute or two to update your repositories. After updating your r
 ```terminal
 sudo apt-get upgrade
 ```
-    
+
 Then press enter.
 
 ![Update Packages](/uploads/2021_12_16_P18.png)
