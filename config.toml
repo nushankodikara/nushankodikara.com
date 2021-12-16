@@ -25,10 +25,10 @@ DefaultContentLanguageInSubdir = true
         url = "page/about/"
         weight = 2
 
-    [[languages.en.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
+#    [[languages.en.menu.main]]
+#        name = "Tags"
+#        url = "tags"
+#        weight = 3
 
 [params]
   # Enable the darkmode toggle in header
@@ -48,15 +48,19 @@ DefaultContentLanguageInSubdir = true
 
 [params.homepage.social]
   # Global params xommon for both languages
+
   title = "Follow me"
   description = "I work on everything coding. Check out my blog and other projects."
+  
   # linkedin = "https://linkedin.com/in/"
   # xing = "https://www.xing.com/profile/"
+
   github = "https://github.com/nushankodikara"
   tiktok = "https://www.tiktok.com/@nushan.kodikara"
   facebook = "https://www.facebook.com/kodikara.nushan"
   telegram = "https://t.me/nushan_kodikara"
   instagram = "https://www.instagram.com/____nushan_/"
+
   # twitter = "https://twitter.com/kodikara_nushan"
   # medium = "https://medium.com/"
   # reddit = "https://reddit.com/"

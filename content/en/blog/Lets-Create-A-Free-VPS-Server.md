@@ -14,7 +14,7 @@ The process of creating a free VPS server is very simple. Some people overcompli
 
 Today in this guide, we're using a site called [Hax.co.id](https://hax.co.id/). It's a site that provides free VPS servers. Unfortunately, this site doesn't provide any premium servers, in-case you needed to upgrade. So, if you need to create a premium server, you can use [DigitalOcean](https://www.digitalocean.com/). Follow along the steps below to create an account on the site.
 
-Browse to the site [https://Hax.co.id/](https://hax.co.id/).
+Browse to the site [https://hax.co.id/](https://hax.co.id/).
 
 ![Homepage](/uploads/2021_12_16_P1.png)
 
@@ -137,7 +137,7 @@ If you did everything correctly, you should be able to see your VPS server's ter
 
 Congratulations! You have successfully connected to your VPS server. Now, you can access your VPS server through SSH.
 
-## Step 6: Uploading Your VPS Server
+## Step 6: Updating Your VPS Server
 
 Technically you can do whatever you need right now. But I would recommend you to update your VPS server to the latest version. Follow along the guide to do so.
 
