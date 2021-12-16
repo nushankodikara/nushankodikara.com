@@ -1,26 +1,12 @@
 ---
-author: Katheryn Fox
+author: Nushan Kodikara
 title: About Me
-date: 2021-07-15
-description:
-keywords: ["about-us", "about-hugo", "contact"]
+date: 2021-12-15
+description: About Me
+keywords: ["contact"]
 type: about
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I am a software developer with a passion for creating applications that improves the lives of others. I have a strong background in web development and have worked with a wide range of technologies. I am currently working on a project that aims to improve the lives of people in Sri Lanka.
 
-Hugo makes use of a variety of open source projects including:
-
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+With the current pandemic, as more and more people trying to get into the tech industry, my goal with this blog is to help them master the skills they need to be successful in the industry. I hope to be able to share my knowledge and experience with you.

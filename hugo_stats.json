@@ -58,8 +58,8 @@
     "classes": [
       "absolute",
       "active",
-      "bg-blue-100",
       "bg-gray-100",
+      "bg-green-100",
       "bg-white",
       "border",
       "border-transparent",
