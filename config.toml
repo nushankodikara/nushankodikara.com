@@ -1,7 +1,7 @@
 baseurl = "https://www.nushankodikara.com"
 metaDataFormat = "yaml"
 title = "Nushan Kodikara"
-theme = "blist"
+theme = "blists"
 publishDir = "docs"
 
 DefaultContentLanguage = "en"
