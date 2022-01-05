@@ -21,8 +21,8 @@ DefaultContentLanguageInSubdir = true
         weight = 1
 
     [[languages.en.menu.main]]
-        name = "Team Drives"
-        url = "https://nushankodikara.com/teamdrives/"
+        name = "Team Drive"
+        url = "https://td.hackgence.com/"
         weight = 2
 
 #    [[languages.en.menu.main]]
