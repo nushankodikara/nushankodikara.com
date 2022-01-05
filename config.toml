@@ -21,8 +21,8 @@ DefaultContentLanguageInSubdir = true
         weight = 1
 
     [[languages.en.menu.main]]
-        name = "About"
-        url = "page/about/"
+        name = "Team Drives"
+        url = "https://nushankodikara.com/teamdrives/"
         weight = 2
 
 #    [[languages.en.menu.main]]
@@ -39,7 +39,7 @@ DefaultContentLanguageInSubdir = true
 
   # Custom copyright - optional
   copyright = "Copyright © 2022 - Nushan Kodikara · All rights reserved"
-  favicon = "/favicon.svg"
+  favicon = "/favicon.png"
 
   # Color for the intro details and social links block, not applicable for dark mode
   # Supported values: Any color from TailwindCSS default colors
