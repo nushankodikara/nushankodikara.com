@@ -22,7 +22,7 @@ DefaultContentLanguageInSubdir = true
 
     [[languages.en.menu.main]]
         name = "Team Drive"
-        url = "https://td.hackgence.com/"
+        url = "https://team.gdrive.vip/"
         weight = 2
 
 #    [[languages.en.menu.main]]
