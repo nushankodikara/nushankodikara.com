@@ -20,10 +20,10 @@ DefaultContentLanguageInSubdir = true
         url = "blog"
         weight = 1
 
-    [[languages.en.menu.main]]
-        name = "Team Drive"
-        url = "https://team.gdrive.vip/"
-        weight = 2
+#    [[languages.en.menu.main]]
+#        name = "Team Drive"
+#        url = "https://team.gdrive.vip/"
+#        weight = 2
 
 #    [[languages.en.menu.main]]
 #        name = "Tags"
