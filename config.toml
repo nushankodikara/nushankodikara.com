@@ -15,15 +15,11 @@ DefaultContentLanguageInSubdir = true
       introTitle = "Hey! I'm Nushan Kodikara"
       introSubtitle = "A developer who enjoys building things."
       introPhoto = "/picture.jpg"
+      
     [[languages.en.menu.main]]
         name = "Blog"
         url = "blog"
         weight = 1
-
-#    [[languages.en.menu.main]]
-#        name = "Team Drive"
-#        url = "https://team.gdrive.vip/"
-#        weight = 2
 
 #    [[languages.en.menu.main]]
 #        name = "Tags"
