@@ -13,21 +13,21 @@
     />
 
     <title>
-        Firebase Realtime Database - Nushan Kodikara
+        Firebase Realtime Database - Blog by Nushan Kodikara
     </title>
     <meta
         name="description"
         content="Complete Guide on Firebase Realtime Database"
-    /><meta name="generator" content="Hugo 0.92.2" /><link
+    /><meta name="generator" content="Hugo 0.96.0" /><link
         rel="stylesheet"
-        href="https://www.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
+        href="https://blog.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
         integrity="sha256-nrGTPXS8UfkKmYKOO4OQCcMmqk2N1ewKxhaPljEF6Vc="
     />
     
      <meta property="og:title" content="Firebase Realtime Database" />
 <meta property="og:description" content="Complete Guide on Firebase Realtime Database" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.nushankodikara.com/blog/firebase-realtime-database/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://blog.nushankodikara.com/blog/firebase-realtime-database/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-08-05T06:00:00+05:30" />
 <meta property="article:modified_time" content="2020-08-05T06:00:00+05:30" />
 
@@ -41,13 +41,13 @@
 <meta itemprop="keywords" content="Mobile Development,web Development,Firebase," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
-  <a href="https://www.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
-    Nushan Kodikara
+  <a href="https://blog.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Blog by Nushan Kodikara
   </a>
   <ul class="flex items-center gap-4 lg:gap-6">
 
     
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://bio.nushankodikara.com">Social Links</a></li>
     
 
     
@@ -211,11 +211,11 @@ Stores data as collections of documents.</p>
 <p>The Firebase Realtime Database is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client. When you build cross-platform apps with our Android, iOS, and JavaScript SDKs, all of your clients share one Realtime Database instance and automatically receive updates with the newest data.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <p>Let&rsquo;s add firebase to our project. in order to do this, you have to implement links to these files in your HTML page. These versions could be changed so go to this site <a href="https://firebase.google.com/docs/web/setup">https://firebase.google.com/docs/web/setup</a> to get the latest</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#6272a4">&lt;!-- This is the main JS file to implement Firebase --&gt;</span>
-&lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-<span style="color:#6272a4">&lt;!-- Now you can add any modular firebase services in this case Realtime Database --&gt;</span>
-&lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-</code></pre></div><p>It&rsquo;s simple as that!. And now that out to the way, we have to initialize your Firebase project. To do this you have to goto <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a> And create a new project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#6272a4">&lt;!-- This is the main JS file to implement Firebase --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">&lt;!-- Now you can add any modular firebase services in this case Realtime Database --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span></code></pre></div><p>It&rsquo;s simple as that!. And now that out to the way, we have to initialize your Firebase project. To do this you have to goto <a href="https://console.firebase.google.com/">https://console.firebase.google.com/</a> And create a new project.</p>
 <p><img src="/uploads/20200805_01.gif" alt="Creating a firebase project"></p>
 <p>Now you have to add the initialization code from the project. Doing this is simple, go to your project and copy the web SDK code And put in right below the Firebase implementation service. This code is okay to be exposed and you can add security rules to make sure no one&rsquo;s going to peek into your database in unwanted ways.</p>
 <p><img src="/uploads/20200805_02.gif" alt="Creating a firebase project">
@@ -229,101 +229,101 @@ Stores data as collections of documents.</p>
 <h3 id="how-data-is-structured-its-a-json-tree">How data is structured: it&rsquo;s a JSON tree</h3>
 <p>All Firebase Realtime Database data is stored as JSON objects. You can think of the database as a cloud-hosted JSON tree. Unlike a SQL database, there are no tables or records. When you add data to the JSON tree, it becomes a node in the existing JSON structure with an associated key. You can provide your own keys, such as user IDs or semantic names, or they can be provided for you using <code>push()</code>.</p>
 <p>For example, consider a chat application that allows users to store a basic profile and contact list. A typical user profile is located at a path, such as /users/$uid. The user alovelace might have a database entry that looks something like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#ff79c6">&#34;users&#34;</span>: {
-    <span style="color:#ff79c6">&#34;alovelace&#34;</span>: {
-      <span style="color:#ff79c6">&#34;name&#34;</span>: <span style="color:#f1fa8c">&#34;Ada Lovelace&#34;</span>,
-      <span style="color:#ff79c6">&#34;contacts&#34;</span>: { <span style="color:#ff79c6">&#34;ghopper&#34;</span>: <span style="color:#ff79c6">true</span> },
-    },
-    <span style="color:#ff79c6">&#34;ghopper&#34;</span>: { ... },
-    <span style="color:#ff79c6">&#34;eclarke&#34;</span>: { ... }
-  }
-}
-</code></pre></div><p>Although the database uses a JSON tree, data stored in the database can be represented as certain native types that correspond to available JSON types to help you write more maintainable code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&#34;users&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;alovelace&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">&#34;name&#34;</span>: <span style="color:#f1fa8c">&#34;Ada Lovelace&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">&#34;contacts&#34;</span>: { <span style="color:#ff79c6">&#34;ghopper&#34;</span>: <span style="color:#ff79c6">true</span> },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;ghopper&#34;</span>: { ... },
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;eclarke&#34;</span>: { ... }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Although the database uses a JSON tree, data stored in the database can be represented as certain native types that correspond to available JSON types to help you write more maintainable code.</p>
 <h2 id="read-and-write-data-on-the-web">Read and Write Data on the Web</h2>
 <p>Alright Before starting, Let&rsquo;s go to the firebase and remove security from security rules. In order to do this, we have to set read and write permission to true. So anyone can read and write from the database.</p>
 <p><img src="/uploads/20200805_05.gif" alt="Creating a firebase project"></p>
 <h2 id="get-a-database-reference">Get a database reference</h2>
 <p>To read or write data from the database, you need an instance of firebase.database.Reference, in order to do this we use the following code in our main JS file, I like to make this into a constant variable,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">const</span> database <span style="color:#ff79c6">=</span> firebase.database();
-</code></pre></div><p>Now we can use this database variable to do anything with our Database, Let&rsquo;s start with basic operations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff79c6">const</span> database <span style="color:#ff79c6">=</span> firebase.database();
+</span></span></code></pre></div><p>Now we can use this database variable to do anything with our Database, Let&rsquo;s start with basic operations.</p>
 <h2 id="basic-writing-operation">Basic Writing Operation</h2>
 <p>For basic write operations, you can use <code>set()</code> to save data to a specified reference, replacing any existing data at that path. For example a social blogging application might add a user with <code>set()</code> as follows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">writeUserData <span style="color:#ff79c6">=</span> (userId, name, email, imageUrl) =&gt; {
-  firebase.database().ref(<span style="color:#f1fa8c">&#39;users/&#39;</span> <span style="color:#ff79c6">+</span> userId).set({
-    username<span style="color:#ff79c6">:</span> name,
-    email<span style="color:#ff79c6">:</span> email,
-    profile_picture <span style="color:#ff79c6">:</span> imageUrl
-  });
-}
-</code></pre></div><p>This function passes 4 variables, userID, name, email and imageUrl to the firebase database reference set function, and from there it&rsquo;s writing to <code>users/*UserID</code> directory where the UserID is the user&rsquo;s unique ID, and setting username variable to padded name, email variable to passed email and profile picture to the passed URL. you can use <code>database</code> variable instead of <code>firebase.database()</code>, however I like to set the whole reference point into a constant variable so I just have to use the set function on it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>writeUserData <span style="color:#ff79c6">=</span> (userId, name, email, imageUrl) =&gt; {
+</span></span><span style="display:flex;"><span>  firebase.database().ref(<span style="color:#f1fa8c">&#39;users/&#39;</span> <span style="color:#ff79c6">+</span> userId).set({
+</span></span><span style="display:flex;"><span>    username<span style="color:#ff79c6">:</span> name,
+</span></span><span style="display:flex;"><span>    email<span style="color:#ff79c6">:</span> email,
+</span></span><span style="display:flex;"><span>    profile_picture <span style="color:#ff79c6">:</span> imageUrl
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This function passes 4 variables, userID, name, email and imageUrl to the firebase database reference set function, and from there it&rsquo;s writing to <code>users/*UserID</code> directory where the UserID is the user&rsquo;s unique ID, and setting username variable to padded name, email variable to passed email and profile picture to the passed URL. you can use <code>database</code> variable instead of <code>firebase.database()</code>, however I like to set the whole reference point into a constant variable so I just have to use the set function on it.</p>
 <p>But with this set function, if there are data in that specific location it would be overwritten.</p>
 <h2 id="listen-for-value-events-basic-read-operations">Listen for value events (Basic Read Operations)</h2>
 <p>To read data at a path and listen for changes, use the <code>on()</code> or <code>once()</code> methods of <code>firebase.database.Reference</code> to observe events. As is says, <code>once()</code> is for reading data only once, and <code>on()</code> is to listen for data in realtime.</p>
 <p>now let&rsquo;s see how we can listen to data in realtime</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">let</span> starCountRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;posts/&#39;</span> <span style="color:#ff79c6">+</span> postId <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;/starCount&#39;</span>);
-starCountRef.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
-  updateStarCount(postElement, snapshot.val());
-});
-</code></pre></div><p>Now with his piece of code, It&rsquo;s listening to the <code>post/*postID/starCount</code> in realtime, and the postID is dynamic as you can see. From this code the SDK is always listening to the starCount of the specific post and once it&rsquo;s been updated, Fires the updateStarCount() function every time with the updated value of the <code>post/*postID/starCount</code> directory. It&rsquo;s that simple to use. ah also the value can be retrieved using <code>snapshot.val()</code> function. Data would be returned as a string.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> starCountRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;posts/&#39;</span> <span style="color:#ff79c6">+</span> postId <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;/starCount&#39;</span>);
+</span></span><span style="display:flex;"><span>starCountRef.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
+</span></span><span style="display:flex;"><span>  updateStarCount(postElement, snapshot.val());
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>Now with his piece of code, It&rsquo;s listening to the <code>post/*postID/starCount</code> in realtime, and the postID is dynamic as you can see. From this code the SDK is always listening to the starCount of the specific post and once it&rsquo;s been updated, Fires the updateStarCount() function every time with the updated value of the <code>post/*postID/starCount</code> directory. It&rsquo;s that simple to use. ah also the value can be retrieved using <code>snapshot.val()</code> function. Data would be returned as a string.</p>
 <p>now let&rsquo;s read the data once. It&rsquo;s the same as the above function, But it&rsquo;s only firing the function, when we define the variable, or you can use it to manually fetch data from the database.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">let</span> userId <span style="color:#ff79c6">=</span> firebase.auth().currentUser.uid;
-<span style="color:#ff79c6">return</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;/users/&#39;</span> <span style="color:#ff79c6">+</span> userId).once(<span style="color:#f1fa8c">&#39;value&#39;</span>).then(<span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
-  <span style="color:#8be9fd;font-style:italic">let</span> username <span style="color:#ff79c6">=</span> (snapshot.val() <span style="color:#ff79c6">&amp;&amp;</span> snapshot.val().username) <span style="color:#ff79c6">||</span> <span style="color:#f1fa8c">&#39;Anonymous&#39;</span>;
-  <span style="color:#6272a4">// ...
-</span><span style="color:#6272a4"></span>});
-</code></pre></div><p>Consider this piece of code as a snippet from a function to get the username from a user. here, first we set the authentication reference to userID variable. then using <code>once()</code> function, we&rsquo;re retrieving data from <code>/users/*userID/</code> path, then what is that on the returning section you may ask, it&rsquo;s checking for is there any has been returned, this is false if you&rsquo;re using Anonymous authentication, and we&rsquo;re discussing about authentication in a while so be patient. And if the function returns a value, we&rsquo;re using it as the username, otherwise we&rsquo;re putting Anonymous as the username.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> userId <span style="color:#ff79c6">=</span> firebase.auth().currentUser.uid;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">return</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;/users/&#39;</span> <span style="color:#ff79c6">+</span> userId).once(<span style="color:#f1fa8c">&#39;value&#39;</span>).then(<span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">let</span> username <span style="color:#ff79c6">=</span> (snapshot.val() <span style="color:#ff79c6">&amp;&amp;</span> snapshot.val().username) <span style="color:#ff79c6">||</span> <span style="color:#f1fa8c">&#39;Anonymous&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>});
+</span></span></code></pre></div><p>Consider this piece of code as a snippet from a function to get the username from a user. here, first we set the authentication reference to userID variable. then using <code>once()</code> function, we&rsquo;re retrieving data from <code>/users/*userID/</code> path, then what is that on the returning section you may ask, it&rsquo;s checking for is there any has been returned, this is false if you&rsquo;re using Anonymous authentication, and we&rsquo;re discussing about authentication in a while so be patient. And if the function returns a value, we&rsquo;re using it as the username, otherwise we&rsquo;re putting Anonymous as the username.</p>
 <h2 id="updating-or-deleting-data">Updating or deleting data</h2>
 <h3 id="update-specific-fields">Update specific fields</h3>
 <p>To simultaneously write to specific children of a node without overwriting other child nodes, use the <code>update()</code> method.</p>
 <p>When calling <code>update()</code>, you can update lower-level child values by specifying a path for the key. If data is stored in multiple locations to scale better, you can update all instances of that data using data fan-out.</p>
 <p>For example, a social blogging app might create a post and simultaneously update it to the recent activity feed and the posting user&rsquo;s activity feed using code like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">writeNewPost <span style="color:#ff79c6">=</span> (uid, username, picture, title, body) =&gt; {
-  <span style="color:#6272a4">// A post entry.
-</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">let</span> postData <span style="color:#ff79c6">=</span> {
-    author<span style="color:#ff79c6">:</span> username,
-    uid<span style="color:#ff79c6">:</span> uid,
-    body<span style="color:#ff79c6">:</span> body,
-    title<span style="color:#ff79c6">:</span> title,
-    starCount<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>,
-    authorPic<span style="color:#ff79c6">:</span> picture
-  };
-
-  <span style="color:#6272a4">// Get a key for a new Post.
-</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">let</span> newPostKey <span style="color:#ff79c6">=</span> firebase.database().ref().child(<span style="color:#f1fa8c">&#39;posts&#39;</span>).push().key;
-
-  <span style="color:#6272a4">// Write the new post&#39;s data simultaneously in the posts list and the user&#39;s post list.
-</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">let</span> updates <span style="color:#ff79c6">=</span> {};
-  updates[<span style="color:#f1fa8c">&#39;/posts/&#39;</span> <span style="color:#ff79c6">+</span> newPostKey] <span style="color:#ff79c6">=</span> postData;
-  updates[<span style="color:#f1fa8c">&#39;/user-posts/&#39;</span> <span style="color:#ff79c6">+</span> uid <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;/&#39;</span> <span style="color:#ff79c6">+</span> newPostKey] <span style="color:#ff79c6">=</span> postData;
-
-  <span style="color:#ff79c6">return</span> firebase.database().ref().update(updates);
-}
-</code></pre></div><p>Let me explain what this does. we have the <code>writeNewPost()</code> function passing uid, username, picture, title and body variables and assigning them to an array in postData. you can get a unique key for a data set using the <code>push()</code> function and we&rsquo;re going to update two directories simultaneously. You can see the update array has two directories with the same dataset, <code>/post/*newPostKey</code> and <code>/user-posts/uid/newpostkey/</code> are getting updated the same time, This can be an example of think like facebook or instagram managing a bigger feed and personal feed with same post data. (There are more efficent ways to do this)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>writeNewPost <span style="color:#ff79c6">=</span> (uid, username, picture, title, body) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// A post entry.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">let</span> postData <span style="color:#ff79c6">=</span> {
+</span></span><span style="display:flex;"><span>    author<span style="color:#ff79c6">:</span> username,
+</span></span><span style="display:flex;"><span>    uid<span style="color:#ff79c6">:</span> uid,
+</span></span><span style="display:flex;"><span>    body<span style="color:#ff79c6">:</span> body,
+</span></span><span style="display:flex;"><span>    title<span style="color:#ff79c6">:</span> title,
+</span></span><span style="display:flex;"><span>    starCount<span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>,
+</span></span><span style="display:flex;"><span>    authorPic<span style="color:#ff79c6">:</span> picture
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// Get a key for a new Post.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">let</span> newPostKey <span style="color:#ff79c6">=</span> firebase.database().ref().child(<span style="color:#f1fa8c">&#39;posts&#39;</span>).push().key;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// Write the new post&#39;s data simultaneously in the posts list and the user&#39;s post list.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">let</span> updates <span style="color:#ff79c6">=</span> {};
+</span></span><span style="display:flex;"><span>  updates[<span style="color:#f1fa8c">&#39;/posts/&#39;</span> <span style="color:#ff79c6">+</span> newPostKey] <span style="color:#ff79c6">=</span> postData;
+</span></span><span style="display:flex;"><span>  updates[<span style="color:#f1fa8c">&#39;/user-posts/&#39;</span> <span style="color:#ff79c6">+</span> uid <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;/&#39;</span> <span style="color:#ff79c6">+</span> newPostKey] <span style="color:#ff79c6">=</span> postData;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> firebase.database().ref().update(updates);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Let me explain what this does. we have the <code>writeNewPost()</code> function passing uid, username, picture, title and body variables and assigning them to an array in postData. you can get a unique key for a data set using the <code>push()</code> function and we&rsquo;re going to update two directories simultaneously. You can see the update array has two directories with the same dataset, <code>/post/*newPostKey</code> and <code>/user-posts/uid/newpostkey/</code> are getting updated the same time, This can be an example of think like facebook or instagram managing a bigger feed and personal feed with same post data. (There are more efficent ways to do this)</p>
 <p>Using these paths, you can perform simultaneous updates to multiple locations in the JSON tree with a single call to update(), such as how this example creates the new post in both locations. Simultaneous updates made this way are atomic: either all updates succeed or all updates fail.</p>
 <h2 id="add-a-completion-callback">Add a Completion Callback</h2>
 <p>If you want to know when your data has been committed, you can add a completion callback. Both set() and update() take an optional completion callback that is called when the write has been committed to the database. If the call was unsuccessful, the callback is passed an error object indicating why the failure occurred.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.database().ref(<span style="color:#f1fa8c">&#39;users/&#39;</span> <span style="color:#ff79c6">+</span> userId).set({
-    username<span style="color:#ff79c6">:</span> name,
-    email<span style="color:#ff79c6">:</span> email,
-    profile_picture <span style="color:#ff79c6">:</span> imageUrl
-}, <span style="color:#8be9fd;font-style:italic">function</span>(error) {
-    <span style="color:#ff79c6">if</span> (error) {
-      <span style="color:#6272a4">// The write failed...
-</span><span style="color:#6272a4"></span>    } <span style="color:#ff79c6">else</span> {
-      <span style="color:#6272a4">// Data saved successfully!
-</span><span style="color:#6272a4"></span>    }
-  });
-}
-</code></pre></div><h2 id="delete-data">Delete data</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>firebase.database().ref(<span style="color:#f1fa8c">&#39;users/&#39;</span> <span style="color:#ff79c6">+</span> userId).set({
+</span></span><span style="display:flex;"><span>    username<span style="color:#ff79c6">:</span> name,
+</span></span><span style="display:flex;"><span>    email<span style="color:#ff79c6">:</span> email,
+</span></span><span style="display:flex;"><span>    profile_picture <span style="color:#ff79c6">:</span> imageUrl
+</span></span><span style="display:flex;"><span>}, <span style="color:#8be9fd;font-style:italic">function</span>(error) {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> (error) {
+</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">// The write failed...
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    } <span style="color:#ff79c6">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">// Data saved successfully!
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    }
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="delete-data">Delete data</h2>
 <p>The simplest way to delete data is to call remove() on a reference to the location of that data.</p>
 <p>You can also delete by specifying null as the value for another write operation such as set() or update(). You can use this technique with update() to delete multiple children in a single API call.</p>
 <h2 id="receive-a-promise">Receive a Promise</h2>
 <p>To know when your data is committed to the Firebase Realtime Database server, you can use a Promise. Both set() and update() can return a Promise you can use to know when the write is committed to the database.</p>
 <h2 id="detach-listeners">Detach listeners</h2>
 <p>Callbacks are removed by calling the off() method on your Firebase database reference.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">firebase.database().ref(<span style="color:#f1fa8c">&#39;users/&#39;</span> <span style="color:#ff79c6">+</span> userId).off()
-</code></pre></div><p>You can remove a single listener by passing it as a parameter to off(). Calling off() on the location with no arguments removes all listeners at that location.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>firebase.database().ref(<span style="color:#f1fa8c">&#39;users/&#39;</span> <span style="color:#ff79c6">+</span> userId).off()
+</span></span></code></pre></div><p>You can remove a single listener by passing it as a parameter to off(). Calling off() on the location with no arguments removes all listeners at that location.</p>
 <p>Calling off() on a parent listener does not automatically remove listeners registered on its child nodes; off() must also be called on any child listeners to remove the callback.</p>
 <h2 id="save-data-as-transactions">Save data as transactions</h2>
 <p>When working with data that could be corrupted by concurrent modifications, such as incremental counters, you can use a transaction operation. You can give this operation an update function and an optional completion callback. The update function takes the current state of the data as an argument and returns the new desired state you would like to write. If another client writes to the location before your new value is successfully written, your update function is called again with the new current value, and the write is retried.</p>
@@ -355,20 +355,20 @@ return post;
 <p>Here we&rsquo;re discussing about how to manage data lists, for an instance, imagine of a chat in a chat application, it&rsquo;s a list of messages, of facebook&rsquo;s post data, it&rsquo;s a list of posts etc etc&hellip;</p>
 <h3 id="get-a-reference-of-the-database">Get a reference of the database</h3>
 <p>To read or write data from the database, you need an instance of firebase.database.Reference:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Get a reference to the database service
-</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">let</span> database <span style="color:#ff79c6">=</span> firebase.database();
-</code></pre></div><h3 id="reading-and-writing-lists">Reading and writing lists</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#6272a4">// Get a reference to the database service
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">let</span> database <span style="color:#ff79c6">=</span> firebase.database();
+</span></span></code></pre></div><h3 id="reading-and-writing-lists">Reading and writing lists</h3>
 <h4 id="append-to-a-list-of-data">Append to a list of data</h4>
 <p>Use the <code>push()</code> method to append data to a list in multiuser applications. The push() method generates a unique key every time a new child is added to the specified Firebase reference. By using these auto-generated keys for each new element in the list, several clients can add children to the same location at the same time without write conflicts. The unique key generated by push() is based on a timestamp, so list items are automatically ordered chronologically.</p>
 <p>You can use the reference to the new data returned by the push() method to get the value of the child&rsquo;s auto-generated key or set data for the child. The .key property of a push() reference contains the auto-generated key.</p>
 <p>You can use these auto-generated keys to simplify flattening your data structure. For more information, see the data fan-out example.</p>
 <p>For example, push() could be used to add a new post to a list of posts in a social application:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">// Create a new post reference with an auto-generated id
-</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">let</span> newPostRef <span style="color:#ff79c6">=</span> postListRef.push();
-newPostRef.set({
-    <span style="color:#6272a4">// ...
-</span><span style="color:#6272a4"></span>});
-</code></pre></div><h3 id="listen-for-child-events">Listen for child events</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#6272a4">// Create a new post reference with an auto-generated id
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">let</span> newPostRef <span style="color:#ff79c6">=</span> postListRef.push();
+</span></span><span style="display:flex;"><span>newPostRef.set({
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>});
+</span></span></code></pre></div><h3 id="listen-for-child-events">Listen for child events</h3>
 <p>Child events are triggered in response to specific operations that happen to the children of a node from an operation such as a new child added through the push() method or a child being updated through the update() method.</p>
 <table>
 <thead>
@@ -397,30 +397,30 @@ newPostRef.set({
 </tbody>
 </table>
 <p>Each of these together can be useful for listening to changes to a specific node in a database. For example, a social blogging app might use these methods together to monitor activity in the comments of a post, as shown below:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">let</span> commentsRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;post-comments/&#39;</span> <span style="color:#ff79c6">+</span> postId);
-commentsRef.on(<span style="color:#f1fa8c">&#39;child_added&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(data) {
-  addCommentElement(postElement, data.key, data.val().text, data.val().author);
-});
-
-commentsRef.on(<span style="color:#f1fa8c">&#39;child_changed&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(data) {
-  setCommentValues(postElement, data.key, data.val().text, data.val().author);
-});
-
-commentsRef.on(<span style="color:#f1fa8c">&#39;child_removed&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(data) {
-  deleteComment(postElement, data.key);
-});
-</code></pre></div><h3 id="listen-for-value-events">Listen for value events</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> commentsRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;post-comments/&#39;</span> <span style="color:#ff79c6">+</span> postId);
+</span></span><span style="display:flex;"><span>commentsRef.on(<span style="color:#f1fa8c">&#39;child_added&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(data) {
+</span></span><span style="display:flex;"><span>  addCommentElement(postElement, data.key, data.val().text, data.val().author);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commentsRef.on(<span style="color:#f1fa8c">&#39;child_changed&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(data) {
+</span></span><span style="display:flex;"><span>  setCommentValues(postElement, data.key, data.val().text, data.val().author);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>commentsRef.on(<span style="color:#f1fa8c">&#39;child_removed&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(data) {
+</span></span><span style="display:flex;"><span>  deleteComment(postElement, data.key);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h3 id="listen-for-value-events">Listen for value events</h3>
 <p>While listening for child events is the recommended way to read lists of data, there are situations listening for value events on a list reference is useful.</p>
 <p>Attaching a value observer to a list of data will return the entire list of data as a single snapshot which you can then loop over to access individual children.</p>
 <p>Even when there is only a single match for the query, the snapshot is still a list; it just contains a single item. To access the item, you need to loop over the result:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">ref.once(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
-  snapshot.forEach(<span style="color:#8be9fd;font-style:italic">function</span>(childSnapshot) {
-    <span style="color:#8be9fd;font-style:italic">var</span> childKey <span style="color:#ff79c6">=</span> childSnapshot.key;
-    <span style="color:#8be9fd;font-style:italic">var</span> childData <span style="color:#ff79c6">=</span> childSnapshot.val();
-    <span style="color:#6272a4">// ...
-</span><span style="color:#6272a4"></span>  });
-});
-</code></pre></div><p>This pattern can be useful when you want to fetch all children of a list in a single operation, rather than listening for additional child added events.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>ref.once(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span>(snapshot) {
+</span></span><span style="display:flex;"><span>  snapshot.forEach(<span style="color:#8be9fd;font-style:italic">function</span>(childSnapshot) {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">var</span> childKey <span style="color:#ff79c6">=</span> childSnapshot.key;
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">var</span> childData <span style="color:#ff79c6">=</span> childSnapshot.val();
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>This pattern can be useful when you want to fetch all children of a list in a single operation, rather than listening for additional child added events.</p>
 <h3 id="sorting-and-filtering-data">Sorting and filtering data</h3>
 <p>You can use the Realtime Database Query class to retrieve data sorted by key, by value, or by value of a child. You can also filter the sorted result to a specific number of results or a range of keys or values.</p>
 <h3 id="sort-data">Sort data</h3>
@@ -449,33 +449,33 @@ commentsRef.on(<span style="color:#f1fa8c">&#39;child_removed&#39;</span>, <span
 </table>
 <p>You can only use one order-by method at a time. Calling an order-by method multiple times in the same query throws an error.</p>
 <p>The following example demonstrates how you could retrieve a list of a user&rsquo;s top posts sorted by their star count:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">let</span> myUserId <span style="color:#ff79c6">=</span> firebase.auth().currentUser.uid;
-<span style="color:#8be9fd;font-style:italic">let</span> topUserPostsRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;user-posts/&#39;</span> <span style="color:#ff79c6">+</span> myUserId).orderByChild(<span style="color:#f1fa8c">&#39;starCount&#39;</span>);
-</code></pre></div><p>This defines a query that when combined with a child listener synchronizes the client with the user&rsquo;s posts from the path in the database based on their user ID, ordered by the number of stars each post has received. This technique of using IDs as index keys is called data fan out, you can read more about it in Structure Your Database.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> myUserId <span style="color:#ff79c6">=</span> firebase.auth().currentUser.uid;
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> topUserPostsRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;user-posts/&#39;</span> <span style="color:#ff79c6">+</span> myUserId).orderByChild(<span style="color:#f1fa8c">&#39;starCount&#39;</span>);
+</span></span></code></pre></div><p>This defines a query that when combined with a child listener synchronizes the client with the user&rsquo;s posts from the path in the database based on their user ID, ordered by the number of stars each post has received. This technique of using IDs as index keys is called data fan out, you can read more about it in Structure Your Database.</p>
 <p>The call to the <code>orderByChild()</code> method specifies the child key to order the results by. In this case, posts are sorted by the value of their respective &ldquo;starCount&rdquo; child. Queries can also be ordered by nested children, in case you have data that looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#f1fa8c">&#34;posts&#34;</span><span style="color:#ff79c6">:</span> {
-  <span style="color:#f1fa8c">&#34;ts-functions&#34;</span><span style="color:#ff79c6">:</span> {
-    <span style="color:#f1fa8c">&#34;metrics&#34;</span><span style="color:#ff79c6">:</span> {
-      <span style="color:#f1fa8c">&#34;views&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1200000</span>,
-      <span style="color:#f1fa8c">&#34;likes&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">251000</span>,
-      <span style="color:#f1fa8c">&#34;shares&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1200</span>,
-    },
-    <span style="color:#f1fa8c">&#34;title&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Why you should use TypeScript for writing Cloud Functions&#34;</span>,
-    <span style="color:#f1fa8c">&#34;author&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Doug&#34;</span>,
-  },
-  <span style="color:#f1fa8c">&#34;android-arch-3&#34;</span><span style="color:#ff79c6">:</span> {
-    <span style="color:#f1fa8c">&#34;metrics&#34;</span><span style="color:#ff79c6">:</span> {
-      <span style="color:#f1fa8c">&#34;views&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">900000</span>,
-      <span style="color:#f1fa8c">&#34;likes&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">117000</span>,
-      <span style="color:#f1fa8c">&#34;shares&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">144</span>,
-    },
-    <span style="color:#f1fa8c">&#34;title&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Using Android Architecture Components with Firebase Realtime Database (Part 3)&#34;</span>,
-    <span style="color:#f1fa8c">&#34;author&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Doug&#34;</span>,
-  }
-}
-</code></pre></div><p>In this case, we can order our list elements by values nested under the metrics key by specifying the relative path to the nested child in our orderByChild() call.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">var</span> mostViewedPosts <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;posts&#39;</span>).orderByChild(<span style="color:#f1fa8c">&#39;metrics/views&#39;</span>);
-</code></pre></div><p>For more information on how other data types are ordered, see How query data is ordered.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;posts&#34;</span><span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f1fa8c">&#34;ts-functions&#34;</span><span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;metrics&#34;</span><span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#f1fa8c">&#34;views&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1200000</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f1fa8c">&#34;likes&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">251000</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f1fa8c">&#34;shares&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1200</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;title&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Why you should use TypeScript for writing Cloud Functions&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;author&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Doug&#34;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f1fa8c">&#34;android-arch-3&#34;</span><span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;metrics&#34;</span><span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#f1fa8c">&#34;views&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">900000</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f1fa8c">&#34;likes&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#bd93f9">117000</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f1fa8c">&#34;shares&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">144</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;title&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Using Android Architecture Components with Firebase Realtime Database (Part 3)&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;author&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Doug&#34;</span>,
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this case, we can order our list elements by values nested under the metrics key by specifying the relative path to the nested child in our orderByChild() call.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">var</span> mostViewedPosts <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;posts&#39;</span>).orderByChild(<span style="color:#f1fa8c">&#39;metrics/views&#39;</span>);
+</span></span></code></pre></div><p>For more information on how other data types are ordered, see How query data is ordered.</p>
 <h3 id="filtering-data">Filtering data</h3>
 <p>To filter data, you can combine any of the limit or range methods with an order-by method when constructing a query.</p>
 <table>
@@ -513,8 +513,8 @@ commentsRef.on(<span style="color:#f1fa8c">&#39;child_removed&#39;</span>, <span
 <p>You can use the limitToFirst() and limitToLast() methods to set a maximum number of children to be synced for a given event. For example, if you use limitToFirst() to set a limit of 100, you initially only receive up to 100 child_added events. If you have fewer than 100 items stored in your Firebase database, a child_added event fires for each item.</p>
 <p>As items change, you receive child_added events for items that enter the query and child_removed events for items that drop out of it so that the total number stays at 100.</p>
 <p>The following example demonstrates how example blogging app defines a query to retrieve a list of the 100 most recent posts by all users:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#8be9fd;font-style:italic">let</span> recentPostsRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;posts&#39;</span>).limitToLast(<span style="color:#bd93f9">100</span>);
-</code></pre></div><p>This example only defines a query, to actually synchronize data it needs to have an attached listener.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> recentPostsRef <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;posts&#39;</span>).limitToLast(<span style="color:#bd93f9">100</span>);
+</span></span></code></pre></div><p>This example only defines a query, to actually synchronize data it needs to have an attached listener.</p>
 <h3 id="filter-by-key-or-value">Filter by key or value</h3>
 <p>You can use startAt(), endAt(), and equalTo() to choose arbitrary starting, ending, and equivalence points for queries. This can be useful for paginating data or finding items with children that have a specific value.</p>
 <h3 id="how-query-data-is-ordered">How query data is ordered</h3>
@@ -544,156 +544,156 @@ commentsRef.on(<span style="color:#f1fa8c">&#39;child_removed&#39;</span>, <span
 <h2 id="so-lets-put-our-knowledge-to-the-test">So let&rsquo;s put our knowledge to the test</h2>
 <p>We can create a simple application of a public grocery list. to demonstrate the usage of firebase realtime database. This is the simplest as it can gets with all the functionalities. So let&rsquo;s see how I did it</p>
 <p><img src="/uploads/20200805_06.gif" alt="Grocery list"></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;en&#34;</span>&gt;
-
-&lt;<span style="color:#ff79c6">head</span>&gt;
-    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">charset</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewport&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;style.css&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">title</span>&gt;Firebase Demo - Realtime Database&lt;/<span style="color:#ff79c6">title</span>&gt;
-&lt;/<span style="color:#ff79c6">head</span>&gt;
-
-&lt;<span style="color:#ff79c6">body</span>&gt;
-    <span style="color:#6272a4">&lt;!-- Nothing Advanced But I Always Use a Content Section for Content --&gt;</span>
-    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
-        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
-        &lt;<span style="color:#ff79c6">h2</span>&gt;Simple Grocery List&lt;/<span style="color:#ff79c6">h2</span>&gt;
-        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
-        <span style="color:#6272a4">&lt;!-- A Simple Form to add items--&gt;</span>
-        &lt;<span style="color:#ff79c6">form</span>&gt;
-            &lt;<span style="color:#ff79c6">h4</span>&gt;Items&lt;/<span style="color:#ff79c6">h4</span>&gt;
-            &lt;<span style="color:#ff79c6">input</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;text&#34;</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Grocery&#34;</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Grocery&#34;</span> <span style="color:#50fa7b">placeholder</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Item&#34;</span> /&gt;
-            &lt;<span style="color:#ff79c6">h4</span>&gt;Quantity&lt;/<span style="color:#ff79c6">h4</span>&gt;
-            &lt;<span style="color:#ff79c6">input</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;number&#34;</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;QTY&#34;</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;QTY&#34;</span> /&gt;
-            &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;postData();return false&#34;</span>&gt;Add item&lt;/<span style="color:#ff79c6">button</span>&gt;
-        &lt;/<span style="color:#ff79c6">form</span>&gt;
-        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
-        &lt;<span style="color:#ff79c6">h2</span>&gt;
-            Grocery List
-        &lt;/<span style="color:#ff79c6">h2</span>&gt;
-        <span style="color:#6272a4">&lt;!-- This would hold our Data and data would be added Programmatically--&gt;</span>
-        &lt;<span style="color:#ff79c6">table</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;table&#34;</span>&gt;
-
-        &lt;/<span style="color:#ff79c6">table</span>&gt;
-        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
-        &lt;<span style="color:#ff79c6">h2</span>&gt;
-            Completed List
-        &lt;/<span style="color:#ff79c6">h2</span>&gt;
-        <span style="color:#6272a4">&lt;!-- This would hold our Data and data would be added Programmatically--&gt;</span>
-        &lt;<span style="color:#ff79c6">table</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;table2&#34;</span>&gt;
-
-        &lt;/<span style="color:#ff79c6">table</span>&gt;
-    &lt;/<span style="color:#ff79c6">div</span>&gt;
-
-    <span style="color:#6272a4">&lt;!-- This is the main JS file to implement Firebase --&gt;</span>
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-    <span style="color:#6272a4">&lt;!-- Now you can add any modular firebase services in this case Realtime Database --&gt;</span>
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-
-    <span style="color:#6272a4">&lt;!-- TODO: Add SDKs for Firebase products that you want to use
-</span><span style="color:#6272a4">     https://firebase.google.com/docs/web/setup#available-libraries --&gt;</span>
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-
-    &lt;<span style="color:#ff79c6">script</span>&gt;
-        <span style="color:#6272a4">// Your web app&#39;s Firebase configuration Should Be added Here
-</span><span style="color:#6272a4"></span>        <span style="color:#8be9fd;font-style:italic">var</span> firebaseConfig <span style="color:#ff79c6">=</span> {
-            apiKey<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;AIzaSyDOMUpm4WNldKOVuQCeizCTZAUdSRLqAeU&#34;</span>,
-            authDomain<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;tecinpact-demo.firebaseapp.com&#34;</span>,
-            databaseURL<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://tecinpact-demo.firebaseio.com&#34;</span>,
-            projectId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;tecinpact-demo&#34;</span>,
-            storageBucket<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;tecinpact-demo.appspot.com&#34;</span>,
-            messagingSenderId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;977048224763&#34;</span>,
-            appId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;1:977048224763:web:4891159dda17b97eb8c15e&#34;</span>,
-            measurementId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;G-RZPCV71CCZ&#34;</span>
-        };
-        <span style="color:#6272a4">// Initialize Firebase
-</span><span style="color:#6272a4"></span>        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    &lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-&lt;/<span style="color:#ff79c6">body</span>&gt;
-
-&lt;/<span style="color:#ff79c6">html</span>&gt;
-</code></pre></div><p>I Added comments Explaining the HTML code and it&rsquo;s self explainatory.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#ff79c6">*</span> {
-    <span style="color:#50fa7b">font-family</span><span style="color:#ff79c6">:</span> monospace;
-}
-
-<span style="color:#50fa7b">.content</span> {
-    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-
-    <span style="color:#ff79c6">form</span> {
-        <span style="color:#ff79c6">@extend</span> <span style="color:#50fa7b">.content</span>;
-
-        <span style="color:#ff79c6">input</span> {
-            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">35</span><span style="color:#8be9fd">px</span>;
-            <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">5</span><span style="color:#8be9fd">px</span>;
-        }
-    }
-
-    <span style="color:#ff79c6">table</span> {
-        <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-        <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">350</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> left;
-    }
-}
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#6272a4">/* A Simple Function to push new data */</span>
-postData <span style="color:#ff79c6">=</span> () =&gt; {
-    <span style="color:#8be9fd;font-style:italic">let</span> gitem <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;Grocery&#34;</span>).value
-    <span style="color:#8be9fd;font-style:italic">let</span> gqty <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;QTY&#34;</span>).value
-    <span style="color:#6272a4">/* Resetting Input Boxes after submission */</span>
-    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;Grocery&#34;</span>).value <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;&#34;</span>
-    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;QTY&#34;</span>).value <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
-    <span style="color:#6272a4">/* Pushing data to the Database&#39;s GroceryList Directory */</span>
-    <span style="color:#8be9fd;font-style:italic">let</span> newItem <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;/GroceryList/&#39;</span>).push();
-    newItem.set({
-        item<span style="color:#ff79c6">:</span> gitem,
-        qty<span style="color:#ff79c6">:</span> gqty
-    });
-}
-
-<span style="color:#6272a4">/* Listner to get data from the Database As soon as it&#39;s added */</span>
-<span style="color:#8be9fd;font-style:italic">let</span> items <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;GroceryList/&#39;</span>);
-items.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (recivedItems) {
-    <span style="color:#6272a4">/* Appends data to an array and then we can set the whole array to the table */</span>
-    <span style="color:#8be9fd;font-style:italic">let</span> htmlArray <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">`&lt;tr&gt;&lt;th&gt;Items&lt;/th&gt;&lt;th&gt;QTY&lt;/th&gt;&lt;th&gt;Got It?&lt;/th&gt;&lt;/tr&gt;`</span>]
-    recivedItems.forEach(item =&gt; {
-        <span style="color:#6272a4">/* Formatting Received Data */</span>
-        htmlArray.push(<span style="color:#f1fa8c">`&lt;tr&gt;&lt;td&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;item&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;qty&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;&lt;button onclick=&#34;removedList(&#39;</span><span style="color:#f1fa8c">${</span>item.key<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#39;)&#34;&gt;✔️&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`</span>)
-    });
-    <span style="color:#6272a4">/* Setting Data to table */</span>
-    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#39;table&#39;</span>).innerHTML <span style="color:#ff79c6">=</span> htmlArray.join(<span style="color:#f1fa8c">&#39;&#39;</span>)
-});
-
-<span style="color:#6272a4">/* Adding data to another list when completed */</span>
-removedList <span style="color:#ff79c6">=</span> (id) =&gt; {
-    <span style="color:#8be9fd;font-style:italic">let</span> item <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">`GroceryList/</span><span style="color:#f1fa8c">${</span>id<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>)
-    item.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (snapshot) {
-        <span style="color:#6272a4">/* Getting data and submitting it to Removed List */</span>
-        <span style="color:#8be9fd;font-style:italic">let</span> newCompletedItem <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;/GroceryRemovedList/&#39;</span>).push();
-        newCompletedItem.set(snapshot.val());
-    });
-    <span style="color:#6272a4">/* Removing from the first list */</span>
-    removeEntity(<span style="color:#f1fa8c">&#34;GroceryList&#34;</span>, <span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>id<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>)
-}
-
-<span style="color:#6272a4">/* Listner for the completed List */</span>
-<span style="color:#8be9fd;font-style:italic">let</span> ritems <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;GroceryRemovedList/&#39;</span>);
-ritems.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (recivedItems) {
-    <span style="color:#8be9fd;font-style:italic">let</span> htmlArray <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">`&lt;tr&gt;&lt;th&gt;Items&lt;/th&gt;&lt;th&gt;QTY&lt;/th&gt;&lt;th&gt;Remove It?&lt;/th&gt;&lt;/tr&gt;`</span>]
-    recivedItems.forEach(item =&gt; {
-        htmlArray.push(<span style="color:#f1fa8c">`&lt;tr&gt;&lt;td style=&#34;text-decoration: line-through;&#34;&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;item&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;qty&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;&lt;button onclick=&#34;removeEntity(&#39;GroceryRemovedList&#39;,&#39;</span><span style="color:#f1fa8c">${</span>item.key<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#39;)&#34;&gt;❌&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`</span>)
-    });
-    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#39;table2&#39;</span>).innerHTML <span style="color:#ff79c6">=</span> htmlArray.join(<span style="color:#f1fa8c">&#39;&#39;</span>)
-});
-
-<span style="color:#6272a4">/* This can delete items from the database */</span>
-removeEntity <span style="color:#ff79c6">=</span> (list, id) =&gt; {
-    firebase.database().ref(<span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>list<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">/</span><span style="color:#f1fa8c">${</span>id<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>).remove()
-}
-</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">charset</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewport&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;style.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">title</span>&gt;Firebase Demo - Realtime Database&lt;/<span style="color:#ff79c6">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">head</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">body</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">&lt;!-- Nothing Advanced But I Always Use a Content Section for Content --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h2</span>&gt;Simple Grocery List&lt;/<span style="color:#ff79c6">h2</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">&lt;!-- A Simple Form to add items--&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">form</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">h4</span>&gt;Items&lt;/<span style="color:#ff79c6">h4</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">input</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;text&#34;</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Grocery&#34;</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Grocery&#34;</span> <span style="color:#50fa7b">placeholder</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Item&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">h4</span>&gt;Quantity&lt;/<span style="color:#ff79c6">h4</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">input</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;number&#34;</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;QTY&#34;</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;QTY&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;postData();return false&#34;</span>&gt;Add item&lt;/<span style="color:#ff79c6">button</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">form</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h2</span>&gt;
+</span></span><span style="display:flex;"><span>            Grocery List
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">h2</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">&lt;!-- This would hold our Data and data would be added Programmatically--&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">table</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;table&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">table</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h1</span>&gt;-------------------------------------&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h2</span>&gt;
+</span></span><span style="display:flex;"><span>            Completed List
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">h2</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">&lt;!-- This would hold our Data and data would be added Programmatically--&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">table</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;table2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">table</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">&lt;!-- This is the main JS file to implement Firebase --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">&lt;!-- Now you can add any modular firebase services in this case Realtime Database --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">&lt;!-- TODO: Add SDKs for Firebase products that you want to use
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">     https://firebase.google.com/docs/web/setup#available-libraries --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">// Your web app&#39;s Firebase configuration Should Be added Here
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>        <span style="color:#8be9fd;font-style:italic">var</span> firebaseConfig <span style="color:#ff79c6">=</span> {
+</span></span><span style="display:flex;"><span>            apiKey<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;AIzaSyDOMUpm4WNldKOVuQCeizCTZAUdSRLqAeU&#34;</span>,
+</span></span><span style="display:flex;"><span>            authDomain<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;tecinpact-demo.firebaseapp.com&#34;</span>,
+</span></span><span style="display:flex;"><span>            databaseURL<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;https://tecinpact-demo.firebaseio.com&#34;</span>,
+</span></span><span style="display:flex;"><span>            projectId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;tecinpact-demo&#34;</span>,
+</span></span><span style="display:flex;"><span>            storageBucket<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;tecinpact-demo.appspot.com&#34;</span>,
+</span></span><span style="display:flex;"><span>            messagingSenderId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;977048224763&#34;</span>,
+</span></span><span style="display:flex;"><span>            appId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;1:977048224763:web:4891159dda17b97eb8c15e&#34;</span>,
+</span></span><span style="display:flex;"><span>            measurementId<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;G-RZPCV71CCZ&#34;</span>
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">// Initialize Firebase
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>        firebase.initializeApp(firebaseConfig);
+</span></span><span style="display:flex;"><span>        firebase.analytics();
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">html</span>&gt;
+</span></span></code></pre></div><p>I Added comments Explaining the HTML code and it&rsquo;s self explainatory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff79c6">*</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">font-family</span><span style="color:#ff79c6">:</span> monospace;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#50fa7b">.content</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">form</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">@extend</span> <span style="color:#50fa7b">.content</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">input</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">35</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">5</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">table</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">350</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> left;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#6272a4">/* A Simple Function to push new data */</span>
+</span></span><span style="display:flex;"><span>postData <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">let</span> gitem <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;Grocery&#34;</span>).value
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">let</span> gqty <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;QTY&#34;</span>).value
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/* Resetting Input Boxes after submission */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;Grocery&#34;</span>).value <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;QTY&#34;</span>).value <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/* Pushing data to the Database&#39;s GroceryList Directory */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">let</span> newItem <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;/GroceryList/&#39;</span>).push();
+</span></span><span style="display:flex;"><span>    newItem.set({
+</span></span><span style="display:flex;"><span>        item<span style="color:#ff79c6">:</span> gitem,
+</span></span><span style="display:flex;"><span>        qty<span style="color:#ff79c6">:</span> gqty
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* Listner to get data from the Database As soon as it&#39;s added */</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> items <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;GroceryList/&#39;</span>);
+</span></span><span style="display:flex;"><span>items.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (recivedItems) {
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/* Appends data to an array and then we can set the whole array to the table */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">let</span> htmlArray <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">`&lt;tr&gt;&lt;th&gt;Items&lt;/th&gt;&lt;th&gt;QTY&lt;/th&gt;&lt;th&gt;Got It?&lt;/th&gt;&lt;/tr&gt;`</span>]
+</span></span><span style="display:flex;"><span>    recivedItems.forEach(item =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">/* Formatting Received Data */</span>
+</span></span><span style="display:flex;"><span>        htmlArray.push(<span style="color:#f1fa8c">`&lt;tr&gt;&lt;td&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;item&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;qty&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;&lt;button onclick=&#34;removedList(&#39;</span><span style="color:#f1fa8c">${</span>item.key<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#39;)&#34;&gt;✔️&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`</span>)
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/* Setting Data to table */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#39;table&#39;</span>).innerHTML <span style="color:#ff79c6">=</span> htmlArray.join(<span style="color:#f1fa8c">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* Adding data to another list when completed */</span>
+</span></span><span style="display:flex;"><span>removedList <span style="color:#ff79c6">=</span> (id) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">let</span> item <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">`GroceryList/</span><span style="color:#f1fa8c">${</span>id<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>)
+</span></span><span style="display:flex;"><span>    item.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (snapshot) {
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">/* Getting data and submitting it to Removed List */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">let</span> newCompletedItem <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;/GroceryRemovedList/&#39;</span>).push();
+</span></span><span style="display:flex;"><span>        newCompletedItem.set(snapshot.val());
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/* Removing from the first list */</span>
+</span></span><span style="display:flex;"><span>    removeEntity(<span style="color:#f1fa8c">&#34;GroceryList&#34;</span>, <span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>id<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* Listner for the completed List */</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> ritems <span style="color:#ff79c6">=</span> firebase.database().ref(<span style="color:#f1fa8c">&#39;GroceryRemovedList/&#39;</span>);
+</span></span><span style="display:flex;"><span>ritems.on(<span style="color:#f1fa8c">&#39;value&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (recivedItems) {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">let</span> htmlArray <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">`&lt;tr&gt;&lt;th&gt;Items&lt;/th&gt;&lt;th&gt;QTY&lt;/th&gt;&lt;th&gt;Remove It?&lt;/th&gt;&lt;/tr&gt;`</span>]
+</span></span><span style="display:flex;"><span>    recivedItems.forEach(item =&gt; {
+</span></span><span style="display:flex;"><span>        htmlArray.push(<span style="color:#f1fa8c">`&lt;tr&gt;&lt;td style=&#34;text-decoration: line-through;&#34;&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;item&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;</span><span style="color:#f1fa8c">${</span>item.val()[<span style="color:#f1fa8c">&#34;qty&#34;</span>]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/td&gt;&lt;td&gt;&lt;button onclick=&#34;removeEntity(&#39;GroceryRemovedList&#39;,&#39;</span><span style="color:#f1fa8c">${</span>item.key<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#39;)&#34;&gt;❌&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;`</span>)
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#39;table2&#39;</span>).innerHTML <span style="color:#ff79c6">=</span> htmlArray.join(<span style="color:#f1fa8c">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* This can delete items from the database */</span>
+</span></span><span style="display:flex;"><span>removeEntity <span style="color:#ff79c6">=</span> (list, id) =&gt; {
+</span></span><span style="display:flex;"><span>    firebase.database().ref(<span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>list<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">/</span><span style="color:#f1fa8c">${</span>id<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>).remove()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
 <p>Well well well, Here we are at the end of another guide, Firebase realtime database is suitable for many applications, after most of these guides have been overed, We&rsquo;re going to make some sample applications to demonstrate the usages of the applications. So stay tuned and don&rsquo;t be shy to ask anything you get doubts on, You are here to learn, so take the advantage.</p>
 
   </article><div class="bg-blue-100 dark:bg-gray-900">
@@ -823,7 +823,7 @@ removeEntity <span style="color:#ff79c6">=</span> (list, id) =&gt; {
 
 
 
-<script src="https://www.nushankodikara.com/js/scripts.min.js"></script>
+<script src="https://blog.nushankodikara.com/js/scripts.min.js"></script>
 
 
 

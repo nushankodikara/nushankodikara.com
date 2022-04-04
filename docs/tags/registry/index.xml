@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Registry on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/registry/</link>
-    <description>Recent content in Registry on Nushan Kodikara</description>
+    <title>Registry on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/registry/</link>
+    <description>Recent content in Registry on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Jul 2020 10:12:44 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/registry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jul 2020 10:12:44 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/registry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 10 Speedup Registry Tweaks</title>
-      <link>https://www.nushankodikara.com/blog/windows-10-speedup-registry-tweaks/</link>
+      <link>https://blog.nushankodikara.com/blog/windows-10-speedup-registry-tweaks/</link>
       <pubDate>Thu, 09 Jul 2020 10:12:44 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/windows-10-speedup-registry-tweaks/</guid>
+      <guid>https://blog.nushankodikara.com/blog/windows-10-speedup-registry-tweaks/</guid>
       <description>Introduction Windows based PCs have a registry system to take control over the system wide operations and most of the times windows default operations are useless to most of us and somewhat annoying. So to be cleared, I made this easy to install Registry file to speed up your PC in matter of seconds.
 What Does It Do? Well, here comes the boring part. If you don&amp;rsquo;t want to know what this file does to your PC, just skip this section and use the link below to download the program.</description>
     </item>

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hybrid Apps on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/hybrid-apps/</link>
-    <description>Recent content in Hybrid Apps on Nushan Kodikara</description>
+    <title>Hybrid Apps on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/hybrid-apps/</link>
+    <description>Recent content in Hybrid Apps on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/hybrid-apps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/hybrid-apps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Weather App Using Openweathermaps API</title>
-      <link>https://www.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
+      <link>https://blog.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
       <pubDate>Tue, 11 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
+      <guid>https://blog.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
       <description>Introduction As I Promised, We&amp;rsquo;re doing advanced app examples today, to be specific, we&amp;rsquo;re creating a weather application using openweathermap API, owfont-regular, vivify for animation, font-awesome pack, progressbar.js for sun-timer , jquery.cookie, jquery-3.5.1 and apexcharts for weather details. We&amp;rsquo;re making this application responsible and I&amp;rsquo;ll link down the documentations off all the libraries we use, with them if you don&amp;rsquo;t understand the code, you can always copy and paste it and it would work fine without a problem at all!</description>
     </item>
     
     <item>
       <title>Let&#39;s Create a Mobile App for TECINPACT</title>
-      <link>https://www.nushankodikara.com/blog/creating-an-app-for-tecinpact/</link>
+      <link>https://blog.nushankodikara.com/blog/creating-an-app-for-tecinpact/</link>
       <pubDate>Sun, 02 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/creating-an-app-for-tecinpact/</guid>
+      <guid>https://blog.nushankodikara.com/blog/creating-an-app-for-tecinpact/</guid>
       <description>Introduction Today we&amp;rsquo;re creating an app for our agency using Hybrid technology which we discussed in THIS ARTICLE, And if you didn&amp;rsquo;t checked it out, Go ahead and try now, I&amp;rsquo;m only showing you the codes I used here And also This is an demo on how to use the technology, Then we&amp;rsquo;re publishing it on playstore Tomorrow! How cool is that? started as a web developer and now you&amp;rsquo;re an official mobile developer.</description>
     </item>
     
     <item>
       <title>Let&#39;s Create Mobile Apps With Cordova</title>
-      <link>https://www.nushankodikara.com/blog/creating-mobile-apps-with-cordova/</link>
+      <link>https://blog.nushankodikara.com/blog/creating-mobile-apps-with-cordova/</link>
       <pubDate>Sat, 01 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/creating-mobile-apps-with-cordova/</guid>
+      <guid>https://blog.nushankodikara.com/blog/creating-mobile-apps-with-cordova/</guid>
       <description>Introduction Mobile app development is a cool thing, and most of us use android studio or swift in order to create mobile apps for Android and IOS devices, But what if I tell you that now you can create mobile apps for android and IOS with a single code base and It&amp;rsquo;s working with HTML CSS and JS? Yeah that&amp;rsquo;s true, with node.js now we&amp;rsquo;re able to create mobile apps using platforms such as Cordova.</description>
     </item>
     

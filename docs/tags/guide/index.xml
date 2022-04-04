@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guide on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/guide/</link>
-    <description>Recent content in Guide on Nushan Kodikara</description>
+    <title>Guide on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/guide/</link>
+    <description>Recent content in Guide on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Hub Version Control for Starters</title>
-      <link>https://www.nushankodikara.com/blog/git-hub-version-control-for-starters/</link>
+      <link>https://blog.nushankodikara.com/blog/git-hub-version-control-for-starters/</link>
       <pubDate>Mon, 27 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/git-hub-version-control-for-starters/</guid>
+      <guid>https://blog.nushankodikara.com/blog/git-hub-version-control-for-starters/</guid>
       <description>Introduction Now let&amp;rsquo;s take an start on our project directories, we as programmers and developers, always run into certain problems regarding our folder structures, corrupted files, need to undo but unable to do that because we made a terrible mistake and so on. Is there a way which we can solve this? Yes it is! that&amp;rsquo;s called version controlling, Here we&amp;rsquo;ll be able to backup our codes with version numbers and retrieve anytime we want, and when working with several developers in a single project, we&amp;rsquo;ll be able to collaborate and code the same project simultaneously with these things, so without much explanation let&amp;rsquo;s get into it.</description>
     </item>
     
     <item>
       <title>Single line CSS Tricks (Part 1)</title>
-      <link>https://www.nushankodikara.com/blog/1line-css-tricks-part1/</link>
+      <link>https://blog.nushankodikara.com/blog/1line-css-tricks-part1/</link>
       <pubDate>Fri, 24 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/1line-css-tricks-part1/</guid>
+      <guid>https://blog.nushankodikara.com/blog/1line-css-tricks-part1/</guid>
       <description>Introduction CSS is the main styler over the internet, We all can&amp;rsquo;t use everything on css and because it&amp;rsquo;s a huge base, We&amp;rsquo;re probably lost somewhere inside it, So today, Let&amp;rsquo;s explore some creative and simple to use but effective single line codes for your next project. You can visit the CSS Full course HERE And without much explanations, Let&amp;rsquo;s get in to the post.
 01. Super Centered We can do so much things to make a code centered, But have you use the place-items property of the grid layout?</description>
     </item>

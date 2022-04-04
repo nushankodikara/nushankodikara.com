@@ -1,111 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web development on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/web-development/</link>
-    <description>Recent content in web development on Nushan Kodikara</description>
+    <title>web development on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/web-development/</link>
+    <description>Recent content in web development on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Weather App Using Openweathermaps API</title>
-      <link>https://www.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
+      <link>https://blog.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</link>
       <pubDate>Tue, 11 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
+      <guid>https://blog.nushankodikara.com/blog/creating-a-weather-app-using-openweathermaps/</guid>
       <description>Introduction As I Promised, We&amp;rsquo;re doing advanced app examples today, to be specific, we&amp;rsquo;re creating a weather application using openweathermap API, owfont-regular, vivify for animation, font-awesome pack, progressbar.js for sun-timer , jquery.cookie, jquery-3.5.1 and apexcharts for weather details. We&amp;rsquo;re making this application responsible and I&amp;rsquo;ll link down the documentations off all the libraries we use, with them if you don&amp;rsquo;t understand the code, you can always copy and paste it and it would work fine without a problem at all!</description>
     </item>
     
     <item>
       <title>Secure Your JavaScript Files</title>
-      <link>https://www.nushankodikara.com/blog/secure-your-javascript-files/</link>
+      <link>https://blog.nushankodikara.com/blog/secure-your-javascript-files/</link>
       <pubDate>Mon, 10 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/secure-your-javascript-files/</guid>
+      <guid>https://blog.nushankodikara.com/blog/secure-your-javascript-files/</guid>
       <description>Introduction Let&amp;rsquo;s be real, with firebase and all these knowledge, we should protect our JS files, They can&amp;rsquo;t be wide open for a smart ass to get there and mess around with the code or so, Yeah I know the firebase provides a much secure system in the security side but the code has to be secure too! To day let&amp;rsquo;s discuss on that, let&amp;rsquo;s explore what we can do to Protect our JS files.</description>
     </item>
     
     <item>
       <title>Creating a Messaging App With Firebase</title>
-      <link>https://www.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</link>
+      <link>https://blog.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</link>
       <pubDate>Sun, 09 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</guid>
+      <guid>https://blog.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</guid>
       <description>Introduction Now we have covered firebase realtime and firestore databases, Authentication, Hosting and analytics, We can create a simple chat/messaging application within 15-minuets or less! Aren&amp;rsquo;t you sure of that? Let&amp;rsquo;s get started!
 Background and Environment I&amp;rsquo;m using what we did in firebase realtime database, authentication and hosting for this project. So if you didn&amp;rsquo;t saw them already, go ahead now. let&amp;rsquo;s explore the code and as always HERE you can download the completed project file.</description>
     </item>
     
     <item>
       <title>Firebase Hosting and Analytics</title>
-      <link>https://www.nushankodikara.com/blog/firebase-hosting-and-analytics/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-hosting-and-analytics/</link>
       <pubDate>Sat, 08 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-hosting-and-analytics/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-hosting-and-analytics/</guid>
       <description>Introduction We can use firebase as a hosting service, Firebase Hosting provides fast and secure hosting for your web app, static and dynamic content, and microservices, Also Firebase Hosting is production-grade web content hosting for developers, With a single command, you can quickly deploy web apps and serve both static and dynamic content to a global CDN (content delivery network), You can also pair Firebase Hosting with Cloud Functions or Cloud Run to build and host microservices on Firebase.</description>
     </item>
     
     <item>
       <title>Firebase Authentication</title>
-      <link>https://www.nushankodikara.com/blog/firebase-authentication/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-authentication/</link>
       <pubDate>Fri, 07 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-authentication/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-authentication/</guid>
       <description>Introduction Let&amp;rsquo;s use firebase for user authentication, you don&amp;rsquo;t need to setup custom authentications, app apis and other stupid things anymore, we have firebase on our back and few lines of codes can make the programs more efficient and more secure! today I&amp;rsquo;m only focusing Email, Google and Anonymous authentications mainly. you can browse firebase docs for more information on how to setup other authentications in advanced.
 Firebase Authentication Most apps need to know the identity of a user.</description>
     </item>
     
     <item>
       <title>Firebase Cloud Firestore</title>
-      <link>https://www.nushankodikara.com/blog/firebase-cloud-firestore/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-cloud-firestore/</link>
       <pubDate>Thu, 06 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-cloud-firestore/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-cloud-firestore/</guid>
       <description>Introduction Use our flexible, scalable NoSQL cloud database to store and sync data for client- and server-side development.
 Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform, Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity, Cloud Firestore also offers seamless integration with other Firebase and Google Cloud Platform products, including Cloud Functions.</description>
     </item>
     
     <item>
       <title>Firebase Realtime Database</title>
-      <link>https://www.nushankodikara.com/blog/firebase-realtime-database/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-realtime-database/</link>
       <pubDate>Wed, 05 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-realtime-database/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-realtime-database/</guid>
       <description>Introduction Okay, Let&amp;rsquo;s do some database actions, But without SQL or any of those table based old style databases, We&amp;rsquo;re learning how to use Firebase Realtime database with a web application, but also the codes are the same for mobile applications, so it won&amp;rsquo;t make much difference at all, And in the end of this series, After we covered Authentication, We&amp;rsquo;re creating a fully fledged Chat application and maybe a social media application to test our knowledge.</description>
     </item>
     
     <item>
       <title>Getting Started With Firebase</title>
-      <link>https://www.nushankodikara.com/blog/getting-started-with-firebase/</link>
+      <link>https://blog.nushankodikara.com/blog/getting-started-with-firebase/</link>
       <pubDate>Wed, 05 Aug 2020 05:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/getting-started-with-firebase/</guid>
+      <guid>https://blog.nushankodikara.com/blog/getting-started-with-firebase/</guid>
       <description>Introduction This is a different post from what I did before, Today I&amp;rsquo;m introducing you to a technology, It&amp;rsquo;s a BaaS from google which stands for Backend As A Service and that&amp;rsquo;s weird in many ways, First It is not what you would expect out of a traditional site and Here I only speak about Modern development So Let&amp;rsquo;s get started with this new technology and make our Lives Easier!</description>
     </item>
     
     <item>
       <title>Best Ways to Modern Web Hosting</title>
-      <link>https://www.nushankodikara.com/blog/best-ways-to-modern-web-hosting/</link>
+      <link>https://blog.nushankodikara.com/blog/best-ways-to-modern-web-hosting/</link>
       <pubDate>Fri, 31 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/best-ways-to-modern-web-hosting/</guid>
+      <guid>https://blog.nushankodikara.com/blog/best-ways-to-modern-web-hosting/</guid>
       <description>Introduction Welcome to the world of modern web hosting, now why modern you ask, If you followed our course of modern web development, by now you should know it&amp;rsquo;s different from the typical web development process and here Today I&amp;rsquo;m showing you the free and paid web hosting platforms I use for my projects in a daily basis. My favorite is Netlify, before you ask, and this is only an introduction guide to what we&amp;rsquo;re going to explore in the near future.</description>
     </item>
     
     <item>
       <title>Simple, Beautiful Modal</title>
-      <link>https://www.nushankodikara.com/blog/simple-beautiful-modal/</link>
+      <link>https://blog.nushankodikara.com/blog/simple-beautiful-modal/</link>
       <pubDate>Tue, 28 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/simple-beautiful-modal/</guid>
+      <guid>https://blog.nushankodikara.com/blog/simple-beautiful-modal/</guid>
       <description>Introduction We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I&amp;rsquo;m going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master HTML CSS SCSS JS part 1 and JS part 2 guides.
 Now in this guide, We&amp;rsquo;re making This Beautiful modal from scratch with only 14 lines of JS codes.</description>
     </item>
     
     <item>
       <title>Js for Modern Web Development (Part 2)</title>
-      <link>https://www.nushankodikara.com/blog/js-for-modern-web-development-2/</link>
+      <link>https://blog.nushankodikara.com/blog/js-for-modern-web-development-2/</link>
       <pubDate>Sun, 26 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/js-for-modern-web-development-2/</guid>
+      <guid>https://blog.nushankodikara.com/blog/js-for-modern-web-development-2/</guid>
       <description>Introduction We did the programming part with JS, Now let&amp;rsquo;s implement our knowledge into action, Let&amp;rsquo;s create JS which can interact with webpages, This would be a long post so hold tight and here we go.
 Browser environment, specs The JavaScript language was initially created for web browsers. Since then it has evolved and become a language with many uses and platforms.
 A platform may be a browser, or a web-server or another host, even a &amp;ldquo;smart&amp;rdquo; coffee machine, if it can run JavaScript.</description>
@@ -113,40 +113,40 @@ A platform may be a browser, or a web-server or another host, even a &amp;ldquo;
     
     <item>
       <title>Web Code Minification</title>
-      <link>https://www.nushankodikara.com/blog/web-code-minification/</link>
+      <link>https://blog.nushankodikara.com/blog/web-code-minification/</link>
       <pubDate>Sat, 25 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/web-code-minification/</guid>
+      <guid>https://blog.nushankodikara.com/blog/web-code-minification/</guid>
       <description>Introduction Code minification is a process modern web developers use on developments to speed up the loading of the codes, reduce the code size and decrease the ability to reverse-engineer the code. And it&amp;rsquo;s pretty easy to use too, but sadly not most of the developers know how to do it themselves. Let&amp;rsquo;s Explore Shall we.
 Minification Now, We use an online tool for this process, https://www.willpeavy.com/tools/minifier/ Goto this website for the tool, and It&amp;rsquo;s pretty simple to use but highly effective.</description>
     </item>
     
     <item>
       <title>Js for Modern Web Development (Part 1)</title>
-      <link>https://www.nushankodikara.com/blog/js-for-modern-web-development/</link>
+      <link>https://blog.nushankodikara.com/blog/js-for-modern-web-development/</link>
       <pubDate>Thu, 23 Jul 2020 11:52:24 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/js-for-modern-web-development/</guid>
+      <guid>https://blog.nushankodikara.com/blog/js-for-modern-web-development/</guid>
       <description>Introduction Here we are at the end of the modern web development course, At the right basics of the language which make the web interactive and functional. JS Is the back-born of the modern Internet, Why do I say so? Because we can do literally Anything you imagine. Without further explanation, Let&amp;rsquo;s start with the course. Before getting here, Please follow HTML CSS and SCSS guides.
 Hello, world! Javascript is fully functional with HTML and CSS, so first, Let&amp;rsquo;s create our demo document with HTML CSS And JS.</description>
     </item>
     
     <item>
       <title>Scss for Modern Web Development (Supercharged CSS)</title>
-      <link>https://www.nushankodikara.com/blog/scss-for-modern-web-development/</link>
+      <link>https://blog.nushankodikara.com/blog/scss-for-modern-web-development/</link>
       <pubDate>Tue, 21 Jul 2020 06:59:06 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/scss-for-modern-web-development/</guid>
+      <guid>https://blog.nushankodikara.com/blog/scss-for-modern-web-development/</guid>
       <description>Introduction If you noticed, I Didn&amp;rsquo;t mentioned css for browser types in our previous CSS tutorial, The case is, I don&amp;rsquo;t want to, SCSS is doing everything for us so why should we even bother? Let&amp;rsquo;s get started with SCSS and supercharge our css.
 Pre-Setup SCSS isn&amp;rsquo;t a universal solution, it&amp;rsquo;s here to help us with variables, nesting and automatic css generation. So we need a software to compile scss into css, here I&amp;rsquo;m using VSCode and an extension called live SCSS compiler.</description>
     </item>
     
     <item>
       <title>CSS for Modern Web Development (Zero-To-Hero)</title>
-      <link>https://www.nushankodikara.com/blog/css-for-modern-web-development/</link>
+      <link>https://blog.nushankodikara.com/blog/css-for-modern-web-development/</link>
       <pubDate>Sat, 18 Jul 2020 09:40:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/css-for-modern-web-development/</guid>
+      <guid>https://blog.nushankodikara.com/blog/css-for-modern-web-development/</guid>
       <description>Introduction Well well, here we are in the section of styling our HTML Page, if you don&amp;rsquo;t know what HTML is, Check HERE for the HTML Course on modern web development, Today we&amp;rsquo;re using CSS and HTML knowledge to create a beautiful looking website.
 Today we&amp;rsquo;re creating
 Adding to HTML There are three ways we can add a css file to our HTML Document and you can use unlimited css files in a single HTML page, Let&amp;rsquo;s Explore.</description>
@@ -154,49 +154,49 @@ Adding to HTML There are three ways we can add a css file to our HTML Document a
     
     <item>
       <title>Google Drive Serverless Web Hosting 2020</title>
-      <link>https://www.nushankodikara.com/blog/google-drive-serverless-web-hosting-2020/</link>
+      <link>https://blog.nushankodikara.com/blog/google-drive-serverless-web-hosting-2020/</link>
       <pubDate>Wed, 15 Jul 2020 08:39:18 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/google-drive-serverless-web-hosting-2020/</guid>
+      <guid>https://blog.nushankodikara.com/blog/google-drive-serverless-web-hosting-2020/</guid>
       <description>Introduction Serverless web hosting getting popular day by day, with the rise of static websites, So here today, I&amp;rsquo;m going to show you how to host your created website ( HTML JS And CSS files ) In the google drive, and setting up a proper domain name for it using Freenome and netlify. If you are a typical follower of my blog, this would be awkward because I didn&amp;rsquo;t completed the web development course just yet.</description>
     </item>
     
     <item>
       <title>HTML for Modern Web Development (Zero-To-Hero)</title>
-      <link>https://www.nushankodikara.com/blog/html-for-modern-web-development/</link>
+      <link>https://blog.nushankodikara.com/blog/html-for-modern-web-development/</link>
       <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/html-for-modern-web-development/</guid>
+      <guid>https://blog.nushankodikara.com/blog/html-for-modern-web-development/</guid>
       <description>Introduction HTML is the structural markup language for the web development community, there are more than HTML in markup community but for websites, we use mainly HTML. I&amp;rsquo;ll explain HTML from ground level so if you&amp;rsquo;re a absolute beginner, you can follow up easily. If something went wrong, just contact me from the links provided.
 Environment HTML doesn&amp;rsquo;t need a specific environment to run, but Modern web development required you to host the main files.</description>
     </item>
     
     <item>
       <title>Royalty Free Internet Resources</title>
-      <link>https://www.nushankodikara.com/blog/royalty-free-internet-resources/</link>
+      <link>https://blog.nushankodikara.com/blog/royalty-free-internet-resources/</link>
       <pubDate>Mon, 13 Jul 2020 18:14:56 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/royalty-free-internet-resources/</guid>
+      <guid>https://blog.nushankodikara.com/blog/royalty-free-internet-resources/</guid>
       <description>Introduction No matter what profession you are in, in a certain period of time, you are going to face a situation which you need some materials royalty free for your projects, maybe Images, videos, sound clips etc.. So in this article, let me show you my pics for royalty free Resource collections.
 But, first, let’s go over some basic royalty-free terms.  Royalty-Free: This allows you to use intellectual property without having to pay royalties or license fees.</description>
     </item>
     
     <item>
       <title>VS Code for Web Developers</title>
-      <link>https://www.nushankodikara.com/blog/vs-code-for-web-developers/</link>
+      <link>https://blog.nushankodikara.com/blog/vs-code-for-web-developers/</link>
       <pubDate>Sun, 12 Jul 2020 07:38:18 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/vs-code-for-web-developers/</guid>
+      <guid>https://blog.nushankodikara.com/blog/vs-code-for-web-developers/</guid>
       <description>Introduction Visual studio code is a powerful and a user-friendly code editor, It has extended functionality, which makes it an all-in-one solution for most of the web developers and This would be a follow up guide to a Web and Hybrid app development course I&amp;rsquo;m planning forward to.
 Installation VS Code is available for Windows, Mac and linux, so pretty much It&amp;rsquo;s a cross platform code editor. one of my favourite.</description>
     </item>
     
     <item>
       <title>Free Top Level Domain Names 2020</title>
-      <link>https://www.nushankodikara.com/blog/free-top-level-domain-names-2020/</link>
+      <link>https://blog.nushankodikara.com/blog/free-top-level-domain-names-2020/</link>
       <pubDate>Sat, 11 Jul 2020 15:54:59 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/free-top-level-domain-names-2020/</guid>
+      <guid>https://blog.nushankodikara.com/blog/free-top-level-domain-names-2020/</guid>
       <description>Introduction I Was surprised and wasn&amp;rsquo;t sure is this a spam or not, Top Level domains for free? that&amp;rsquo;s Odd to be exact, But yeah, Freenom offers top level domains for no cost at all! and that&amp;rsquo;s weird. In this article, I&amp;rsquo;ll show you how you can get a Freenom top level domain for free and in the correct way. Follow this guide very carefully because anyone can f*ck it up in no time.</description>
     </item>
     

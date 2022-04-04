@@ -13,21 +13,21 @@
     />
 
     <title>
-        Let&#39;s Create a Mobile App for TECINPACT - Nushan Kodikara
+        Let&#39;s Create a Mobile App for TECINPACT - Blog by Nushan Kodikara
     </title>
     <meta
         name="description"
         content="Here, We&#39;re creating an app for tecinpact using previous tutorial"
-    /><meta name="generator" content="Hugo 0.92.2" /><link
+    /><meta name="generator" content="Hugo 0.96.0" /><link
         rel="stylesheet"
-        href="https://www.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
+        href="https://blog.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
         integrity="sha256-nrGTPXS8UfkKmYKOO4OQCcMmqk2N1ewKxhaPljEF6Vc="
     />
     
      <meta property="og:title" content="Let&#39;s Create a Mobile App for TECINPACT" />
 <meta property="og:description" content="Here, We&#39;re creating an app for tecinpact using previous tutorial" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.nushankodikara.com/blog/creating-an-app-for-tecinpact/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://blog.nushankodikara.com/blog/creating-an-app-for-tecinpact/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-08-02T06:00:00+05:30" />
 <meta property="article:modified_time" content="2020-08-02T06:00:00+05:30" />
 
@@ -41,13 +41,13 @@
 <meta itemprop="keywords" content="Android,IOS,Mobile development,Hybrid Apps," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
-  <a href="https://www.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
-    Nushan Kodikara
+  <a href="https://blog.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Blog by Nushan Kodikara
   </a>
   <ul class="flex items-center gap-4 lg:gap-6">
 
     
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://bio.nushankodikara.com">Social Links</a></li>
     
 
     
@@ -155,490 +155,490 @@
 <li>added android key and build.json</li>
 </ul>
 <p>If you did these things, Let&rsquo;s get started with the coding. Now first you have to configure your config.xml file. let me show you what I did. This is how my config.xml file looks like.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
-<span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;tk.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.1.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
-    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
-    <span style="color:#ff79c6">&lt;description&gt;</span>
-        Tecinpact Official Application
-    <span style="color:#ff79c6">&lt;/description&gt;</span>
-    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;nushankodi@gmail.com&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://tecinpact.tk&#34;</span><span style="color:#ff79c6">&gt;</span>
-        Nushan Kodikara
-    <span style="color:#ff79c6">&lt;/author&gt;</span>
-    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/icon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;/platform&gt;</span>
-    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;/platform&gt;</span>
-<span style="color:#ff79c6">&lt;/widget&gt;</span>
-</code></pre></div><p>Notice some differences? Yeah I added package name to widget id and version is the version number, you have to increase the version number every time you release an update. Then in the name tags, I added my app name also a description and then in author tags, I filled every thing with my personal details. Also notice I added an Icon before platform tags.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;tk.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.1.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;description&gt;</span>
+</span></span><span style="display:flex;"><span>        Tecinpact Official Application
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/description&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;nushankodi@gmail.com&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://tecinpact.tk&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        Nushan Kodikara
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/author&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/icon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/widget&gt;</span>
+</span></span></code></pre></div><p>Notice some differences? Yeah I added package name to widget id and version is the version number, you have to increase the version number every time you release an update. Then in the name tags, I added my app name also a description and then in author tags, I filled every thing with my personal details. Also notice I added an Icon before platform tags.</p>
 <p>Now that out to the way, delete everything in the WWW folder and add your responsive web design to this folder. This is where your main code lives. and notice the <code>&lt;content src=&quot;index.html&quot; /&gt;</code> in the config.xml It&rsquo;s the main file of the www folder. I keep it as index.html and this is what my index.html looks like</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;en&#34;</span>&gt;
-
-&lt;<span style="color:#ff79c6">head</span>&gt;
-    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;style.css&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./font-awesome-4.7.0/css/font-awesome.min.css&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://fonts.googleapis.com/css2?family=Aclonica&amp;display=swap&#34;</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">title</span>&gt;SCSS Demo&lt;/<span style="color:#ff79c6">title</span>&gt;
-&lt;/<span style="color:#ff79c6">head</span>&gt;
-
-&lt;<span style="color:#ff79c6">body</span>&gt;
-    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;preloader&#34;</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;loading&#34;</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;<span style="color:#ff79c6">h1</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;loadingText&#34;</span>&gt;Loading Please Wait&lt;/<span style="color:#ff79c6">h1</span>&gt;
-    &lt;/<span style="color:#ff79c6">div</span>&gt;
-    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;body&#34;</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;nav&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;list&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;butotnFunction()&#34;</span>&gt;About&lt;/<span style="color:#ff79c6">a</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">h4</span>&gt;Digital Guideline Of 21st Century&lt;/<span style="color:#ff79c6">h4</span>&gt;&lt;<span style="color:#ff79c6">br</span>&gt;
-                &lt;<span style="color:#ff79c6">h1</span>&gt;TECINPACT&lt;/<span style="color:#ff79c6">h1</span>&gt;
-                &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.tecinpact.tk&#39;);&#34;</span>&gt;Visit Website&lt;/<span style="color:#ff79c6">button</span>&gt;
-                &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;showFeed()&#34;</span>&gt;View Posts&lt;/<span style="color:#ff79c6">button</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;footer&#34;</span>&gt;Tecinpact © 2020 All Rights Reserved.&lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;wrapper&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;modal&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">close</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;butotnFunction()&#34;</span>&gt;X&lt;/<span style="color:#ff79c6">close</span>&gt;
-                    &lt;<span style="color:#ff79c6">header</span>&gt;# Tecinpact&lt;/<span style="color:#ff79c6">header</span>&gt;
-                    &lt;<span style="color:#ff79c6">main</span>&gt;
-                        TECINPACT is a Digital Guide Book to navigate through the 21st century cyber space in a safe and
-                        cheap
-                        manner. As we can get most of the products and services we’re paying for pennies, my vision here
-                        is
-                        to
-                        support the non-geeks and starters to start their Cyber career with a boost.
-                    &lt;/<span style="color:#ff79c6">main</span>&gt;
-                    &lt;<span style="color:#ff79c6">footer</span>&gt;Copyright 2020 Tecinpact&lt;/<span style="color:#ff79c6">footer</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">table</span>&gt;
-                &lt;<span style="color:#ff79c6">tr</span>&gt;
-                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;facebook&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.facebook.com/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
-                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.facebook.com/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-facebook&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">td</span>&gt;
-                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;twitter&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.twitter.com/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
-                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.twitter.com/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-twitter&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
-                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;instagram&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.instagram.com/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
-                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.instagram.com/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-instagram&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">td</span>&gt;
-                &lt;/<span style="color:#ff79c6">tr</span>&gt;
-                &lt;<span style="color:#ff79c6">tr</span>&gt;
-                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;whatsapp&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://wa.me/94769477743&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
-                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://wa.me/94769477743&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-whatsapp&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
-                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;email&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;mailto:tecinpactagencies@gmail.com&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
-                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mailto:tecinpactagencies@gmail.com&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-envelope&#34;</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
-                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;telegram&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://t.me/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
-                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://t.me/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-telegram&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
-                &lt;/<span style="color:#ff79c6">tr</span>&gt;
-            &lt;/<span style="color:#ff79c6">table</span>&gt;
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;feed&#34;</span>&gt;
-            &lt;<span style="color:#ff79c6">p</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;back&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;showFeed()&#34;</span>&gt;Go Back&lt;/<span style="color:#ff79c6">p</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;textBox&#34;</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-    &lt;/<span style="color:#ff79c6">div</span>&gt;
-
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./jquery-3.5.1.min.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./index.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-&lt;/<span style="color:#ff79c6">body</span>&gt;
-
-&lt;/<span style="color:#ff79c6">html</span>&gt;
-</code></pre></div><p>Here in the head tags, I linked my main css, a fontawesome pack and a custom font from google to make it fancy or so. and my document has 2 sections divided with div tags called preloader and content. Preloader is where the loading animation lives, I animate it with a CSS code section. and the content section. Is this looks familiar? Yes it should be! We made this template in the <a href="/post/simple-beautiful-modal/">JS CSS modal</a> tutorial! and oh boy it came in handy isn&rsquo;t it. And for something new, I added a new button and a div with a ID of feed, this is where I grab My website&rsquo;s rss feed and convert it to html. so you can see it as new posts and when I update my app, You&rsquo;ll be able to see it instantly here! also because xml is a small file, it would cost you arround 5-10kb per session and that&rsquo;s like nothing these days! My logic here is to hide unwanted sections and show only one section at a time, so it would look like a native app with smooth animations. I&rsquo;ll explain it in the future.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;style.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./font-awesome-4.7.0/css/font-awesome.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://fonts.googleapis.com/css2?family=Aclonica&amp;display=swap&#34;</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">title</span>&gt;SCSS Demo&lt;/<span style="color:#ff79c6">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">head</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;preloader&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;loading&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h1</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;loadingText&#34;</span>&gt;Loading Please Wait&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;nav&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;list&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;butotnFunction()&#34;</span>&gt;About&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">h4</span>&gt;Digital Guideline Of 21st Century&lt;/<span style="color:#ff79c6">h4</span>&gt;&lt;<span style="color:#ff79c6">br</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">h1</span>&gt;TECINPACT&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.tecinpact.tk&#39;);&#34;</span>&gt;Visit Website&lt;/<span style="color:#ff79c6">button</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;showFeed()&#34;</span>&gt;View Posts&lt;/<span style="color:#ff79c6">button</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;footer&#34;</span>&gt;Tecinpact © 2020 All Rights Reserved.&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;wrapper&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;modal&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">close</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;butotnFunction()&#34;</span>&gt;X&lt;/<span style="color:#ff79c6">close</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">header</span>&gt;# Tecinpact&lt;/<span style="color:#ff79c6">header</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">main</span>&gt;
+</span></span><span style="display:flex;"><span>                        TECINPACT is a Digital Guide Book to navigate through the 21st century cyber space in a safe and
+</span></span><span style="display:flex;"><span>                        cheap
+</span></span><span style="display:flex;"><span>                        manner. As we can get most of the products and services we’re paying for pennies, my vision here
+</span></span><span style="display:flex;"><span>                        is
+</span></span><span style="display:flex;"><span>                        to
+</span></span><span style="display:flex;"><span>                        support the non-geeks and starters to start their Cyber career with a boost.
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">main</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">footer</span>&gt;Copyright 2020 Tecinpact&lt;/<span style="color:#ff79c6">footer</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">table</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">tr</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;facebook&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.facebook.com/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.facebook.com/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-facebook&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">td</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;twitter&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.twitter.com/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.twitter.com/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-twitter&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;instagram&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://www.instagram.com/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.instagram.com/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-instagram&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">tr</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">tr</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;whatsapp&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://wa.me/94769477743&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://wa.me/94769477743&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-whatsapp&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;email&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;mailto:tecinpactagencies@gmail.com&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mailto:tecinpactagencies@gmail.com&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-envelope&#34;</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">td</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;telegram&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;window.location.replace(&#39;https://t.me/tecinpact&#39;);&#34;</span>&gt;&lt;<span style="color:#ff79c6">a</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://t.me/tecinpact&#34;</span>&gt;&lt;<span style="color:#ff79c6">i</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;fa fa-telegram&#34;</span>&gt;&lt;/<span style="color:#ff79c6">i</span>&gt;&lt;/<span style="color:#ff79c6">a</span>&gt;&lt;/<span style="color:#ff79c6">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">tr</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">table</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;feed&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">p</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;back&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;showFeed()&#34;</span>&gt;Go Back&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;textBox&#34;</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./jquery-3.5.1.min.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./index.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">html</span>&gt;
+</span></span></code></pre></div><p>Here in the head tags, I linked my main css, a fontawesome pack and a custom font from google to make it fancy or so. and my document has 2 sections divided with div tags called preloader and content. Preloader is where the loading animation lives, I animate it with a CSS code section. and the content section. Is this looks familiar? Yes it should be! We made this template in the <a href="/post/simple-beautiful-modal/">JS CSS modal</a> tutorial! and oh boy it came in handy isn&rsquo;t it. And for something new, I added a new button and a div with a ID of feed, this is where I grab My website&rsquo;s rss feed and convert it to html. so you can see it as new posts and when I update my app, You&rsquo;ll be able to see it instantly here! also because xml is a small file, it would cost you arround 5-10kb per session and that&rsquo;s like nothing these days! My logic here is to hide unwanted sections and show only one section at a time, so it would look like a native app with smooth animations. I&rsquo;ll explain it in the future.</p>
 <p>Now let&rsquo;s see the SCSS code, If you don&rsquo;t know what scss is, I have a tutorial for it too and go and study it <a href="/post/scss-for-modern-web-development">HERE</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#8be9fd;font-style:italic">$background</span><span style="color:#ff79c6"> :</span> <span style="color:#f1fa8c">url(background.jpg)</span>;
-<span style="color:#8be9fd;font-style:italic">$buttons</span><span style="color:#ff79c6"> :</span> <span style="color:#50fa7b">linear-gradient</span>(to right top<span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#191d3c</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#151831</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#121425</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#0e0d1b</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#05050f</span>);
-<span style="color:#8be9fd;font-style:italic">$modal</span><span style="color:#ff79c6"> :</span> <span style="color:#50fa7b">linear-gradient</span>(to right top<span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#532527</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#401d29</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#2c1826</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#19121d</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#05050f</span>);
-<span style="color:#8be9fd;font-style:italic">$fonts</span><span style="color:#ff79c6"> :</span> <span style="color:#f1fa8c">&#39;Aclonica&#39;</span><span style="color:#ff79c6">,</span>
-sans-serif<span style="color:#ff79c6">,</span>
-monospace;
-<span style="color:#8be9fd;font-style:italic">$dark</span><span style="color:#ff79c6"> :</span> <span style="color:#bd93f9">#1f1e2f</span>;
-<span style="color:#8be9fd;font-style:italic">$mode</span><span style="color:#ff79c6"> :</span> <span style="color:#bd93f9">#111E6C</span>;
-<span style="color:#8be9fd;font-style:italic">$lite</span><span style="color:#ff79c6"> :</span> white;
-
-<span style="color:#ff79c6">html</span> {
-    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-    <span style="color:#50fa7b">user-select</span><span style="color:#ff79c6">:</span> none;
-
-    <span style="color:#ff79c6">body</span> {
-
-        <span style="color:#50fa7b">font-family</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$fonts</span>;
-        <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">linear-gradient</span>(<span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span>)<span style="color:#ff79c6">,</span> <span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span>))<span style="color:#ff79c6">,</span> <span style="color:#8be9fd;font-style:italic">$background</span>;
-        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#282d53</span>;
-        <span style="color:#50fa7b">background-repeat</span><span style="color:#ff79c6">:</span> no-repeat;
-        <span style="color:#50fa7b">background-size</span><span style="color:#ff79c6">:</span> cover;
-        <span style="color:#50fa7b">background-position</span><span style="color:#ff79c6">:</span> center;
-        <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$lite</span>;
-        <span style="color:#50fa7b">box-sizing</span><span style="color:#ff79c6">:</span> border-box;
-
-        <span style="color:#50fa7b">.preloader</span> {
-            <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-            <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-            <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-            <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-            <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-            <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-
-            <span style="color:#50fa7b">.loading</span> {
-                <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> flex;
-                <span style="color:#50fa7b">justify-content</span><span style="color:#ff79c6">:</span> center;
-
-                <span style="color:#ff79c6">div</span> {
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#8be9fd">rem</span>;
-                    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#8be9fd">rem</span>;
-                    <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">rem</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.3</span><span style="color:#8be9fd">rem</span>;
-                    <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> white;
-                    <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">animation</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.9</span><span style="color:#8be9fd">s</span> bounce infinite alternate;
-
-                    <span style="color:#ff79c6">&amp;</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">2</span><span style="color:#ff79c6">)</span> {
-                        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.3</span><span style="color:#8be9fd">s</span>;
-                    }
-
-                    <span style="color:#ff79c6">&amp;</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">3</span><span style="color:#ff79c6">)</span> {
-                        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.6</span><span style="color:#8be9fd">s</span>;
-                    }
-                }
-            }
-
-            <span style="color:#ff79c6">@keyframes</span> <span style="color:#ff79c6">bounce</span> {
-                <span style="color:#ff79c6">to</span> {
-                    <span style="color:#50fa7b">opacity</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.3</span>;
-                    <span style="color:#50fa7b">transform</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">translate3d</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#ff79c6">-</span><span style="color:#bd93f9">1</span><span style="color:#8be9fd">rem</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span>);
-                }
-            }
-        }
-
-        <span style="color:#50fa7b">.content</span> {
-            <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> none;
-
-            <span style="color:#50fa7b">.feed</span> {
-                <span style="color:#50fa7b">.textBox</span> {
-                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-                    <span style="color:#50fa7b">overflow-y</span><span style="color:#ff79c6">:</span> auto;
-                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">px</span>;
-                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.8</span>);
-                    <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-                    <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-
-                    <span style="color:#50fa7b">.link</span> {
-                        <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> skyblue;
-                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> large;
-                        <span style="color:#50fa7b">text-decoration</span><span style="color:#ff79c6">:</span> none;
-                    }
-                }
-
-                <span style="color:#50fa7b">.back</span> {
-                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">transform</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">translate</span>(<span style="color:#ff79c6">-</span><span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span>);
-                    <span style="color:#50fa7b">z-index</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span>;
-                    <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">px</span>;
-                    <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
-                    <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$buttons</span>;
-                    <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
-                    <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
-                    <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#14162b</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
-                }
-
-                <span style="color:#50fa7b">.back</span>:hover {
-                    <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">55</span><span style="color:#8be9fd">px</span>;
-                    <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#ffffff</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
-                }
-            }
-
-            <span style="color:#50fa7b">.body</span> {
-
-                <span style="color:#ff79c6">table</span> {
-                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-                    <span style="color:#50fa7b">bottom</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">px</span>;
-                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">justify-content</span><span style="color:#ff79c6">:</span> center;
-                    <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
-
-                    <span style="color:#ff79c6">tr</span> {
-                        <span style="color:#ff79c6">td</span> {
-                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
-
-                            <span style="color:#ff79c6">a</span> {
-                                <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> white;
-                                <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#bd93f9">.5</span><span style="color:#8be9fd">em</span>;
-                                <span style="color:#50fa7b">text-decoration</span><span style="color:#ff79c6">:</span> none;
-                                <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
-                            }
-                        }
-
-                        <span style="color:#50fa7b">.facebook</span> {
-                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#3b5998</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#3b5998</span>;
-                        }
-
-                        <span style="color:#50fa7b">.twitter</span> {
-                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#00acee</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#00acee</span>;
-                        }
-
-                        <span style="color:#50fa7b">.instagram</span> {
-                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#ee0077</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#ee0077</span>;
-                        }
-
-                        <span style="color:#50fa7b">.whatsapp</span> {
-                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#075E54</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#075E54</span>;
-                        }
-
-                        <span style="color:#50fa7b">.email</span> {
-                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#aaaaaa</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#aaaaaa</span>;
-                        }
-
-                        <span style="color:#50fa7b">.telegram</span> {
-                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#0088CC</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#0088CC</span>;
-                        }
-
-                        <span style="color:#ff79c6">td</span>:hover {
-                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> black;
-                            <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
-                            <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> yellow;
-
-                            <span style="color:#ff79c6">a</span> {
-                                <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> yellow;
-                            }
-                        }
-                    }
-                }
-
-                <span style="color:#50fa7b">.nav</span> {
-                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
-                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-
-                    <span style="color:#50fa7b">.list</span> {
-                        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
-                        <span style="color:#50fa7b">margin-top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-
-                        <span style="color:#ff79c6">a</span> {
-                            <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
-                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">14</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">16</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">text-decoration</span><span style="color:#ff79c6">:</span> none;
-                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">60</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$buttons</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#14162b</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> white;
-                        }
-
-                        <span style="color:#ff79c6">a</span>:hover {
-                            <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
-                            <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
-                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#50fa7b">rgb</span>(<span style="color:#bd93f9">255</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">255</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">255</span>) <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
-                        }
-                    }
-                }
-
-                <span style="color:#50fa7b">.content</span> {
-                    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-                    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">25</span><span style="color:#8be9fd">%</span>;
-
-                    <span style="color:#ff79c6">h4</span> {
-                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">em</span>;
-                        <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    }
-
-                    <span style="color:#ff79c6">h1</span> {
-                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">4</span><span style="color:#8be9fd">em</span>;
-                        <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    }
-
-                    <span style="color:#ff79c6">button</span> {
-                        <span style="color:#50fa7b">font-family</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$fonts</span>;
-                        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">95</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">outline</span><span style="color:#ff79c6">:</span> none;
-                        <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> none;
-                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> large;
-                        <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> white;
-                        <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$buttons</span>;
-                        <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
-                        <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
-                        <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#14162b</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
-                    }
-
-                    <span style="color:#ff79c6">button</span>:hover {
-                        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">105</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#ffffff</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
-                    }
-                }
-
-                <span style="color:#50fa7b">.footer</span> {
-                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">bottom</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
-                    <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-                }
-
-                <span style="color:#50fa7b">.wrapper</span> {
-                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-                    <span style="color:#50fa7b">z-index</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span>;
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-                    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-                    <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.8</span>);
-
-                    <span style="color:#50fa7b">.modal</span> {
-                        <span style="color:#ff79c6">close</span> {
-                            <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
-                            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                            <span style="color:#50fa7b">right</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> red;
-                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-                        }
-
-                        <span style="color:#ff79c6">header</span> {
-                            <span style="color:#50fa7b">margin-bottom</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">3</span><span style="color:#bd93f9">.5</span><span style="color:#8be9fd">em</span>;
-                        }
-
-                        <span style="color:#ff79c6">main</span> {
-                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#8be9fd">em</span>;
-                        }
-
-                        <span style="color:#ff79c6">footer</span> {
-                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#bd93f9">.5</span><span style="color:#8be9fd">em</span>;
-                        }
-
-                        <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">350</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">350</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$modal</span>;
-                        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">px</span>;
-                        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
-                        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-                        <span style="color:#50fa7b">grid-template-rows</span><span style="color:#ff79c6">:</span> auto <span style="color:#bd93f9">1</span><span style="color:#8be9fd">fr</span> auto;
-                    }
-                }
-            }
-        }
-    }
-}
-</code></pre></div><p>This code isn&rsquo;t hard, anyone can understand this with my CSS and SCSS guides because they are different from what you find in the other sites. and Also I used tricks from my single line css tricks guide. Those are the things that would get hard and I already explained almost everything in other guides so I&rsquo;m not going to do it here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$background</span><span style="color:#ff79c6"> :</span> <span style="color:#f1fa8c">url(background.jpg)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$buttons</span><span style="color:#ff79c6"> :</span> <span style="color:#50fa7b">linear-gradient</span>(to right top<span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#191d3c</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#151831</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#121425</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#0e0d1b</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#05050f</span>);
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$modal</span><span style="color:#ff79c6"> :</span> <span style="color:#50fa7b">linear-gradient</span>(to right top<span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#532527</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#401d29</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#2c1826</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#19121d</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">#05050f</span>);
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$fonts</span><span style="color:#ff79c6"> :</span> <span style="color:#f1fa8c">&#39;Aclonica&#39;</span><span style="color:#ff79c6">,</span>
+</span></span><span style="display:flex;"><span>sans-serif<span style="color:#ff79c6">,</span>
+</span></span><span style="display:flex;"><span>monospace;
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$dark</span><span style="color:#ff79c6"> :</span> <span style="color:#bd93f9">#1f1e2f</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$mode</span><span style="color:#ff79c6"> :</span> <span style="color:#bd93f9">#111E6C</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$lite</span><span style="color:#ff79c6"> :</span> white;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">html</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">user-select</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">body</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">font-family</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$fonts</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">linear-gradient</span>(<span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span>)<span style="color:#ff79c6">,</span> <span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span>))<span style="color:#ff79c6">,</span> <span style="color:#8be9fd;font-style:italic">$background</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#282d53</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background-repeat</span><span style="color:#ff79c6">:</span> no-repeat;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background-size</span><span style="color:#ff79c6">:</span> cover;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background-position</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$lite</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">box-sizing</span><span style="color:#ff79c6">:</span> border-box;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">.preloader</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">.loading</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> flex;
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">justify-content</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">div</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#8be9fd">rem</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#8be9fd">rem</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">rem</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.3</span><span style="color:#8be9fd">rem</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> white;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">animation</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.9</span><span style="color:#8be9fd">s</span> bounce infinite alternate;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&amp;</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">2</span><span style="color:#ff79c6">)</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.3</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&amp;</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">3</span><span style="color:#ff79c6">)</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.6</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">@keyframes</span> <span style="color:#ff79c6">bounce</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">to</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">opacity</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.3</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">transform</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">translate3d</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#ff79c6">-</span><span style="color:#bd93f9">1</span><span style="color:#8be9fd">rem</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span>);
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">.content</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">.feed</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">.textBox</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">overflow-y</span><span style="color:#ff79c6">:</span> auto;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.8</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">.link</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> skyblue;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> large;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">text-decoration</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">.back</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">transform</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">translate</span>(<span style="color:#ff79c6">-</span><span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">z-index</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$buttons</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#14162b</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">.back</span>:hover {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">55</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#ffffff</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">.body</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">table</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">bottom</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">justify-content</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">tr</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">td</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#ff79c6">a</span> {
+</span></span><span style="display:flex;"><span>                                <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> white;
+</span></span><span style="display:flex;"><span>                                <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#bd93f9">.5</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>                                <span style="color:#50fa7b">text-decoration</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>                                <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">.facebook</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#3b5998</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#3b5998</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">.twitter</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#00acee</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#00acee</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">.instagram</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#ee0077</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#ee0077</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">.whatsapp</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#075E54</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#075E54</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">.email</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#aaaaaa</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#aaaaaa</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">.telegram</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#0088CC</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">#0088CC</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">td</span>:hover {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> black;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span> yellow;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#ff79c6">a</span> {
+</span></span><span style="display:flex;"><span>                                <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> yellow;
+</span></span><span style="display:flex;"><span>                            }
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">.nav</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">.list</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">margin-top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">a</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">14</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">16</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">text-decoration</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">60</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$buttons</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#14162b</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> white;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">a</span>:hover {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#50fa7b">rgb</span>(<span style="color:#bd93f9">255</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">255</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">255</span>) <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">.content</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">25</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">h4</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">h1</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">4</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">button</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">font-family</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$fonts</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">95</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">500</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">outline</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> large;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> white;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$buttons</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">transition-timing-function</span><span style="color:#ff79c6">:</span> linear;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">transition-duration</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.1</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#14162b</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">button</span>:hover {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">105</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">border</span><span style="color:#ff79c6">:</span> solid <span style="color:#bd93f9">#ffffff</span> <span style="color:#bd93f9">2</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">.footer</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">bottom</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">margin</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">.wrapper</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">z-index</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">2</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#50fa7b">rgba</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.8</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">.modal</span> {
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">close</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">right</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">color</span><span style="color:#ff79c6">:</span> red;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">header</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">margin-bottom</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">3</span><span style="color:#bd93f9">.5</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">main</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#ff79c6">footer</span> {
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">font-size</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">1</span><span style="color:#bd93f9">.5</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">350</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">350</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-image</span><span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">$modal</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">grid-template-rows</span><span style="color:#ff79c6">:</span> auto <span style="color:#bd93f9">1</span><span style="color:#8be9fd">fr</span> auto;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This code isn&rsquo;t hard, anyone can understand this with my CSS and SCSS guides because they are different from what you find in the other sites. and Also I used tricks from my single line css tricks guide. Those are the things that would get hard and I already explained almost everything in other guides so I&rsquo;m not going to do it here.</p>
 <p>This is where the fun begins, Let&rsquo;s see how I did the JS code. Here, I used a library called JQuery and I didn&rsquo;t covered it yet, I&rsquo;ll do it in the near future however, but the code is easy to understand and I explained JQuery a bit in one of my previous guides.</p>
 <p>Also don&rsquo;t consider the animation part for now, we&rsquo;re doing a full css animation guide in the future, let me know would you like to see it sooner or later in the comments bellow.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">$(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).css({
-    display<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;none&#34;</span>
-});
-$(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-<span style="color:#8be9fd;font-style:italic">let</span> modalStat <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
-<span style="color:#8be9fd;font-style:italic">let</span> feed <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
-<span style="color:#8be9fd;font-style:italic">let</span> xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Data Loading&lt;br&gt;Please Check Your Internet Connection&lt;br&gt;&lt;span onclick=&#39;loadData()&#39; style = &#39;color:#0088CC;&#39; &gt;Reload&lt;/span&gt;&lt;/h1 &gt; &#34;</span>];
-$(<span style="color:#f1fa8c">&#34;.textBox&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
-
-butotnFunction <span style="color:#ff79c6">=</span> () =&gt; {
-    <span style="color:#ff79c6">if</span> (modalStat <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">0</span>) {
-        $(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
-        modalStat <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>;
-    } <span style="color:#ff79c6">else</span> {
-        $(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-        modalStat <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
-    }
-}
-
-showFeed <span style="color:#ff79c6">=</span> () =&gt; {
-    <span style="color:#ff79c6">if</span> (feed <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">0</span>) {
-        $(<span style="color:#f1fa8c">&#34;.body&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-        $(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
-        feed <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>;
-    } <span style="color:#ff79c6">else</span> {
-        $(<span style="color:#f1fa8c">&#34;.body&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
-        $(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-        feed <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
-    }
-}
-
-loadComplete <span style="color:#ff79c6">=</span> () =&gt; {
-    $(<span style="color:#f1fa8c">&#34;.preloader&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-    $(<span style="color:#f1fa8c">&#34;.content&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
-}
-
-loadData <span style="color:#ff79c6">=</span> () =&gt; {
-    $.get(<span style="color:#f1fa8c">&#39;https://www.tecinpact.tk/index.xml&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
-        xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Latest Posts With Summaries&lt;/h1&gt;&#34;</span>];
-        $(data).find(<span style="color:#f1fa8c">&#34;item&#34;</span>).each(<span style="color:#8be9fd;font-style:italic">function</span> () { <span style="color:#6272a4">// or &#34;item&#34; or whatever suits your feed
-</span><span style="color:#6272a4"></span>            <span style="color:#8be9fd;font-style:italic">var</span> el <span style="color:#ff79c6">=</span> $(<span style="color:#ff79c6">this</span>);
-            <span style="color:#8be9fd;font-style:italic">var</span> retstring <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">`&lt;div class=&#39;card&#39; &gt;------------------------
-</span><span style="color:#f1fa8c">        &lt;br&gt;
-</span><span style="color:#f1fa8c">        &lt;h1&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;title&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/h1&gt;
-</span><span style="color:#f1fa8c">        &lt;br&gt;
-</span><span style="color:#f1fa8c">        &lt;small&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;pubDate&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/small&gt;
-</span><span style="color:#f1fa8c">        &lt;br&gt;
-</span><span style="color:#f1fa8c">        &lt;p&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;description&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#39;link&#39;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;&gt;Read More&gt;&gt;&lt;/a&gt;&lt;/p&gt;
-</span><span style="color:#f1fa8c">        &lt;/div&gt;`</span>;
-            xml.push(retstring)
-        });
-        $(<span style="color:#f1fa8c">&#34;.textBox&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
-    });
-}
-
-$(<span style="color:#8be9fd;font-style:italic">document</span>).ready(<span style="color:#8be9fd;font-style:italic">function</span> () {
-    setTimeout(<span style="color:#8be9fd;font-style:italic">function</span> () {
-        loadComplete();
-    }, <span style="color:#bd93f9">3000</span>);
-});
-
-<span style="color:#8be9fd;font-style:italic">document</span>.addEventListener(<span style="color:#f1fa8c">&#39;deviceready&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (event) {
-    <span style="color:#8be9fd;font-style:italic">document</span>.addEventListener(<span style="color:#f1fa8c">&#39;backbutton&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (e) {
-        $(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-        $(<span style="color:#f1fa8c">&#34;.body&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
-        $(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-    })
-}, <span style="color:#ff79c6">false</span>);
-
-loadData()
-</code></pre></div><p>Let&rsquo;s see what&rsquo;s this does. Here first I&rsquo;m selecting the div with the class of wrapper and hiding it using css with JQuery, then I&rsquo;m doing the same thing to the feed but I used a function called fadeOut with it and it&rsquo;s fading out for 500 milliseconds, Then I&rsquo;m creating 3 variables, modalstat to check wether the modal is showing or not, feed to check wether the feed is showing or not and xml to hold data from the site and I set it a value at the beginning with a message so if something got wrong with the connection, the message would show up and there&rsquo;s a button to refresh the process too!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>$(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).css({
+</span></span><span style="display:flex;"><span>    display<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;none&#34;</span>
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>$(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> modalStat <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> feed <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Data Loading&lt;br&gt;Please Check Your Internet Connection&lt;br&gt;&lt;span onclick=&#39;loadData()&#39; style = &#39;color:#0088CC;&#39; &gt;Reload&lt;/span&gt;&lt;/h1 &gt; &#34;</span>];
+</span></span><span style="display:flex;"><span>$(<span style="color:#f1fa8c">&#34;.textBox&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>butotnFunction <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> (modalStat <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">0</span>) {
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        modalStat <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#ff79c6">else</span> {
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        modalStat <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>showFeed <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> (feed <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">0</span>) {
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.body&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        feed <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#ff79c6">else</span> {
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.body&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        feed <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>loadComplete <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    $(<span style="color:#f1fa8c">&#34;.preloader&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>    $(<span style="color:#f1fa8c">&#34;.content&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>loadData <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    $.get(<span style="color:#f1fa8c">&#39;https://www.tecinpact.tk/index.xml&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
+</span></span><span style="display:flex;"><span>        xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Latest Posts With Summaries&lt;/h1&gt;&#34;</span>];
+</span></span><span style="display:flex;"><span>        $(data).find(<span style="color:#f1fa8c">&#34;item&#34;</span>).each(<span style="color:#8be9fd;font-style:italic">function</span> () { <span style="color:#6272a4">// or &#34;item&#34; or whatever suits your feed
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>            <span style="color:#8be9fd;font-style:italic">var</span> el <span style="color:#ff79c6">=</span> $(<span style="color:#ff79c6">this</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#8be9fd;font-style:italic">var</span> retstring <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">`&lt;div class=&#39;card&#39; &gt;------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;br&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;h1&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;title&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/h1&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;br&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;small&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;pubDate&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/small&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;br&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;p&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;description&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;br&gt;&lt;a class=&#34;link&#34; href=&#34;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#39;link&#39;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;&gt;Read More&gt;&gt;&lt;/a&gt;&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;/div&gt;`</span>;
+</span></span><span style="display:flex;"><span>            xml.push(retstring)
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.textBox&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$(<span style="color:#8be9fd;font-style:italic">document</span>).ready(<span style="color:#8be9fd;font-style:italic">function</span> () {
+</span></span><span style="display:flex;"><span>    setTimeout(<span style="color:#8be9fd;font-style:italic">function</span> () {
+</span></span><span style="display:flex;"><span>        loadComplete();
+</span></span><span style="display:flex;"><span>    }, <span style="color:#bd93f9">3000</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">document</span>.addEventListener(<span style="color:#f1fa8c">&#39;deviceready&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (event) {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">document</span>.addEventListener(<span style="color:#f1fa8c">&#39;backbutton&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (e) {
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.feed&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.body&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.wrapper&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>}, <span style="color:#ff79c6">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>loadData()
+</span></span></code></pre></div><p>Let&rsquo;s see what&rsquo;s this does. Here first I&rsquo;m selecting the div with the class of wrapper and hiding it using css with JQuery, then I&rsquo;m doing the same thing to the feed but I used a function called fadeOut with it and it&rsquo;s fading out for 500 milliseconds, Then I&rsquo;m creating 3 variables, modalstat to check wether the modal is showing or not, feed to check wether the feed is showing or not and xml to hold data from the site and I set it a value at the beginning with a message so if something got wrong with the connection, the message would show up and there&rsquo;s a button to refresh the process too!</p>
 <p>Then for the functions, I first made this butotnFunction which I miss spelled (But works anyways) for modal to show if hidden and hide if shown. it&rsquo;s checking the variable and if it&rsquo;s 1, modal will hide and if it&rsquo;s 0, modal will show up. also it sets the values to the opposite of the condition they&rsquo;re checking. This is the same for the showFeed function too, but here it&rsquo;s hiding body section while showing itself and vice versa.</p>
 <p>Then I have a function called loadComplete, it hides the preloader and shows the content, we&rsquo;re firing this function with a eventhandler lately.</p>
 <p>Then we have loadData function. it&rsquo;s the brain behind the dynamic feed of the application. this function fetches the rss feed from my site and phrases it for certain tags and looping through them to get out the content. this is pretty much universal for every feed, so don&rsquo;t mind it. then I add those values to the xml array and in the end, I&rsquo;m rendering it in the div with the class of textBox.</p>
@@ -646,8 +646,8 @@ loadData()
 <p>Then I have a event handler from cordova to handle backbutton events. this would close modal or get you out of the feed when backing up.</p>
 <p>And guys that&rsquo;s it for the application and that&rsquo;s all we have to put to create a supper simple app!</p>
 <p>Now you have to run</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">cordova build android <span style="color:#ff79c6">--</span>release
-</code></pre></div><p>to create the application, and Wolah! that&rsquo;s our application!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>cordova build android <span style="color:#ff79c6">--</span>release
+</span></span></code></pre></div><p>to create the application, and Wolah! that&rsquo;s our application!</p>
 <p>Let me show you some screenshots!</p>
 <p><img src="/uploads/20200802_01.jpg" alt="Screenshot 1">
 <img src="/uploads/20200802_02.jpg" alt="Screenshot 2">
@@ -783,7 +783,7 @@ loadData()
 
 
 
-<script src="https://www.nushankodikara.com/js/scripts.min.js"></script>
+<script src="https://blog.nushankodikara.com/js/scripts.min.js"></script>
 
 
 

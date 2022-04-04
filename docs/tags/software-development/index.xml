@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software Development on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/software-development/</link>
-    <description>Recent content in Software Development on Nushan Kodikara</description>
+    <title>Software Development on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/software-development/</link>
+    <description>Recent content in Software Development on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Jul 2020 14:30:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jul 2020 14:30:00 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python Ultimate Crash Course (Zero-To-Hero)</title>
-      <link>https://www.nushankodikara.com/blog/python-ultimate-crash-course-2020/</link>
+      <link>https://blog.nushankodikara.com/blog/python-ultimate-crash-course-2020/</link>
       <pubDate>Thu, 16 Jul 2020 14:30:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/python-ultimate-crash-course-2020/</guid>
+      <guid>https://blog.nushankodikara.com/blog/python-ultimate-crash-course-2020/</guid>
       <description>Introduction Python is one of most popular and most powerful and one of the fastest programming languages until now, Millions upon millions developers use python in their projects to script easily. also python is one of the easiest languages to learn and master. But there are some differences between python 2 and 3, and most beginners get confused and leave python because they can&amp;rsquo;t understand how these work. So let&amp;rsquo;s begin with python 2 and 3 at the same time shall we?</description>
     </item>
     

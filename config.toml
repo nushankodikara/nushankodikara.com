@@ -1,6 +1,6 @@
-baseurl = "https://www.nushankodikara.com"
+baseurl = "https://blog.nushankodikara.com"
 metaDataFormat = "yaml"
-title = "Nushan Kodikara"
+title = "Blog by Nushan Kodikara"
 theme = "blists"
 publishDir = "docs"
 
@@ -17,8 +17,8 @@ DefaultContentLanguageInSubdir = true
       introPhoto = "https://lh3.googleusercontent.com/9hrdO8kkUU2a-NIknjGwCwcHUCG2GIxh8qNo9mcZOAzH2dffqD4B2o3jy_bJYs4r82iYr5jRNkJZmVEaOLq6ddrjmRusyRUQnUIsL3I3tjwI_xJAUhfOqjE96O286Kf5htrlkMJf2gau7lYr3P4twE38D-eR6i7jZm8IcSxuutec4TI_DxAj6veUqy-gs6zdyDZxH9LgkzA3fQlPD9QN6lp1cSRGDCLngvD5bRrNbyK4s3DXsvPwZshTzz50G77ckljJwaInFaP4fXMZN73A1TUArWsQJM83vcwa8B9OvgXlombFW6QGVfrYPQgC85qLj1MBmk3lySv65jxdLg9OZzmvzbNWBfZF-R0fXubarYxCAS99MNugvfRGlc8Ys3hFFUEnchq5iXSga1RWKLqmgIpGirukVKsBW5xejhLhpDa0ouMrH3szegw_dhddfNTAAAeiMmiXA_MsOE_fPl68R51scWbMzYgVmDxNuEgUi4hDIvzFKrxpnZpItnfoK1eLQ6ICbKNfKwI4L-ohVBMZCTUTvxlh0KEJOM6HeVC26iwYqMGldYP_szCBOQm_jBHEHUvNaz1sbKFzGlP0vlumRMuakmwGTXvs41BlG5eum0GUZ3QRtSM7mcud5bGF9P1Iv6efJzxN2cQyFS0w0z4OQsND-7R6IMleeN6NLS7nk6EWmKLe1GlOhCPWBlBVWR4-H9ZZPEwoXdR38wwWU-y9T7GOlQ=w1280-h720-no?authuser=0"
       
     [[languages.en.menu.main]]
-        name = "Blog"
-        url = "blog"
+        name = "Social Links"
+        url = "https://bio.nushankodikara.com"
         weight = 1
 
 #    [[languages.en.menu.main]]

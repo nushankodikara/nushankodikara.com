@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VPS on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/vps/</link>
-    <description>Recent content in VPS on Nushan Kodikara</description>
+    <title>VPS on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/vps/</link>
+    <description>Recent content in VPS on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Dec 2021 08:32:21 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Dec 2021 08:32:21 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/vps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let&#39;s Create a Free VPS Server</title>
-      <link>https://www.nushankodikara.com/blog/lets-create-a-free-vps-server/</link>
+      <link>https://blog.nushankodikara.com/blog/lets-create-a-free-vps-server/</link>
       <pubDate>Thu, 16 Dec 2021 08:32:21 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/lets-create-a-free-vps-server/</guid>
+      <guid>https://blog.nushankodikara.com/blog/lets-create-a-free-vps-server/</guid>
       <description>The process of creating a free VPS server is very simple. Some people overcomplicate the process and the ones who follow them will get frustrated. Let&amp;rsquo;s see how we can create a free VPS server in just a few steps, without complicating the process. If you got any issues while following the steps, please feel free to contact me through Telegram.
 Step 1: Creating An Account On VPS Provider Today in this guide, we&amp;rsquo;re using a site called Hax.</description>
     </item>

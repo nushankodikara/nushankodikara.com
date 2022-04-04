@@ -13,21 +13,21 @@
     />
 
     <title>
-        Creating a Network Hub for Social Medias - Nushan Kodikara
+        Creating a Network Hub for Social Medias - Blog by Nushan Kodikara
     </title>
     <meta
         name="description"
         content="Network hub for social medias"
-    /><meta name="generator" content="Hugo 0.92.2" /><link
+    /><meta name="generator" content="Hugo 0.96.0" /><link
         rel="stylesheet"
-        href="https://www.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
+        href="https://blog.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
         integrity="sha256-nrGTPXS8UfkKmYKOO4OQCcMmqk2N1ewKxhaPljEF6Vc="
     />
     
      <meta property="og:title" content="Creating a Network Hub for Social Medias" />
 <meta property="og:description" content="Network hub for social medias" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.nushankodikara.com/blog/creating-a-network-hub-of-socialmedias/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://blog.nushankodikara.com/blog/creating-a-network-hub-of-socialmedias/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-08-03T06:00:00+05:30" />
 <meta property="article:modified_time" content="2020-08-03T06:00:00+05:30" />
 
@@ -41,13 +41,13 @@
 <meta itemprop="keywords" content="Social Game," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
-  <a href="https://www.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
-    Nushan Kodikara
+  <a href="https://blog.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Blog by Nushan Kodikara
   </a>
   <ul class="flex items-center gap-4 lg:gap-6">
 
     
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://bio.nushankodikara.com">Social Links</a></li>
     
 
     
@@ -150,382 +150,382 @@
 <p><img src="/uploads/20200803_01.gif" alt="BIO SECTION"></p>
 <h2 id="lets-start-shall-we">Let&rsquo;s Start Shall we</h2>
 <p>Because I made this in a hurry, I used two commonly used libraries from the internet to make my life easier, Bootstrap 4 and JQuery 3, If you aren&rsquo;t comfortable with these, check their official documents, Otherwise, Just copy my codes and you&rsquo;ll be good to go! As usual <a href="/zip/TecinpactBio.zip">HERE</a> is the link to download the documents directly. Let&rsquo;s Start with HTML First, This is a single page setup so the index.html file would be</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;en&#34;</span>&gt;
-
-&lt;<span style="color:#ff79c6">head</span>&gt;
-    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">charset</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;utf-8&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">http-equiv</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;X-UA-Compatible&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;IE=edge&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewport&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;width=device-width, initial-scale=1&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&#34;</span>
-        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;css/style.css&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;shortcut icon&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./img/internet-b.png&#34;</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;image/x-icon&#34;</span>&gt;
-    &lt;<span style="color:#ff79c6">title</span>&gt;Bio Section&lt;/<span style="color:#ff79c6">title</span>&gt;
-&lt;/<span style="color:#ff79c6">head</span>&gt;
-
-&lt;<span style="color:#ff79c6">body</span>&gt;
-    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;preloader&#34;</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;lds-facebook&#34;</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;<span style="color:#ff79c6">h1</span>&gt;Loading Bio Section&lt;/<span style="color:#ff79c6">h1</span>&gt;
-    &lt;/<span style="color:#ff79c6">div</span>&gt;
-    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;jumbotron&#34;</span>&gt;
-            &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.tecinpact.tk/images/profile.jpg&#34;</span> /&gt;
-            &lt;<span style="color:#ff79c6">h1</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;display-4&#34;</span>&gt;Tecinpact &lt;<span style="color:#ff79c6">span</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;badge badge-dark&#34;</span>&gt;Bio&lt;/<span style="color:#ff79c6">span</span>&gt;&lt;/<span style="color:#ff79c6">h1</span>&gt;
-            &lt;<span style="color:#ff79c6">p</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;lead&#34;</span>&gt;Here you can navigate through all of our sites and groups easily and safely&lt;/<span style="color:#ff79c6">p</span>&gt;
-            &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;button&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewQP()&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;btn btn-warning&#34;</span>&gt;Show / Hide Quick Posts&lt;/<span style="color:#ff79c6">button</span>&gt;
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;links&#34;</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-primary&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/internet.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Main Website&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;Here&#39;s our main blog site, we update content daily and Hope you&#39;ll learn something new! Don&#39;t
-                            forget to let us know your feelings in the comment section.&lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.tecinpact.tk&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Visit Site&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-secondary&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/facebook.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Facebook Page&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;Yes! We have a facebook page and it&#39;s also updating with the site. would be glad if you can
-                            show some love.&lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.facebook.com/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Goto FB Page&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-success&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/telegram.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Telegram Group&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;We have an amazing community here in Telegram, Everyone&#39;s friendly and so helpful. Ask
-                            anything you get a doubt about and within minutes, Someone will reply with a super helpful
-                            answer!&lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://t.me/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Join Group&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-warning&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/playstore.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Android App&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;Hey! We have a new android app on the playstore! It&#39;s great if you can go and check it out!
-                        &lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://play.google.com/store/apps/details?id=tk.tecinpact.app&#34;</span>
-                            <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Install application&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-danger&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/instagram.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Instagram Account&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;I Don&#39;t know how, But we developed a huge community on instagram and growing, Don&#39;t forget to
-                            join us and you&#39;ll learn something new for sure! and also I&#39;m updating stories hourly.&lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://instagram.com/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Follow Us&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-warning&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/whatsapp.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Whatsapp&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;We always face different problems to solve and sometimes, we get stuck. Ask me anything via
-                            whatsapp so I can reply you within minutes.&lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://wa.me/94769477743&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Send A Message&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-info&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/twitter.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Twitter&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;We also have a twitter account! if you&#39;re clever enough, You can probably get notification
-                            through SMS to your phone.&lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://twitter.com/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Follow Us&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-dark&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
-                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/gmail.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
-                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
-                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;E-Mail&lt;/<span style="color:#ff79c6">h5</span>&gt;
-                        &lt;<span style="color:#ff79c6">p</span>&gt;Hope you have an official inquiry to discuss with us. we always have an email account for
-                            these kinds of work.&lt;/<span style="color:#ff79c6">p</span>&gt;
-                        &lt;<span style="color:#ff79c6">hr</span>&gt;
-                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mailto:tecinpactagencies@gmail.com&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Send Us An Email&lt;/<span style="color:#ff79c6">a</span>&gt;
-                    &lt;/<span style="color:#ff79c6">div</span>&gt;
-                &lt;/<span style="color:#ff79c6">div</span>&gt;
-            &lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;quickPosts&#34;</span>&gt;
-
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;copyright&#34;</span>&gt;
-            Copyright 2020 Tecinpact. All Rights Reserved.
-        &lt;/<span style="color:#ff79c6">div</span>&gt;
-    &lt;/<span style="color:#ff79c6">div</span>&gt;
-
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://code.jquery.com/jquery-3.5.1.slim.min.js&#34;</span>
-        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
-    &lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&#34;</span>
-        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
-    &lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&#34;</span>
-        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
-    &lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://code.jquery.com/jquery-3.5.1.min.js&#34;</span>
-        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;js/app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-&lt;/<span style="color:#ff79c6">body</span>&gt;
-
-&lt;/<span style="color:#ff79c6">html</span>&gt;
-</code></pre></div><p>The infrastructure of this document isn&rsquo;t that hard, First we&rsquo;re using two sections for preloader and content, and the content is loading secretly in the background while the preloader runs an animation. Then in the content section, I Divide the document again into four main sections, First I have a jumbotron (A Section with a bigger heading and a description sometimes also have an image) Then the main link section, quick posts section and finally the copyright line. Here the link section and quick post section hides and un-hides according to the needs. Let&rsquo;s explore the SCSS page now</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#ff79c6">*</span> {
-    <span style="color:#50fa7b">user-select</span><span style="color:#ff79c6">:</span> none;
-}
-
-<span style="color:#50fa7b">.content</span> {
-    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> none;
-
-    <span style="color:#50fa7b">.jumbotron</span> {
-        <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">url(../img/background.png)</span>;
-        <span style="color:#50fa7b">background-position</span><span style="color:#ff79c6">:</span> center;
-        <span style="color:#50fa7b">background-size</span><span style="color:#ff79c6">:</span> cover;
-        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-        <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-
-        <span style="color:#ff79c6">img</span> {
-            <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">200</span><span style="color:#8be9fd">px</span>;
-            <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span>;
-        }
-
-        <span style="color:#ff79c6">h1</span> {
-
-            <span style="color:#ff79c6">span</span> {
-                <span style="color:#50fa7b">animation</span><span style="color:#ff79c6">:</span> coloranimation <span style="color:#bd93f9">15</span><span style="color:#8be9fd">s</span> infinite;
-
-                <span style="color:#ff79c6">@keyframes</span> <span style="color:#ff79c6">coloranimation</span> {
-                    <span style="color:#ff79c6">0</span>% {
-                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#845EC2</span>;
-                    }
-
-                    <span style="color:#ff79c6">20</span>% {
-                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#D65DB1</span>;
-                    }
-
-                    <span style="color:#ff79c6">40</span>% {
-                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#FF6F91</span>;
-                    }
-
-                    <span style="color:#ff79c6">60</span>% {
-                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#FF9671</span>;
-                    }
-
-                    <span style="color:#ff79c6">80</span>% {
-                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#FFC75F</span>;
-                    }
-
-                    <span style="color:#ff79c6">100</span>% {
-                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#845EC2</span>;
-                    }
-                }
-            }
-        }
-    }
-
-    <span style="color:#50fa7b">.links</span> {
-        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-        <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-
-        <span style="color:#50fa7b">.alert</span> {
-            <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">600</span><span style="color:#8be9fd">px</span>;
-
-            <span style="color:#50fa7b">.media</span> {
-                <span style="color:#ff79c6">img</span> {
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">%</span>;
-                }
-            }
-        }
-    }
-
-    <span style="color:#50fa7b">.quickPosts</span> {
-        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-        <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-
-        <span style="color:#50fa7b">.alert</span> {
-            <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">600</span><span style="color:#8be9fd">px</span>;
-
-            <span style="color:#50fa7b">.media</span> {
-                <span style="color:#ff79c6">img</span> {
-                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">%</span>;
-                }
-            }
-        }
-    }
-
-    <span style="color:#50fa7b">.copyright</span> {
-        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
-        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
-    }
-}
-
-<span style="color:#50fa7b">.preloader</span> {
-    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
-    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
-    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
-    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
-    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-
-
-    <span style="color:#50fa7b">.lds-facebook</span> {
-        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> inline-block;
-        <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> relative;
-        <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">px</span>;
-    }
-
-    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span> {
-        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> inline-block;
-        <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
-        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">8</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">16</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#000</span>;
-        <span style="color:#50fa7b">animation</span><span style="color:#ff79c6">:</span> lds-facebook <span style="color:#bd93f9">1</span><span style="color:#bd93f9">.2</span><span style="color:#8be9fd">s</span> <span style="color:#50fa7b">cubic-bezier</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">1</span>) infinite;
-    }
-
-    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">1</span><span style="color:#ff79c6">)</span> {
-        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">8</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">-</span><span style="color:#bd93f9">0</span><span style="color:#bd93f9">.24</span><span style="color:#8be9fd">s</span>;
-    }
-
-    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">2</span><span style="color:#ff79c6">)</span> {
-        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">32</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">-</span><span style="color:#bd93f9">0</span><span style="color:#bd93f9">.12</span><span style="color:#8be9fd">s</span>;
-    }
-
-    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">3</span><span style="color:#ff79c6">)</span> {
-        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">56</span><span style="color:#8be9fd">px</span>;
-        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
-    }
-
-    <span style="color:#ff79c6">@keyframes</span> <span style="color:#ff79c6">lds-facebook</span> {
-        <span style="color:#ff79c6">0</span>% {
-            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">8</span><span style="color:#8be9fd">px</span>;
-            <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">64</span><span style="color:#8be9fd">px</span>;
-        }
-
-        <span style="color:#ff79c6">50</span>%<span style="color:#ff79c6">,</span>
-        <span style="color:#ff79c6">100</span>% {
-            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">24</span><span style="color:#8be9fd">px</span>;
-            <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">32</span><span style="color:#8be9fd">px</span>;
-        }
-    }
-}
-</code></pre></div><p>Firstly, I Made all sections un-selectable using a SCSS trick, and then I start the content section of scss, here I hide it at the beginning to load elements silently and adding some minor tweaks to how the elements appear and then in the preload section, I add the animations for the loading bar. And that&rsquo;s pretty simple. Let&rsquo;s see what we did to the JS section.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">loadComplete <span style="color:#ff79c6">=</span> () =&gt; {
-    $(<span style="color:#f1fa8c">&#34;.preloader&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>)
-    $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-    $(<span style="color:#f1fa8c">&#34;.content&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>)
-}
-
-$(<span style="color:#8be9fd;font-style:italic">window</span>).on(<span style="color:#f1fa8c">&#39;load&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> () {
-    setTimeout(<span style="color:#8be9fd;font-style:italic">function</span> () {
-        loadComplete()
-    }, <span style="color:#bd93f9">3000</span>);
-});
-
-<span style="color:#8be9fd;font-style:italic">let</span> xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Loading Data Please Wait&lt;/h1&gt;&#34;</span>]
-$(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
-<span style="color:#8be9fd;font-style:italic">let</span> colors <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;alert-primary&#34;</span>, <span style="color:#f1fa8c">&#34;alert-secondary&#34;</span>, <span style="color:#f1fa8c">&#34;alert-success&#34;</span>, <span style="color:#f1fa8c">&#34;alert-danger&#34;</span>, <span style="color:#f1fa8c">&#34;alert-warning&#34;</span>, <span style="color:#f1fa8c">&#34;alert-info&#34;</span>, <span style="color:#f1fa8c">&#34;alert-dark&#34;</span>]
-<span style="color:#8be9fd;font-style:italic">let</span> prev <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
-<span style="color:#8be9fd;font-style:italic">let</span> newn <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
-
-getnumber <span style="color:#ff79c6">=</span> () =&gt; {
-    newn <span style="color:#ff79c6">=</span> getRandomInt(<span style="color:#bd93f9">6</span>)
-    <span style="color:#ff79c6">while</span> (newn <span style="color:#ff79c6">==</span> prev) {
-        newn <span style="color:#ff79c6">=</span> getRandomInt(<span style="color:#bd93f9">6</span>)
-    }
-    prev <span style="color:#ff79c6">=</span> newn
-    <span style="color:#ff79c6">return</span> newn
-}
-
-<span style="color:#8be9fd;font-style:italic">function</span> getRandomInt(max) {
-    <span style="color:#ff79c6">return</span> <span style="color:#8be9fd;font-style:italic">Math</span>.floor(<span style="color:#8be9fd;font-style:italic">Math</span>.random() <span style="color:#ff79c6">*</span> <span style="color:#8be9fd;font-style:italic">Math</span>.floor(max));
-}
-
-loadData <span style="color:#ff79c6">=</span> () =&gt; {
-    $.get(<span style="color:#f1fa8c">&#39;https://www.tecinpact.tk/index.xml&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
-        xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Quick Post View&lt;/h1&gt;&lt;br&gt;&#34;</span>];
-        $(data).find(<span style="color:#f1fa8c">&#34;item&#34;</span>).each(<span style="color:#8be9fd;font-style:italic">function</span> () { <span style="color:#6272a4">// or &#34;item&#34; or whatever suits your feed
-</span><span style="color:#6272a4"></span>            <span style="color:#8be9fd;font-style:italic">var</span> el <span style="color:#ff79c6">=</span> $(<span style="color:#ff79c6">this</span>);
-
-            <span style="color:#8be9fd;font-style:italic">var</span> retstring <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">`
-</span><span style="color:#f1fa8c">            &lt;div class=&#34;alert </span><span style="color:#f1fa8c">${</span>colors[getnumber()]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34; role=&#34;alert&#34;&gt;
-</span><span style="color:#f1fa8c">            &lt;div class=&#34;media&#34;&gt;
-</span><span style="color:#f1fa8c">                &lt;img src=&#34;img/folder.png&#34; width=&#34;20%&#34; class=&#34;align-self-center mr-3&#34; alt=&#34;...&#34;&gt;
-</span><span style="color:#f1fa8c">                &lt;div class=&#34;media-body&#34;&gt;
-</span><span style="color:#f1fa8c">                    &lt;h5 class=&#34;mt-0&#34;&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;title&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/h5&gt;
-</span><span style="color:#f1fa8c">                    &lt;small&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;pubDate&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/small&gt;
-</span><span style="color:#f1fa8c">                    &lt;p&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;description&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/p&gt;
-</span><span style="color:#f1fa8c">                    &lt;hr&gt;
-</span><span style="color:#f1fa8c">                    &lt;a href=&#34;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#39;link&#39;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34; class=&#34;alert-link&#34;&gt;Visit Post&lt;/a&gt;
-</span><span style="color:#f1fa8c">                &lt;/div&gt;
-</span><span style="color:#f1fa8c">            &lt;/div&gt;
-</span><span style="color:#f1fa8c">        &lt;/div&gt;`</span>;
-
-            xml.push(retstring)
-        });
-        $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
-    });
-}
-
-<span style="color:#8be9fd;font-style:italic">let</span> QP <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
-
-viewQP <span style="color:#ff79c6">=</span> () =&gt; {
-    setTimeout(<span style="color:#8be9fd;font-style:italic">function</span> () {
-        loadData();
-    }, <span style="color:#bd93f9">2000</span>);
-    <span style="color:#ff79c6">if</span> (QP <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">0</span>) {
-        $(<span style="color:#f1fa8c">&#34;.links&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-        $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
-        QP <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
-    } <span style="color:#ff79c6">else</span> {
-        $(<span style="color:#f1fa8c">&#34;.links&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
-        $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
-        QP <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
-    }
-}
-
-loadData()
-</code></pre></div><p>At the beginning as usual, I defined the function to remove the preloader, here also I&rsquo;m hiding the quickpost section to show only the content page. Then, I added a event listener to trigger the function I explained above, after the page loads completely. and The next code part is the same, if you saw my guide on how I made the tecinpact application. so I&rsquo;m not explaining the mechanic in detail. however I added a simple function to get a random number form 0 to 6 when it ran, to get a randomly picked color for the posts, also here, I added a simple logic to prevent the function from giving me the same number twice in a row. and also the loadData function is as the same from the previous guide and View QP is as the same as the function which I used to show a feed in my app.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">charset</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">http-equiv</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;X-UA-Compatible&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;IE=edge&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewport&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;stylesheet&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;css/style.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">link</span> <span style="color:#50fa7b">rel</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;shortcut icon&#34;</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;./img/internet-b.png&#34;</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;image/x-icon&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">title</span>&gt;Bio Section&lt;/<span style="color:#ff79c6">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">head</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;preloader&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;lds-facebook&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span>&gt;&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">h1</span>&gt;Loading Bio Section&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;jumbotron&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.tecinpact.tk/images/profile.jpg&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">h1</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;display-4&#34;</span>&gt;Tecinpact &lt;<span style="color:#ff79c6">span</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;badge badge-dark&#34;</span>&gt;Bio&lt;/<span style="color:#ff79c6">span</span>&gt;&lt;/<span style="color:#ff79c6">h1</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">p</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;lead&#34;</span>&gt;Here you can navigate through all of our sites and groups easily and safely&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;button&#34;</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewQP()&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;btn btn-warning&#34;</span>&gt;Show / Hide Quick Posts&lt;/<span style="color:#ff79c6">button</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;links&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-primary&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/internet.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Main Website&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;Here&#39;s our main blog site, we update content daily and Hope you&#39;ll learn something new! Don&#39;t
+</span></span><span style="display:flex;"><span>                            forget to let us know your feelings in the comment section.&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.tecinpact.tk&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Visit Site&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-secondary&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/facebook.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Facebook Page&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;Yes! We have a facebook page and it&#39;s also updating with the site. would be glad if you can
+</span></span><span style="display:flex;"><span>                            show some love.&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://www.facebook.com/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Goto FB Page&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-success&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/telegram.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Telegram Group&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;We have an amazing community here in Telegram, Everyone&#39;s friendly and so helpful. Ask
+</span></span><span style="display:flex;"><span>                            anything you get a doubt about and within minutes, Someone will reply with a super helpful
+</span></span><span style="display:flex;"><span>                            answer!&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://t.me/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Join Group&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-warning&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/playstore.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Android App&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;Hey! We have a new android app on the playstore! It&#39;s great if you can go and check it out!
+</span></span><span style="display:flex;"><span>                        &lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://play.google.com/store/apps/details?id=tk.tecinpact.app&#34;</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Install application&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-danger&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/instagram.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Instagram Account&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;I Don&#39;t know how, But we developed a huge community on instagram and growing, Don&#39;t forget to
+</span></span><span style="display:flex;"><span>                            join us and you&#39;ll learn something new for sure! and also I&#39;m updating stories hourly.&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://instagram.com/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Follow Us&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-warning&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/whatsapp.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Whatsapp&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;We always face different problems to solve and sometimes, we get stuck. Ask me anything via
+</span></span><span style="display:flex;"><span>                            whatsapp so I can reply you within minutes.&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://wa.me/94769477743&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Send A Message&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-info&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/twitter.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;Twitter&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;We also have a twitter account! if you&#39;re clever enough, You can probably get notification
+</span></span><span style="display:flex;"><span>                            through SMS to your phone.&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://twitter.com/tecinpact&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Follow Us&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert alert-dark&#34;</span> <span style="color:#50fa7b">role</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">img</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img/gmail.png&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;align-self-center mr-3&#34;</span> <span style="color:#50fa7b">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;...&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;media-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">h5</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mt-0&#34;</span>&gt;E-Mail&lt;/<span style="color:#ff79c6">h5</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">p</span>&gt;Hope you have an official inquiry to discuss with us. we always have an email account for
+</span></span><span style="display:flex;"><span>                            these kinds of work.&lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">hr</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;mailto:tecinpactagencies@gmail.com&#34;</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;alert-link&#34;</span>&gt;Send Us An Email&lt;/<span style="color:#ff79c6">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;quickPosts&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;copyright&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            Copyright 2020 Tecinpact. All Rights Reserved.
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://code.jquery.com/jquery-3.5.1.slim.min.js&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://code.jquery.com/jquery-3.5.1.min.js&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">integrity</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=&#34;</span> <span style="color:#50fa7b">crossorigin</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;js/app.js&#34;</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">html</span>&gt;
+</span></span></code></pre></div><p>The infrastructure of this document isn&rsquo;t that hard, First we&rsquo;re using two sections for preloader and content, and the content is loading secretly in the background while the preloader runs an animation. Then in the content section, I Divide the document again into four main sections, First I have a jumbotron (A Section with a bigger heading and a description sometimes also have an image) Then the main link section, quick posts section and finally the copyright line. Here the link section and quick post section hides and un-hides according to the needs. Let&rsquo;s explore the SCSS page now</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#ff79c6">*</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">user-select</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#50fa7b">.content</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> none;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.jumbotron</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">url(../img/background.png)</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background-position</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background-size</span><span style="color:#ff79c6">:</span> cover;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">img</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">200</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">border-radius</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">50</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">h1</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">span</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#50fa7b">animation</span><span style="color:#ff79c6">:</span> coloranimation <span style="color:#bd93f9">15</span><span style="color:#8be9fd">s</span> infinite;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">@keyframes</span> <span style="color:#ff79c6">coloranimation</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">0</span>% {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#845EC2</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">20</span>% {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#D65DB1</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">40</span>% {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#FF6F91</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">60</span>% {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#FF9671</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">80</span>% {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#FFC75F</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">100</span>% {
+</span></span><span style="display:flex;"><span>                        <span style="color:#50fa7b">background-color</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#845EC2</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.links</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">.alert</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">600</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">.media</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">img</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.quickPosts</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">.alert</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">max-width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">600</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">.media</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">img</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">20</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.copyright</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">text-align</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">padding</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#50fa7b">.preloader</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> grid;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">place-items</span><span style="color:#ff79c6">:</span> center;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> fixed;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.lds-facebook</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> inline-block;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> relative;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">80</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">display</span><span style="color:#ff79c6">:</span> inline-block;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">position</span><span style="color:#ff79c6">:</span> absolute;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">8</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">width</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">16</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">background</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">#000</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">animation</span><span style="color:#ff79c6">:</span> lds-facebook <span style="color:#bd93f9">1</span><span style="color:#bd93f9">.2</span><span style="color:#8be9fd">s</span> <span style="color:#50fa7b">cubic-bezier</span>(<span style="color:#bd93f9">0</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">0</span><span style="color:#bd93f9">.5</span><span style="color:#ff79c6">,</span> <span style="color:#bd93f9">1</span>) infinite;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">1</span><span style="color:#ff79c6">)</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">8</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">-</span><span style="color:#bd93f9">0</span><span style="color:#bd93f9">.24</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">2</span><span style="color:#ff79c6">)</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">32</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#ff79c6">-</span><span style="color:#bd93f9">0</span><span style="color:#bd93f9">.12</span><span style="color:#8be9fd">s</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#50fa7b">.lds-facebook</span> <span style="color:#ff79c6">div</span>:nth-child<span style="color:#ff79c6">(</span><span style="color:#ff79c6">3</span><span style="color:#ff79c6">)</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">left</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">56</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">animation-delay</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">@keyframes</span> <span style="color:#ff79c6">lds-facebook</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">0</span>% {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">8</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">64</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">50</span>%<span style="color:#ff79c6">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">100</span>% {
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">top</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">24</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#50fa7b">height</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">32</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Firstly, I Made all sections un-selectable using a SCSS trick, and then I start the content section of scss, here I hide it at the beginning to load elements silently and adding some minor tweaks to how the elements appear and then in the preload section, I add the animations for the loading bar. And that&rsquo;s pretty simple. Let&rsquo;s see what we did to the JS section.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>loadComplete <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    $(<span style="color:#f1fa8c">&#34;.preloader&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>)
+</span></span><span style="display:flex;"><span>    $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>    $(<span style="color:#f1fa8c">&#34;.content&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$(<span style="color:#8be9fd;font-style:italic">window</span>).on(<span style="color:#f1fa8c">&#39;load&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> () {
+</span></span><span style="display:flex;"><span>    setTimeout(<span style="color:#8be9fd;font-style:italic">function</span> () {
+</span></span><span style="display:flex;"><span>        loadComplete()
+</span></span><span style="display:flex;"><span>    }, <span style="color:#bd93f9">3000</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Loading Data Please Wait&lt;/h1&gt;&#34;</span>]
+</span></span><span style="display:flex;"><span>$(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> colors <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;alert-primary&#34;</span>, <span style="color:#f1fa8c">&#34;alert-secondary&#34;</span>, <span style="color:#f1fa8c">&#34;alert-success&#34;</span>, <span style="color:#f1fa8c">&#34;alert-danger&#34;</span>, <span style="color:#f1fa8c">&#34;alert-warning&#34;</span>, <span style="color:#f1fa8c">&#34;alert-info&#34;</span>, <span style="color:#f1fa8c">&#34;alert-dark&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> prev <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> newn <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>getnumber <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    newn <span style="color:#ff79c6">=</span> getRandomInt(<span style="color:#bd93f9">6</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">while</span> (newn <span style="color:#ff79c6">==</span> prev) {
+</span></span><span style="display:flex;"><span>        newn <span style="color:#ff79c6">=</span> getRandomInt(<span style="color:#bd93f9">6</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    prev <span style="color:#ff79c6">=</span> newn
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> newn
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">function</span> getRandomInt(max) {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> <span style="color:#8be9fd;font-style:italic">Math</span>.floor(<span style="color:#8be9fd;font-style:italic">Math</span>.random() <span style="color:#ff79c6">*</span> <span style="color:#8be9fd;font-style:italic">Math</span>.floor(max));
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>loadData <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    $.get(<span style="color:#f1fa8c">&#39;https://www.tecinpact.tk/index.xml&#39;</span>, <span style="color:#8be9fd;font-style:italic">function</span> (data) {
+</span></span><span style="display:flex;"><span>        xml <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c">&#34;&lt;h1&gt;Quick Post View&lt;/h1&gt;&lt;br&gt;&#34;</span>];
+</span></span><span style="display:flex;"><span>        $(data).find(<span style="color:#f1fa8c">&#34;item&#34;</span>).each(<span style="color:#8be9fd;font-style:italic">function</span> () { <span style="color:#6272a4">// or &#34;item&#34; or whatever suits your feed
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>            <span style="color:#8be9fd;font-style:italic">var</span> el <span style="color:#ff79c6">=</span> $(<span style="color:#ff79c6">this</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8be9fd;font-style:italic">var</span> retstring <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">`
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;div class=&#34;alert </span><span style="color:#f1fa8c">${</span>colors[getnumber()]<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34; role=&#34;alert&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;div class=&#34;media&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                &lt;img src=&#34;img/folder.png&#34; width=&#34;20%&#34; class=&#34;align-self-center mr-3&#34; alt=&#34;...&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                &lt;div class=&#34;media-body&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                    &lt;h5 class=&#34;mt-0&#34;&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;title&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/h5&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                    &lt;small&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;pubDate&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/small&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                    &lt;p&gt;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#34;description&#34;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                    &lt;hr&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                    &lt;a href=&#34;</span><span style="color:#f1fa8c">${</span>el.find(<span style="color:#f1fa8c">&#39;link&#39;</span>).text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34; class=&#34;alert-link&#34;&gt;Visit Post&lt;/a&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">                &lt;/div&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">            &lt;/div&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        &lt;/div&gt;`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            xml.push(retstring)
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).html(xml.join(<span style="color:#f1fa8c">&#39;&#39;</span>))
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">let</span> QP <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>viewQP <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    setTimeout(<span style="color:#8be9fd;font-style:italic">function</span> () {
+</span></span><span style="display:flex;"><span>        loadData();
+</span></span><span style="display:flex;"><span>    }, <span style="color:#bd93f9">2000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> (QP <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">0</span>) {
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.links&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        QP <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>    } <span style="color:#ff79c6">else</span> {
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.links&#34;</span>).fadeIn(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        $(<span style="color:#f1fa8c">&#34;.quickPosts&#34;</span>).fadeOut(<span style="color:#bd93f9">500</span>);
+</span></span><span style="display:flex;"><span>        QP <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>loadData()
+</span></span></code></pre></div><p>At the beginning as usual, I defined the function to remove the preloader, here also I&rsquo;m hiding the quickpost section to show only the content page. Then, I added a event listener to trigger the function I explained above, after the page loads completely. and The next code part is the same, if you saw my guide on how I made the tecinpact application. so I&rsquo;m not explaining the mechanic in detail. however I added a simple function to get a random number form 0 to 6 when it ran, to get a randomly picked color for the posts, also here, I added a simple logic to prevent the function from giving me the same number twice in a row. and also the loadData function is as the same from the previous guide and View QP is as the same as the function which I used to show a feed in my app.</p>
 <p>And here you go! that&rsquo;s all it needs to create a bio section (A Network hub), you can skip the feed part if you don&rsquo;t use RSS in your project and use github Pages, Netlify or Heroku to host this site for no cost at all!</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>As a developer, my opinion is we don&rsquo;t have to depend on others every single time, there are times which we can do something better than someone else, and in that process, maybe we would be able to create something more appealing to the user. Who Knows! what could be better.</p>
@@ -657,7 +657,7 @@ loadData()
 
 
 
-<script src="https://www.nushankodikara.com/js/scripts.min.js"></script>
+<script src="https://blog.nushankodikara.com/js/scripts.min.js"></script>
 
 
 

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SCSS on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/scss/</link>
-    <description>Recent content in SCSS on Nushan Kodikara</description>
+    <title>SCSS on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/scss/</link>
+    <description>Recent content in SCSS on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/scss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jul 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/scss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simple, Beautiful Modal</title>
-      <link>https://www.nushankodikara.com/blog/simple-beautiful-modal/</link>
+      <link>https://blog.nushankodikara.com/blog/simple-beautiful-modal/</link>
       <pubDate>Tue, 28 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/simple-beautiful-modal/</guid>
+      <guid>https://blog.nushankodikara.com/blog/simple-beautiful-modal/</guid>
       <description>Introduction We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I&amp;rsquo;m going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master HTML CSS SCSS JS part 1 and JS part 2 guides.
 Now in this guide, We&amp;rsquo;re making This Beautiful modal from scratch with only 14 lines of JS codes.</description>
     </item>
     
     <item>
       <title>Scss for Modern Web Development (Supercharged CSS)</title>
-      <link>https://www.nushankodikara.com/blog/scss-for-modern-web-development/</link>
+      <link>https://blog.nushankodikara.com/blog/scss-for-modern-web-development/</link>
       <pubDate>Tue, 21 Jul 2020 06:59:06 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/scss-for-modern-web-development/</guid>
+      <guid>https://blog.nushankodikara.com/blog/scss-for-modern-web-development/</guid>
       <description>Introduction If you noticed, I Didn&amp;rsquo;t mentioned css for browser types in our previous CSS tutorial, The case is, I don&amp;rsquo;t want to, SCSS is doing everything for us so why should we even bother? Let&amp;rsquo;s get started with SCSS and supercharge our css.
 Pre-Setup SCSS isn&amp;rsquo;t a universal solution, it&amp;rsquo;s here to help us with variables, nesting and automatic css generation. So we need a software to compile scss into css, here I&amp;rsquo;m using VSCode and an extension called live SCSS compiler.</description>
     </item>

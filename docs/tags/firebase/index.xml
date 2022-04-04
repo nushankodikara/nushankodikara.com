@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Firebase on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/firebase/</link>
-    <description>Recent content in Firebase on Nushan Kodikara</description>
+    <title>Firebase on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/firebase/</link>
+    <description>Recent content in Firebase on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/firebase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Messaging App With Firebase</title>
-      <link>https://www.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</link>
+      <link>https://blog.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</link>
       <pubDate>Sun, 09 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</guid>
+      <guid>https://blog.nushankodikara.com/blog/creating-a-messaging-app-with-firebase/</guid>
       <description>Introduction Now we have covered firebase realtime and firestore databases, Authentication, Hosting and analytics, We can create a simple chat/messaging application within 15-minuets or less! Aren&amp;rsquo;t you sure of that? Let&amp;rsquo;s get started!
 Background and Environment I&amp;rsquo;m using what we did in firebase realtime database, authentication and hosting for this project. So if you didn&amp;rsquo;t saw them already, go ahead now. let&amp;rsquo;s explore the code and as always HERE you can download the completed project file.</description>
     </item>
     
     <item>
       <title>Firebase Hosting and Analytics</title>
-      <link>https://www.nushankodikara.com/blog/firebase-hosting-and-analytics/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-hosting-and-analytics/</link>
       <pubDate>Sat, 08 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-hosting-and-analytics/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-hosting-and-analytics/</guid>
       <description>Introduction We can use firebase as a hosting service, Firebase Hosting provides fast and secure hosting for your web app, static and dynamic content, and microservices, Also Firebase Hosting is production-grade web content hosting for developers, With a single command, you can quickly deploy web apps and serve both static and dynamic content to a global CDN (content delivery network), You can also pair Firebase Hosting with Cloud Functions or Cloud Run to build and host microservices on Firebase.</description>
     </item>
     
     <item>
       <title>Firebase Authentication</title>
-      <link>https://www.nushankodikara.com/blog/firebase-authentication/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-authentication/</link>
       <pubDate>Fri, 07 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-authentication/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-authentication/</guid>
       <description>Introduction Let&amp;rsquo;s use firebase for user authentication, you don&amp;rsquo;t need to setup custom authentications, app apis and other stupid things anymore, we have firebase on our back and few lines of codes can make the programs more efficient and more secure! today I&amp;rsquo;m only focusing Email, Google and Anonymous authentications mainly. you can browse firebase docs for more information on how to setup other authentications in advanced.
 Firebase Authentication Most apps need to know the identity of a user.</description>
     </item>
     
     <item>
       <title>Firebase Cloud Firestore</title>
-      <link>https://www.nushankodikara.com/blog/firebase-cloud-firestore/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-cloud-firestore/</link>
       <pubDate>Thu, 06 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-cloud-firestore/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-cloud-firestore/</guid>
       <description>Introduction Use our flexible, scalable NoSQL cloud database to store and sync data for client- and server-side development.
 Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform, Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity, Cloud Firestore also offers seamless integration with other Firebase and Google Cloud Platform products, including Cloud Functions.</description>
     </item>
     
     <item>
       <title>Firebase Realtime Database</title>
-      <link>https://www.nushankodikara.com/blog/firebase-realtime-database/</link>
+      <link>https://blog.nushankodikara.com/blog/firebase-realtime-database/</link>
       <pubDate>Wed, 05 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/firebase-realtime-database/</guid>
+      <guid>https://blog.nushankodikara.com/blog/firebase-realtime-database/</guid>
       <description>Introduction Okay, Let&amp;rsquo;s do some database actions, But without SQL or any of those table based old style databases, We&amp;rsquo;re learning how to use Firebase Realtime database with a web application, but also the codes are the same for mobile applications, so it won&amp;rsquo;t make much difference at all, And in the end of this series, After we covered Authentication, We&amp;rsquo;re creating a fully fledged Chat application and maybe a social media application to test our knowledge.</description>
     </item>
     

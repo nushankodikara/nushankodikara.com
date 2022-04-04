@@ -13,21 +13,21 @@
     />
 
     <title>
-        Let&#39;s Create Mobile Apps With Cordova - Nushan Kodikara
+        Let&#39;s Create Mobile Apps With Cordova - Blog by Nushan Kodikara
     </title>
     <meta
         name="description"
         content="Creating Mobile apps using cordova"
-    /><meta name="generator" content="Hugo 0.92.2" /><link
+    /><meta name="generator" content="Hugo 0.96.0" /><link
         rel="stylesheet"
-        href="https://www.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
+        href="https://blog.nushankodikara.com/css/styles.min.9eb1933d74bc51f90a99828e3b839009c326aa4d8dd5ec0ac6168f963105e957.css"
         integrity="sha256-nrGTPXS8UfkKmYKOO4OQCcMmqk2N1ewKxhaPljEF6Vc="
     />
     
      <meta property="og:title" content="Let&#39;s Create Mobile Apps With Cordova" />
 <meta property="og:description" content="Creating Mobile apps using cordova" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.nushankodikara.com/blog/creating-mobile-apps-with-cordova/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://blog.nushankodikara.com/blog/creating-mobile-apps-with-cordova/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-08-01T06:00:00+05:30" />
 <meta property="article:modified_time" content="2020-08-01T06:00:00+05:30" />
 
@@ -41,13 +41,13 @@
 <meta itemprop="keywords" content="Android,IOS,Mobile development,Hybrid Apps," />
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
-  <a href="https://www.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
-    Nushan Kodikara
+  <a href="https://blog.nushankodikara.com/" class="capitalize font-extrabold text-2xl">
+    Blog by Nushan Kodikara
   </a>
   <ul class="flex items-center gap-4 lg:gap-6">
 
     
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://bio.nushankodikara.com">Social Links</a></li>
     
 
     
@@ -233,33 +233,33 @@
 </ul>
 <h3 id="configxml">config.xml</h3>
 <p>For this project I have a config file like this and I&rsquo;m pretty sure yours also looks like this.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
-<span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;com.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.0.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
-    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
-    <span style="color:#ff79c6">&lt;description&gt;</span>
-        A sample Apache Cordova application that responds to the deviceready event.
-    <span style="color:#ff79c6">&lt;/description&gt;</span>
-    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;dev@cordova.apache.org&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://cordova.io&#34;</span><span style="color:#ff79c6">&gt;</span>
-        Apache Cordova Team
-    <span style="color:#ff79c6">&lt;/author&gt;</span>
-    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;/platform&gt;</span>
-    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;/platform&gt;</span>
-<span style="color:#ff79c6">&lt;/widget&gt;</span>
-</code></pre></div><p>Now here, This is the file that controls our application, this is our meta data file, you can change the package name, application name and many more things by tweaking this file, later in this tutorial, we&rsquo;re explaining how we can do things by tweaking this file. For now, don&rsquo;t be afraid to modify and tweak it BUT DO NOT REMOVE ANYTHING WITHOUT KNOWING WHAT IT DOES. And that&rsquo;s a warning.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;com.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.0.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;description&gt;</span>
+</span></span><span style="display:flex;"><span>        A sample Apache Cordova application that responds to the deviceready event.
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/description&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;dev@cordova.apache.org&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://cordova.io&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        Apache Cordova Team
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/author&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/widget&gt;</span>
+</span></span></code></pre></div><p>Now here, This is the file that controls our application, this is our meta data file, you can change the package name, application name and many more things by tweaking this file, later in this tutorial, we&rsquo;re explaining how we can do things by tweaking this file. For now, don&rsquo;t be afraid to modify and tweak it BUT DO NOT REMOVE ANYTHING WITHOUT KNOWING WHAT IT DOES. And that&rsquo;s a warning.</p>
 <p>Let me introduce each element to you. Name tags holds the application name, description tag holds a description of the app, author tag as others author details. content must be pointed to the main HTML file and that&rsquo;s what you need for now, and there should be a self closing icon tag pointing to a icon file with src attribute and that&rsquo;s all you need to know in the base level. if non of these made sense to you, go check out my Web Development series <a href="/post/html-for-modern-web-development/">HTML</a>, <a href="/post/css-for-modern-web-development/">CSS</a>, <a href="/post/scss-for-modern-web-development/">SCSS</a>, <a href="/post/js-for-modern-web-development/">JS part 1</a> and <a href="/content/post/js-for-modern-web-development-2/">JS part 2</a> First and then come to this section.</p>
 <h3 id="www-directory">www Directory</h3>
 <p>Now the www directory is where we create our hybrid app. Hybrid means you can create your application out of HTML CSS and JS and compile it into a native app, using some sort of a magic. Magics are not real and they are illusions, so the trick behind the sleave is, Cordova has a separate stable web view activity which can run the HTML file internally. The end user won&rsquo;t feel a difference and if you&rsquo;re careful enough, We can make this app looks way way better. Now you can find these even in the cordova documentation page, but let me show you what you cannot find in the documentation and what I really use in my workflow. BTW go and modify the content in the www folder and create your mobile app there with HTML CSS and JS and I&rsquo;ll do it in the next guide. For now I&rsquo;m using the default pages.</p>
@@ -267,57 +267,57 @@
 <p>This isn&rsquo;t a hard one you need to create a res folder and add your icon in there, also after that you just need to add a single line of code to the config file and you&rsquo;re pretty much good to go. Here&rsquo;s how I do it.</p>
 <p><img src="/uploads/20200801_05.gif" alt="Adding Icon To the Folder"></p>
 <p>And That out to the way we need to map the icon to the config file. How can we do that? Simple, Just add this line of code to your config file</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/demoIcon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
-</code></pre></div><p>And That&rsquo;s it. After that the whole XML config file should look like this. You have to rename the demoIcon.png part to your icon name and you&rsquo;re done.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
-<span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;com.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.0.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
-    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
-    <span style="color:#ff79c6">&lt;description&gt;</span>
-        A sample Apache Cordova application that responds to the deviceready event.
-    <span style="color:#ff79c6">&lt;/description&gt;</span>
-    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;dev@cordova.apache.org&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://cordova.io&#34;</span><span style="color:#ff79c6">&gt;</span>
-        Apache Cordova Team
-    <span style="color:#ff79c6">&lt;/author&gt;</span>
-    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/demoIcon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;/platform&gt;</span>
-    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
-    <span style="color:#ff79c6">&lt;/platform&gt;</span>
-<span style="color:#ff79c6">&lt;/widget&gt;</span>
-</code></pre></div><p>Alright now there&rsquo;s something called signing your app when developing android apps, and to do that, you have to develop your application into a apk file and do a complex thing called Zip aligning. Lucky for us, I Found a way which a handful of members know of, you can automatically sign Cordova apps with a build.json file and That&rsquo;s the easiest as it gets. But before that, you have to create a key for your app. In order to do this you have to follow up the usual procedure of obtaining a key. You can learn how to get a keystore key for android from <a href="https://www.youtube.com/watch?v=HNbtFTtq-8o">THIS VIDEO</a>, You don&rsquo;t have to follow the whole guide, Just generate the .keystore file and you&rsquo;re good to go. Now you have to create a new file called build.json</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/demoIcon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
+</span></span></code></pre></div><p>And That&rsquo;s it. After that the whole XML config file should look like this. You have to rename the demoIcon.png part to your icon name and you&rsquo;re done.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;widget</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;com.tecinpact.app&#34;</span> <span style="color:#50fa7b">version=</span><span style="color:#f1fa8c">&#34;1.0.0&#34;</span> <span style="color:#50fa7b">xmlns=</span><span style="color:#f1fa8c">&#34;http://www.w3.org/ns/widgets&#34;</span> <span style="color:#50fa7b">xmlns:cdv=</span><span style="color:#f1fa8c">&#34;http://cordova.apache.org/ns/1.0&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;name&gt;</span>Tecinpact<span style="color:#ff79c6">&lt;/name&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;description&gt;</span>
+</span></span><span style="display:flex;"><span>        A sample Apache Cordova application that responds to the deviceready event.
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/description&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;author</span> <span style="color:#50fa7b">email=</span><span style="color:#f1fa8c">&#34;dev@cordova.apache.org&#34;</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://cordova.io&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        Apache Cordova Team
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/author&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;content</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;index.html&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;plugin</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;cordova-plugin-whitelist&#34;</span> <span style="color:#50fa7b">spec=</span><span style="color:#f1fa8c">&#34;1&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;access</span> <span style="color:#50fa7b">origin=</span><span style="color:#f1fa8c">&#34;*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;http://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;https://*/*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;tel:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;sms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;mailto:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;geo:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;icon</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#34;./res/demoIcon.png&#34;</span><span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;android&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;market:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;platform</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;ios&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;allow-intent</span> <span style="color:#50fa7b">href=</span><span style="color:#f1fa8c">&#34;itms-apps:*&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;/platform&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/widget&gt;</span>
+</span></span></code></pre></div><p>Alright now there&rsquo;s something called signing your app when developing android apps, and to do that, you have to develop your application into a apk file and do a complex thing called Zip aligning. Lucky for us, I Found a way which a handful of members know of, you can automatically sign Cordova apps with a build.json file and That&rsquo;s the easiest as it gets. But before that, you have to create a key for your app. In order to do this you have to follow up the usual procedure of obtaining a key. You can learn how to get a keystore key for android from <a href="https://www.youtube.com/watch?v=HNbtFTtq-8o">THIS VIDEO</a>, You don&rsquo;t have to follow the whole guide, Just generate the .keystore file and you&rsquo;re good to go. Now you have to create a new file called build.json</p>
 <p><img src="/uploads/20200801_06.png" alt="Cordova Folder Structure"></p>
 <p>Here you can see I created a build.json file and copied my mykey.keystore file. Now in the json file, I you have to add these lines</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#ff79c6">&#34;android&#34;</span>: {
-        <span style="color:#ff79c6">&#34;debug&#34;</span>: {
-            <span style="color:#ff79c6">&#34;keystore&#34;</span>: <span style="color:#f1fa8c">&#34;mykey.keystore&#34;</span>,
-            <span style="color:#ff79c6">&#34;storePassword&#34;</span>: <span style="color:#f1fa8c">&#34;password&#34;</span>,
-            <span style="color:#ff79c6">&#34;alias&#34;</span>: <span style="color:#f1fa8c">&#34;alias name&#34;</span>,
-            <span style="color:#ff79c6">&#34;password&#34;</span> : <span style="color:#f1fa8c">&#34;password&#34;</span>,
-            <span style="color:#ff79c6">&#34;keystoreType&#34;</span>: <span style="color:#f1fa8c">&#34;&#34;</span>
-        },
-        <span style="color:#ff79c6">&#34;release&#34;</span>: {
-            <span style="color:#ff79c6">&#34;keystore&#34;</span>: <span style="color:#f1fa8c">&#34;mykey.keystore&#34;</span>,
-            <span style="color:#ff79c6">&#34;storePassword&#34;</span>: <span style="color:#f1fa8c">&#34;password&#34;</span>,
-            <span style="color:#ff79c6">&#34;alias&#34;</span>: <span style="color:#f1fa8c">&#34;alias name&#34;</span>,
-            <span style="color:#ff79c6">&#34;password&#34;</span> : <span style="color:#f1fa8c">&#34;password&#34;</span>,
-            <span style="color:#ff79c6">&#34;keystoreType&#34;</span>: <span style="color:#f1fa8c">&#34;&#34;</span>
-        }
-    }
-}
-</code></pre></div><p>Here you have to change mykey.keystore to your keystore file, enter your storepassword to the password, alias name to that section and alias password in password section. You are writing these when creating the keystore file and DO NOT LOSE THIS FILE, if you did so you won&rsquo;t be able to update your app in the future. Now we&rsquo;re officially done with the process and we only have to Build the app itself. Before that, Let&rsquo;s summarize what we did for now</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;android&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&#34;debug&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;keystore&#34;</span>: <span style="color:#f1fa8c">&#34;mykey.keystore&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;storePassword&#34;</span>: <span style="color:#f1fa8c">&#34;password&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;alias&#34;</span>: <span style="color:#f1fa8c">&#34;alias name&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;password&#34;</span> : <span style="color:#f1fa8c">&#34;password&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;keystoreType&#34;</span>: <span style="color:#f1fa8c">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&#34;release&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;keystore&#34;</span>: <span style="color:#f1fa8c">&#34;mykey.keystore&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;storePassword&#34;</span>: <span style="color:#f1fa8c">&#34;password&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;alias&#34;</span>: <span style="color:#f1fa8c">&#34;alias name&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;password&#34;</span> : <span style="color:#f1fa8c">&#34;password&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;keystoreType&#34;</span>: <span style="color:#f1fa8c">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here you have to change mykey.keystore to your keystore file, enter your storepassword to the password, alias name to that section and alias password in password section. You are writing these when creating the keystore file and DO NOT LOSE THIS FILE, if you did so you won&rsquo;t be able to update your app in the future. Now we&rsquo;re officially done with the process and we only have to Build the app itself. Before that, Let&rsquo;s summarize what we did for now</p>
 <ol>
 <li>Created a Cordova Project</li>
 <li>Added Android Platform</li>
@@ -479,7 +479,7 @@
 
 
 
-<script src="https://www.nushankodikara.com/js/scripts.min.js"></script>
+<script src="https://blog.nushankodikara.com/js/scripts.min.js"></script>
 
 
 

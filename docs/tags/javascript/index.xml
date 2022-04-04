@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on Nushan Kodikara</title>
-    <link>https://www.nushankodikara.com/tags/javascript/</link>
-    <description>Recent content in Javascript on Nushan Kodikara</description>
+    <title>Javascript on Blog by Nushan Kodikara</title>
+    <link>https://blog.nushankodikara.com/tags/javascript/</link>
+    <description>Recent content in Javascript on Blog by Nushan Kodikara</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://www.nushankodikara.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Aug 2020 06:00:00 +0530</lastBuildDate><atom:link href="https://blog.nushankodikara.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Secure Your JavaScript Files</title>
-      <link>https://www.nushankodikara.com/blog/secure-your-javascript-files/</link>
+      <link>https://blog.nushankodikara.com/blog/secure-your-javascript-files/</link>
       <pubDate>Mon, 10 Aug 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/secure-your-javascript-files/</guid>
+      <guid>https://blog.nushankodikara.com/blog/secure-your-javascript-files/</guid>
       <description>Introduction Let&amp;rsquo;s be real, with firebase and all these knowledge, we should protect our JS files, They can&amp;rsquo;t be wide open for a smart ass to get there and mess around with the code or so, Yeah I know the firebase provides a much secure system in the security side but the code has to be secure too! To day let&amp;rsquo;s discuss on that, let&amp;rsquo;s explore what we can do to Protect our JS files.</description>
     </item>
     
     <item>
       <title>Simple, Beautiful Modal</title>
-      <link>https://www.nushankodikara.com/blog/simple-beautiful-modal/</link>
+      <link>https://blog.nushankodikara.com/blog/simple-beautiful-modal/</link>
       <pubDate>Tue, 28 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/simple-beautiful-modal/</guid>
+      <guid>https://blog.nushankodikara.com/blog/simple-beautiful-modal/</guid>
       <description>Introduction We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I&amp;rsquo;m going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master HTML CSS SCSS JS part 1 and JS part 2 guides.
 Now in this guide, We&amp;rsquo;re making This Beautiful modal from scratch with only 14 lines of JS codes.</description>
     </item>
     
     <item>
       <title>Js for Modern Web Development (Part 2)</title>
-      <link>https://www.nushankodikara.com/blog/js-for-modern-web-development-2/</link>
+      <link>https://blog.nushankodikara.com/blog/js-for-modern-web-development-2/</link>
       <pubDate>Sun, 26 Jul 2020 06:00:00 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/js-for-modern-web-development-2/</guid>
+      <guid>https://blog.nushankodikara.com/blog/js-for-modern-web-development-2/</guid>
       <description>Introduction We did the programming part with JS, Now let&amp;rsquo;s implement our knowledge into action, Let&amp;rsquo;s create JS which can interact with webpages, This would be a long post so hold tight and here we go.
 Browser environment, specs The JavaScript language was initially created for web browsers. Since then it has evolved and become a language with many uses and platforms.
 A platform may be a browser, or a web-server or another host, even a &amp;ldquo;smart&amp;rdquo; coffee machine, if it can run JavaScript.</description>
@@ -38,10 +38,10 @@ A platform may be a browser, or a web-server or another host, even a &amp;ldquo;
     
     <item>
       <title>Js for Modern Web Development (Part 1)</title>
-      <link>https://www.nushankodikara.com/blog/js-for-modern-web-development/</link>
+      <link>https://blog.nushankodikara.com/blog/js-for-modern-web-development/</link>
       <pubDate>Thu, 23 Jul 2020 11:52:24 +0530</pubDate>
       
-      <guid>https://www.nushankodikara.com/blog/js-for-modern-web-development/</guid>
+      <guid>https://blog.nushankodikara.com/blog/js-for-modern-web-development/</guid>
       <description>Introduction Here we are at the end of the modern web development course, At the right basics of the language which make the web interactive and functional. JS Is the back-born of the modern Internet, Why do I say so? Because we can do literally Anything you imagine. Without further explanation, Let&amp;rsquo;s start with the course. Before getting here, Please follow HTML CSS and SCSS guides.
 Hello, world! Javascript is fully functional with HTML and CSS, so first, Let&amp;rsquo;s create our demo document with HTML CSS And JS.</description>
     </item>
